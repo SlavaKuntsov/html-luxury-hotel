@@ -1,0 +1,112 @@
+main{
+	@extend %max;
+	margin: 0 auto;
+	.text{
+		@extend %max;
+		margin: 100px 0 80px 0;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		gap: 40px;
+		h2{
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 72px;
+			letter-spacing: 0.05em;
+			color: #14274A;
+		}
+		p{
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			color: #14274A;
+			text-align: center;
+		}
+	}
+	.carts{
+		display: flex;
+		flex-flow: wrap;
+		gap: 60px;
+		justify-content: center;
+		.cart{
+			position: relative;
+			width: 600px;
+			height: 400px;
+			img{
+				width: 600px;
+				height: 400px;
+				z-index: 1;
+			}
+			.cart-text{
+				width: 320px;
+				background: white;
+				padding: 10px 40px 0;
+				bottom: -1px;
+				margin: auto;
+				left: 0;
+				right: 0;
+				position: absolute;
+				// bottom: 0;
+				// left: 26%;
+				// margin-left: auto;
+				// margin-right: auto;
+				// left: 0;
+				// right: 0;
+				// text-align: center;
+				// margin-top: -50px;
+				z-index: 10;
+				p{
+					white-space: nowrap;
+					text-align: center;
+					font-weight: 700;
+					font-size: 30px;
+					// line-height: 59px;
+					color: #14274A;
+				}
+			}
+		}
+	}
+	.comments{
+		margin: 110px 0 0 0;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		align-items: center;
+		gap: 20px;
+		h2{
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 72px;
+			color: #14274A;
+		}
+		.comments-track{
+			text-align: center;
+			.comment-cart{
+				p{
+					font-weight: 400;
+					font-size: 30px;
+					line-height: 37px;
+					color: #14274A;
+				}
+				span{
+					font-weight: 400;
+					font-size: 25px;
+					line-height: 30px;
+					color: #14274A;
+				}
+			}
+		}
+		.buttons{
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.left, .right {
+				padding: 10px;
+				font-size: 24px;
+				background: $ohra;
+				color: white;
+				border-radius: 8px;
+			}
+		}
+	}
+}

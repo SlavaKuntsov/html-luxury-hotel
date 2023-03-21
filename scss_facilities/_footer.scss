@@ -1,0 +1,120 @@
+footer{
+	background: #14274A;
+	width: 100%;
+	margin: 100px 0 0 0;
+	.footer-text{
+		@extend %max;
+		margin: 0 auto;
+		color: white;
+		padding: 70px 0;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		.left-col{
+			width: 42%;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+
+			.l-first{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				.l-f-top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						font-weight: 700;
+						font-size: 25px;
+						line-height: 30px;
+						letter-spacing: 0.15em;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 12px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+					}
+				}
+				.l-f-bottom{
+					p{
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 17px;
+						padding: 0 0 5px 0;
+					}
+				}
+			}
+			.l-second{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				a{
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+		.right-col{
+			width: 42%;
+			justify-content: space-between;
+			display: flex;
+			flex-flow: row;
+			.r-first{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			.r-second{
+				p{
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+				}
+				form{
+					input[type="email"]{
+						background: #14274A;
+						font-family: 'Montserrat';
+						border: 2px solid $ohra;
+						border-right: none;
+						font-size: 16px;
+						padding: 15px 25px;
+						border-radius: 5px 0 0 5px;
+						color: white;
+					}
+					input[type="email"]::placeholder{
+						font-family: 'Montserrat';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						color: white;
+					}
+					input[type="submit"]{
+						font-family: 'Montserrat';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						color: #14274A;
+						background: $ohra;
+						padding: 15px 25px 14px;
+						margin-left: -2px;
+						border: 2px solid $ohra;
+						border-radius: 0 5px 5px 0;
+					}
+				}
+			}
+		}
+	}
+}
