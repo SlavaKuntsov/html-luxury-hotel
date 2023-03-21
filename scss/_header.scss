@@ -1,0 +1,175 @@
+
+
+header {
+	position: relative;
+	.back{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		height: 1080px;
+	}
+}
+
+nav{
+	@extend %max;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	.logo{
+		position: relative;
+		background: $ohra;
+		border-radius: 50px;
+		padding: 40px 35px;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		h3{
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 48px;
+			letter-spacing: 0.15em;
+			color: #14274A;
+		}
+		h5{
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 18px;
+			letter-spacing: 0.6em;
+			color: #14274A;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+			background: $ohra;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+			background: $ohra;
+		}
+	}
+	ul{
+		display: flex;
+		align-items: center;
+		gap: 70px;
+		li a{
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			color: #FFFFFF;
+		}
+		li:nth-child(1){
+			a{
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 30px;
+				color: #FFFFFF;
+				border-bottom: 3px solid white;
+			}
+		}
+	}
+}
+.header-main{
+	@extend %max;
+	margin: 0 auto;
+	.text{
+		margin: 190px 0 110px;
+		display: flex;
+		flex-flow: column;
+		align-items: start;
+		span{
+			font-family: 'Montserrat';
+			font-weight: 400;
+			font-size: 50px;
+			line-height: 61px;
+			color: #FFFFFF;
+		}
+		h1{
+			font-weight: 700;
+			font-size: 154px;
+			line-height: 130px;
+			letter-spacing: 0.07em;
+			color: #FFFFFF;
+		}
+		h2{
+			font-size: 60px;
+			line-height: 72px;
+			letter-spacing: 0.4em;
+			color: #FFFFFF;
+		}
+		p{
+			width: 580px;
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			letter-spacing: 0.1em;
+			color: #FFFFFF;
+		}
+	}
+	.all-buttons{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		gap: 80px;
+		.button{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			background: $ohra;
+			padding: 25px 0;
+			border-radius: 15px;
+			width: 270px;
+			img{
+				width: 28px;
+				height: 26px;
+			}
+			p{
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 30px;
+				color: #FFFFFF;
+			}
+		}
+		.scroll{
+			animation: scroll 3s infinite;
+			display: flex;
+			flex-flow: column;
+			gap: 15px;
+			align-items: center;
+			p{
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+				color: #FFFFFF;
+			}
+			img{
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+}
+
+@keyframes scroll {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: .5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
