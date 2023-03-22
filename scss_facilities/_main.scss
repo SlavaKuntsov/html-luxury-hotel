@@ -2,7 +2,6 @@ main{
 	@extend %max;
 	margin: 0 auto;
 	.text{
-		@extend %max;
 		margin: 100px 0 80px 0;
 		display: flex;
 		flex-flow: column;
@@ -23,7 +22,7 @@ main{
 			text-align: center;
 		}
 	}
-	.carts{
+	.all-carts{
 		display: flex;
 		flex-flow: wrap;
 		gap: 60px;
@@ -32,12 +31,18 @@ main{
 			position: relative;
 			width: 600px;
 			height: 400px;
+			@include scale;
 			img{
+				border-radius: 15px;
 				width: 600px;
 				height: 400px;
 				z-index: 1;
 			}
+			span{
+				display: none;
+			}
 			.cart-text{
+				border-radius:  8px 8px 0 0;
 				width: 320px;
 				background: white;
 				padding: 10px 40px 0;
@@ -46,26 +51,42 @@ main{
 				left: 0;
 				right: 0;
 				position: absolute;
-				// bottom: 0;
-				// left: 26%;
-				// margin-left: auto;
-				// margin-right: auto;
-				// left: 0;
-				// right: 0;
-				// text-align: center;
-				// margin-top: -50px;
 				z-index: 10;
 				p{
 					white-space: nowrap;
 					text-align: center;
 					font-weight: 700;
 					font-size: 30px;
-					// line-height: 59px;
 					color: #14274A;
 				}
 			}
 		}
 	}
+
+	.offer{
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		margin: 110px 0 0 0;
+		h2{
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 72px;
+			color: #14274A;
+		}
+		.offer-text{
+			display: flex;
+			flex-flow: wrap;
+			gap: 300px;
+			p{
+				color: black;
+				padding: 0 0 15px 0;
+				font-size: 24px;
+				font-weight: 500;
+			}
+		}
+	}
+	
 	.comments{
 		margin: 110px 0 0 0;
 		display: flex;
@@ -101,11 +122,587 @@ main{
 			align-items: center;
 			gap: 20px;
 			.left, .right {
+				@include hover($ohra);
 				padding: 10px;
-				font-size: 24px;
+				font-size: 28px;
 				background: $ohra;
 				color: white;
 				border-radius: 8px;
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1660px)  {
+	main{
+		@include max_1660;
+		.text{
+			margin: 60px 0;
+			gap: 10px;
+			h2{
+				font-size: 40px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		.all-carts{
+			display: flex;
+			flex-flow: wrap;
+			gap: 60px;
+			justify-content: center;
+			.cart{
+				position: relative;
+				width: 400px;
+				height: 280px;
+				img{
+					border-radius: 10px 10px;
+					width: 400px;
+					height: 280px;
+				}
+				.cart-text{
+					border-radius:  8px 8px 0 0;
+					width: 220px;
+					background: white;
+					padding: 10px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 700;
+						font-size: 18px;
+						color: #14274A;
+					}
+				}
+			}
+		}
+		.offer{
+			display: flex;
+			flex-flow: column;
+			gap: 20px;
+			margin: 110px 0 0 0;
+			h2{
+				font-weight: 700;
+				font-size: 36px;
+				line-height: 72px;
+				color: #14274A;
+			}
+			.offer-text{
+				display: flex;
+				flex-flow: wrap;
+				gap: 130px;
+				p{
+					color: black;
+					padding: 0 0 15px 0;
+					font-size: 20px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: 60px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 40px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 20px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 30px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 16px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+	main{
+		@include max_1100;
+		.text{
+			margin: 40px 0;
+			h2{
+				font-size: 30px;
+				line-height: 40px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		.all-carts{
+			display: flex;
+			flex-flow: wrap;
+			gap: 60px;
+			justify-content: center;
+			.cart{
+				position: relative;
+				width: 300px;
+				height: 180px;
+				img{
+					border-radius: 10px 10px;
+					width: 300px;
+					height: 180px;
+				}
+				.cart-text{
+					border-radius:  8px 8px 0 0;
+					width: 180px;
+					background: white;
+					padding: 8px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 600;
+						font-size: 15px;
+						color: #14274A;
+					}
+				}
+			}
+		}
+		
+		.offer{
+			display: flex;
+			flex-flow: column;
+			gap: 20px;
+			margin: 110px 0 0 0;
+			h2{
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 72px;
+				color: #14274A;
+			}
+			.offer-text{
+				display: flex;
+				flex-flow: wrap;
+				gap: 50px;
+				p{
+					color: black;
+					padding: 0 0 10px 0;
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: 50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 34px;
+				line-height: 30px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 18px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 24px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 14x;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+	main{
+		@include max_800;
+		.text{
+			margin: 30px 0;
+			h2{
+				font-size: 30px;
+				line-height: 40px;
+			}
+			p{
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		.all-carts{
+			display: flex;
+			flex-flow: wrap;
+			gap: 40px;
+			justify-content: center;
+			.cart{
+				position: relative;
+				width: 400px;
+				height: 240px;
+				img{
+					border-radius: 10px 10px;
+					width: 400px;
+					height: 240px;
+				}
+				.cart-text{
+					width: 180px;
+					background: white;
+					border-radius:  8px 8px 0 0;
+					padding: 8px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 600;
+						font-size: 15px;
+						color: #14274A;
+					}
+				}
+			}
+		}
+		.offer{
+			display: flex;
+			flex-flow: column;
+			gap: 20px;
+			margin: 110px 0 0 0;
+			h2{
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 72px;
+				color: #14274A;
+			}
+			.offer-text{
+				display: flex;
+				flex-flow: wrap;
+				gap: 30px;
+				.offer-first{
+					padding: 0 120px 0 0;
+				}
+				p{
+					color: black;
+					padding: 0 0 10px 0;
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: 50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 26px;
+				line-height: 24px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 16px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+	main{
+		@include max_550;
+		padding: 20px;
+		.text{
+			margin: 10px 0 30px;
+			h2{
+				font-size: 20px;
+				line-height: 20px;
+			}
+			p{
+				font-size: 10px;
+				line-height: 18px;
+			}
+		}
+		.all-carts{
+			display: flex;
+			flex-flow: wrap;
+			gap: 20px;
+			justify-content: center;
+			.cart{
+				position: relative;
+				width: 330px;
+				height: 200px;
+				img{
+					border-radius: 10px 10px;
+					width: 330px;
+					height: 200px;
+				}
+				span{
+					
+					display: inline-block;
+					color: white;
+					position: absolute;
+					margin-left: auto;
+					margin-right: auto;
+					left: 0;
+					right: 0;
+					text-align: center;
+					top: 45%;
+					font-size: 28px;
+					font-weight: 500;
+				}
+				.cart-text{
+					display: none;
+					width: 180px;
+					background: white;
+					border-radius:  8px 8px 0 0;
+					padding: 8px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 600;
+						font-size: 14px;
+						color: #14274A;
+					}
+				}
+			}
+		}
+		.offer{
+			display: flex;
+			flex-flow: column;
+			gap: 0px;
+			margin: 110px 0 0 0;
+			align-items: center;
+			h2{
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 72px;
+				color: #14274A;
+			}
+			.offer-text{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				div{
+					padding: 0 60px 0 0;
+					display: flex;
+					flex-flow: column;
+					p{
+						display: inline-block;
+						color: black;
+						padding: 0 0 10px 0;
+						font-size: 12px;
+						font-weight: 500;
+					}
+				}
+				.offer-first{
+					padding: 0;
+				}
+			}
+		}
+		.comments{
+			margin: 50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 20px;
+				line-height: 18px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 12px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 10px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 5px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 400px) {
+	main{
+		@include max_550;
+		padding: 20px;
+		.text{
+			margin: 10px 0 30px;
+			h2{
+				font-size: 20px;
+				line-height: 20px;
+			}
+			p{
+				font-size: 10px;
+				line-height: 18px;
+			}
+		}
+		.all-carts{
+			display: flex;
+			flex-flow: wrap;
+			gap: 20px;
+			justify-content: center;
+			.cart{
+				position: relative;
+				width: 280px;
+				height: 160px;
+				img{
+					border-radius: 10px 10px;
+					width: 280px;
+					height: 160px;
+				}
+				span{
+					
+					display: inline-block;
+					color: white;
+					position: absolute;
+					margin-left: auto;
+					margin-right: auto;
+					left: 0;
+					right: 0;
+					text-align: center;
+					top: 45%;
+					font-size: 22px;
+					font-weight: 500;
+				}
+				.cart-text{
+					display: none;
+					width: 180px;
+					background: white;
+					border-radius:  8px 8px 0 0;
+					padding: 8px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 600;
+						font-size: 14px;
+						color: #14274A;
+					}
+				}
+			}
+		}
+		.comments{
+			margin: 50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 20px;
+				line-height: 18px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 14px;
+						line-height: 16px;
+						padding: 10px 0 10px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 11px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					@include hover($ohra);
+					padding: 10px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
 			}
 		}
 	}

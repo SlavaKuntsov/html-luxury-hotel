@@ -1,86 +1,99 @@
 footer{
 	background: #14274A;
 	width: 100%;
-	margin: 100px 0 0 0;
+	margin: 120px 0 0 0;
+	position: relative;
+	&::after{
+		content: "";
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background: #14274A;
+		top: -40px;
+		transform: rotate(45deg);
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+	.email-top{
+		display: none
+	}
+
 	.footer-text{
 		@extend %max;
+		display: flex;
+		flex-flow: row;
+		gap: 120px;
 		margin: 0 auto;
-		color: white;
 		padding: 70px 0;
 		display: flex;
 		flex-flow: row;
-		justify-content: space-between;
-		.left-col{
-			width: 42%;
+		.footer-first{
 			display: flex;
-			flex-flow: row;
-			justify-content: space-between;
-
-			.l-first{
+			flex-flow: column;
+			gap: 20px;
+			.top{
 				display: flex;
 				flex-flow: column;
-				gap: 20px;
-				.l-f-top{
-					display: flex;
-					flex-flow: column;
-					gap: 5px;
-					h5{
-						font-weight: 700;
-						font-size: 25px;
-						line-height: 30px;
-						letter-spacing: 0.15em;
-					}
-					h6{
-						font-weight: 700;
-						font-size: 12px;
-						line-height: 11px;
-						letter-spacing: 0.6em;
-					}
+				gap: 5px;
+				h5{
+					font-weight: 700;
+					font-size: 30px;
+					line-height: 30px;
+					letter-spacing: 0.15em;
+					color: white;
 				}
-				.l-f-bottom{
-					p{
-						font-weight: 400;
-						font-size: 16px;
-						line-height: 17px;
-						padding: 0 0 5px 0;
-					}
+				h6{
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 11px;
+					letter-spacing: 0.6em;
+					color: white;
 				}
 			}
-			.l-second{
-				display: flex;
-				flex-flow: column;
-				gap: 20px;
-				a{
+			.bottom{
+				p{
 					font-weight: 400;
-					font-size: 16px;
-					line-height: 20px;
+					font-size: 18px;
+					line-height: 17px;
+					padding: 0 0 5px 0;
+					color: white;
 				}
 			}
 		}
-		.right-col{
-			width: 42%;
-			justify-content: space-between;
+		.footer-second{
 			display: flex;
-			flex-flow: row;
-			.r-first{
+			flex-flow: column;
+			gap: 20px;
+			a{
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+		.footer-third{
+			display: flex;
+			flex-flow: column;
+			gap: 20px;
+			
+			a{
+				gap: 10px;
 				display: flex;
+				align-items: center;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 20px;
+			}
+		}
+		.footer-fourth{
+			display: flex;
 				flex-flow: column;
 				gap: 20px;
-				
-				a{
-					gap: 10px;
-					display: flex;
-					align-items: center;
-					font-weight: 400;
-					font-size: 16px;
-					line-height: 20px;
-				}
-			}
-			.r-second{
 				p{
 					font-weight: 400;
-					font-size: 16px;
+					font-size: 22px;
 					line-height: 20px;
+					color: white;
 				}
 				form{
 					input[type="email"]{
@@ -88,15 +101,15 @@ footer{
 						font-family: 'Montserrat';
 						border: 2px solid $ohra;
 						border-right: none;
-						font-size: 16px;
-						padding: 15px 25px;
+						font-size: 24px;
+						padding: 25px 35px;
 						border-radius: 5px 0 0 5px;
 						color: white;
 					}
 					input[type="email"]::placeholder{
 						font-family: 'Montserrat';
 						font-weight: 400;
-						font-size: 16px;
+						font-size: 24px;
 						line-height: 20px;
 						color: white;
 					}
@@ -104,16 +117,710 @@ footer{
 						font-family: 'Montserrat';
 						font-style: normal;
 						font-weight: 400;
-						font-size: 16px;
+						font-size: 24px;
 						line-height: 20px;
 						color: #14274A;
 						background: $ohra;
-						padding: 15px 25px 14px;
-						margin-left: -2px;
+						padding: 29px 35px 29px;
+						margin-left: -4px;
 						border: 2px solid $ohra;
 						border-radius: 0 5px 5px 0;
+						font-weight: 500;
+						color: white;
 					}
 				}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1660px) {
+	footer{
+		&::after{
+			width: 80px;
+			height: 80px;
+			top: -30px;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+		.email-top{
+			display: none;
+		}
+		.footer-text{
+			@include max_1660;
+			display: flex;
+			flex-flow: row;
+			gap: 60px;
+			margin: 0 auto;
+			padding: 70px 0;
+			display: flex;
+			flex-flow: row;
+			.footer-first{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				.top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						font-weight: 700;
+						font-size: 26px;
+						line-height: 30px;
+						letter-spacing: 0.15em;
+						color: white;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 12px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+						color: white;
+					}
+				}
+				.bottom{
+					p{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 17px;
+						padding: 0 0 5px 0;
+						color: white;
+						padding: 0 0 3px 0;
+					}
+				}
+			}
+			.footer-second{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				a{
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+			.footer-third{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+			.footer-fourth{
+				display: flex;
+					flex-flow: column;
+					gap: 20px;
+					p{
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: white;
+					}
+					form{
+						display: flex;
+						flex-flow: row;
+						input[type="email"]{
+							background: #14274A;
+							font-family: 'Montserrat';
+							border: 2px solid $ohra;
+							border-right: none;
+							font-size: 16px;
+							padding: 15px 25px;
+							border-radius: 5px 0 0 5px;
+							color: white;
+						}
+						input[type="email"]::placeholder{
+							font-family: 'Montserrat';
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 20px;
+							color: white;
+						}
+						input[type="submit"]{
+							font-family: 'Montserrat';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 18px;
+							line-height: 20px;
+							color: #14274A;
+							background: $ohra;
+							padding: 15px 30px 19px;
+							margin-left: -4px;
+							border: 2px solid $ohra;
+							border-radius: 0 5px 5px 0;
+							font-weight: 500;
+							color: white;
+						}
+					}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+	footer{
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		align-items: center;
+		&::after{
+			width: 60px;
+			height: 60px;
+			top: -25px;
+			z-index: -1;
+		}
+		.email-top{
+			margin: 40px 0 0 0;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			p{
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				color: white;
+			}
+			form{
+				input[type="email"]{
+					background: #14274A;
+					font-family: 'Montserrat';
+					border: 2px solid $ohra;
+					border-right: none;
+					font-size: 14px;
+					padding: 8px 20px;
+					border-radius: 5px 0 0 5px;
+					color: white;
+				}
+				input[type="email"]::placeholder{
+					font-family: 'Montserrat';
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+					color: white;
+				}
+				input[type="submit"]{
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+					color: #14274A;
+					background: $ohra;
+					padding: 7px 25px 7px;
+					margin-left: -4px;
+					border: 2px solid $ohra;
+					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+
+		.footer-text{
+			@include max_1100;
+			gap: 110px;
+			margin: 0 auto;
+			padding: 40px 0;
+			display: flex;
+			flex-flow: row;
+			.footer-first{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				.top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						font-weight: 700;
+						font-size: 26px;
+						line-height: 30px;
+						letter-spacing: 0.15em;
+						color: white;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 12px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+						color: white;
+					}
+				}
+				.bottom{
+					p{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 17px;
+						padding: 0 0 5px 0;
+						color: white;
+						padding: 0 0 3px 0;
+					}
+				}
+			}
+			.footer-second{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				a{
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+			.footer-third{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+			.footer-fourth{
+				display: none;
+				// display: flex;
+					flex-flow: column;
+					gap: 20px;
+					p{
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 20px;
+						color: white;
+					}
+					form{
+						display: flex;
+						flex-flow: row;
+						input[type="email"]{
+							background: #14274A;
+							font-family: 'Montserrat';
+							border: 2px solid $ohra;
+							border-right: none;
+							font-size: 16px;
+							padding: 15px 25px;
+							border-radius: 5px 0 0 5px;
+							color: white;
+						}
+						input[type="email"]::placeholder{
+							font-family: 'Montserrat';
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 20px;
+							color: white;
+						}
+						input[type="submit"]{
+							font-family: 'Montserrat';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 18px;
+							line-height: 20px;
+							color: #14274A;
+							background: $ohra;
+							padding: 15px 30px 19px;
+							margin-left: -4px;
+							border: 2px solid $ohra;
+							border-radius: 0 5px 5px 0;
+							font-weight: 500;
+							color: white;
+						}
+					}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+	footer{
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		align-items: center;
+		margin: 70px 0 0 0;
+		&::after{
+			width: 60px;
+			height: 60px;
+			top: -25px;
+			z-index: -1;
+		}
+		.email-top{
+			margin: 40px 0 0 0;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			p{
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: white;
+			}
+			form{
+				input[type="email"]{
+					background: #14274A;
+					font-family: 'Montserrat';
+					border: 2px solid $ohra;
+					border-right: none;
+					font-size: 12px;
+					padding: 8px 20px;
+					border-radius: 5px 0 0 5px;
+					color: white;
+				}
+				input[type="email"]::placeholder{
+					font-family: 'Montserrat';
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 20px;
+					color: white;
+				}
+				input[type="submit"]{
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 15px;
+					color: #14274A;
+					background: $ohra;
+					padding: 8px 20px 8px;
+					margin-left: -4px;
+					border: 2px solid $ohra;
+					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+		.footer-text{
+			@include max_800;
+			display: flex;
+			flex-flow: row;
+			gap: 60px;
+			margin: 0 auto;
+			padding: 30px 0;
+			display: flex;
+			flex-flow: row;
+			.footer-first{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				.top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						font-weight: 700;
+						font-size: 22px;
+						line-height: 20px;
+						letter-spacing: 0.15em;
+						color: white;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 10px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+						color: white;
+					}
+				}
+				.bottom{
+					p{
+						font-weight: 400;
+						font-size: 10px;
+						line-height: 17px;
+						padding: 0 0 5px 0;
+						color: white;
+						padding: 0 0 3px 0;
+					}
+				}
+			}
+			.footer-second{
+				display: flex;
+				flex-flow: column;
+				gap: 15px;
+				a{
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 20px;
+				}
+			}
+			.footer-third{
+				display: flex;
+				flex-flow: column;
+				gap: 15px;
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 20px;
+				}
+			}
+			.footer-fourth{
+				display: none;
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+	footer{
+		margin: 70px 0 0 0;
+		
+		gap: 20px;
+		&::after{
+			width: 60px;
+			height: 60px;
+			top: -25px;
+			z-index: -1;
+		}
+		.email-top{	
+			padding: 0 20px;
+			margin: 20px 0 0 0;
+			gap: 10px;
+			display: flex;
+			flex-flow: column;
+			p{
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 20px;
+				color: white;
+			}
+			form{
+				display: flex;
+				align-items: center;
+				input[type="email"]{
+					border: 2px solid $ohra;
+					border-right: none;
+					font-size: 8px;
+					padding: 7px 20px;
+					border-radius: 5px 0 0 5px;
+				}
+				input[type="email"]::placeholder{
+					font-weight: 300;
+					font-size: 8px;
+				}
+				input[type="submit"]{
+					font-weight: 400;
+					font-size: 10px;
+					line-height: 8.5px;
+					padding: 8px 10px;
+					margin-left: -4px;
+					margin-top: -0px;
+					border: 2px solid $ohra;
+					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+		.footer-text{
+			@include max_550;
+			display: flex;
+			gap: 60px;
+			padding: 20px;
+			display: flex;
+			flex-flow: row;
+
+			.footer-first{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				.top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						padding: 5px 0 0 0;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 14px;
+						letter-spacing: 0.15em;
+						color: white;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 6px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+						color: white;
+					}
+				}
+				.bottom{
+					p{
+						font-weight: 400;
+						font-size: 8px;
+						line-height: 10px;
+						color: white;
+						padding: 0 0 3px 0;
+					}
+				}
+			}
+			.footer-second{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				a{
+					font-weight: 400;
+					font-size: 9px;
+					line-height: 20px;
+				}
+			}
+			.footer-third{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				img{
+					height: 14px;
+				}
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 9px;
+					line-height: 20px;
+				}
+			}
+			.footer-fourth{
+				display: none;
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 400px) {
+	footer{
+		margin: 70px 0 0 0;
+		
+		gap: 10px;
+		&::after{
+			width: 40px;
+			height: 40px;
+			top: -15px;
+			z-index: -1;
+			
+		}
+		.email-top{	
+			padding: 0 20px;
+			margin: 20px 0 0 0;
+			gap: 10px;
+			display: flex;
+			flex-flow: column;
+			p{
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 20px;
+				color: white;
+			}
+			form{
+				display: flex;
+				align-items: center;
+				input[type="email"]{
+					border: 2px solid $ohra;
+					border-right: none;
+					font-size: 10px;
+					padding: 7px 20px;
+					border-radius: 5px 0 0 5px;
+				}
+				input[type="email"]::placeholder{
+					font-weight: 300;
+					font-size: 10px;
+				}
+				input[type="submit"]{
+					font-weight: 400;
+					font-size: 10px;
+					line-height: 8.5px;
+					padding: 8px 10px;
+					margin-left: -4px;
+					margin-top: -0px;
+					border: 2px solid $ohra;
+					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+		.footer-text{
+			@include max_550;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: center;
+			gap: 60px;
+			margin: 0 auto;
+			padding: 20px;
+
+			.footer-first{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				.top{
+					display: flex;
+					flex-flow: column;
+					gap: 5px;
+					h5{
+						padding: 5px 0 0 0;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 12px;
+						letter-spacing: 0.15em;
+						color: white;
+					}
+					h6{
+						font-weight: 700;
+						font-size: 8px;
+						line-height: 11px;
+						letter-spacing: 0.6em;
+						color: white;
+					}
+				}
+				.bottom{
+					p{
+						font-weight: 400;
+						font-size: 8px;
+						line-height: 10px;
+						color: white;
+						padding: 0 0 3px 0;
+					}
+				}
+			}
+			.footer-second{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				a{
+					font-weight: 400;
+					font-size: 11px;
+					line-height: 20px;
+				}
+			}
+			.footer-third{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				img{
+					height: 14px;
+				}
+				a{
+					gap: 10px;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+					font-size: 11px;
+					line-height: 20px;
+				}
+			}
+			.footer-fourth{
+				display: none;
 			}
 		}
 	}

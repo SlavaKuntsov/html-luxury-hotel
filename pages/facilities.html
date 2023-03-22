@@ -7,19 +7,19 @@
 
 	<title>Facilities</title>
 
+	<link rel="icon" href="../img/other/letter-h.png">
+
 	<link rel="stylesheet" href="../css/style_facilities.css">
 	<link rel="stylesheet" href="../css/global.css">
 
 </head>
 <body>
 	<header>
-		<div class="back_color"></div>
-		<img class="back" src="../img/header/background_2.png" alt="">
 		<nav>
-			<div class="logo">
+			<a href="main.html" class="logo">
 				<h3>LUXURY</h3>
 				<h5>HOTEL</h5>
-			</div>
+			</a>
 			<ul>
 				<li><a href="main.html">Home</a></li>
 				<li><a href="#">Facilities</a></li>
@@ -27,6 +27,9 @@
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Contact-us</a></li>
 			</ul>
+			<div class="burger">
+				<img id="open" src="../img/header/menu-outline.svg" alt="">
+			</div>
 		</nav>
 		<div class="header-main">
 			<div class="text">
@@ -46,6 +49,17 @@
 				</div>
 			</div>
 		</div>
+		<div id="burger-menu">
+			<img id="close" src="../img/header/close.svg" alt="">
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<hr>
+				<li><a href="#">Facilities</a></li>
+				<li><a href="#">Rooms</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Contact-us</a></li>
+			</ul>
+		</div>
 	</header>
 
 	<main>
@@ -55,13 +69,14 @@
 				that we can ensure an experience quite uniquw. Luxury hotels offers the perfect setting with stunning views for leisure
 				and our modern luxury resort facilities will help you enjoy the best of all. </p>
 		</div>
-		<div class="carts">
+		<div class="all-carts">
 
 			<a href="" class="cart">
 				<img src="../img/main/restaurant.png" alt="">
 				<div class="cart-text">
 					<p>Restaurants</p>
 				</div>
+				<span>Restaurants</span>
 			</a>
 			
 			<a href="" class="cart">
@@ -69,6 +84,7 @@
 				<div class="cart-text">
 					<p>Poolside Bar</p>
 				</div>
+				<span>Poolside Bar</span>
 			</a>
 
 			<a href="" class="cart">
@@ -76,6 +92,7 @@
 				<div class="cart-text">
 					<p>Swimming Pool</p>
 				</div>
+				<span>Swimming Pool</span>
 			</a>
 
 			<a href="" class="cart">
@@ -83,6 +100,7 @@
 				<div class="cart-text">
 					<p>The Gym</p>
 				</div>
+				<span>The Gym</span>
 			</a>
 
 			<a href="" class="cart">
@@ -90,6 +108,7 @@
 				<div class="cart-text">
 					<p>Spa</p>
 				</div>
+				<span>Spa</span>
 			</a>
 
 			<a href="" class="cart">
@@ -97,7 +116,32 @@
 				<div class="cart-text">
 					<p>Laundry</p>
 				</div>
+				<span>Laundry</span>
 			</a>
+		</div>
+
+		<div class="offer">
+			<h2>We also offer:</h2>
+			<div class="offer-text">
+				<div class="offer-first">
+					<p>Library services</p>
+					<p>Free Wi-fi</p>
+					<p>Adequate safety/ security</p>
+					<p>Laundry services</p>
+				</div>
+				<div class="offer-second">
+					<p>Delicious meals</p>
+					<p>Air cooling in all rooms</p>
+					<p>Room services</p>
+					<p>Ticket books </p>
+				</div>
+				<div class="offer-third">
+					<p>Shuffle/ Private transfers</p>
+					<p>Necessities for</p>
+					<p>babies and children</p>
+					<p></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="comments">
@@ -109,14 +153,62 @@
 				</div>
 			</div>
 			<div class="buttons">
-				<div id="left" class="left">"<"</div>
-				<div id="right" class="right">">"</div>
+				<button id="left" class="left">"<"</button>
+				<button id="right" class="right">">"</button>
 			</div>
 		</div>
 	</main>
 
 	<footer>
+		<div class="email-top">
+			<p>Subscribe to our newsletter</p>
+			<form class="email">
+				<input type="email" placeholder="Email Address">
+				<input type="submit" value="Ok">
+			</form>
+		</div>
+
 		<div class="footer-text">
+			<div class="footer-first">
+				<div class="top">
+					<h5>LUXURY</h5>
+					<h6>HOTELS</h6>
+				</div>
+				<div class="bottom">
+					<p>497 Evergreen Rd. Roseville, CA 95673</p>
+					<p>+44 345 678 903</p>
+					<p>luxury_hotels@gmail.com</p>
+				</div>
+			</div>
+			<div class="footer-second">
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Terms & Conditions</a>
+			</div>
+			<div class="footer-third">
+				<a href="#" class="str">
+					<img src="../img/footer/facebook.png" alt="">
+					Facebook
+				</a>
+				<a href="#" class="str">
+					<img src="../img/footer/twitter.png" alt="">
+					Twitter
+				</a>
+				<a href="https://www.instagram.com/slava_kunz_/" class="str">
+					<img src="../img/footer/instagram.png" alt="">
+					Instagram
+				</a>
+			</div>
+			<div class="footer-fourth">
+				<p>Subscribe to our newsletter</p>
+				<form class="email">
+					<input type="email" placeholder="Email Address">
+					<input type="submit" value="Ok">
+				</form>
+			</div>
+		</div>
+
+		<!-- <div class="footer-text">
 			<div class="left-col">
 				<div class="l-first">
 					<div class="l-f-top">
@@ -145,7 +237,7 @@
 						<img src="../img/footer/twitter.png" alt="">
 						Twitter
 					</a>
-					<a href="#" class="str">
+					<a href="https://www.instagram.com/slava_kunz_/" class="str">
 						<img src="../img/footer/instagram.png" alt="">
 						Instagram
 					</a>
@@ -158,7 +250,9 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</footer>
+
+	<script type="text/javascript" src="../scripts/index.js"></script>
 </body>
 </html>

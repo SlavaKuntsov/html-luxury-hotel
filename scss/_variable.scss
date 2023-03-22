@@ -2,9 +2,30 @@
 // $salat: #edfff9a2;
 $ohra: #E0B973;
 
-
+//	1920px
 %max {
 	max-width: 1500px;
+}
+
+@mixin max_1660 {
+	max-width: 1000px;
+}
+
+@mixin max_1100 {
+	max-width: 700px;
+}
+
+
+@mixin max_800 { 
+	max-width: 500px;
+}
+
+@mixin max_550 { 
+	max-width: inherit;
+}
+
+@mixin max_425 { 
+	max-width: inherit;
 }
 // @mixin row {
 //     display: flex;
@@ -26,24 +47,49 @@ $ohra: #E0B973;
 // 	align-items: center;
 // }
 
-// @mixin bl-hover($bg-color) {
-// 	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, background 0.2s ease-in-out;
-// 	&:hover{
-// 		transform: translateY(-5px);
-// 		box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-// 		background: darken($color: $bg-color, $amount: 10);
-// 	}
-// 	&:active{
-// 		background: lighten($color: $bg-color, $amount: 5);
-// 	}
-// }
-// @mixin hover {
-// 	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-// 	&:hover{
-// 		transform: translateY(-10px);
-// 		box-shadow: 0px 4px 20px rgba(90, 90, 90, 0.3);
-// 	}
-// }
+@mixin slide {
+	transition: transform 0.2s ease-in-out;
+	position: relative;
+	cursor: pointer;
+	&::before{
+		content: "";
+		height: 2px;
+		width: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: white;
+		z-index: 10;
+		transition: width .5s ease-in-out;
+	}
+	&:hover::before{
+		width: 100%;
+	}
+}
+
+@mixin hover($bg-color) {
+	transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
+		background: darken($color: $bg-color, $amount: 10);
+	}
+	&:active{
+		background: lighten($color: $bg-color, $amount: 5);
+	}
+}
+@mixin a-hover {
+	transition: transform 0.2s ease-in-out;
+	&:hover{
+		transform: translateY(-5px);
+	}
+}
+@mixin scale {
+	transition: transform 0.4s ease-in-out;
+	&:hover{
+		transform: scale(1.03);
+	}
+}
 // @mixin sm-hover {
 // 	transition: box-shadow 0.1s ease-in-out, transform 0.2s ease-in-out;
 // 	&:hover{
