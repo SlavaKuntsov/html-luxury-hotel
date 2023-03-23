@@ -764,19 +764,20 @@ main .offer {
 }
 main .offer h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 72px;
   color: #14274A;
 }
 main .offer .offer-text {
   display: flex;
   flex-flow: wrap;
-  gap: 300px;
+  gap: 0;
+  justify-content: space-between;
 }
 main .offer .offer-text p {
   color: black;
   padding: 0 0 15px 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 main .comments {
@@ -789,7 +790,7 @@ main .comments {
 }
 main .comments h2 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 72px;
   color: #14274A;
 }
@@ -798,13 +799,13 @@ main .comments .comments-track {
 }
 main .comments .comments-track .comment-cart p {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 37px;
   color: #14274A;
 }
 main .comments .comments-track .comment-cart span {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   color: #14274A;
 }
@@ -888,19 +889,20 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 72px;
     color: #14274A;
   }
   main .offer .offer-text {
     display: flex;
-    flex-flow: wrap;
-    gap: 130px;
+    flex-flow: row;
+    gap: 0;
+    justify-content: space-between;
   }
   main .offer .offer-text p {
     color: black;
     padding: 0 0 15px 0;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
   }
   main .comments {
@@ -908,14 +910,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
   main .comments .comments-track .comment-cart p {
-    font-size: 20px;
+    font-size: 16px;
   }
   main .comments .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     color: #14274A;
   }
@@ -990,19 +992,20 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 72px;
     color: #14274A;
   }
   main .offer .offer-text {
     display: flex;
-    flex-flow: wrap;
-    gap: 50px;
+    flex-flow: row;
+    gap: 0;
+    justify-content: space-between;
   }
   main .offer .offer-text p {
     color: black;
     padding: 0 0 10px 0;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
   }
   main .comments {
@@ -1010,15 +1013,15 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 30px;
   }
   main .comments .comments-track .comment-cart p {
-    font-size: 18px;
+    font-size: 14px;
   }
   main .comments .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 24px;
     color: #14274A;
   }
@@ -1093,22 +1096,20 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 72px;
     color: #14274A;
   }
   main .offer .offer-text {
     display: flex;
     flex-flow: wrap;
-    gap: 30px;
-  }
-  main .offer .offer-text .offer-first {
-    padding: 0 120px 0 0;
+    gap: 0;
+    justify-content: space-between;
   }
   main .offer .offer-text p {
     color: black;
     padding: 0 0 10px 0;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
   }
   main .comments {
@@ -1116,15 +1117,15 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 24px;
   }
   main .comments .comments-track .comment-cart p {
-    font-size: 16px;
+    font-size: 14px;
   }
   main .comments .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     color: #14274A;
   }
@@ -1210,7 +1211,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     display: flex;
     flex-flow: column;
     gap: 0px;
-    margin: 110px 0 0 0;
+    margin: 30px 0 0 0;
     align-items: center;
   }
   main .offer h2 {
@@ -1663,7 +1664,7 @@ footer .footer-text .footer-fourth form input[type=submit] {
   }
   footer .email-top p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     color: white;
   }
@@ -1672,7 +1673,7 @@ footer .footer-text .footer-fourth form input[type=submit] {
     font-family: "Montserrat";
     border: 2px solid #E0B973;
     border-right: none;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 20px;
     border-radius: 5px 0 0 5px;
     color: white;
@@ -1680,14 +1681,14 @@ footer .footer-text .footer-fourth form input[type=submit] {
   footer .email-top form input[type=email]::-moz-placeholder {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color: white;
   }
   footer .email-top form input[type=email]::placeholder {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     color: white;
   }
@@ -1695,11 +1696,11 @@ footer .footer-text .footer-fourth form input[type=submit] {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 17px;
     color: #14274A;
     background: #E0B973;
-    padding: 7px 25px 7px;
+    padding: 7px 20px 6px;
     margin-left: -4px;
     border: 2px solid #E0B973;
     border-radius: 0 5px 5px 0;
@@ -1724,21 +1725,21 @@ footer .footer-text .footer-fourth form input[type=submit] {
   }
   footer .footer-text .footer-first .top h5 {
     font-weight: 700;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: 0.15em;
     color: white;
   }
   footer .footer-text .footer-first .top h6 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 11px;
     letter-spacing: 0.6em;
     color: white;
   }
   footer .footer-text .footer-first .bottom p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 17px;
     padding: 0 0 5px 0;
     color: white;
@@ -1751,7 +1752,7 @@ footer .footer-text .footer-fourth form input[type=submit] {
   }
   footer .footer-text .footer-second a {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 20px;
   }
   footer .footer-text .footer-third {
@@ -1759,12 +1760,15 @@ footer .footer-text .footer-fourth form input[type=submit] {
     flex-flow: column;
     gap: 20px;
   }
+  footer .footer-text .footer-third img {
+    height: 12px;
+  }
   footer .footer-text .footer-third a {
     gap: 10px;
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 20px;
   }
   footer .footer-text .footer-fourth {
@@ -1907,21 +1911,21 @@ footer .footer-text .footer-fourth form input[type=submit] {
   }
   footer .footer-text .footer-first .top h5 {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 20px;
     letter-spacing: 0.15em;
     color: white;
   }
   footer .footer-text .footer-first .top h6 {
     font-weight: 700;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 11px;
     letter-spacing: 0.6em;
     color: white;
   }
   footer .footer-text .footer-first .bottom p {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 17px;
     padding: 0 0 5px 0;
     color: white;
@@ -1934,7 +1938,7 @@ footer .footer-text .footer-fourth form input[type=submit] {
   }
   footer .footer-text .footer-second a {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
   }
   footer .footer-text .footer-third {
@@ -1947,7 +1951,7 @@ footer .footer-text .footer-fourth form input[type=submit] {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
   }
   footer .footer-text .footer-fourth {

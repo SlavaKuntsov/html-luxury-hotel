@@ -70,18 +70,19 @@ main{
 		margin: 110px 0 0 0;
 		h2{
 			font-weight: 700;
-			font-size: 40px;
+			font-size: 30px;
 			line-height: 72px;
 			color: #14274A;
 		}
 		.offer-text{
 			display: flex;
 			flex-flow: wrap;
-			gap: 300px;
+			gap: 0;
+			justify-content: space-between;
 			p{
 				color: black;
 				padding: 0 0 15px 0;
-				font-size: 24px;
+				font-size: 20px;
 				font-weight: 500;
 			}
 		}
@@ -96,7 +97,7 @@ main{
 		gap: 20px;
 		h2{
 			font-weight: 700;
-			font-size: 60px;
+			font-size: 50px;
 			line-height: 72px;
 			color: #14274A;
 		}
@@ -105,13 +106,13 @@ main{
 			.comment-cart{
 				p{
 					font-weight: 400;
-					font-size: 30px;
+					font-size: 24px;
 					line-height: 37px;
 					color: #14274A;
 				}
 				span{
 					font-weight: 400;
-					font-size: 25px;
+					font-size: 20px;
 					line-height: 30px;
 					color: #14274A;
 				}
@@ -191,18 +192,19 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 36px;
+				font-size: 30px;
 				line-height: 72px;
 				color: #14274A;
 			}
 			.offer-text{
 				display: flex;
-				flex-flow: wrap;
-				gap: 130px;
+				flex-flow: row;
+				gap: 0;
+				justify-content: space-between;
 				p{
 					color: black;
 					padding: 0 0 15px 0;
-					font-size: 20px;
+					font-size: 14px;
 					font-weight: 500;
 				}
 			}
@@ -211,16 +213,16 @@ main{
 			margin: 60px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 40px;
+				font-size: 36px;
 			}
 			.comments-track{
 				.comment-cart{
 					p{
-						font-size: 20px;
+						font-size: 16px;
 					}
 					span{
 						font-weight: 400;
-						font-size: 18px;
+						font-size: 14px;
 						line-height: 30px;
 						color: #14274A;
 					}
@@ -301,18 +303,19 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 30px;
+				font-size: 24px;
 				line-height: 72px;
 				color: #14274A;
 			}
 			.offer-text{
 				display: flex;
-				flex-flow: wrap;
-				gap: 50px;
+				flex-flow: row;
+				gap: 0;
+				justify-content: space-between;
 				p{
 					color: black;
 					padding: 0 0 10px 0;
-					font-size: 16px;
+					font-size: 12px;
 					font-weight: 500;
 				}
 			}
@@ -321,17 +324,17 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 34px;
+				font-size: 26px;
 				line-height: 30px;
 			}
 			.comments-track{
 				.comment-cart{
 					p{
-						font-size: 18px;
+						font-size: 14px;
 					}
 					span{
 						font-weight: 400;
-						font-size: 18px;
+						font-size: 12px;
 						line-height: 24px;
 						color: #14274A;
 					}
@@ -411,21 +414,21 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 24px;
+				font-size: 22px;
 				line-height: 72px;
 				color: #14274A;
 			}
 			.offer-text{
 				display: flex;
 				flex-flow: wrap;
-				gap: 30px;
+				gap: 0;
+				justify-content: space-between;
 				.offer-first{
-					padding: 0 120px 0 0;
 				}
 				p{
 					color: black;
 					padding: 0 0 10px 0;
-					font-size: 14px;
+					font-size: 12px;
 					font-weight: 500;
 				}
 			}
@@ -434,17 +437,17 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 26px;
+				font-size: 24px;
 				line-height: 24px;
 			}
 			.comments-track{
 				.comment-cart{
 					p{
-						font-size: 16px;
+						font-size: 14px;
 					}
 					span{
 						font-weight: 400;
-						font-size: 14px;
+						font-size: 12px;
 						line-height: 14px;
 						color: #14274A;
 					}
@@ -537,7 +540,7 @@ main{
 			display: flex;
 			flex-flow: column;
 			gap: 0px;
-			margin: 110px 0 0 0;
+			margin: 30px 0 0 0;
 			align-items: center;
 			h2{
 				font-weight: 700;

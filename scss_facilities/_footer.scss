@@ -286,7 +286,7 @@ footer{
 			gap: 20px;
 			p{
 				font-weight: 400;
-				font-size: 16px;
+				font-size: 12px;
 				line-height: 20px;
 				color: white;
 			}
@@ -296,7 +296,7 @@ footer{
 					font-family: 'Montserrat';
 					border: 2px solid $ohra;
 					border-right: none;
-					font-size: 14px;
+					font-size: 12px;
 					padding: 8px 20px;
 					border-radius: 5px 0 0 5px;
 					color: white;
@@ -304,7 +304,7 @@ footer{
 				input[type="email"]::placeholder{
 					font-family: 'Montserrat';
 					font-weight: 400;
-					font-size: 14px;
+					font-size: 12px;
 					line-height: 20px;
 					color: white;
 				}
@@ -312,11 +312,11 @@ footer{
 					font-family: 'Montserrat';
 					font-style: normal;
 					font-weight: 400;
-					font-size: 16px;
-					line-height: 20px;
+					font-size: 12px;
+					line-height: 17px;
 					color: #14274A;
 					background: $ohra;
-					padding: 7px 25px 7px;
+					padding: 7px 20px 6px;
 					margin-left: -4px;
 					border: 2px solid $ohra;
 					border-radius: 0 5px 5px 0;
@@ -341,14 +341,14 @@ footer{
 					gap: 5px;
 					h5{
 						font-weight: 700;
-						font-size: 26px;
-						line-height: 30px;
+						font-size: 20px;
+						line-height: 20px;
 						letter-spacing: 0.15em;
 						color: white;
 					}
 					h6{
 						font-weight: 700;
-						font-size: 12px;
+						font-size: 9px;
 						line-height: 11px;
 						letter-spacing: 0.6em;
 						color: white;
@@ -357,7 +357,7 @@ footer{
 				.bottom{
 					p{
 						font-weight: 400;
-						font-size: 12px;
+						font-size: 10px;
 						line-height: 17px;
 						padding: 0 0 5px 0;
 						color: white;
@@ -371,7 +371,7 @@ footer{
 				gap: 20px;
 				a{
 					font-weight: 400;
-					font-size: 14px;
+					font-size: 10px;
 					line-height: 20px;
 				}
 			}
@@ -379,12 +379,15 @@ footer{
 				display: flex;
 				flex-flow: column;
 				gap: 20px;
+				img{
+					height: 12px;
+				}
 				a{
 					gap: 10px;
 					display: flex;
 					align-items: center;
 					font-weight: 400;
-					font-size: 14px;
+					font-size: 10px;
 					line-height: 20px;
 				}
 			}
@@ -518,14 +521,14 @@ footer{
 					gap: 5px;
 					h5{
 						font-weight: 700;
-						font-size: 22px;
+						font-size: 18px;
 						line-height: 20px;
 						letter-spacing: 0.15em;
 						color: white;
 					}
 					h6{
 						font-weight: 700;
-						font-size: 10px;
+						font-size: 8px;
 						line-height: 11px;
 						letter-spacing: 0.6em;
 						color: white;
@@ -534,7 +537,7 @@ footer{
 				.bottom{
 					p{
 						font-weight: 400;
-						font-size: 10px;
+						font-size: 8px;
 						line-height: 17px;
 						padding: 0 0 5px 0;
 						color: white;
@@ -548,7 +551,7 @@ footer{
 				gap: 15px;
 				a{
 					font-weight: 400;
-					font-size: 12px;
+					font-size: 10px;
 					line-height: 20px;
 				}
 			}
@@ -561,7 +564,7 @@ footer{
 					display: flex;
 					align-items: center;
 					font-weight: 400;
-					font-size: 12px;
+					font-size: 10px;
 					line-height: 20px;
 				}
 			}
