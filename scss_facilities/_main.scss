@@ -229,8 +229,6 @@ main{
 				}
 			}
 			.buttons{
-				display: flex;
-				align-items: center;
 				gap: 20px;
 				.left, .right {
 					padding: 10px;
@@ -607,9 +605,9 @@ main{
 
 // ===========================================================
 
-@media screen and (width < 400px) {
+@media screen and (width < 450px) {
 	main{
-		@include max_550;
+		@include max_400;
 		padding: 20px;
 		.text{
 			margin: 10px 0 30px;

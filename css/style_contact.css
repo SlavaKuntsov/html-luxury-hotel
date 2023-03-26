@@ -1,4 +1,4 @@
-footer .footer-text, main, .header-main, nav {
+footer .footer-text, main, nav {
   max-width: 1500px;
 }
 
@@ -84,9 +84,8 @@ img {
 }
 
 header {
-  background: url("../img/header/background_2.png") no-repeat;
-  background-size: cover;
-  height: 1080px;
+  background: #14274a;
+  height: 465px;
 }
 
 #burger-menu {
@@ -116,12 +115,12 @@ header {
 }
 #burger-menu ul li a {
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.4px;
 }
-#burger-menu ul li:nth-child(2) a {
+#burger-menu ul li:nth-child(5) a {
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.4px;
   border-bottom: 2px solid black;
 }
@@ -147,14 +146,14 @@ nav .logo h3 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.15em;
-  color: #14274A;
+  color: #14274a;
 }
 nav .logo h5 {
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.6em;
-  color: #14274A;
+  color: #14274a;
 }
 nav .logo:after {
   content: "";
@@ -201,135 +200,46 @@ nav ul li::before {
 nav ul li:hover::before {
   width: 100%;
 }
-nav ul li:not(:nth-child(2)) {
+nav ul li:not(:nth-child(5)) {
   transition: transform 0.2s ease-in-out;
 }
-nav ul li:not(:nth-child(2)):hover {
+nav ul li:not(:nth-child(5)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(2)):hover::before {
+nav ul li:not(:nth-child(5)):hover::before {
   width: 100%;
 }
 nav ul li a {
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-nav ul li:nth-child(2) a {
+nav ul li:nth-child(5) a {
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-bottom: 2px solid white;
 }
 
 .header-main {
-  z-index: 1;
-  margin: 0 auto;
-}
-.header-main .text {
-  margin: 190px 0 110px;
+  margin: 60px auto 0;
   display: flex;
-  flex-flow: column;
-  align-items: start;
-}
-.header-main .text span {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 61px;
-  color: #FFFFFF;
-}
-.header-main .text h1 {
-  font-weight: 700;
-  font-size: 154px;
-  line-height: 130px;
-  letter-spacing: 0.07em;
-  color: #FFFFFF;
-}
-.header-main .text h2 {
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: 0.4em;
-  color: #FFFFFF;
-}
-.header-main .text p {
-  width: 580px;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-}
-.header-main .all-buttons {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 80px;
-}
-.header-main .all-buttons .button {
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: #E0B973;
-  padding: 25px 0;
-  border-radius: 15px;
-  width: 270px;
 }
-.header-main .all-buttons .button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-  background: #d7a449;
-}
-.header-main .all-buttons .button:active {
-  background: #e5c388;
-}
-.header-main .all-buttons .button img {
-  width: 28px;
-  height: 26px;
-}
-.header-main .all-buttons .button p {
+.header-main h1 {
+  font-family: "Montserrat";
+  font-style: normal;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-.header-main .all-buttons .scroll {
-  animation: scroll 3s infinite;
-  display: flex;
-  flex-flow: column;
-  gap: 15px;
-  align-items: center;
-}
-.header-main .all-buttons .scroll p {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-.header-main .all-buttons .scroll img {
-  width: 60px;
-  height: 60px;
+  font-size: 80px;
+  line-height: 98px;
+  color: #ffffff;
 }
 
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media screen and (width < 1660px) {
   header {
-    height: 780px;
+    height: 420px;
   }
   nav {
     max-width: 1000px;
@@ -361,61 +271,27 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 14px;
   }
-  nav ul li:nth-child(2) a {
+  nav ul li:nth-child(5) a {
     font-size: 14px;
+    border-bottom: 2px solid white;
   }
   .header-main {
-    max-width: 1000px;
+    margin: 90px auto 0;
+    display: flex;
+    justify-content: center;
   }
-  .header-main .text {
-    margin: 150px 0 120px;
-  }
-  .header-main .text span {
-    font-size: 25px;
-    line-height: 40px;
-  }
-  .header-main .text h1 {
-    font-size: 90px;
-    line-height: 70px;
-  }
-  .header-main .text h2 {
-    font-size: 30px;
-    line-height: 50px;
-  }
-  .header-main .text p {
-    width: 510px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .header-main .all-buttons {
-    gap: 40px;
-  }
-  .header-main .all-buttons .button {
-    gap: 10px;
-    padding: 10px 0;
-    width: 170px;
-  }
-  .header-main .all-buttons .button img {
-    width: 20px;
-    height: 20px;
-  }
-  .header-main .all-buttons .button p {
-    font-size: 14px;
-  }
-  .header-main .all-buttons .scroll {
-    gap: 5px;
-  }
-  .header-main .all-buttons .scroll p {
-    font-size: 14px;
-  }
-  .header-main .all-buttons .scroll img {
-    width: 35px;
-    height: 35px;
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 98px;
+    color: #ffffff;
   }
 }
 @media screen and (width < 1100px) {
   header {
-    height: 550px;
+    height: 330px;
   }
   nav {
     max-width: 700px;
@@ -450,61 +326,23 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 12px;
   }
-  nav ul li:nth-child(2) a {
-    font-size: 12px;
-    border-bottom: 1.5px solid white;
-  }
   .header-main {
-    max-width: 700px;
+    margin: 55px auto 0;
+    display: flex;
+    justify-content: center;
   }
-  .header-main .text {
-    margin: 100px 0 60px;
-  }
-  .header-main .text span {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .header-main .text h1 {
-    font-size: 70px;
-    line-height: 60px;
-  }
-  .header-main .text h2 {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  .header-main .text p {
-    width: 300px;
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .header-main .all-buttons {
-    gap: 30px;
-  }
-  .header-main .all-buttons .button {
-    gap: 10px;
-    padding: 5px 0;
-    width: 140px;
-    border-radius: 5px;
-  }
-  .header-main .all-buttons .button img {
-    width: 18px;
-    height: 18px;
-  }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
-  .header-main .all-buttons .scroll p {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .header-main .all-buttons .scroll img {
-    width: 30px;
-    height: 30px;
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 98px;
+    color: #ffffff;
   }
 }
 @media screen and (width < 800px) {
   header {
-    height: 550px;
+    height: 280px;
   }
   nav {
     max-width: 500px;
@@ -539,61 +377,27 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 12px;
   }
-  nav ul li:nth-child(2) a {
+  nav ul li:nth-child(5) a {
     font-size: 12px;
     border-bottom: 1.5px solid white;
   }
   .header-main {
-    max-width: 500px;
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: center;
   }
-  .header-main .text {
-    margin: 100px 0 60px;
-  }
-  .header-main .text span {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .header-main .text h1 {
-    font-size: 70px;
-    line-height: 60px;
-  }
-  .header-main .text h2 {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  .header-main .text p {
-    width: 300px;
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .header-main .all-buttons {
-    gap: 30px;
-  }
-  .header-main .all-buttons .button {
-    gap: 10px;
-    padding: 5px 0;
-    width: 140px;
-    border-radius: 5px;
-  }
-  .header-main .all-buttons .button img {
-    width: 18px;
-    height: 18px;
-  }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
-  .header-main .all-buttons .scroll p {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .header-main .all-buttons .scroll img {
-    width: 30px;
-    height: 30px;
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 98px;
+    color: #ffffff;
   }
 }
 @media screen and (width < 550px) {
   header {
-    height: 360px;
+    height: 230px;
     padding: 20px;
   }
   nav {
@@ -634,205 +438,117 @@ nav ul li:nth-child(2) a {
     height: 35px;
   }
   .header-main {
-    max-width: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
-  .header-main .text {
-    margin: 40px 0 30px;
-  }
-  .header-main .text span {
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .header-main .text h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-  .header-main .text h2 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .header-main .text p {
-    width: 240px;
-    font-size: 9px;
-    line-height: 12px;
-  }
-  .header-main .all-buttons {
-    gap: 20px;
-    align-items: start;
-    position: relative;
-  }
-  .header-main .all-buttons .button {
-    gap: 8px;
-    padding: 0;
-    width: 90px;
-    border-radius: 5px;
-  }
-  .header-main .all-buttons .button img {
-    width: 12px;
-    height: 12px;
-  }
-  .header-main .all-buttons .button p {
-    font-size: 7px;
-    line-height: 24px;
-  }
-  .header-main .all-buttons .scroll {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    bottom: -60px;
-  }
-  .header-main .all-buttons .scroll p {
-    font-size: 10px;
-    line-height: 15px;
-  }
-  .header-main .all-buttons .scroll img {
-    width: 20px;
-    height: 20px;
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 98px;
+    color: #ffffff;
   }
 }
 main {
   margin: 0 auto;
 }
 main .text {
-  margin: 100px 0 80px 0;
+  margin: 200px 0 150px 0;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  gap: 40px;
+  align-items: start;
+  gap: 20px;
 }
 main .text h2 {
   font-weight: 700;
   font-size: 60px;
   line-height: 72px;
-  letter-spacing: 0.05em;
   color: #14274A;
 }
 main .text p {
   font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  color: #14274A;
-  text-align: center;
-}
-main .all-carts {
-  display: flex;
-  flex-flow: wrap;
-  gap: 60px;
-  justify-content: center;
-}
-main .all-carts .cart {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  transition: transform 0.4s ease-in-out;
-}
-main .all-carts .cart:hover {
-  transform: scale(1.03);
-}
-main .all-carts .cart img {
-  border-radius: 15px;
-  width: 600px;
-  height: 400px;
-  z-index: 1;
-}
-main .all-carts .cart span {
-  display: none;
-}
-main .all-carts .cart .cart-text {
-  border-radius: 8px 8px 0 0;
-  width: 320px;
-  background: white;
-  padding: 10px 40px 0;
-  bottom: -1px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  z-index: 10;
-}
-main .all-carts .cart .cart-text p {
-  white-space: nowrap;
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
-  color: #14274A;
-}
-main .offer {
-  display: flex;
-  flex-flow: column;
-  gap: 20px;
-  margin: 110px 0 0 0;
-}
-main .offer h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 72px;
-  color: #14274A;
-}
-main .offer .offer-text {
-  display: flex;
-  flex-flow: wrap;
-  gap: 0;
-  justify-content: space-between;
-}
-main .offer .offer-text p {
-  color: black;
-  padding: 0 0 15px 0;
-  font-size: 20px;
-  font-weight: 500;
-}
-main .comments {
-  margin: 110px 0 0 0;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  gap: 20px;
-}
-main .comments h2 {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 72px;
-  color: #14274A;
-}
-main .comments .comments-track {
-  text-align: center;
-}
-main .comments .comments-track .comment-cart p {
-  font-weight: 400;
-  font-size: 24px;
+  font-size: 29px;
   line-height: 37px;
   color: #14274A;
 }
-main .comments .comments-track .comment-cart span {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #14274A;
-}
-main .comments .buttons {
+main .info {
   display: flex;
-  align-items: center;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0 0 200px 0;
+}
+main .info .email {
+  display: flex;
+  flex-flow: column;
   gap: 20px;
 }
-main .comments .buttons .left, main .comments .buttons .right {
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-  padding: 10px;
-  font-size: 28px;
+main .info .email p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 49px;
+  color: #14274A;
+}
+main .info .email a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 49px;
+  color: #14274A;
+}
+main .info .email a img {
+  width: 60px;
+}
+main .info form {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: end;
+}
+main .info form .name, main .info form .emailAddress, main .info form .message {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+  font-weight: 400;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #14274A;
+}
+main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+  border: 1px solid #14274A;
+  resize: none;
+  width: 570px;
+  height: 350px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+  width: 570px;
+  height: 80px;
+  padding: 0 20px;
+}
+main .info form input[type=submit] {
+  width: 200px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
   background: #E0B973;
-  color: white;
-  border-radius: 8px;
-}
-main .comments .buttons .left:hover, main .comments .buttons .right:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-  background: #d7a449;
-}
-main .comments .buttons .left:active, main .comments .buttons .right:active {
-  background: #e5c388;
+  padding: 15px 20px;
+  margin: 20px 0 0 0;
 }
 
 @media screen and (width < 1660px) {
@@ -840,100 +556,93 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     max-width: 1000px;
   }
   main .text {
-    margin: 60px 0;
+    margin: 100px 0 100px 0;
     gap: 10px;
   }
   main .text h2 {
     font-size: 40px;
+    line-height: 50px;
   }
   main .text p {
     font-size: 16px;
     line-height: 24px;
   }
-  main .all-carts {
+  main .info {
     display: flex;
-    flex-flow: wrap;
-    gap: 60px;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 0 180px 0;
   }
-  main .all-carts .cart {
-    position: relative;
-    width: 400px;
-    height: 280px;
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 280px;
-  }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 220px;
-    background: white;
-    padding: 10px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
+  main .info .email p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 49px;
     color: #14274A;
   }
-  main .offer {
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 49px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 40px;
+  }
+  main .info form {
     display: flex;
     flex-flow: column;
     gap: 20px;
-    margin: 110px 0 0 0;
+    align-items: end;
   }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 72px;
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
     color: #14274A;
   }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: row;
-    gap: 0;
-    justify-content: space-between;
-  }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 15px 0;
-    font-size: 14px;
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 450px;
+    height: 250px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 18px;
+    padding: 10px 20px;
     font-weight: 500;
   }
-  main .comments {
-    margin: 60px 0 0 0;
-    gap: 10px;
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
   }
-  main .comments h2 {
-    font-size: 36px;
-  }
-  main .comments .comments-track .comment-cart p {
-    font-size: 16px;
-  }
-  main .comments .comments-track .comment-cart span {
-    font-weight: 400;
-    font-size: 14px;
+  main .info form input[type=submit] {
+    width: 180px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 30px;
-    color: #14274A;
-  }
-  main .comments .buttons {
-    gap: 20px;
-  }
-  main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
-    font-size: 16px;
+    color: #FFFFFF;
     background: #E0B973;
-    color: white;
-    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 20px 0 0 0;
   }
 }
 @media screen and (width < 1100px) {
@@ -941,103 +650,93 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     max-width: 700px;
   }
   main .text {
-    margin: 40px 0;
+    margin: 80px 0 80px 0;
   }
   main .text h2 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 30px;
   }
   main .text p {
     font-size: 14px;
     line-height: 20px;
   }
-  main .all-carts {
-    display: flex;
-    flex-flow: wrap;
-    gap: 60px;
-    justify-content: center;
-  }
-  main .all-carts .cart {
-    position: relative;
-    width: 300px;
-    height: 180px;
-  }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 300px;
-    height: 180px;
-  }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 180px;
-    background: white;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-    color: #14274A;
-  }
-  main .offer {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    margin: 110px 0 0 0;
-  }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
+  main .info {
     display: flex;
     flex-flow: row;
-    gap: 0;
     justify-content: space-between;
+    margin: 0 0 180px 0;
+    gap: 50px;
   }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
-    font-weight: 500;
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
   }
-  main .comments {
-    margin: 50px 0 0 0;
-    gap: 10px;
-  }
-  main .comments h2 {
-    font-size: 26px;
-    line-height: 30px;
-  }
-  main .comments .comments-track .comment-cart p {
-    font-size: 14px;
-  }
-  main .comments .comments-track .comment-cart span {
+  main .info .email p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 24px;
     color: #14274A;
   }
-  main .comments .buttons {
+  main .info .email a {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 49px;
+    color: #14274A;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
-    font-size: 14x;
+  main .info .email a img {
+    width: 30px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: end;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 250px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
     background: #E0B973;
-    color: white;
-    border-radius: 8px;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
   }
 }
 @media screen and (width < 800px) {
@@ -1049,99 +748,89 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text h2 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 25px;
   }
   main .text p {
     font-size: 12px;
     line-height: 20px;
   }
-  main .all-carts {
+  main .info {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 120px 0;
     gap: 40px;
-    justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
-    width: 400px;
-    height: 240px;
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 240px;
-  }
-  main .all-carts .cart .cart-text {
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
+  main .info .email p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
     color: #14274A;
   }
-  main .offer {
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
     display: flex;
     flex-flow: column;
     gap: 20px;
-    margin: 110px 0 0 0;
+    align-items: start;
   }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 72px;
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
     color: #14274A;
   }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: wrap;
-    gap: 0;
-    justify-content: space-between;
-  }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
     font-weight: 500;
   }
-  main .comments {
-    margin: 50px 0 0 0;
-    gap: 10px;
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
   }
-  main .comments h2 {
-    font-size: 24px;
-    line-height: 24px;
-  }
-  main .comments .comments-track .comment-cart p {
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
-  }
-  main .comments .comments-track .comment-cart span {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #14274A;
-  }
-  main .comments .buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
-    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
     background: #E0B973;
-    color: white;
-    border-radius: 8px;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
   }
 }
 @media screen and (width < 550px) {
@@ -1153,123 +842,90 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 10px 0 30px;
   }
   main .text h2 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
   }
   main .text p {
-    font-size: 10px;
-    line-height: 18px;
-  }
-  main .all-carts {
-    display: flex;
-    flex-flow: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  main .all-carts .cart {
-    position: relative;
-    width: 330px;
-    height: 200px;
-  }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 330px;
-    height: 200px;
-  }
-  main .all-carts .cart span {
-    display: inline-block;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
-    font-size: 28px;
-    font-weight: 500;
-  }
-  main .all-carts .cart .cart-text {
-    display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
     font-size: 14px;
-    color: #14274A;
+    line-height: 15px;
   }
-  main .offer {
+  main .info {
     display: flex;
     flex-flow: column;
-    gap: 0px;
-    margin: 30px 0 0 0;
-    align-items: center;
-  }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 50px 0;
     gap: 20px;
   }
-  main .offer .offer-text div {
-    padding: 0 60px 0 0;
+  main .info .email {
     display: flex;
     flex-flow: column;
+    gap: 5px;
   }
-  main .offer .offer-text div p {
-    display: inline-block;
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
+  main .info .email p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: start;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
     font-weight: 500;
   }
-  main .offer .offer-text .offer-first {
-    padding: 0;
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
   }
-  main .comments {
-    margin: 50px 0 0 0;
-    gap: 10px;
-  }
-  main .comments h2 {
-    font-size: 20px;
-    line-height: 18px;
-  }
-  main .comments .comments-track .comment-cart p {
-    font-size: 12px;
-  }
-  main .comments .comments-track .comment-cart span {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    color: #14274A;
-  }
-  main .comments .buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  main .comments .buttons .left, main .comments .buttons .right {
-    padding: 5px;
-    font-size: 12px;
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
     background: #E0B973;
-    color: white;
-    border-radius: 8px;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
   }
 }
 @media screen and (width < 450px) {
@@ -1282,100 +938,89 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text h2 {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 15px;
   }
   main .text p {
-    font-size: 10px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 15px;
   }
-  main .all-carts {
+  main .info {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 20px 0;
     gap: 20px;
-    justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
-    width: 280px;
-    height: 160px;
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 280px;
-    height: 160px;
-  }
-  main .all-carts .cart span {
-    display: inline-block;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
-    font-size: 22px;
-    font-weight: 500;
-  }
-  main .all-carts .cart .cart-text {
-    display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    color: #14274A;
-  }
-  main .comments {
-    margin: 50px 0 0 0;
-    gap: 10px;
-  }
-  main .comments h2 {
-    font-size: 20px;
-    line-height: 18px;
-  }
-  main .comments .comments-track .comment-cart p {
-    font-size: 14px;
-    line-height: 16px;
-    padding: 10px 0 10px;
-  }
-  main .comments .comments-track .comment-cart span {
+  main .info .email p {
     font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 15px;
+    line-height: 16px;
     color: #14274A;
   }
-  main .comments .buttons {
+  main .info .email a {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #14274A;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 10px;
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: start;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 280px;
+    height: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
     font-size: 12px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 280px;
+    height: 35px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
     background: #E0B973;
-    color: white;
-    border-radius: 8px;
-  }
-  main .comments .buttons .left:hover, main .comments .buttons .right:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-    background: #d7a449;
-  }
-  main .comments .buttons .left:active, main .comments .buttons .right:active {
-    background: #e5c388;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
   }
 }
 footer {

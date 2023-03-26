@@ -1,8 +1,9 @@
 
 
 header {
-	background: url("../img/header/background_2.png") no-repeat;
+	background: url("../img/header/background_3.png") no-repeat;
 	background-size: cover;
+	background-position: center top;
 	height: 1080px;
 }
 
@@ -30,15 +31,15 @@ header {
 			padding: 0 0 13px 0;
 			a{
 				color: black;
-				font-size: 26px;
+				font-size: 24px;
 				letter-spacing: .4px;
 
 			}
 		}
-		li:nth-child(2){
+		li:nth-child(3){
 			a{
 				color: black;
-				font-size: 26px;
+				font-size: 24px;
 				letter-spacing: .4px;
 				border-bottom: 2px solid black;
 			}
@@ -104,10 +105,10 @@ nav{
 		gap: 70px;
 		li{
 			@include slide;
-			&:not(:nth-child(2)){
+			&:not(:nth-child(3)){
 				@include a-hover;
 			}
-			&:not(:nth-child(2)):hover::before{
+			&:not(:nth-child(3)):hover::before{
 				width: 100%;
 			}
 		}
@@ -117,7 +118,7 @@ nav{
 			line-height: 30px;
 			color: #FFFFFF;
 		}
-		li:nth-child(2){
+		li:nth-child(3){
 			a{
 				font-weight: 700;
 				font-size: 22px;
@@ -133,34 +134,34 @@ nav{
 	@extend %max;
 	margin: 0 auto;
 	.text{
-		margin: 190px 0 110px;
+		margin: 190px 0 160px;
 		display: flex;
 		flex-flow: column;
 		align-items: start;
 		span{
 			font-family: 'Montserrat';
 			font-weight: 400;
-			font-size: 50px;
+			font-size: 45px;
 			line-height: 61px;
 			color: #FFFFFF;
 		}
 		h1{
 			font-weight: 700;
-			font-size: 154px;
-			line-height: 130px;
+			font-size: 134px;
+			line-height: 120px;
 			letter-spacing: 0.07em;
 			color: #FFFFFF;
 		}
 		h2{
 			font-size: 60px;
-			line-height: 72px;
+			line-height: 60px;
 			letter-spacing: 0.4em;
 			color: #FFFFFF;
 		}
 		p{
 			width: 580px;
 			font-weight: 400;
-			font-size: 25px;
+			font-size: 22px;
 			line-height: 30px;
 			letter-spacing: 0.1em;
 			color: #FFFFFF;
@@ -170,7 +171,7 @@ nav{
 		display: flex;
 		flex-flow: column;
 		align-items: center;
-		gap: 80px;
+		gap: 50px;
 		.button{
 			@include hover($ohra);
 			display: flex;
@@ -178,16 +179,16 @@ nav{
 			justify-content: center;
 			gap: 10px;
 			background: $ohra;
-			padding: 25px 0;
+			padding: 20px 0;
 			border-radius: 15px;
-			width: 270px;
+			width: 240px;
 			img{
-				width: 28px;
-				height: 26px;
+				width:  25px;
+				height: 25px;
 			}
 			p{
 				font-weight: 700;
-				font-size: 25px;
+				font-size: 20px;
 				line-height: 30px;
 				color: #FFFFFF;
 			}
@@ -200,14 +201,14 @@ nav{
 			align-items: center;
 			p{
 				font-weight: 700;
-				font-size: 25px;
+				font-size: 22px;
 				line-height: 30px;
 				letter-spacing: 0.05em;
 				color: #FFFFFF;
 			}
 			img{
-				width: 60px;
-				height: 60px;
+				width:  50px;
+				height: 50px;
 			}
 		}
 	}
@@ -260,9 +261,10 @@ nav{
 			li a{
 				font-size: 14px;
 			}
-			li:nth-child(2){
+			li:nth-child(3){
 				a{
 					font-size: 14px;
+					border-bottom: 2px solid white;
 				}
 			}
 		}
@@ -354,12 +356,7 @@ nav{
 			li a{
 				font-size: 12px;
 			}
-			li:nth-child(2){
-				a{
-					font-size: 12px;
-					border-bottom: 1.5px solid white;
-				}
-			}
+			
 		}
 	}
 	.header-main{
@@ -450,7 +447,7 @@ nav{
 			li a{
 				font-size: 12px;
 			}
-			li:nth-child(2){
+			li:nth-child(3){
 				a{
 					font-size: 12px;
 					border-bottom: 1.5px solid white;

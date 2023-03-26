@@ -84,8 +84,9 @@ img {
 }
 
 header {
-  background: url("../img/header/background_2.png") no-repeat;
+  background: url("../img/header/background_3.png") no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 1080px;
 }
 
@@ -116,12 +117,12 @@ header {
 }
 #burger-menu ul li a {
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.4px;
 }
-#burger-menu ul li:nth-child(2) a {
+#burger-menu ul li:nth-child(3) a {
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.4px;
   border-bottom: 2px solid black;
 }
@@ -201,13 +202,13 @@ nav ul li::before {
 nav ul li:hover::before {
   width: 100%;
 }
-nav ul li:not(:nth-child(2)) {
+nav ul li:not(:nth-child(3)) {
   transition: transform 0.2s ease-in-out;
 }
-nav ul li:not(:nth-child(2)):hover {
+nav ul li:not(:nth-child(3)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(2)):hover::before {
+nav ul li:not(:nth-child(3)):hover::before {
   width: 100%;
 }
 nav ul li a {
@@ -216,7 +217,7 @@ nav ul li a {
   line-height: 30px;
   color: #FFFFFF;
 }
-nav ul li:nth-child(2) a {
+nav ul li:nth-child(3) a {
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
@@ -229,7 +230,7 @@ nav ul li:nth-child(2) a {
   margin: 0 auto;
 }
 .header-main .text {
-  margin: 190px 0 110px;
+  margin: 190px 0 160px;
   display: flex;
   flex-flow: column;
   align-items: start;
@@ -237,27 +238,27 @@ nav ul li:nth-child(2) a {
 .header-main .text span {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 61px;
   color: #FFFFFF;
 }
 .header-main .text h1 {
   font-weight: 700;
-  font-size: 154px;
-  line-height: 130px;
+  font-size: 134px;
+  line-height: 120px;
   letter-spacing: 0.07em;
   color: #FFFFFF;
 }
 .header-main .text h2 {
   font-size: 60px;
-  line-height: 72px;
+  line-height: 60px;
   letter-spacing: 0.4em;
   color: #FFFFFF;
 }
 .header-main .text p {
   width: 580px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
@@ -266,7 +267,7 @@ nav ul li:nth-child(2) a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
 }
 .header-main .all-buttons .button {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
@@ -275,9 +276,9 @@ nav ul li:nth-child(2) a {
   justify-content: center;
   gap: 10px;
   background: #E0B973;
-  padding: 25px 0;
+  padding: 20px 0;
   border-radius: 15px;
-  width: 270px;
+  width: 240px;
 }
 .header-main .all-buttons .button:hover {
   transform: translateY(-5px);
@@ -288,12 +289,12 @@ nav ul li:nth-child(2) a {
   background: #e5c388;
 }
 .header-main .all-buttons .button img {
-  width: 28px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
 }
 .header-main .all-buttons .button p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
 }
@@ -306,14 +307,14 @@ nav ul li:nth-child(2) a {
 }
 .header-main .all-buttons .scroll p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
 .header-main .all-buttons .scroll img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 @keyframes scroll {
@@ -361,8 +362,9 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 14px;
   }
-  nav ul li:nth-child(2) a {
+  nav ul li:nth-child(3) a {
     font-size: 14px;
+    border-bottom: 2px solid white;
   }
   .header-main {
     max-width: 1000px;
@@ -450,10 +452,6 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 12px;
   }
-  nav ul li:nth-child(2) a {
-    font-size: 12px;
-    border-bottom: 1.5px solid white;
-  }
   .header-main {
     max-width: 700px;
   }
@@ -539,7 +537,7 @@ nav ul li:nth-child(2) a {
   nav ul li a {
     font-size: 12px;
   }
-  nav ul li:nth-child(2) a {
+  nav ul li:nth-child(3) a {
     font-size: 12px;
     border-bottom: 1.5px solid white;
   }
@@ -717,75 +715,128 @@ main .text p {
   color: #14274A;
   text-align: center;
 }
-main .all-carts {
-  display: flex;
-  flex-flow: wrap;
-  gap: 60px;
-  justify-content: center;
-}
-main .all-carts .cart {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  transition: transform 0.4s ease-in-out;
-}
-main .all-carts .cart:hover {
-  transform: scale(1.03);
-}
-main .all-carts .cart img {
-  border-radius: 15px;
-  width: 600px;
-  height: 400px;
-  z-index: 1;
-}
-main .all-carts .cart span {
-  display: none;
-}
-main .all-carts .cart .cart-text {
-  border-radius: 8px 8px 0 0;
-  width: 320px;
-  background: white;
-  padding: 10px 40px 0;
-  bottom: -1px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  z-index: 10;
-}
-main .all-carts .cart .cart-text p {
-  white-space: nowrap;
-  text-align: center;
-  font-weight: 700;
-  font-size: 30px;
-  color: #14274A;
-}
-main .offer {
+main .info {
+  margin: 0 0 60px 0;
   display: flex;
   flex-flow: column;
-  gap: 20px;
-  margin: 110px 0 0 0;
+  gap: 40px;
 }
-main .offer h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 72px;
-  color: #14274A;
-}
-main .offer .offer-text {
+main .info .top {
   display: flex;
-  flex-flow: wrap;
-  gap: 0;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: end;
+}
+main .info .top .date {
+  display: flex;
+  flex-flow: row;
+  gap: 100px;
+}
+main .info .top .date .in, main .info .top .date .out {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+main .info .top .date .in label, main .info .top .date .out label {
+  font-size: 27px;
+  font-weight: 500;
+}
+main .info .top .date .in input, main .info .top .date .out input {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #14274A;
+}
+main .info .top .date .radio {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+main .info .top .date .radio .label {
+  font-size: 27px;
+  font-weight: 500;
+}
+main .info .top .date .radio .input {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  font-size: 25px;
+}
+main .info .top .date .radio .input input {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+  border: 1px solid #14274A;
+}
+main .info .top .reserv {
+  font-size: 28px;
+  font-weight: 600;
+  background: #E0B973;
+  padding: 10px 60px;
+  color: white;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+}
+main .info .top .output2 {
+  display: none;
+}
+main .info .bottom {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-main .offer .offer-text p {
-  color: black;
-  padding: 0 0 15px 0;
+main .info .bottom .output {
+  flex-flow: row;
+  gap: 10px;
+}
+main .info .bottom .output h5 {
+  font-size: 28px;
+  font-weight: 400;
+}
+main .info .bottom .output h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+main .info .bottom .reserv {
+  display: none;
+}
+main .all-carts {
+  margin: 0 0 100px 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .all-carts:hover .cart:not(:hover) {
+  filter: blur(3px);
+}
+main .all-carts .cart {
+  margin: 0 0 30px 0;
+  width: 30%;
+  transition: filter 0.4s ease-in-out;
+}
+main .all-carts .cart .cart-img {
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+main .all-carts .cart .cart-img img {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.4s ease-in-out;
+}
+main .all-carts .cart .cart-img img:hover {
+  transform: scale(1.1);
+}
+main .all-carts .cart h5 {
+  font-size: 34px;
+  line-height: 40px;
+}
+main .all-carts .cart p {
   font-size: 20px;
   font-weight: 500;
 }
 main .comments {
-  margin: 110px 0 0 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -850,67 +901,81 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 16px;
     line-height: 24px;
   }
+  main .info .top .date {
+    gap: 100px;
+  }
+  main .info .top .date .in, main .info .top .date .out {
+    gap: 15px;
+  }
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 22px;
+  }
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  main .info .top .date .radio {
+    gap: 15px;
+  }
+  main .info .top .date .radio .label {
+    font-size: 22px;
+  }
+  main .info .top .date .radio .input {
+    font-size: 20px;
+  }
+  main .info .top .date .radio .input input {
+    padding: 10px 20px;
+  }
+  main .info .top .reserv {
+    font-size: 24px;
+    padding: 10px 60px;
+  }
+  main .info .top .output2 {
+    display: none;
+  }
+  main .info .bottom .output {
+    flex-flow: row;
+    gap: 10px;
+  }
+  main .info .bottom .output h5 {
+    font-size: 24px;
+  }
+  main .info .bottom .output h4 {
+    font-size: 26px;
+  }
+  main .info .bottom .reserv {
+    display: none;
+  }
   main .all-carts {
+    margin: 0 0 100px 0;
     display: flex;
     flex-flow: wrap;
-    gap: 60px;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
   }
   main .all-carts .cart {
-    position: relative;
-    width: 400px;
-    height: 280px;
+    margin: 0 0 30px 0;
+    width: 30%;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 280px;
+  main .all-carts .cart .cart-img {
+    margin: 0 0 10px 0;
   }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 220px;
-    background: white;
-    padding: 10px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
+  main .all-carts .cart .cart-img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: #14274A;
+  main .all-carts .cart h5 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0 0 5px 0;
   }
-  main .offer {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    margin: 110px 0 0 0;
-  }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: row;
-    gap: 0;
-    justify-content: space-between;
-  }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 15px 0;
-    font-size: 14px;
+  main .all-carts .cart p {
+    font-size: 16px;
     font-weight: 500;
   }
   main .comments {
-    margin: 60px 0 0 0;
+    margin: -50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
@@ -951,67 +1016,86 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 14px;
     line-height: 20px;
   }
+  main .info {
+    gap: 40px;
+  }
+  main .info .top {
+    flex-flow: wrap;
+    gap: 20px;
+  }
+  main .info .top .date {
+    gap: 125px;
+  }
+  main .info .top .date .in, main .info .top .date .out {
+    gap: 15px;
+  }
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 18px;
+  }
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  main .info .top .date .radio {
+    gap: 15px;
+  }
+  main .info .top .date .radio .label {
+    font-size: 18px;
+  }
+  main .info .top .date .radio .input {
+    gap: 10px;
+    font-size: 16px;
+  }
+  main .info .top .date .radio .input input {
+    padding: 10px 20px;
+  }
+  main .info .top .output2 {
+    gap: 10px;
+  }
+  main .info .top .output2 h5 {
+    font-size: 18px;
+  }
+  main .info .top .output2 h4 {
+    font-size: 20px;
+  }
+  main .info .top .reserv {
+    font-size: 18px;
+    padding: 10px 30px;
+    letter-spacing: 1.4px;
+  }
+  main .info .bottom {
+    display: none;
+  }
   main .all-carts {
+    margin: 0 0 100px 0;
     display: flex;
     flex-flow: wrap;
-    gap: 60px;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
   }
   main .all-carts .cart {
-    position: relative;
-    width: 300px;
-    height: 180px;
+    margin: 0 0 30px 0;
+    width: 40%;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 300px;
-    height: 180px;
+  main .all-carts .cart .cart-img {
+    margin: 0 0 10px 0;
   }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 180px;
-    background: white;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
+  main .all-carts .cart .cart-img img {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-    color: #14274A;
+  main .all-carts .cart h5 {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 3px 0;
   }
-  main .offer {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    margin: 110px 0 0 0;
-  }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: row;
-    gap: 0;
-    justify-content: space-between;
-  }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
+  main .all-carts .cart p {
+    font-size: 13px;
     font-weight: 500;
   }
   main .comments {
-    margin: 50px 0 0 0;
+    margin: -50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
@@ -1055,67 +1139,94 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 12px;
     line-height: 20px;
   }
+  main .info {
+    gap: 40px;
+  }
+  main .info .top {
+    gap: 40px;
+  }
+  main .info .top .date {
+    gap: 55px;
+  }
+  main .info .top .date .in, main .info .top .date .out {
+    gap: 15px;
+  }
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 16px;
+  }
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+  main .info .top .date .radio {
+    gap: 15px;
+  }
+  main .info .top .date .radio .label {
+    font-size: 16px;
+  }
+  main .info .top .date .radio .input {
+    gap: 10px;
+    font-size: 14px;
+  }
+  main .info .top .date .radio .input input {
+    padding: 10px 20px;
+  }
+  main .info .top .output2 {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+  }
+  main .info .top .output2 h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  main .info .top .output2 h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  main .info .top .reserv {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  main .info .bottom {
+    display: none;
+  }
   main .all-carts {
+    margin: 0 0 100px 0;
     display: flex;
     flex-flow: wrap;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  main .all-carts:hover .cart:not(:hover) {
+    filter: blur(0px);
   }
   main .all-carts .cart {
-    position: relative;
-    width: 400px;
-    height: 240px;
+    margin: 0 0 30px 0;
+    width: 40%;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 240px;
+  main .all-carts .cart .cart-img {
+    margin: 0 0 10px 0;
   }
-  main .all-carts .cart .cart-text {
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
+  main .all-carts .cart .cart-img img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 15px;
-    color: #14274A;
+  main .all-carts .cart .cart-img:hover {
+    transform: scale(none);
   }
-  main .offer {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    margin: 110px 0 0 0;
+  main .all-carts .cart h5 {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 0 3px 0;
   }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: wrap;
-    gap: 0;
-    justify-content: space-between;
-  }
-  main .offer .offer-text p {
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
+  main .all-carts .cart p {
+    font-size: 10px;
     font-weight: 500;
   }
   main .comments {
-    margin: 50px 0 0 0;
+    margin: -60px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
@@ -1160,90 +1271,85 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 10px;
     line-height: 18px;
   }
+  main .info {
+    gap: 40px;
+  }
+  main .info .top {
+    flex-flow: wrap;
+    gap: 30px;
+  }
+  main .info .top .date {
+    gap: 20px;
+  }
+  main .info .top .date .in, main .info .top .date .out {
+    gap: 15px;
+  }
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 14px;
+  }
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+  main .info .top .date .radio {
+    gap: 15px;
+  }
+  main .info .top .date .radio .label {
+    font-size: 14px;
+  }
+  main .info .top .date .radio .input {
+    gap: 10px;
+    font-size: 12px;
+  }
+  main .info .top .date .radio .input input {
+    padding: 10px 20px;
+  }
+  main .info .top .output2 {
+    gap: 10px;
+  }
+  main .info .top .output2 h5 {
+    font-size: 14px;
+  }
+  main .info .top .output2 h4 {
+    font-size: 16px;
+  }
+  main .info .top .reserv {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  main .info .bottom {
+    display: none;
+  }
   main .all-carts {
+    margin: 0 0 100px 0;
     display: flex;
     flex-flow: wrap;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 10px;
   }
   main .all-carts .cart {
-    position: relative;
-    width: 330px;
-    height: 200px;
+    margin: 0 0 30px 0;
+    width: 40%;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 330px;
-    height: 200px;
+  main .all-carts .cart .cart-img {
+    margin: 0 0 10px 0;
   }
-  main .all-carts .cart span {
-    display: inline-block;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
-    font-size: 28px;
+  main .all-carts .cart .cart-img img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+  }
+  main .all-carts .cart h5 {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 0 3px 0;
+  }
+  main .all-carts .cart p {
+    font-size: 10px;
     font-weight: 500;
-  }
-  main .all-carts .cart .cart-text {
-    display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    color: #14274A;
-  }
-  main .offer {
-    display: flex;
-    flex-flow: column;
-    gap: 0px;
-    margin: 30px 0 0 0;
-    align-items: center;
-  }
-  main .offer h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 72px;
-    color: #14274A;
-  }
-  main .offer .offer-text {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-  }
-  main .offer .offer-text div {
-    padding: 0 60px 0 0;
-    display: flex;
-    flex-flow: column;
-  }
-  main .offer .offer-text div p {
-    display: inline-block;
-    color: black;
-    padding: 0 0 10px 0;
-    font-size: 12px;
-    font-weight: 500;
-  }
-  main .offer .offer-text .offer-first {
-    padding: 0;
   }
   main .comments {
-    margin: 50px 0 0 0;
+    margin: -60px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
@@ -1288,57 +1394,87 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 10px;
     line-height: 18px;
   }
-  main .all-carts {
+  main .info {
+    gap: 40px;
+  }
+  main .info .top {
+    gap: 10px;
+  }
+  main .info .top .date {
     display: flex;
     flex-flow: wrap;
     gap: 20px;
+  }
+  main .info .top .date .in, main .info .top .date .out {
+    gap: 15px;
+  }
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 14px;
+  }
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 10px;
+    padding: 8px 15px;
+  }
+  main .info .top .date .radio {
+    gap: 8px;
+  }
+  main .info .top .date .radio .label {
+    font-size: 14px;
+  }
+  main .info .top .date .radio .input {
+    gap: 10px;
+    font-size: 14px;
+  }
+  main .info .top .date .radio .input input {
+    padding: 10px 20px;
+  }
+  main .info .top .output2 {
+    gap: 10px;
+    margin: 10px 0 0;
+  }
+  main .info .top .output2 h5 {
+    font-size: 14px;
+  }
+  main .info .top .output2 h4 {
+    font-size: 16px;
+  }
+  main .info .top .reserv {
+    font-size: 14px;
+  }
+  main .info .bottom {
+    display: none;
+  }
+  main .all-carts {
+    margin: 0 0 100px 0;
+    display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   main .all-carts .cart {
-    position: relative;
-    width: 280px;
-    height: 160px;
+    margin: 0 0 30px 0;
+    width: 80%;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 280px;
-    height: 160px;
+  main .all-carts .cart .cart-img {
+    margin: 0 0 10px 0;
   }
-  main .all-carts .cart span {
-    display: inline-block;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
-    font-size: 22px;
+  main .all-carts .cart .cart-img img {
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+  }
+  main .all-carts .cart h5 {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 0 3px 0;
+  }
+  main .all-carts .cart p {
+    font-size: 10px;
     font-weight: 500;
   }
-  main .all-carts .cart .cart-text {
-    display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
-  }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    color: #14274A;
-  }
   main .comments {
-    margin: 50px 0 0 0;
+    margin: -50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {

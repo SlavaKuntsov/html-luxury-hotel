@@ -15,20 +15,21 @@
 </head>
 <body>
 	<header>
-		<div class="back_color"></div>
-		<img class="back" src="../img/header/background.png" alt="">
 		<nav>
-			<div class="logo">
+			<a href="main.html" class="logo">
 				<h3>LUXURY</h3>
 				<h5>HOTEL</h5>
-			</div>
+			</a>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="facilities.html">Facilities</a></li>
-				<li><a href="#">Rooms</a></li>
+				<li><a href="rooms.html">Rooms</a></li>
 				<li><a href="#">Menu</a></li>
-				<li><a href="#">Contact-us</a></li>
+				<li><a href="contact-us.html">Contact-us</a></li>
 			</ul>
+			<div class="burger">
+				<img id="open" src="../img/header/menu-outline.svg" alt="">
+			</div>
 		</nav>
 		<div class="header-main">
 			<div class="text">
@@ -38,7 +39,7 @@
 				<p>Book your stay and enjoy Luxury redefined at the most affordable rates.</p>
 			</div>
 			<div class="all-buttons">
-				<a href="#" class="button">
+				<a href="rooms.html" class="button">
 					<img src="../img/header/button.svg" alt="">
 					<p>BOOK NOW</p>
 				</a>
@@ -48,9 +49,22 @@
 				</div>
 			</div>
 		</div>
+		<div id="burger-menu">
+			<img id="close" src="../img/header/close.svg" alt="">
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<hr>
+				<li><a href="#">Facilities</a></li>
+				<li><a href="#">Rooms</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Contact-us</a></li>
+			</ul>
+		</div>
 	</header>
 	<main>
 
 	</main>
+
+	<script type="text/javascript" src="../scripts/index.js"></script>
 </body>
 </html>

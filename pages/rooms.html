@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Facilities</title>
+	
+	<title>Rooms and Rates</title>
 
 	<link rel="icon" href="../img/other/letter-h.png">
 
-	<link rel="stylesheet" href="../css/style_facilities.css">
-	<link rel="stylesheet" href="../css/global.css">
 
+	<link rel="stylesheet" href="../css/style_rooms.css">
+	<link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
 	<header>
@@ -22,8 +22,8 @@
 			</a>
 			<ul>
 				<li><a href="main.html">Home</a></li>
-				<li><a href="#">Facilities</a></li>
-				<li><a href="rooms.html">Rooms</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="r">Rooms</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="contact-us.html">Contact-us</a></li>
 			</ul>
@@ -39,7 +39,7 @@
 				<p>Book your stay and enjoy Luxury redefined at the most affordable rates.</p>
 			</div>
 			<div class="all-buttons">
-				<a href="rooms.html" class="button">
+				<a href="#" class="button">
 					<img src="../img/header/button.svg" alt="">
 					<p>BOOK NOW</p>
 				</a>
@@ -53,94 +53,60 @@
 			<img id="close" src="../img/header/close.svg" alt="">
 			<ul>
 				<li><a href="main.html">Home</a></li>
-				<li><a href="#">Facilities</a></li>
-				<li><a href="rooms.html">Rooms</a></li>
+				<li><a href="facilities.html">Facilities</a></li>
+				<li><a href="#">Rooms</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="contact-us.html">Contact-us</a></li>
 			</ul>
 		</div>
 	</header>
-
 	<main>
 		<section class="text">
-			<h2>FACILITIES</h2>
-			<p>We want your stay at our lush hotel to be truly unforgettable.  That is why we give special attention to all of your needs so 
-				that we can ensure an experience quite uniquw. Luxury hotels offers the perfect setting with stunning views for leisure
-				and our modern luxury resort facilities will help you enjoy the best of all. </p>
-		</section>
-		<section class="all-carts">
-
-			<a href="" class="cart">
-				<img src="../img/main/restaurant.png" alt="">
-				<div class="cart-text">
-					<p>Restaurants</p>
-				</div>
-				<span>Restaurants</span>
-			</a>
-			
-			<a href="" class="cart">
-				<img src="../img/main/bar.png" alt="">
-				<div class="cart-text">
-					<p>Poolside Bar</p>
-				</div>
-				<span>Poolside Bar</span>
-			</a>
-
-			<a href="" class="cart">
-				<img src="../img/main/pool.png" alt="">
-				<div class="cart-text">
-					<p>Swimming Pool</p>
-				</div>
-				<span>Swimming Pool</span>
-			</a>
-
-			<a href="" class="cart">
-				<img src="../img/main/gym.png" alt="">
-				<div class="cart-text">
-					<p>The Gym</p>
-				</div>
-				<span>The Gym</span>
-			</a>
-
-			<a href="" class="cart">
-				<img src="../img/main/spa.png" alt="">
-				<div class="cart-text">
-					<p>Spa</p>
-				</div>
-				<span>Spa</span>
-			</a>
-
-			<a href="" class="cart">
-				<img src="../img/main/laundry.png" alt="">
-				<div class="cart-text">
-					<p>Laundry</p>
-				</div>
-				<span>Laundry</span>
-			</a>
+			<h2>ROOMS AND RATES</h2>
+			<p>Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, 
+				comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented 
+				by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces. </p>
 		</section>
 
-		<section class="offer">
-			<h2>We also offer:</h2>
-			<div class="offer-text">
-				<div class="offer-first">
-					<p>Library services</p>
-					<p>Free Wi-fi</p>
-					<p>Adequate safety/ security</p>
-					<p>Laundry services</p>
+		<section class="info">
+			<div class="top">
+				<div class="date">
+					<div class="in">
+						<label for="">Date-in</label>
+						<input id="in" type="date">
+					</div>
+					<div class="out">
+						<label for="">Date-out</label>
+						<input id="out" type="date">
+					</div>
+					<div class="radio">
+						<label class="label" for="">Select the desired</label>
+						<label class="input" for="1">
+							<input value="All inclusive" id="1" type="radio" name="radio" checked>
+							All inclusive
+						</label>
+						<label class="input" for="2">
+							<input value="Breakfast only" id="2" type="radio" name="radio">
+							Breakfast only
+						</label>
+					</div>
 				</div>
-				<div class="offer-second">
-					<p>Delicious meals</p>
-					<p>Air cooling in all rooms</p>
-					<p>Room services</p>
-					<p>Ticket books </p>
+				<div id="choose2" class="output2">
+					<!-- === -->
 				</div>
-				<div class="offer-third">
-					<p>Shuffle/ Private transfers</p>
-					<p>Necessities for</p>
-					<p>babies and children</p>
-					<p></p>
+				<div id="reserv" class="reserv">
+					Reserv
 				</div>
 			</div>
+			<div  class="bottom">
+				<div id="choose" class="output">
+					<!-- === -->
+				</div>
+			</div>
+		</section>
+
+		<section id="all-carts" class="all-carts">
+			<!-- === -->
 		</section>
 
 		<section class="comments">

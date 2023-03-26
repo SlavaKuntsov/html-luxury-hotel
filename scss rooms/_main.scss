@@ -1,0 +1,859 @@
+main{
+	@extend %max;
+	margin: 0 auto;
+	.text{
+		margin: 100px 0 80px 0;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		gap: 40px;
+		h2{
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 72px;
+			letter-spacing: 0.05em;
+			color: #14274A;
+		}
+		p{
+			font-weight: 400;
+			font-size: 25px;
+			line-height: 30px;
+			color: #14274A;
+			text-align: center;
+		}
+	}
+	.info{
+		margin: 0 0 60px 0;
+		display: flex;
+		flex-flow: column;
+		gap: 40px;
+		.top{
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: end;
+			.date{
+				display: flex;
+				flex-flow: row;
+				gap: 100px;
+				.in, .out{
+					display: flex;
+					flex-flow: column;
+					gap: 15px;
+					label{
+						font-size: 27px;
+						font-weight: 500;
+					}
+					input{
+						font-size: 22px;
+						font-family: 'Montserrat', sans-serif;
+						padding: 10px 20px;
+						border: 1px solid #14274A;
+					}
+				}
+				.radio{
+					display: flex;
+					flex-flow: column;
+					gap: 15px;
+					.label{
+						font-size: 27px;
+						font-weight: 500;
+					}
+					.input{
+						display: flex;
+						flex-flow: row;
+						gap: 10px;
+						font-size: 25px;
+						input{
+							font-family: 'Montserrat', sans-serif;
+							padding: 10px 20px;
+							border: 1px solid #14274A;
+						}
+					}
+				}
+			}
+			.reserv{
+				font-size: 28px;
+				font-weight: 600;
+				background: $ohra;
+				padding: 10px 60px;
+				color: white;
+				letter-spacing: 1.4px;
+				cursor: pointer;
+			}
+			.output2{
+				display: none;
+			}
+		}
+		.bottom{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.output{
+				flex-flow: row;
+				gap: 10px;
+				h5{
+					font-size: 28px;
+					font-weight: 400;
+				}
+				h4{
+					font-size: 30px;
+					font-weight: 600;
+				}
+			}
+			.reserv{
+				display: none;
+			}
+		}
+	}
+	.all-carts{
+		margin: 0 0 100px 0;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+		gap: 20px;
+		&:hover{
+			.cart:not(:hover) {
+				filter: blur(3px);
+			}
+		}
+		.cart{
+			margin: 0 0 30px 0;
+			width: 30%;
+			transition: filter .4s ease-in-out;
+			.cart-img{
+				margin: 0 0 10px 0;
+				overflow: hidden;
+				border-radius: 8px;
+				img{
+					width: 100%;
+					height: 300px;
+					transition: transform .4s ease-in-out;
+					&:hover{
+						transform: scale(1.1);
+					}
+
+				}
+			}
+			h5{
+				font-size: 34px;
+				line-height: 40px;
+			}
+			p{
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+	}
+	.comments{
+		margin: 50px 0 0 0;
+		display: flex;
+		justify-content: center;
+		flex-flow: column;
+		align-items: center;
+		gap: 20px;
+		h2{
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 72px;
+			color: #14274A;
+		}
+		.comments-track{
+			text-align: center;
+			.comment-cart{
+				p{
+					font-weight: 400;
+					font-size: 24px;
+					line-height: 37px;
+					color: #14274A;
+				}
+				span{
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 30px;
+					color: #14274A;
+				}
+			}
+		}
+		.buttons{
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.left, .right {
+				@include hover($ohra);
+				padding: 10px;
+				font-size: 28px;
+				background: $ohra;
+				color: white;
+				border-radius: 8px;
+			}
+		}
+	}
+}
+
+
+// ===========================================================
+
+@media screen and (width < 1660px) {
+	main{
+		@include max_1660;
+		.text{
+			margin: 60px 0;
+			gap: 10px;
+			h2{
+				font-size: 40px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		.info{
+			.top{
+				.date{
+					gap: 100px;
+					.in, .out{
+						gap: 15px;
+						label{
+							font-size: 22px;
+						}
+						input{
+							font-size: 18px;
+							padding: 10px 20px;
+						}
+					}
+					.radio{
+						gap: 15px;
+						.label{
+							font-size: 22px;
+						}
+						.input{
+							font-size: 20px;
+							input{
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+				.reserv{
+					font-size: 24px;
+					padding: 10px 60px;
+				}
+				.output2{
+					display: none;
+				}
+			}
+			.bottom{
+				.output{
+					flex-flow: row;
+					gap: 10px;
+					h5{
+						font-size: 24px;
+					}
+					h4{
+						font-size: 26px;
+					}
+				}
+				.reserv{
+					display: none;
+				}
+				
+			}
+		}
+		.all-carts{
+			margin: 0 0 100px 0;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: space-between;
+			gap: 20px;
+			.cart{
+				margin: 0 0 30px 0;
+				width: 30%;
+				.cart-img{
+					margin: 0 0 10px 0;
+					img{
+						width: 100%;
+						height: 200px;
+						border-radius: 8px;
+					}
+				}
+				h5{
+					font-size: 24px;
+					line-height: 24px;
+					padding: 0 0 5px 0;
+				}
+				p{
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: -50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 36px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 16px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 30px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 16px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+	main{
+		@include max_1100;
+		.text{
+			margin: 40px 0;
+			h2{
+				font-size: 30px;
+				line-height: 40px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		.info{
+			gap: 40px;
+			.top{
+				flex-flow: wrap;
+				gap: 20px;
+				.date{
+					gap: 125px;
+					.in, .out{
+						gap: 15px;
+						label{
+							font-size: 18px;
+						}
+						input{
+							font-size: 14px;
+							padding: 10px 20px;
+						}
+					}
+					.radio{
+						gap: 15px;
+						.label{
+							font-size: 18px;
+						}
+						.input{
+							gap: 10px;
+							font-size: 16px;
+							input{
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+				.output2{
+					gap: 10px;
+					h5{
+						font-size: 18px;
+					}
+					h4{
+						font-size: 20px;
+					}
+				}
+				.reserv{
+					font-size: 18px;
+					padding: 10px 30px;
+					letter-spacing: 1.4px;
+				}
+			}
+			.bottom{
+				display: none;
+			}
+		}
+		.all-carts{
+			margin: 0 0 100px 0;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: space-evenly;
+			gap: 20px;
+			.cart{
+				margin: 0 0 30px 0;
+				width: 40%;
+				.cart-img{
+					margin: 0 0 10px 0;
+					img{
+						width: 100%;
+						height: 160px;
+						border-radius: 8px;
+					}
+				}
+				h5{
+					font-size: 20px;
+					line-height: 24px;
+					padding: 0 0 3px 0;
+				}
+				p{
+					font-size: 13px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: -50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 26px;
+				line-height: 30px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 14px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 24px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 14x;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+	main{
+		@include max_800;
+		.text{
+			margin: 30px 0;
+			h2{
+				font-size: 30px;
+				line-height: 40px;
+			}
+			p{
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		.info{
+			gap: 40px;
+			.top{
+				gap: 40px;
+				.date{
+					gap: 55px;
+					.in, .out{
+						gap: 15px;
+						label{
+							font-size: 16px;
+						}
+						input{
+							font-size: 12px;
+							padding: 8px 15px;
+						}
+					}
+					.radio{
+						gap: 15px;
+						.label{
+							font-size: 16px;
+						}
+						.input{
+							gap: 10px;
+							font-size: 14px;
+							input{
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+				.output2{
+					display: flex;
+					flex-flow: row;
+					gap: 10px;
+					h5{
+						font-size: 16px;
+						font-weight: 400;
+					}
+					h4{
+						font-size: 18px;
+						font-weight: 600;
+					}
+				}
+				.reserv{
+					font-size: 14px;
+					padding: 8px 20px;
+				}
+			}
+			.bottom{
+				display: none;
+			}
+		}
+		.all-carts{
+			margin: 0 0 100px 0;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: space-evenly;
+			gap: 20px;
+			&:hover{
+				.cart:not(:hover) {
+					filter: blur(0px);
+				}
+			}
+			.cart{
+				margin: 0 0 30px 0;
+				width: 40%;
+				.cart-img{
+					margin: 0 0 10px 0;
+					img{
+						width: 100%;
+						height: 120px;
+						border-radius: 8px;
+					}
+					&:hover{
+						transform: scale(none);
+					}
+				}
+				h5{
+					font-size: 18px;
+					line-height: 18px;
+					padding: 0 0 3px 0;
+				}
+				p{
+					font-size: 10px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: -60px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 24px;
+				line-height: 24px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 14px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 10px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+	main{
+		@include max_550;
+		padding: 20px;
+		.text{
+			margin: 10px 0 30px;
+			h2{
+				font-size: 20px;
+				line-height: 20px;
+			}
+			p{
+				font-size: 10px;
+				line-height: 18px;
+			}
+		}
+		.info{
+			gap: 40px;
+			.top{
+				flex-flow: wrap;
+				gap: 30px;
+				.date{
+					gap: 20px;
+					.in, .out{
+						gap: 15px;
+						label{
+							font-size: 14px;
+						}
+						input{
+							font-size: 10px;
+							padding: 8px 15px;
+						}
+					}
+					.radio{
+						gap: 15px;
+						.label{
+							font-size: 14px;
+						}
+						.input{
+							gap: 10px;
+							font-size: 12px;
+							input{
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+				.output2{
+					gap: 10px;
+					h5{
+						font-size: 14px;
+					}
+					h4{
+						font-size: 16px;
+					}
+				}
+				.reserv{
+					font-size: 14px;
+					padding: 8px 20px;
+				}
+			}
+			.bottom{
+				display: none;
+			}
+		}
+		.all-carts{
+			margin: 0 0 100px 0;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: space-evenly;
+			gap: 10px;
+			.cart{
+				margin: 0 0 30px 0;
+				width: 40%;
+				.cart-img{
+					margin: 0 0 10px 0;
+					img{
+						width: 100%;
+						height: 100px;
+						border-radius: 8px;
+					}
+				}
+				h5{
+					font-size: 16px;
+					line-height: 18px;
+					padding: 0 0 3px 0;
+				}
+				p{
+					font-size: 10px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: -60px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 20px;
+				line-height: 18px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 12px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 10px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					padding: 5px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 450px) {
+	main{
+		@include max_400;
+		padding: 20px;
+		.text{
+			margin: 10px 0 30px;
+			h2{
+				font-size: 20px;
+				line-height: 20px;
+			}
+			p{
+				font-size: 10px;
+				line-height: 18px;
+			}
+		}
+		.info{
+			gap: 40px;
+			.top{
+				gap: 10px;
+				.date{
+					display: flex;
+					flex-flow: wrap;
+					gap: 20px;
+					.in, .out{
+						gap: 15px;
+						label{
+							font-size: 14px;
+						}
+						input{
+							font-size: 10px;
+							padding: 8px 15px;
+						}
+					}
+					.radio{
+						gap: 8px;
+						.label{
+							font-size: 14px;
+						}
+						.input{
+							gap: 10px;
+							font-size: 14px;
+							input{
+								padding: 10px 20px;
+							}
+						}
+					}
+				}
+				.output2{
+					gap: 10px;
+					margin: 10px 0 0;
+					h5{
+						font-size: 14px;
+					}
+					h4{
+						font-size: 16px;
+					}
+				}
+				.reserv{
+					font-size: 14px;
+				}
+			}
+			.bottom{
+				display: none;
+			}
+		}
+		.all-carts{
+			margin: 0 0 100px 0;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			.cart{
+				margin: 0 0 30px 0;
+				width: 80%;
+				.cart-img{
+					margin: 0 0 10px 0;
+					img{
+						width: 100%;
+						height: 140px;
+						border-radius: 8px;
+					}
+				}
+				h5{
+					font-size: 16px;
+					line-height: 18px;
+					padding: 0 0 3px 0;
+				}
+				p{
+					font-size: 10px;
+					font-weight: 500;
+				}
+			}
+		}
+		.comments{
+			margin: -50px 0 0 0;
+			gap: 10px;
+			h2{
+				font-size: 20px;
+				line-height: 18px;
+			}
+			.comments-track{
+				.comment-cart{
+					p{
+						font-size: 14px;
+						line-height: 16px;
+						padding: 10px 0 10px;
+					}
+					span{
+						font-weight: 400;
+						font-size: 11px;
+						line-height: 14px;
+						color: #14274A;
+					}
+				}
+			}
+			.buttons{
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.left, .right {
+					@include hover($ohra);
+					padding: 10px;
+					font-size: 12px;
+					background: $ohra;
+					color: white;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}

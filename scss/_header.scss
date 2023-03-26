@@ -1,27 +1,53 @@
 
 
 header {
-	position: relative;
-	.back_color{
-		background: rgba(20, 39, 74, 0.5);
+	background: url("../img/header/background.png") no-repeat;
+	background-size: cover;
+	height: 1080px;
+}
+
+#burger-menu{
+	position: fixed;
+	top: 0;
+	left: 100%;
+	background: white;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transition: left .5s ease-in-out, display 1s ease-in-out;
+	overflow: auto;
+	padding: 20px;
+	img{
+		width:  40px;
+		height: 40px;
 		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		height: 1080px;
-		width: 1920px;
+		top: 20px;
+		right: 20px;
 	}
-	.back{
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -2;
-		height: 1080px;
-		width: 1920px;
+	ul{
+		margin: 60px 0 0 0;
+		li{
+			padding: 0 0 13px 0;
+			a{
+				color: black;
+				font-size: 26px;
+				letter-spacing: .4px;
+
+			}
+		}
+		li:nth-child(1){
+			a{
+				color: black;
+				font-size: 26px;
+				letter-spacing: .4px;
+				border-bottom: 2px solid black;
+			}
+		}
 	}
 }
 
 nav{
+	z-index: 1;
 	@extend %max;
 	margin: 0 auto;
 	display: flex;
@@ -68,32 +94,46 @@ nav{
 			background: $ohra;
 		}
 	}
+	.burger{
+		display: none;
+		
+	}
 	ul{
 		display: flex;
 		align-items: center;
 		gap: 70px;
+		li{
+			@include slide;
+			&:not(:nth-child(1)){
+				@include a-hover;
+			}
+			&:not(:nth-child(1)):hover:before{
+				width: 100%;
+			}
+		}
 		li a{
 			font-weight: 400;
-			font-size: 25px;
+			font-size: 22px;
 			line-height: 30px;
 			color: #FFFFFF;
 		}
 		li:nth-child(1){
 			a{
 				font-weight: 700;
-				font-size: 25px;
+				font-size: 22px;
 				line-height: 30px;
 				color: #FFFFFF;
-				border-bottom: 3px solid white;
+				border-bottom: 2px solid white;
 			}
 		}
 	}
 }
 .header-main{
+	z-index: 1;
 	@extend %max;
 	margin: 0 auto;
 	.text{
-		margin: 190px 0 110px;
+		margin: 190px 0 160px;
 		display: flex;
 		flex-flow: column;
 		align-items: start;
@@ -130,23 +170,24 @@ nav{
 		display: flex;
 		flex-flow: column;
 		align-items: center;
-		gap: 80px;
+		gap: 50px;
 		.button{
+			@include hover($ohra);
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 10px;
 			background: $ohra;
-			padding: 25px 0;
+			padding: 20px 0;
 			border-radius: 15px;
-			width: 270px;
+			width: 240px;
 			img{
-				width: 28px;
-				height: 26px;
+				width:  25px;
+				height: 25px;
 			}
 			p{
 				font-weight: 700;
-				font-size: 25px;
+				font-size: 20px;
 				line-height: 30px;
 				color: #FFFFFF;
 			}
@@ -159,14 +200,14 @@ nav{
 			align-items: center;
 			p{
 				font-weight: 700;
-				font-size: 25px;
+				font-size: 22px;
 				line-height: 30px;
 				letter-spacing: 0.05em;
 				color: #FFFFFF;
 			}
 			img{
-				width: 60px;
-				height: 60px;
+				width:  50px;
+				height: 50px;
 			}
 		}
 	}
@@ -177,9 +218,395 @@ nav{
 		opacity: 1;
 	}
 	50%{
-		opacity: .5;
+		opacity: .3;
 	}
 	100%{
 		opacity: 1;
+	}
+}
+
+
+// ===========================================================
+
+@media screen and (width < 1660px) {
+	header{
+		height: 780px;
+	}
+	nav{
+		@include max_1660;
+		.logo{
+			padding: 25px;
+			h3{
+				z-index: 5;
+				font-size: 26px;
+				line-height: 30px;
+			}
+			h5{
+				font-size: 14px;
+			}
+			&:after{
+				width:  45px;
+				height: 45px;
+				z-index: 1;
+			}
+			&:before{
+				width:  45px;
+				height: 45px;
+				z-index: 1;
+			}
+		}
+		ul{
+			gap: 50px;
+			li a{
+				font-size: 14px;
+			}
+			li:nth-child(1){
+				a{
+					font-size: 14px;
+					border-bottom: 2px solid white;
+				}
+			}
+		}
+	}
+	.header-main{
+		@include max_1660;
+		.text{
+			margin: 150px 0 120px;
+			span{
+				font-size: 25px;
+				line-height: 40px;
+			}
+			h1{
+				font-size: 90px;
+				line-height: 70px;
+			}
+			h2{
+				font-size: 30px;
+				line-height: 50px;
+			}
+			p{
+				width: 510px;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		.all-buttons{
+			gap: 40px;
+			.button{
+				gap: 10px;
+				padding: 10px 0;
+				width: 170px;
+				img{
+					width: 20px;
+					height: 20px;
+				}
+				p{
+					font-size: 14px;
+				}
+			}
+			.scroll{
+				gap: 5px;
+				p{
+					font-size: 14px;
+				}
+				img{
+					width:  35px;
+					height: 35px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+	header{
+		height: 550px;
+	}
+	nav{
+		@include max_1100;
+		.logo{
+			padding: 15px 10px;
+			background: transparent;
+			h3{
+				color: white;
+				z-index: 5;
+				font-size: 20px;
+				line-height: 20px;
+			}
+			h5{
+				color: white;
+				font-size: 10px;
+			}
+			&:after{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+			&:before{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+		}
+		ul{
+			gap: 30px;
+			li a{
+				font-size: 12px;
+			}
+			
+		}
+	}
+	.header-main{
+		@include max_1100;
+		.text{
+			margin: 100px 0 60px;
+			span{
+				font-size: 18px;
+				line-height: 30px;
+			}
+			h1{
+				font-size: 70px;
+				line-height: 60px;
+			}
+			h2{
+				font-size: 24px;
+				line-height: 40px;
+			}
+			p{
+				width: 300px;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		.all-buttons{
+			gap: 30px;
+			.button{
+				gap: 10px;
+				padding: 5px 0;
+				width: 140px;
+				border-radius: 5px;
+				img{
+					width:  18px;
+					height: 18px;
+				}
+				p{
+					font-size: 10px;
+				}
+			}
+			.scroll{
+				p{
+					font-size: 12px;
+					line-height: 15px;
+				}
+				img{
+					width:  30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+	header{
+		height: 550px;
+	}
+	nav{
+		@include max_800;
+		.logo{
+			padding: 15px 10px;
+			background: transparent;
+			h3{
+				color: white;
+				z-index: 5;
+				font-size: 20px;
+				line-height: 20px;
+			}
+			h5{
+				color: white;
+				font-size: 10px;
+			}
+			&:after{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+			&:before{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+		}
+		ul{
+			gap: 30px;
+			li a{
+				font-size: 12px;
+			}
+			li:nth-child(1){
+				a{
+					font-size: 12px;
+					border-bottom: 1.5px solid white;
+				}
+			}
+		}
+	}
+	.header-main{
+		@include max_800;
+		.text{
+			margin: 100px 0 60px;
+			span{
+				font-size: 18px;
+				line-height: 30px;
+			}
+			h1{
+				font-size: 70px;
+				line-height: 60px;
+			}
+			h2{
+				font-size: 24px;
+				line-height: 40px;
+			}
+			p{
+				width: 300px;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		.all-buttons{
+			gap: 30px;
+			.button{
+				gap: 10px;
+				padding: 5px 0;
+				width: 140px;
+				border-radius: 5px;
+				img{
+					width:  18px;
+					height: 18px;
+				}
+				p{
+					font-size: 10px;
+				}
+			}
+			.scroll{
+				p{
+					font-size: 12px;
+					line-height: 15px;
+				}
+				img{
+					width:  30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+	header{
+		height: 360px;
+		padding: 20px;
+	}
+	nav{
+		@include max_550;
+		.logo{
+			padding: 10px;
+			background: transparent;
+			h3{
+				color: white;
+				z-index: 5;
+				font-size: 16px;
+				line-height: 16px;
+			}
+			h5{
+				color: white;
+				font-size: 8px;
+			}
+			&:after{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+			&:before{
+				width:  0;
+				height: 0;
+				z-index: 1;
+			}
+		}
+		ul{
+			display: none;
+		}
+		.burger{
+			display: block;
+			img{
+				width:  35px;
+				height: 35px;
+			}
+		}
+	}
+	.header-main{
+		@include max_550;
+		.text{
+			margin: 40px 0 30px;
+			span{
+				font-size: 14px;
+				line-height: 14px;
+			}
+			h1{
+				font-size: 50px;
+				line-height: 50px;
+			}
+			h2{
+				font-size: 16px;
+				line-height: 20px;
+			}
+			p{
+				width: 240px;
+				font-size: 9px;
+				line-height: 12px;
+			}
+		}
+		.all-buttons{
+			gap: 20px;
+			align-items: start;
+			position: relative;
+			.button{
+				
+				gap: 8px;
+				padding: 0;
+				width: 90px;
+				border-radius: 5px;
+				img{
+					width:  12px;
+					height: 12px;
+				}
+				p{
+					font-size: 7px;
+					line-height: 24px;
+				}
+			}
+			.scroll{
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				text-align: center;
+				bottom: -60px;
+				p{
+					font-size: 10px;
+					line-height: 15px;
+				}
+				img{
+					width:  20px;
+					height: 20px;
+				}
+			}
+		}
 	}
 }
