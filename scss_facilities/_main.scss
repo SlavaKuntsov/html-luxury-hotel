@@ -27,38 +27,69 @@ main{
 		flex-flow: wrap;
 		gap: 60px;
 		justify-content: center;
-		.cart{
+		.cartF{
+			// &:hover{
+			// 	.front{
+			// 		transform: perspective(900px) rotateY(-180deg);
+			// 		z-index: -10;
+			// 	}
+			// 	.back{
+			// 		transform: perspective(900px) rotateY(0deg);
+			// 		z-index: 10;
+			// 	}
+			// }
 			position: relative;
-			width: 600px;
-			height: 400px;
-			@include scale;
-			img{
-				border-radius: 15px;
+			.front{
+				overflow: hidden;
 				width: 600px;
 				height: 400px;
-				z-index: 1;
-			}
-			span{
-				display: none;
-			}
-			.cart-text{
-				border-radius:  8px 8px 0 0;
-				width: 320px;
-				background: white;
-				padding: 10px 40px 0;
-				bottom: -1px;
-				margin: auto;
-				left: 0;
-				right: 0;
 				position: absolute;
+				top: 0;
+				left: 0;
 				z-index: 10;
-				p{
-					white-space: nowrap;
-					text-align: center;
-					font-weight: 700;
-					font-size: 30px;
-					color: #14274A;
+				// position: relative;
+				transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+				transform: perspective(900px) rotateY(0deg);
+				img{
+					border-radius: 15px;
+					width: 600px;
+					height: 400px;
+					z-index: 1;
 				}
+				span{
+					display: none;
+				}
+				.cart-text{
+					border-radius: 8px 8px 0 0;
+					width: 320px;
+					background: white;
+					padding: 10px 40px 0;
+					bottom: -1px;
+					margin: auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					z-index: 10;
+					p{
+						white-space: nowrap;
+						text-align: center;
+						font-weight: 700;
+						font-size: 30px;
+						color: #14274A;
+						padding: 0 0 5px 0;
+					}
+				}
+			}
+			.back{
+				background: white;
+				z-index: -10;
+				width: 600px;
+				height: 400px;
+				transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+				transform: perspective(900px) rotateY(180deg);
+				border-radius: 16px;
+				border: 2px solid #14274A;
+				padding: 20px;
 			}
 		}
 	}
@@ -101,20 +132,27 @@ main{
 			line-height: 72px;
 			color: #14274A;
 		}
-		.comments-track{
-			text-align: center;
-			.comment-cart{
-				p{
-					font-weight: 400;
-					font-size: 24px;
-					line-height: 37px;
-					color: #14274A;
-				}
-				span{
-					font-weight: 400;
-					font-size: 20px;
-					line-height: 30px;
-					color: #14274A;
+		.comments-container{
+			overflow: hidden;
+			.comments-track{
+				text-align: center;
+				display: flex;
+				flex-flow: row;
+				width: 500px;
+				.comment-cart{
+					min-width: 500px;
+					p{
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 37px;
+						color: #14274A;
+					}
+					span{
+						font-weight: 400;
+						font-size: 20px;
+						line-height: 30px;
+						color: #14274A;
+					}
 				}
 			}
 		}
@@ -124,7 +162,7 @@ main{
 			gap: 20px;
 			.left, .right {
 				@include hover($ohra);
-				padding: 10px;
+				padding: 10px 20px;
 				font-size: 28px;
 				background: $ohra;
 				color: white;
@@ -155,33 +193,34 @@ main{
 			flex-flow: wrap;
 			gap: 60px;
 			justify-content: center;
-			.cart{
-				position: relative;
-				width: 400px;
-				height: 280px;
-				img{
-					border-radius: 10px 10px;
+			.cartF{
+				.front{
 					width: 400px;
 					height: 280px;
-				}
-				.cart-text{
-					border-radius:  8px 8px 0 0;
-					width: 220px;
-					background: white;
-					padding: 10px 40px 0;
-					bottom: -1px;
-					margin: auto;
-					left: 0;
-					right: 0;
-					position: absolute;
-					z-index: 10;
-					p{
-						white-space: nowrap;
-						text-align: center;
-						font-weight: 700;
-						font-size: 18px;
-						color: #14274A;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(0deg);
+					img{
+						width: 400px;
+						height: 280px;
 					}
+					.cart-text{
+						width: 300px;
+						padding: 10px 40px 0;
+						bottom: -1px;
+						p{
+							font-weight: 700;
+							font-size: 24px;
+							padding: 0 0 5px 0;
+						}
+					}
+				}
+				.back{
+					width: 400px;
+					height: 280px;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(180deg);
+					border: 2px solid #14274A;
+					padding: 20px;
 				}
 			}
 		}
@@ -215,23 +254,25 @@ main{
 			h2{
 				font-size: 36px;
 			}
-			.comments-track{
-				.comment-cart{
-					p{
-						font-size: 16px;
-					}
-					span{
-						font-weight: 400;
-						font-size: 14px;
-						line-height: 30px;
-						color: #14274A;
+			.comments-container{
+				.comments-track{
+					.comment-cart{
+						p{
+							font-size: 16px;
+						}
+						span{
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 30px;
+							color: #14274A;
+						}
 					}
 				}
 			}
 			.buttons{
 				gap: 20px;
 				.left, .right {
-					padding: 10px;
+					padding: 10px 20px;
 					font-size: 16px;
 					background: $ohra;
 					color: white;
@@ -263,33 +304,34 @@ main{
 			flex-flow: wrap;
 			gap: 60px;
 			justify-content: center;
-			.cart{
-				position: relative;
-				width: 300px;
-				height: 180px;
-				img{
-					border-radius: 10px 10px;
+			.cartF{
+				.front{
 					width: 300px;
 					height: 180px;
-				}
-				.cart-text{
-					border-radius:  8px 8px 0 0;
-					width: 180px;
-					background: white;
-					padding: 8px 40px 0;
-					bottom: -1px;
-					margin: auto;
-					left: 0;
-					right: 0;
-					position: absolute;
-					z-index: 10;
-					p{
-						white-space: nowrap;
-						text-align: center;
-						font-weight: 600;
-						font-size: 15px;
-						color: #14274A;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(0deg);
+					img{
+						width: 300px;
+						height: 180px;
 					}
+					.cart-text{
+						width: 200px;
+						padding: 8px 40px 0;
+						bottom: -1px;
+						p{
+							font-weight: 600;
+							font-size: 15px;
+							padding: 0 0 5px 0;
+						}
+					}
+				}
+				.back{
+					width: 300px;
+					height: 180px;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(180deg);
+					border: 1px solid #14274A;
+					padding: 20px;
 				}
 			}
 		}
@@ -325,16 +367,19 @@ main{
 				font-size: 26px;
 				line-height: 30px;
 			}
-			.comments-track{
-				.comment-cart{
-					p{
-						font-size: 14px;
-					}
-					span{
-						font-weight: 400;
-						font-size: 12px;
-						line-height: 24px;
-						color: #14274A;
+			.comments-container{
+
+				.comments-track{
+					.comment-cart{
+						p{
+							font-size: 14px;
+						}
+						span{
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 24px;
+							color: #14274A;
+						}
 					}
 				}
 			}
@@ -343,7 +388,7 @@ main{
 				align-items: center;
 				gap: 20px;
 				.left, .right {
-					padding: 10px;
+					padding: 10px 20px;
 					font-size: 14x;
 					background: $ohra;
 					color: white;
@@ -375,33 +420,34 @@ main{
 			flex-flow: wrap;
 			gap: 40px;
 			justify-content: center;
-			.cart{
-				position: relative;
-				width: 400px;
-				height: 240px;
-				img{
-					border-radius: 10px 10px;
+			.cartF{
+				.front{
 					width: 400px;
 					height: 240px;
-				}
-				.cart-text{
-					width: 180px;
-					background: white;
-					border-radius:  8px 8px 0 0;
-					padding: 8px 40px 0;
-					bottom: -1px;
-					margin: auto;
-					left: 0;
-					right: 0;
-					position: absolute;
-					z-index: 10;
-					p{
-						white-space: nowrap;
-						text-align: center;
-						font-weight: 600;
-						font-size: 15px;
-						color: #14274A;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(0deg);
+					img{
+						width: 400px;
+						height: 240px;
 					}
+					.cart-text{
+						width: 220px;
+						padding: 8px 40px 0;
+						bottom: -1px;
+						p{
+							font-weight: 600;
+							font-size: 17px;
+							padding: 0 0 5px 0;
+						}
+					}
+				}
+				.back{
+					width: 400px;
+					height: 240px;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(180deg);
+					border: 1px solid #14274A;
+					padding: 20px;
 				}
 			}
 		}
@@ -421,8 +467,6 @@ main{
 				flex-flow: wrap;
 				gap: 0;
 				justify-content: space-between;
-				.offer-first{
-				}
 				p{
 					color: black;
 					padding: 0 0 10px 0;
@@ -438,16 +482,19 @@ main{
 				font-size: 24px;
 				line-height: 24px;
 			}
-			.comments-track{
-				.comment-cart{
-					p{
-						font-size: 14px;
-					}
-					span{
-						font-weight: 400;
-						font-size: 12px;
-						line-height: 14px;
-						color: #14274A;
+			.comments-container{
+
+				.comments-track{
+					.comment-cart{
+						p{
+							font-size: 14px;
+						}
+						span{
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 14px;
+							color: #14274A;
+						}
 					}
 				}
 			}
@@ -456,7 +503,7 @@ main{
 				align-items: center;
 				gap: 20px;
 				.left, .right {
-					padding: 10px;
+					padding: 10px 20px;
 					font-size: 12px;
 					background: $ohra;
 					color: white;
@@ -489,48 +536,40 @@ main{
 			flex-flow: wrap;
 			gap: 20px;
 			justify-content: center;
-			.cart{
-				position: relative;
-				width: 330px;
-				height: 200px;
-				img{
-					border-radius: 10px 10px;
+			.cartF{
+				.front{
 					width: 330px;
 					height: 200px;
-				}
-				span{
-					
-					display: inline-block;
-					color: white;
-					position: absolute;
-					margin-left: auto;
-					margin-right: auto;
-					left: 0;
-					right: 0;
-					text-align: center;
-					top: 45%;
-					font-size: 28px;
-					font-weight: 500;
-				}
-				.cart-text{
-					display: none;
-					width: 180px;
-					background: white;
-					border-radius:  8px 8px 0 0;
-					padding: 8px 40px 0;
-					bottom: -1px;
-					margin: auto;
-					left: 0;
-					right: 0;
-					position: absolute;
-					z-index: 10;
-					p{
-						white-space: nowrap;
-						text-align: center;
-						font-weight: 600;
-						font-size: 14px;
-						color: #14274A;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(0deg);
+					img{
+						width: 330px;
+						height: 200px;
 					}
+					span{
+						display: inline-block;
+						color: white;
+						position: absolute;
+						margin-left: auto;
+						margin-right: auto;
+						left: 0;
+						right: 0;
+						text-align: center;
+						top: 45%;
+						font-size: 28px;
+						font-weight: 500;
+					}
+					.cart-text{
+						display: none;
+					}
+				}
+				.back{
+					width: 330px;
+					height: 200px;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(180deg);
+					border: 1px solid #14274A;
+					padding: 20px;
 				}
 			}
 		}
@@ -574,25 +613,30 @@ main{
 				font-size: 20px;
 				line-height: 18px;
 			}
-			.comments-track{
-				.comment-cart{
-					p{
-						font-size: 12px;
-					}
-					span{
-						font-weight: 400;
-						font-size: 10px;
-						line-height: 14px;
-						color: #14274A;
+			.comments-container{
+				.comments-track{
+					width: 350px;
+					.comment-cart{
+						min-width: 350px;
+						p{
+							font-size: 12px;
+						}
+						span{
+							font-weight: 400;
+							font-size: 10px;
+							line-height: 14px;
+							color: #14274A;
+						}
 					}
 				}
 			}
 			.buttons{
+				margin: 10px 0 0 0;
 				display: flex;
 				align-items: center;
 				gap: 20px;
 				.left, .right {
-					padding: 5px;
+					padding: 5px 10px;
 					font-size: 12px;
 					background: $ohra;
 					color: white;
@@ -625,48 +669,30 @@ main{
 			flex-flow: wrap;
 			gap: 20px;
 			justify-content: center;
-			.cart{
-				position: relative;
-				width: 280px;
-				height: 160px;
-				img{
-					border-radius: 10px 10px;
+			.cartF{
+				.front{
 					width: 280px;
 					height: 160px;
-				}
-				span{
-					
-					display: inline-block;
-					color: white;
-					position: absolute;
-					margin-left: auto;
-					margin-right: auto;
-					left: 0;
-					right: 0;
-					text-align: center;
-					top: 45%;
-					font-size: 22px;
-					font-weight: 500;
-				}
-				.cart-text{
-					display: none;
-					width: 180px;
-					background: white;
-					border-radius:  8px 8px 0 0;
-					padding: 8px 40px 0;
-					bottom: -1px;
-					margin: auto;
-					left: 0;
-					right: 0;
-					position: absolute;
-					z-index: 10;
-					p{
-						white-space: nowrap;
-						text-align: center;
-						font-weight: 600;
-						font-size: 14px;
-						color: #14274A;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(0deg);
+					img{
+						width: 280px;
+						height: 160px;
 					}
+					span{
+						font-size: 22px;
+					}
+					.cart-text{
+						display: none;
+					}
+				}
+				.back{
+					width: 280px;
+					height: 160px;
+					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
+					transform: perspective(900px) rotateY(180deg);
+					border: 1px solid #14274A;
+					padding: 20px;
 				}
 			}
 		}
@@ -677,28 +703,33 @@ main{
 				font-size: 20px;
 				line-height: 18px;
 			}
-			.comments-track{
-				.comment-cart{
-					p{
-						font-size: 14px;
-						line-height: 16px;
-						padding: 10px 0 10px;
-					}
-					span{
-						font-weight: 400;
-						font-size: 11px;
-						line-height: 14px;
-						color: #14274A;
+			.comments-container{
+				.comments-track{
+					width: 300px;
+					.comment-cart{
+						min-width: 300px;
+						p{
+							font-size: 12px;
+							line-height: 16px;
+							padding: 10px 0 10px;
+						}
+						span{
+							font-weight: 400;
+							font-size: 11px;
+							line-height: 14px;
+							color: #14274A;
+						}
 					}
 				}
 			}
 			.buttons{
+				margin: 10px 0 0 0;
 				display: flex;
 				align-items: center;
 				gap: 20px;
 				.left, .right {
 					@include hover($ohra);
-					padding: 10px;
+					padding: 5px 10px;
 					font-size: 12px;
 					background: $ohra;
 					color: white;

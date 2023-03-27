@@ -785,8 +785,10 @@ main .info .bottom {
   justify-content: space-between;
 }
 main .info .bottom .output {
+  display: flex;
   flex-flow: row;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 main .info .bottom .output h5 {
   font-size: 28px;
@@ -849,16 +851,25 @@ main .comments h2 {
   line-height: 72px;
   color: #14274A;
 }
-main .comments .comments-track {
-  text-align: center;
+main .comments .comments-container {
+  overflow: hidden;
 }
-main .comments .comments-track .comment-cart p {
+main .comments .comments-container .comments-track {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart {
+  min-width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart p {
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   color: #14274A;
 }
-main .comments .comments-track .comment-cart span {
+main .comments .comments-container .comments-track .comment-cart span {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -871,7 +882,7 @@ main .comments .buttons {
 }
 main .comments .buttons .left, main .comments .buttons .right {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 28px;
   background: #E0B973;
   color: white;
@@ -981,10 +992,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments h2 {
     font-size: 36px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 16px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
@@ -994,7 +1005,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 16px;
     background: #E0B973;
     color: white;
@@ -1102,10 +1113,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 26px;
     line-height: 30px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 14px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
@@ -1117,7 +1128,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 14x;
     background: #E0B973;
     color: white;
@@ -1233,10 +1244,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 24px;
     line-height: 24px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 14px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -1248,7 +1259,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 12px;
     background: #E0B973;
     color: white;
@@ -1349,29 +1360,36 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-weight: 500;
   }
   main .comments {
-    margin: -60px 0 0 0;
+    margin: -70px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
     font-size: 20px;
     line-height: 18px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track {
+    width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 12px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
+    margin: 10px 0 0 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 12px;
     background: #E0B973;
     color: white;
@@ -1429,7 +1447,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     padding: 10px 20px;
   }
   main .info .top .output2 {
-    gap: 10px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px;
     margin: 10px 0 0;
   }
   main .info .top .output2 h5 {
@@ -1445,7 +1465,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     display: none;
   }
   main .all-carts {
-    margin: 0 0 100px 0;
+    margin: 0 0 -10px 0;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -1474,32 +1494,39 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-weight: 500;
   }
   main .comments {
-    margin: -50px 0 0 0;
+    margin: 50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
     font-size: 20px;
     line-height: 18px;
   }
-  main .comments .comments-track .comment-cart p {
-    font-size: 14px;
+  main .comments .comments-container .comments-track {
+    width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 12px;
     line-height: 16px;
     padding: 10px 0 10px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 11px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
+    margin: 10px 0 0 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 12px;
     background: #E0B973;
     color: white;

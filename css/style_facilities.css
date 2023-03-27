@@ -723,25 +723,30 @@ main .all-carts {
   gap: 60px;
   justify-content: center;
 }
-main .all-carts .cart {
+main .all-carts .cartF {
   position: relative;
+}
+main .all-carts .cartF .front {
+  overflow: hidden;
   width: 600px;
   height: 400px;
-  transition: transform 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+  transform: perspective(900px) rotateY(0deg);
 }
-main .all-carts .cart:hover {
-  transform: scale(1.03);
-}
-main .all-carts .cart img {
+main .all-carts .cartF .front img {
   border-radius: 15px;
   width: 600px;
   height: 400px;
   z-index: 1;
 }
-main .all-carts .cart span {
+main .all-carts .cartF .front span {
   display: none;
 }
-main .all-carts .cart .cart-text {
+main .all-carts .cartF .front .cart-text {
   border-radius: 8px 8px 0 0;
   width: 320px;
   background: white;
@@ -753,12 +758,24 @@ main .all-carts .cart .cart-text {
   position: absolute;
   z-index: 10;
 }
-main .all-carts .cart .cart-text p {
+main .all-carts .cartF .front .cart-text p {
   white-space: nowrap;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   color: #14274A;
+  padding: 0 0 5px 0;
+}
+main .all-carts .cartF .back {
+  background: white;
+  z-index: -10;
+  width: 600px;
+  height: 400px;
+  transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+  transform: perspective(900px) rotateY(180deg);
+  border-radius: 16px;
+  border: 2px solid #14274A;
+  padding: 20px;
 }
 main .offer {
   display: flex;
@@ -798,16 +815,25 @@ main .comments h2 {
   line-height: 72px;
   color: #14274A;
 }
-main .comments .comments-track {
-  text-align: center;
+main .comments .comments-container {
+  overflow: hidden;
 }
-main .comments .comments-track .comment-cart p {
+main .comments .comments-container .comments-track {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart {
+  min-width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart p {
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   color: #14274A;
 }
-main .comments .comments-track .comment-cart span {
+main .comments .comments-container .comments-track .comment-cart span {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -820,7 +846,7 @@ main .comments .buttons {
 }
 main .comments .buttons .left, main .comments .buttons .right {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 28px;
   background: #E0B973;
   color: white;
@@ -856,34 +882,33 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 60px;
     justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
+  main .all-carts .cartF .front {
+    width: 400px;
+    height: 280px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
     width: 400px;
     height: 280px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 280px;
-  }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 220px;
-    background: white;
+  main .all-carts .cartF .front .cart-text {
+    width: 300px;
     padding: 10px 40px 0;
     bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
+  main .all-carts .cartF .front .cart-text p {
     font-weight: 700;
-    font-size: 18px;
-    color: #14274A;
+    font-size: 24px;
+    padding: 0 0 5px 0;
+  }
+  main .all-carts .cartF .back {
+    width: 400px;
+    height: 280px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    border: 2px solid #14274A;
+    padding: 20px;
   }
   main .offer {
     display: flex;
@@ -916,10 +941,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments h2 {
     font-size: 36px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 16px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
@@ -929,7 +954,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 16px;
     background: #E0B973;
     color: white;
@@ -957,34 +982,33 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 60px;
     justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
+  main .all-carts .cartF .front {
+    width: 300px;
+    height: 180px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
     width: 300px;
     height: 180px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 300px;
-    height: 180px;
-  }
-  main .all-carts .cart .cart-text {
-    border-radius: 8px 8px 0 0;
-    width: 180px;
-    background: white;
+  main .all-carts .cartF .front .cart-text {
+    width: 200px;
     padding: 8px 40px 0;
     bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
+  main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
     font-size: 15px;
-    color: #14274A;
+    padding: 0 0 5px 0;
+  }
+  main .all-carts .cartF .back {
+    width: 300px;
+    height: 180px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    border: 1px solid #14274A;
+    padding: 20px;
   }
   main .offer {
     display: flex;
@@ -1018,10 +1042,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 26px;
     line-height: 30px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 14px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
@@ -1033,7 +1057,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 14x;
     background: #E0B973;
     color: white;
@@ -1061,34 +1085,33 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 40px;
     justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
+  main .all-carts .cartF .front {
+    width: 400px;
+    height: 240px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
     width: 400px;
     height: 240px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 400px;
-    height: 240px;
-  }
-  main .all-carts .cart .cart-text {
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
+  main .all-carts .cartF .front .cart-text {
+    width: 220px;
     padding: 8px 40px 0;
     bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
+  main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
-    font-size: 15px;
-    color: #14274A;
+    font-size: 17px;
+    padding: 0 0 5px 0;
+  }
+  main .all-carts .cartF .back {
+    width: 400px;
+    height: 240px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    border: 1px solid #14274A;
+    padding: 20px;
   }
   main .offer {
     display: flex;
@@ -1122,10 +1145,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 24px;
     line-height: 24px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 14px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -1137,7 +1160,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 12px;
     background: #E0B973;
     color: white;
@@ -1166,17 +1189,17 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
     justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
+  main .all-carts .cartF .front {
+    width: 330px;
+    height: 200px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
     width: 330px;
     height: 200px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 330px;
-    height: 200px;
-  }
-  main .all-carts .cart span {
+  main .all-carts .cartF .front span {
     display: inline-block;
     color: white;
     position: absolute;
@@ -1189,25 +1212,16 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 28px;
     font-weight: 500;
   }
-  main .all-carts .cart .cart-text {
+  main .all-carts .cartF .front .cart-text {
     display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    color: #14274A;
+  main .all-carts .cartF .back {
+    width: 330px;
+    height: 200px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    border: 1px solid #14274A;
+    padding: 20px;
   }
   main .offer {
     display: flex;
@@ -1250,22 +1264,29 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 20px;
     line-height: 18px;
   }
-  main .comments .comments-track .comment-cart p {
+  main .comments .comments-container .comments-track {
+    width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
     font-size: 12px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
+    margin: 10px 0 0 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 12px;
     background: #E0B973;
     color: white;
@@ -1294,48 +1315,29 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
     justify-content: center;
   }
-  main .all-carts .cart {
-    position: relative;
+  main .all-carts .cartF .front {
+    width: 280px;
+    height: 160px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
     width: 280px;
     height: 160px;
   }
-  main .all-carts .cart img {
-    border-radius: 10px 10px;
-    width: 280px;
-    height: 160px;
-  }
-  main .all-carts .cart span {
-    display: inline-block;
-    color: white;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
+  main .all-carts .cartF .front span {
     font-size: 22px;
-    font-weight: 500;
   }
-  main .all-carts .cart .cart-text {
+  main .all-carts .cartF .front .cart-text {
     display: none;
-    width: 180px;
-    background: white;
-    border-radius: 8px 8px 0 0;
-    padding: 8px 40px 0;
-    bottom: -1px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    z-index: 10;
   }
-  main .all-carts .cart .cart-text p {
-    white-space: nowrap;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    color: #14274A;
+  main .all-carts .cartF .back {
+    width: 280px;
+    height: 160px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    border: 1px solid #14274A;
+    padding: 20px;
   }
   main .comments {
     margin: 50px 0 0 0;
@@ -1345,25 +1347,32 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 20px;
     line-height: 18px;
   }
-  main .comments .comments-track .comment-cart p {
-    font-size: 14px;
+  main .comments .comments-container .comments-track {
+    width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 12px;
     line-height: 16px;
     padding: 10px 0 10px;
   }
-  main .comments .comments-track .comment-cart span {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     font-size: 11px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
+    margin: 10px 0 0 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 12px;
     background: #E0B973;
     color: white;

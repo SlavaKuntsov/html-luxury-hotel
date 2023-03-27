@@ -163,3 +163,105 @@ if(viewMap) {
 		alert("Sorry, the map is temporarily not working")
 	})
 }
+
+// ========================================
+
+let track = document.getElementById("track");
+
+if(track) {
+	let leftBtn = document.getElementById("left");
+	let rightBtn = document.getElementById("right");
+
+	let position = 0;
+	let itemWidth
+	if(window.innerWidth > 550) {
+		itemWidth = 500;
+	}
+	if(window.innerWidth < 550 && window.innerWidth > 350){
+		itemWidth = 350;
+	}
+	if(window.innerWidth < 350){
+		itemWidth = 300;
+	}
+
+	leftBtn.addEventListener('click', () => {
+		position += itemWidth
+		setPosition()
+	})
+	
+	rightBtn.addEventListener('click', () => {
+		position -= itemWidth
+		setPosition()
+	})
+
+	setPosition = () => {
+		track.style.transform = `translateX(${position}px)`
+		track.style.transition = `transform .4s ease-in-out`
+		checkButtons()
+	}
+
+	checkButtons = () => {
+		if(position === 0) {
+			leftBtn.setAttribute('disabled', true)
+			leftBtn.style.opacity = 0.7
+		}
+		else{
+			leftBtn.removeAttribute('disabled')
+			leftBtn.style.opacity = 1
+		}
+		if(position === -((3 - 1) * itemWidth)) {
+			rightBtn.setAttribute('disabled', true)
+			rightBtn.style.opacity = 0.7
+		}
+		else{
+			rightBtn.removeAttribute('disabled')
+			rightBtn.style.opacity = 1
+		} 
+	}
+	checkButtons()
+}
+
+// =================================
+
+let cartF = document.querySelectorAll(".cartF")
+
+let front = document.querySelectorAll(".front")
+let back = document.querySelectorAll(".back")
+
+if(cartF) {
+	cartF.forEach((cart, index) => {
+
+		let bool = false
+		
+		cart.addEventListener("click", function() {
+			bool = !bool
+
+			front.forEach((fItem, fIndex) => {
+				if(index == fIndex) {
+					if(bool) {
+						fItem.style.transform = "perspective(900px) rotateY(-180deg)"
+						fItem.style.zIndex = -10
+					}
+					else{
+						fItem.style.transform = "perspective(900px) rotateY(0deg)"
+						fItem.style.zIndex = 10
+					}
+				}
+			})
+			back.forEach((bItem, bIndex) => {
+				if(index == bIndex) {
+					if(bool) {
+						bItem.style.transform = "perspective(900px) rotateY(0deg)"
+						bItem.style.zIndex = 10
+					}
+					else{
+						bItem.style.transform = "perspective(900px) rotateY(180deg)"
+						bItem.style.zIndex = -10
+					}
+				}
+			})
+
+		})
+	})
+
+}
