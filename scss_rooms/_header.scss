@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 header {
@@ -15,6 +22,8 @@ header {
 	width: 100%;
 	height: 100%;
 	z-index: 100;
+	-webkit-transition: left .5s ease-in-out;
+	-o-transition: left .5s ease-in-out;
 	transition: left .5s ease-in-out;
 	overflow: auto;
 	padding: 20px;
@@ -51,17 +60,31 @@ nav{
 	z-index: 1;
 	@extend %max;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row;
+	        flex-flow: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	.logo{
 		position: relative;
 		background: $ohra;
 		border-radius: 50px;
 		padding: 40px 35px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		h3{
 			font-weight: 700;
 			font-size: 40px;
@@ -100,8 +123,12 @@ nav{
 		
 	}
 	ul{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		gap: 70px;
 		li{
 			@include slide;
@@ -135,9 +162,16 @@ nav{
 	margin: 0 auto;
 	.text{
 		margin: 190px 0 160px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		align-items: start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: start;
 		span{
 			font-family: 'Montserrat';
 			font-weight: 400;
@@ -168,15 +202,28 @@ nav{
 		}
 	}
 	.all-buttons{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		gap: 50px;
 		.button{
 			@include hover($ohra);
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			align-items: center;
-			justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
 			gap: 10px;
 			background: $ohra;
 			padding: 20px 0;
@@ -194,11 +241,19 @@ nav{
 			}
 		}
 		.scroll{
-			animation: scroll 3s infinite;
+			-webkit-animation: scroll 3s infinite;
+			        animation: scroll 3s infinite;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: column;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: column;
+			        flex-flow: column;
 			gap: 15px;
-			align-items: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 			p{
 				font-weight: 700;
 				font-size: 22px;
@@ -211,6 +266,18 @@ nav{
 				height: 50px;
 			}
 		}
+	}
+}
+
+@-webkit-keyframes scroll {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: .3;
+	}
+	100%{
+		opacity: 1;
 	}
 }
 
@@ -574,7 +641,9 @@ nav{
 		}
 		.all-buttons{
 			gap: 20px;
-			align-items: start;
+			-webkit-box-align: start;
+			    -ms-flex-align: start;
+			        align-items: start;
 			position: relative;
 			.button{
 				
