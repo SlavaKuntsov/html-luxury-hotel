@@ -80,6 +80,12 @@ main{
 				color: white;
 				letter-spacing: 1.4px;
 				cursor: pointer;
+				transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+			}
+			.incorrect {
+				animation: incorrectly .3s;
+				background: rgb(255, 100, 100);
+				box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.4);
 			}
 			.output2{
 				display: none;
@@ -92,7 +98,7 @@ main{
 			.output{
 				display: flex;
 				flex-flow: row;
-				align-items: center;
+				align-items: end;
 				gap: 15px;
 				h5{
 					font-size: 28px;
@@ -201,6 +207,124 @@ main{
 	}
 }
 
+#form{
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	background: transparent;
+	backdrop-filter: blur(70px);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transition: opacity .4s ease-in-out, visibility 1s ease-in-out;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+	form{
+		padding: 30px 40px 40px;
+		width: 500px;
+		height: 850px;
+		background: #14274A;
+		position: relative;
+		z-index: 20;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		img{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			right: 30px;
+			top: 30px;
+		}
+		h1{
+			color: white;
+			font-size: 36px;
+		}
+		input{
+			font-family: 'Montserrat', sans-serif;
+			padding: 8px 15px;
+			font-weight: 500;
+			font-size: 20px;
+		}
+		::placeholder{
+			font-weight: 300;
+		}
+		input[type="submit"] {
+			background: $ohra;
+			color: white;
+		}
+		.all-input{
+			display: flex;
+			flex-flow: column;
+			gap: 20px;
+			label{
+				color: white;
+				font-size: 24px;
+				font-weight: 500;
+				
+			}
+			.name, .email{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				div{
+					display: flex;
+					flex-flow: column;
+					gap: 15px;
+
+				}
+			}
+		}
+		.output{
+			display: flex;
+			flex-flow: column;
+			gap: 15px;
+			p{
+				color: white;
+				font-size: 24px;
+				font-weight: 500;
+				span{
+					line-height: 30px;
+					font-size: 26px;
+					font-weight: 600;		
+					color: $ohra;			
+				}
+			}
+		}
+	}
+}
+
+@keyframes incorrectly {
+	0% {
+		transform: translateX(0px) rotate(0deg);
+	}
+
+	20% {
+		transform: translateX(-4px) rotate(-4deg);
+	}
+
+	40% {
+		transform: translateX(-2px) rotate(-2deg);
+	}
+
+	60% {
+		transform: translateX(4px) rotate(4deg);
+	}
+
+	80% {
+		transform: translateX(2px) rotate(2deg);
+	}
+
+	100% {
+		transform: translateX(0px) rotate(0deg);
+	}
+}
+
 
 // ===========================================================
 
@@ -221,24 +345,24 @@ main{
 		.info{
 			.top{
 				.date{
-					gap: 100px;
+					gap: 70px;
 					.in, .out{
 						gap: 15px;
 						label{
-							font-size: 22px;
+							font-size: 18px;
 						}
 						input{
-							font-size: 18px;
+							font-size: 16px;
 							padding: 10px 20px;
 						}
 					}
 					.radio{
 						gap: 15px;
 						.label{
-							font-size: 22px;
+							font-size: 18px;
 						}
 						.input{
-							font-size: 20px;
+							font-size: 18px;
 							input{
 								padding: 10px 20px;
 							}
@@ -246,7 +370,7 @@ main{
 					}
 				}
 				.reserv{
-					font-size: 24px;
+					font-size: 20px;
 					padding: 10px 60px;
 				}
 				.output2{
@@ -258,10 +382,10 @@ main{
 					flex-flow: row;
 					gap: 10px;
 					h5{
-						font-size: 24px;
+						font-size: 22px;
 					}
 					h4{
-						font-size: 26px;
+						font-size: 24px;
 					}
 				}
 				.reserv{
@@ -331,6 +455,67 @@ main{
 			}
 		}
 	}
+	#form{
+	
+		form{
+			padding: 20px 30px 30px;
+			width: 400px;
+			height: 600px;
+			img{
+				width: 30px;
+				height: 30px;
+			}
+			h1{
+				font-size: 28px;
+			}
+			input{
+				padding: 8px 15px;
+				font-weight: 500;
+				font-size: 14px;
+			}
+			::placeholder{
+				font-weight: 300;
+			}
+			.all-input{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				label{
+					color: white;
+					font-size: 16px;
+					font-weight: 500;
+					
+				}
+				.name, .email{
+					display: flex;
+					flex-flow: column;
+					gap: 8px;
+					div{
+						display: flex;
+						flex-flow: column;
+						gap: 8px;
+		
+					}
+				}
+			}
+			.output{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				p{
+					color: white;
+					font-size: 18px;
+					font-weight: 500;
+					span{
+						line-height: 20px;
+						font-size: 20px;
+						font-weight: 600;		
+						color: $ohra;			
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -356,7 +541,7 @@ main{
 				flex-flow: wrap;
 				gap: 20px;
 				.date{
-					gap: 125px;
+					gap: 120px;
 					.in, .out{
 						gap: 15px;
 						label{
@@ -461,6 +646,68 @@ main{
 					background: $ohra;
 					color: white;
 					border-radius: 8px;
+				}
+			}
+		}
+	}
+	#form{
+	
+		form{
+			padding: 20px 30px 30px;
+			width: 350px;
+			height: 550px;
+			img{
+				width: 30px;
+				height: 30px;
+				top: 20px;
+				right: 20px;
+			}
+			h1{
+				font-size: 26px;
+			}
+			input{
+				padding: 8px 15px;
+				font-weight: 500;
+				font-size: 12px;
+			}
+			::placeholder{
+				font-weight: 300;
+			}
+			.all-input{
+				display: flex;
+				flex-flow: column;
+				gap: 20px;
+				label{
+					color: white;
+					font-size: 14px;
+					font-weight: 500;
+					
+				}
+				.name, .email{
+					display: flex;
+					flex-flow: column;
+					gap: 8px;
+					div{
+						display: flex;
+						flex-flow: column;
+						gap: 8px;
+		
+					}
+				}
+			}
+			.output{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				p{
+					font-size: 12px;
+					font-weight: 500;
+					span{
+						line-height: 20px;
+						font-size: 16px;
+						font-weight: 600;		
+						color: $ohra;			
+					}
 				}
 			}
 		}

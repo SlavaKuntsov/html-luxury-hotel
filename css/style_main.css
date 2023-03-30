@@ -1,4 +1,4 @@
-.header-main, nav {
+footer .footer-text, .header-main, nav {
   max-width: 1500px;
 }
 
@@ -688,5 +688,834 @@ nav ul li:nth-child(1) a {
   .header-main .all-buttons .scroll img {
     width: 20px;
     height: 20px;
+  }
+}
+footer {
+  background: #14274A;
+  width: 100%;
+  margin: 120px 0 0 0;
+  position: relative;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #14274A;
+  top: -40px;
+  transform: rotate(45deg);
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+footer .email-top {
+  display: none;
+}
+footer .footer-text {
+  display: flex;
+  flex-flow: row;
+  gap: 120px;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-flow: row;
+}
+footer .footer-text .footer-first {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-first .top {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+footer .footer-text .footer-first .top h5 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  color: white;
+}
+footer .footer-text .footer-first .top h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 11px;
+  letter-spacing: 0.6em;
+  color: white;
+}
+footer .footer-text .footer-first .bottom p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  padding: 0 0 5px 0;
+  color: white;
+}
+footer .footer-text .footer-second {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-second a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+footer .footer-text .footer-third {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-third a {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+footer .footer-text .footer-fourth {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-fourth p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email] {
+  background: #14274A;
+  font-family: "Montserrat";
+  border: 2px solid #E0B973;
+  border-right: none;
+  font-size: 24px;
+  padding: 25px 35px;
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email]::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=submit] {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: #14274A;
+  background: #E0B973;
+  padding: 29px 35px 29px;
+  margin-left: -4px;
+  border: 2px solid #E0B973;
+  border-radius: 0 5px 5px 0;
+  font-weight: 500;
+  color: white;
+}
+
+@media screen and (width < 1660px) {
+  footer::after {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  footer .email-top {
+    display: none;
+  }
+  footer .footer-text {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-fourth p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form {
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-fourth form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 15px 30px 19px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+    color: white;
+  }
+}
+@media screen and (width < 1100px) {
+  footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 7px 20px 6px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: 700px;
+    gap: 110px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-third img {
+    height: 12px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-fourth p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form {
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-fourth form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 15px 30px 19px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+    color: white;
+  }
+}
+@media screen and (width < 800px) {
+  footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+    margin: 70px 0 0 0;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 8px 20px 8px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: 500px;
+    display: flex;
+    flex-flow: row;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+  }
+}
+@media screen and (width < 550px) {
+  footer {
+    margin: 70px 0 0 0;
+    gap: 20px;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form {
+    display: flex;
+    align-items: center;
+  }
+  footer .email-top form input[type=email] {
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 8px;
+    padding: 7px 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-weight: 300;
+    font-size: 8px;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-weight: 300;
+    font-size: 8px;
+  }
+  footer .email-top form input[type=submit] {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 8.5px;
+    padding: 8px 10px;
+    margin-left: -4px;
+    margin-top: 0px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: inherit;
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    padding: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-third img {
+    height: 14px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+  }
+}
+@media screen and (width < 400px) {
+  footer {
+    margin: 70px 0 0 0;
+    gap: 10px;
+  }
+  footer::after {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    z-index: -1;
+  }
+  footer .email-top {
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form {
+    display: flex;
+    align-items: center;
+  }
+  footer .email-top form input[type=email] {
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 10px;
+    padding: 7px 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  footer .email-top form input[type=submit] {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 8.5px;
+    padding: 8px 10px;
+    margin-left: -4px;
+    margin-top: 0px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: inherit;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    padding: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-third img {
+    height: 14px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
   }
 }

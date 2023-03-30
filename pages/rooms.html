@@ -61,6 +61,7 @@
 		</div>
 	</header>
 	<main>
+
 		<section class="text">
 			<h2>ROOMS AND RATES</h2>
 			<p>Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, 
@@ -103,6 +104,34 @@
 					<!-- === -->
 				</div>
 			</div>
+		</section>
+
+		<section id="form">
+			<form>
+				<img id="formClose" src="../img/header/close.svg" alt="">
+				<h1>Sign Up Form</h1>
+				<div class="all-input">
+					<div class="name">
+						<label for="">Name:</label>
+						<div>
+							<input type="text" placeholder="First name" required>
+							<input type="text" placeholder="Last name" required>
+						</div>
+						
+					</div>
+					<div class="email">
+						<label for="">Email:</label>
+						<input type="email" placeholder="Email" required>
+					</div>
+				</div>
+				<div class="output">
+					<p id="in-output"></p>
+					<p id="out-output"></p>
+					<p id="room-output"></p>
+					<p id="person-output"></p>
+				</div>
+				<input type="submit" value="Ok" id="formSubmit">
+			</form>
 		</section>
 
 		<section id="all-carts" class="all-carts">
@@ -177,7 +206,7 @@
 			<div class="footer-fourth">
 				<p>Subscribe to our newsletter</p>
 				<form class="email">
-					<input type="email" placeholder="Email Address">
+					<input required type="email" placeholder="Email Address">
 					<input type="submit" value="Ok">
 				</form>
 			</div>

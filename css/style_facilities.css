@@ -741,7 +741,7 @@ main .all-carts .cartF .front img {
   border-radius: 15px;
   width: 600px;
   height: 400px;
-  z-index: 1;
+  z-index: 10;
 }
 main .all-carts .cartF .front span {
   display: none;
@@ -756,7 +756,7 @@ main .all-carts .cartF .front .cart-text {
   left: 0;
   right: 0;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
 }
 main .all-carts .cartF .front .cart-text p {
   white-space: nowrap;
@@ -767,15 +767,53 @@ main .all-carts .cartF .front .cart-text p {
   padding: 0 0 5px 0;
 }
 main .all-carts .cartF .back {
-  background: white;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: -10;
   width: 600px;
   height: 400px;
   transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
   transform: perspective(900px) rotateY(180deg);
   border-radius: 16px;
-  border: 2px solid #14274A;
-  padding: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  color: white;
+}
+main .all-carts .cartF .back .time {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: center;
+}
+main .all-carts .cartF .back .time h3 {
+  font-size: 40px;
+  z-index: 20;
+}
+main .all-carts .cartF .back .time h4 {
+  font-size: 30px;
+  z-index: 20;
+}
+main .all-carts .cartF .back p {
+  font-weight: 500;
+  text-align: center;
+  font-size: 24px;
+  z-index: 20;
+  padding: 0 20px;
+  line-height: 28px;
+}
+main .all-carts .cartF .back span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  z-index: 10;
+  width: 600px;
+  height: 400px;
+  background: rgba(37, 37, 37, 0.3);
 }
 main .offer {
   display: flex;
@@ -905,10 +943,30 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .all-carts .cartF .back {
     width: 400px;
     height: 280px;
+    border-radius: 15px;
     transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
     transform: perspective(900px) rotateY(180deg);
-    border: 2px solid #14274A;
     padding: 20px;
+  }
+  main .all-carts .cartF .back .time {
+    gap: 10px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    font-size: 28px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    font-size: 22px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    font-size: 16px;
+    padding: 0 20px 40px;
+    line-height: 20px;
+  }
+  main .all-carts .cartF .back span {
+    width: 400px;
+    height: 280px;
   }
   main .offer {
     display: flex;
@@ -1005,10 +1063,31 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .all-carts .cartF .back {
     width: 300px;
     height: 180px;
+    border-radius: 15px;
     transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
     transform: perspective(900px) rotateY(180deg);
-    border: 1px solid #14274A;
     padding: 20px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: row;
+    gap: 10px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    font-size: 18px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    font-size: 16px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    font-size: 10px;
+    padding: 0 20px 0;
+    line-height: 16px;
+  }
+  main .all-carts .cartF .back span {
+    width: 300px;
+    height: 180px;
   }
   main .offer {
     display: flex;
@@ -1110,8 +1189,29 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     height: 240px;
     transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
     transform: perspective(900px) rotateY(180deg);
-    border: 1px solid #14274A;
     padding: 20px;
+    border-radius: 15px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: column;
+    gap: 10px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    font-size: 20px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    font-size: 18px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    font-size: 12px;
+    padding: 0 20px 0;
+    line-height: 16px;
+  }
+  main .all-carts .cartF .back span {
+    width: 400px;
+    height: 240px;
   }
   main .offer {
     display: flex;
@@ -1220,8 +1320,28 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     height: 200px;
     transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
     transform: perspective(900px) rotateY(180deg);
-    border: 1px solid #14274A;
     padding: 20px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    font-size: 20px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    font-size: 16px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    font-size: 10px;
+    padding: 0 20px 0;
+    line-height: 16px;
+  }
+  main .all-carts .cartF .back span {
+    width: 330px;
+    height: 200px;
   }
   main .offer {
     display: flex;
@@ -1336,8 +1456,28 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     height: 160px;
     transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
     transform: perspective(900px) rotateY(180deg);
-    border: 1px solid #14274A;
-    padding: 20px;
+    padding: 15px 10px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: row;
+    gap: 5px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    font-size: 18px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    font-size: 16px;
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    font-size: 10px;
+    padding: 0 20px 0;
+    line-height: 14px;
+  }
+  main .all-carts .cartF .back span {
+    width: 280px;
+    height: 160px;
   }
   main .comments {
     margin: 50px 0 0 0;

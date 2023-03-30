@@ -98,7 +98,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 10;
-  transition: left 0.5s ease-in-out, display 1s ease-in-out;
+  transition: left 0.5s ease-in-out;
   overflow: auto;
   padding: 20px;
 }
@@ -775,6 +775,12 @@ main .info .top .reserv {
   color: white;
   letter-spacing: 1.4px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+main .info .top .incorrect {
+  animation: incorrectly 0.3s;
+  background: rgb(255, 100, 100);
+  box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.4);
 }
 main .info .top .output2 {
   display: none;
@@ -787,7 +793,7 @@ main .info .bottom {
 main .info .bottom .output {
   display: flex;
   flex-flow: row;
-  align-items: center;
+  align-items: end;
   gap: 15px;
 }
 main .info .bottom .output h5 {
@@ -897,6 +903,120 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   background: #e5c388;
 }
 
+#form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent;
+  -webkit-backdrop-filter: blur(70px);
+          backdrop-filter: blur(70px);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: opacity 0.4s ease-in-out, visibility 1s ease-in-out;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+#form form {
+  padding: 30px 40px 40px;
+  width: 500px;
+  height: 850px;
+  background: #14274A;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+#form form img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+#form form h1 {
+  color: white;
+  font-size: 36px;
+}
+#form form input {
+  font-family: "Montserrat", sans-serif;
+  padding: 8px 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#form form ::-moz-placeholder {
+  font-weight: 300;
+}
+#form form ::placeholder {
+  font-weight: 300;
+}
+#form form input[type=submit] {
+  background: #E0B973;
+  color: white;
+}
+#form form .all-input {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+#form form .all-input label {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+#form form .all-input .name, #form form .all-input .email {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+#form form .all-input .name div, #form form .all-input .email div {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+#form form .output {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+#form form .output p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+#form form .output p span {
+  line-height: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #E0B973;
+}
+
+@keyframes incorrectly {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-4px) rotate(-4deg);
+  }
+  40% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(4deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
 @media screen and (width < 1660px) {
   main {
     max-width: 1000px;
@@ -913,32 +1033,32 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     line-height: 24px;
   }
   main .info .top .date {
-    gap: 100px;
+    gap: 70px;
   }
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
   main .info .top .date .in label, main .info .top .date .out label {
-    font-size: 22px;
+    font-size: 18px;
   }
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 20px;
   }
   main .info .top .date .radio {
     gap: 15px;
   }
   main .info .top .date .radio .label {
-    font-size: 22px;
+    font-size: 18px;
   }
   main .info .top .date .radio .input {
-    font-size: 20px;
+    font-size: 18px;
   }
   main .info .top .date .radio .input input {
     padding: 10px 20px;
   }
   main .info .top .reserv {
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 60px;
   }
   main .info .top .output2 {
@@ -949,10 +1069,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .info .bottom .output h5 {
-    font-size: 24px;
+    font-size: 22px;
   }
   main .info .bottom .output h4 {
-    font-size: 26px;
+    font-size: 24px;
   }
   main .info .bottom .reserv {
     display: none;
@@ -1011,6 +1131,65 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     color: white;
     border-radius: 8px;
   }
+  #form form {
+    padding: 20px 30px 30px;
+    width: 400px;
+    height: 600px;
+  }
+  #form form img {
+    width: 30px;
+    height: 30px;
+  }
+  #form form h1 {
+    font-size: 28px;
+  }
+  #form form input {
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  #form form ::-moz-placeholder {
+    font-weight: 300;
+  }
+  #form form ::placeholder {
+    font-weight: 300;
+  }
+  #form form .all-input {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  #form form .all-input label {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #form form .all-input .name, #form form .all-input .email {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }
+  #form form .all-input .name div, #form form .all-input .email div {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }
+  #form form .output {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  #form form .output p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #form form .output p span {
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E0B973;
+  }
 }
 @media screen and (width < 1100px) {
   main {
@@ -1035,7 +1214,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
   }
   main .info .top .date {
-    gap: 125px;
+    gap: 120px;
   }
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
@@ -1133,6 +1312,66 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     background: #E0B973;
     color: white;
     border-radius: 8px;
+  }
+  #form form {
+    padding: 20px 30px 30px;
+    width: 350px;
+    height: 550px;
+  }
+  #form form img {
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+  }
+  #form form h1 {
+    font-size: 26px;
+  }
+  #form form input {
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #form form ::-moz-placeholder {
+    font-weight: 300;
+  }
+  #form form ::placeholder {
+    font-weight: 300;
+  }
+  #form form .all-input {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  #form form .all-input label {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #form form .all-input .name, #form form .all-input .email {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }
+  #form form .all-input .name div, #form form .all-input .email div {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }
+  #form form .output {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  #form form .output p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  #form form .output p span {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #E0B973;
   }
 }
 @media screen and (width < 800px) {

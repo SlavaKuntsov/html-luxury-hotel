@@ -1,6 +1,6 @@
-@import "../scss/_variable.scss";
-@import "../scss/_reset.scss";
+@import "../global_scss/variable";
+@import "../global_scss/reset";
 
 @import "_header.scss";
 @import "_main.scss";
-@import "../scss_facilities/footer";
+@import "../global_scss/footer";

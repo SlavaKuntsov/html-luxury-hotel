@@ -54,7 +54,7 @@ main{
 					border-radius: 15px;
 					width: 600px;
 					height: 400px;
-					z-index: 1;
+					z-index: 10	;
 				}
 				span{
 					display: none;
@@ -69,7 +69,7 @@ main{
 					left: 0;
 					right: 0;
 					position: absolute;
-					z-index: 10;
+					z-index: 1;
 					p{
 						white-space: nowrap;
 						text-align: center;
@@ -81,15 +81,53 @@ main{
 				}
 			}
 			.back{
-				background: white;
+				background: transparent;
+				backdrop-filter: blur(10px);
 				z-index: -10;
 				width: 600px;
 				height: 400px;
 				transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 				transform: perspective(900px) rotateY(180deg);
 				border-radius: 16px;
-				border: 2px solid #14274A;
-				padding: 20px;
+				// border: 2px solid #14274A;
+				padding: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-flow: column;
+				color: white;
+				.time{
+					display: flex;
+					flex-flow: column;
+					gap: 20px;
+					align-items: center;
+					h3{
+						font-size: 40px;
+						z-index: 20;
+					}
+					h4{
+						font-size: 30px;;
+						z-index: 20;
+					}
+				}
+				p{
+					font-weight: 500;
+					text-align: center;
+					font-size: 24px;
+					z-index: 20;
+					padding: 0 20px;
+					line-height: 28px;
+				}
+				span{
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-radius: 16px;
+					z-index: 10;
+					width: 600px;
+					height: 400px;	
+					background: rgba($color: #252525, $alpha: .3);
+				}
 			}
 		}
 	}
@@ -217,10 +255,30 @@ main{
 				.back{
 					width: 400px;
 					height: 280px;
+					border-radius: 15px;
 					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 					transform: perspective(900px) rotateY(180deg);
-					border: 2px solid #14274A;
 					padding: 20px;
+					.time{
+						gap: 10px;
+						h3{
+							font-size: 28px;
+							z-index: 20;
+						}
+						h4{
+							font-size: 22px;
+							z-index: 20;
+						}
+					}
+					p{
+						font-size: 16px;
+						padding: 0 20px 40px;
+						line-height: 20px;
+					}
+					span{
+						width: 400px;
+						height: 280px;
+					}
 				}
 			}
 		}
@@ -328,10 +386,31 @@ main{
 				.back{
 					width: 300px;
 					height: 180px;
+					border-radius: 15px;
 					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 					transform: perspective(900px) rotateY(180deg);
-					border: 1px solid #14274A;
 					padding: 20px;
+					.time{
+						flex-flow: row;
+						gap: 10px;
+						h3{
+							font-size: 18px;
+							z-index: 20;
+						}
+						h4{
+							font-size: 16px;
+							z-index: 20;
+						}
+					}
+					p{
+						font-size: 10px;
+						padding: 0 20px 0;
+						line-height: 16px;
+					}
+					span{
+						width: 300px;
+						height: 180px;
+					}
 				}
 			}
 		}
@@ -446,8 +525,29 @@ main{
 					height: 240px;
 					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 					transform: perspective(900px) rotateY(180deg);
-					border: 1px solid #14274A;
 					padding: 20px;
+					border-radius: 15px;
+					.time{
+						flex-flow: column;
+						gap: 10px;
+						h3{
+							font-size: 20px;
+							z-index: 20;
+						}
+						h4{
+							font-size: 18px;
+							z-index: 20;
+						}
+					}
+					p{
+						font-size: 12px;
+						padding: 0 20px 0;
+						line-height: 16px;
+					}
+					span{
+						width: 400px;
+						height: 240px;
+					}
 				}
 			}
 		}
@@ -568,8 +668,28 @@ main{
 					height: 200px;
 					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 					transform: perspective(900px) rotateY(180deg);
-					border: 1px solid #14274A;
 					padding: 20px;
+					.time{
+						flex-flow: column;
+						gap: 5px;
+						h3{
+							font-size: 20px;
+							z-index: 20;
+						}
+						h4{
+							font-size: 16px;
+							z-index: 20;
+						}
+					}
+					p{
+						font-size: 10px;
+						padding: 0 20px 0;
+						line-height: 16px;
+					}
+					span{
+						width: 330px;
+						height: 200px;
+					}
 				}
 			}
 		}
@@ -691,8 +811,28 @@ main{
 					height: 160px;
 					transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 					transform: perspective(900px) rotateY(180deg);
-					border: 1px solid #14274A;
-					padding: 20px;
+					padding: 15px 10px;
+					.time{
+						flex-flow: row;
+						gap: 5px;
+						h3{
+							font-size: 18px;
+							z-index: 20;
+						}
+						h4{
+							font-size: 16px;
+							z-index: 20;
+						}
+					}
+					p{
+						font-size: 10px;
+						padding: 0 20px 0;
+						line-height: 14px;
+					}
+					span{
+						width: 280px;
+						height: 160px;
+					}
 				}
 			}
 		}
