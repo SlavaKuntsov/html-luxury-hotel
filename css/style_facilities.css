@@ -86,6 +86,7 @@ img {
 header {
   background: url("../img/header/background_2.png") no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 1080px;
 }
 
