@@ -83,6 +83,13 @@ img {
   vertical-align: top;
 }
 
+header {
+  background: url("../img/header/background_3.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 1080px;
+}
+
 #burger-menu {
   position: fixed;
   top: 0;
@@ -118,13 +125,6 @@ img {
   font-size: 24px;
   letter-spacing: 0.4px;
   border-bottom: 2px solid black;
-}
-
-header {
-  background: url("../img/header/background_3.png") no-repeat;
-  background-size: cover;
-  background-position: center top;
-  height: 1080px;
 }
 
 nav {
