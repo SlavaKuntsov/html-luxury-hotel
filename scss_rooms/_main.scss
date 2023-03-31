@@ -1,25 +1,11 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 main{
 	@extend %max;
 	margin: 0 auto;
 	.text{
 		margin: 100px 0 80px 0;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: column;
-		        flex-flow: column;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		flex-flow: column;
+		align-items: center;
 		gap: 40px;
 		h2{
 			font-weight: 700;
@@ -38,45 +24,21 @@ main{
 	}
 	.info{
 		margin: 0 0 60px 0;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: column;
-		        flex-flow: column;
+		flex-flow: column;
 		gap: 40px;
 		.top{
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			    -ms-flex-flow: row;
-			        flex-flow: row;
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
-			-webkit-box-align: end;
-			    -ms-flex-align: end;
-			        align-items: end;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: end;
 			.date{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: horizontal;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: row;
-				        flex-flow: row;
+				flex-flow: row;
 				gap: 100px;
 				.in, .out{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: vertical;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: column;
-					        flex-flow: column;
+					flex-flow: column;
 					gap: 15px;
 					label{
 						font-size: 27px;
@@ -90,26 +52,16 @@ main{
 					}
 				}
 				.radio{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: vertical;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: column;
-					        flex-flow: column;
+					flex-flow: column;
 					gap: 15px;
 					.label{
 						font-size: 27px;
 						font-weight: 500;
 					}
 					.input{
-						display: -webkit-box;
-						display: -ms-flexbox;
 						display: flex;
-						-webkit-box-orient: horizontal;
-						-webkit-box-direction: normal;
-						    -ms-flex-flow: row;
-						        flex-flow: row;
+						flex-flow: row;
 						gap: 10px;
 						font-size: 25px;
 						input{
@@ -128,44 +80,25 @@ main{
 				color: white;
 				letter-spacing: 1.4px;
 				cursor: pointer;
-				-webkit-transition: background .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
-				transition: background .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
-				-o-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 				transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-				transition: background .2s ease-in-out, box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
 			}
 			.incorrect {
-				-webkit-animation: incorrectly .3s;
-				        animation: incorrectly .3s;
+				animation: incorrectly .3s;
 				background: rgb(255, 100, 100);
-				-webkit-box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.4);
-				        box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.4);
+				box-shadow: 0px 4px 10px rgba(39, 39, 39, 0.4);
 			}
 			.output2{
 				display: none;
 			}
 		}
 		.bottom{
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
+			align-items: center;
+			justify-content: space-between;
 			.output{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: horizontal;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: row;
-				        flex-flow: row;
-				-webkit-box-align: end;
-				    -ms-flex-align: end;
-				        align-items: end;
+				flex-flow: row;
+				align-items: end;
 				gap: 15px;
 				h5{
 					font-size: 28px;
@@ -183,29 +116,19 @@ main{
 	}
 	.all-carts{
 		margin: 0 0 100px 0;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-ms-flex-flow: wrap;
-		    flex-flow: wrap;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		flex-flow: wrap;
+		justify-content: space-between;
 		gap: 20px;
 		&:hover{
 			.cart:not(:hover) {
-				-webkit-filter: blur(3px);
-				        filter: blur(3px);
+				filter: blur(3px);
 			}
 		}
 		.cart{
 			margin: 0 0 30px 0;
 			width: 30%;
-			-webkit-transition: -webkit-filter .4s ease-in-out;
-			transition: -webkit-filter .4s ease-in-out;
-			-o-transition: filter .4s ease-in-out;
 			transition: filter .4s ease-in-out;
-			transition: filter .4s ease-in-out, -webkit-filter .4s ease-in-out;
 			.cart-img{
 				margin: 0 0 10px 0;
 				overflow: hidden;
@@ -213,15 +136,9 @@ main{
 				img{
 					width: 100%;
 					height: 300px;
-					-webkit-transition: -webkit-transform .4s ease-in-out;
-					transition: -webkit-transform .4s ease-in-out;
-					-o-transition: transform .4s ease-in-out;
 					transition: transform .4s ease-in-out;
-					transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
 					&:hover{
-						-webkit-transform: scale(1.1);
-						    -ms-transform: scale(1.1);
-						        transform: scale(1.1);
+						transform: scale(1.1);
 					}
 
 				}
@@ -238,19 +155,10 @@ main{
 	}
 	.comments{
 		margin: 50px 0 0 0;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: column;
-		        flex-flow: column;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		justify-content: center;
+		flex-flow: column;
+		align-items: center;
 		gap: 20px;
 
 		h2{
@@ -263,13 +171,8 @@ main{
 			overflow: hidden;
 			.comments-track{
 				text-align: center;
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: horizontal;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: row;
-				        flex-flow: row;
+				flex-flow: row;
 				width: 500px;
 				.comment-cart{
 					min-width: 500px;
@@ -289,12 +192,8 @@ main{
 			}
 		}
 		.buttons{
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			align-items: center;
 			gap: 20px;
 			.left, .right {
 				@include hover($ohra);
@@ -315,24 +214,15 @@ main{
 	opacity: 0;
 	visibility: hidden;
 	background: transparent;
-	-webkit-backdrop-filter: blur(70px);
-	        backdrop-filter: blur(70px);
+	backdrop-filter: blur(70px);
 	width: 100%;
 	height: 100%;
 	z-index: 10;
-	-webkit-transition: opacity .4s ease-in-out, visibility 1s ease-in-out;
-	-o-transition: opacity .4s ease-in-out, visibility 1s ease-in-out;
 	transition: opacity .4s ease-in-out, visibility 1s ease-in-out;
 	overflow: auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	align-items: center;
+	justify-content: center;
 	padding: 30px 0;
 	form{
 		padding: 30px 40px 40px;
@@ -341,16 +231,9 @@ main{
 		background: #14274A;
 		position: relative;
 		z-index: 20;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-flow: column;
-		        flex-flow: column;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		flex-flow: column;
+		justify-content: space-between;
 		img{
 			width: 40px;
 			height: 40px;
@@ -368,18 +251,6 @@ main{
 			font-weight: 500;
 			font-size: 20px;
 		}
-		::-webkit-input-placeholder{
-			font-weight: 300;
-		}
-		::-moz-placeholder{
-			font-weight: 300;
-		}
-		:-ms-input-placeholder{
-			font-weight: 300;
-		}
-		::-ms-input-placeholder{
-			font-weight: 300;
-		}
 		::placeholder{
 			font-weight: 300;
 		}
@@ -388,13 +259,8 @@ main{
 			color: white;
 		}
 		.all-input{
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
+			flex-flow: column;
 			gap: 20px;
 			label{
 				color: white;
@@ -403,35 +269,20 @@ main{
 				
 			}
 			.name, .email{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: column;
-				        flex-flow: column;
+				flex-flow: column;
 				gap: 10px;
 				div{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: vertical;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: column;
-					        flex-flow: column;
+					flex-flow: column;
 					gap: 15px;
 
 				}
 			}
 		}
 		.output{
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
+			flex-flow: column;
 			gap: 15px;
 			p{
 				color: white;
@@ -448,67 +299,29 @@ main{
 	}
 }
 
-@-webkit-keyframes incorrectly {
-	0% {
-		-webkit-transform: translateX(0px) rotate(0deg);
-		        transform: translateX(0px) rotate(0deg);
-	}
-
-	20% {
-		-webkit-transform: translateX(-4px) rotate(-4deg);
-		        transform: translateX(-4px) rotate(-4deg);
-	}
-
-	40% {
-		-webkit-transform: translateX(-2px) rotate(-2deg);
-		        transform: translateX(-2px) rotate(-2deg);
-	}
-
-	60% {
-		-webkit-transform: translateX(4px) rotate(4deg);
-		        transform: translateX(4px) rotate(4deg);
-	}
-
-	80% {
-		-webkit-transform: translateX(2px) rotate(2deg);
-		        transform: translateX(2px) rotate(2deg);
-	}
-
-	100% {
-		-webkit-transform: translateX(0px) rotate(0deg);
-		        transform: translateX(0px) rotate(0deg);
-	}
-}
-
 @keyframes incorrectly {
 	0% {
-		-webkit-transform: translateX(0px) rotate(0deg);
-		        transform: translateX(0px) rotate(0deg);
+		transform: translateX(0px) rotate(0deg);
 	}
 
 	20% {
-		-webkit-transform: translateX(-4px) rotate(-4deg);
-		        transform: translateX(-4px) rotate(-4deg);
+		transform: translateX(-4px) rotate(-4deg);
 	}
 
 	40% {
-		-webkit-transform: translateX(-2px) rotate(-2deg);
-		        transform: translateX(-2px) rotate(-2deg);
+		transform: translateX(-2px) rotate(-2deg);
 	}
 
 	60% {
-		-webkit-transform: translateX(4px) rotate(4deg);
-		        transform: translateX(4px) rotate(4deg);
+		transform: translateX(4px) rotate(4deg);
 	}
 
 	80% {
-		-webkit-transform: translateX(2px) rotate(2deg);
-		        transform: translateX(2px) rotate(2deg);
+		transform: translateX(2px) rotate(2deg);
 	}
 
 	100% {
-		-webkit-transform: translateX(0px) rotate(0deg);
-		        transform: translateX(0px) rotate(0deg);
+		transform: translateX(0px) rotate(0deg);
 	}
 }
 
@@ -566,10 +379,7 @@ main{
 			}
 			.bottom{
 				.output{
-					-webkit-box-orient: horizontal;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: row;
-					        flex-flow: row;
+					flex-flow: row;
 					gap: 10px;
 					h5{
 						font-size: 22px;
@@ -586,14 +396,9 @@ main{
 		}
 		.all-carts{
 			margin: 0 0 100px 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-ms-flex-flow: wrap;
-			    flex-flow: wrap;
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
+			flex-flow: wrap;
+			justify-content: space-between;
 			gap: 20px;
 			.cart{
 				margin: 0 0 30px 0;
@@ -668,29 +473,12 @@ main{
 				font-weight: 500;
 				font-size: 14px;
 			}
-			::-webkit-input-placeholder{
-				font-weight: 300;
-			}
-			::-moz-placeholder{
-				font-weight: 300;
-			}
-			:-ms-input-placeholder{
-				font-weight: 300;
-			}
-			::-ms-input-placeholder{
-				font-weight: 300;
-			}
 			::placeholder{
 				font-weight: 300;
 			}
 			.all-input{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: column;
-				        flex-flow: column;
+				flex-flow: column;
 				gap: 20px;
 				label{
 					color: white;
@@ -699,35 +487,20 @@ main{
 					
 				}
 				.name, .email{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: vertical;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: column;
-					        flex-flow: column;
+					flex-flow: column;
 					gap: 8px;
 					div{
-						display: -webkit-box;
-						display: -ms-flexbox;
 						display: flex;
-						-webkit-box-orient: vertical;
-						-webkit-box-direction: normal;
-						    -ms-flex-flow: column;
-						        flex-flow: column;
+						flex-flow: column;
 						gap: 8px;
 		
 					}
 				}
 			}
 			.output{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: column;
-				        flex-flow: column;
+				flex-flow: column;
 				gap: 10px;
 				p{
 					color: white;
@@ -765,8 +538,7 @@ main{
 		.info{
 			gap: 40px;
 			.top{
-				-ms-flex-flow: wrap;
-				    flex-flow: wrap;
+				flex-flow: wrap;
 				gap: 20px;
 				.date{
 					gap: 120px;
@@ -815,14 +587,9 @@ main{
 		}
 		.all-carts{
 			margin: 0 0 100px 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-ms-flex-flow: wrap;
-			    flex-flow: wrap;
-			-webkit-box-pack: space-evenly;
-			    -ms-flex-pack: space-evenly;
-			        justify-content: space-evenly;
+			flex-flow: wrap;
+			justify-content: space-evenly;
 			gap: 20px;
 			.cart{
 				margin: 0 0 30px 0;
@@ -870,12 +637,8 @@ main{
 				}
 			}
 			.buttons{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
+				align-items: center;
 				gap: 20px;
 				.left, .right {
 					padding: 10px 20px;
@@ -907,29 +670,12 @@ main{
 				font-weight: 500;
 				font-size: 12px;
 			}
-			::-webkit-input-placeholder{
-				font-weight: 300;
-			}
-			::-moz-placeholder{
-				font-weight: 300;
-			}
-			:-ms-input-placeholder{
-				font-weight: 300;
-			}
-			::-ms-input-placeholder{
-				font-weight: 300;
-			}
 			::placeholder{
 				font-weight: 300;
 			}
 			.all-input{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: column;
-				        flex-flow: column;
+				flex-flow: column;
 				gap: 20px;
 				label{
 					color: white;
@@ -938,36 +684,21 @@ main{
 					
 				}
 				.name, .email{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: vertical;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: column;
-					        flex-flow: column;
+					flex-flow: column;
 					
 					gap: 8px;
 					div{
-						display: -webkit-box;
-						display: -ms-flexbox;
 						display: flex;
-						-webkit-box-orient: vertical;
-						-webkit-box-direction: normal;
-						    -ms-flex-flow: column;
-						        flex-flow: column;
+						flex-flow: column;
 						gap: 8px;
 		
 					}
 				}
 			}
 			.output{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: vertical;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: column;
-				        flex-flow: column;
+				flex-flow: column;
 				gap: 10px;
 				p{
 					font-size: 12px;
@@ -1032,13 +763,8 @@ main{
 					}
 				}
 				.output2{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-webkit-box-orient: horizontal;
-					-webkit-box-direction: normal;
-					    -ms-flex-flow: row;
-					        flex-flow: row;
+					flex-flow: row;
 					gap: 10px;
 					h5{
 						font-size: 16px;
@@ -1060,19 +786,13 @@ main{
 		}
 		.all-carts{
 			margin: 0 0 100px 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-ms-flex-flow: wrap;
-			    flex-flow: wrap;
-			-webkit-box-pack: space-evenly;
-			    -ms-flex-pack: space-evenly;
-			        justify-content: space-evenly;
+			flex-flow: wrap;
+			justify-content: space-evenly;
 			gap: 20px;
 			&:hover{
 				.cart:not(:hover) {
-					-webkit-filter: blur(0px);
-					        filter: blur(0px);
+					filter: blur(0px);
 				}
 			}
 			.cart{
@@ -1086,9 +806,7 @@ main{
 						border-radius: 8px;
 					}
 					&:hover{
-						-webkit-transform: scale(none);
-						    -ms-transform: scale(none);
-						        transform: scale(none);
+						transform: scale(none);
 					}
 				}
 				h5{
@@ -1126,12 +844,8 @@ main{
 				}
 			}
 			.buttons{
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
+				align-items: center;
 				gap: 20px;
 				.left, .right {
 					padding: 10px 20px;
@@ -1165,8 +879,7 @@ main{
 		.info{
 			gap: 40px;
 			.top{
-				-ms-flex-flow: wrap;
-				    flex-flow: wrap;
+				flex-flow: wrap;
 				gap: 30px;
 				.date{
 					gap: 20px;
@@ -1214,14 +927,9 @@ main{
 		}
 		.all-carts{
 			margin: 0 0 100px 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-ms-flex-flow: wrap;
-			    flex-flow: wrap;
-			-webkit-box-pack: space-evenly;
-			    -ms-flex-pack: space-evenly;
-			        justify-content: space-evenly;
+			flex-flow: wrap;
+			justify-content: space-evenly;
 			gap: 10px;
 			.cart{
 				margin: 0 0 30px 0;
@@ -1271,12 +979,8 @@ main{
 			}
 			.buttons{
 				margin: 10px 0 0 0;
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
+				align-items: center;
 				gap: 20px;
 				.left, .right {
 					padding: 5px 10px;
@@ -1312,11 +1016,8 @@ main{
 			.top{
 				gap: 10px;
 				.date{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-ms-flex-flow: wrap;
-					    flex-flow: wrap;
+					flex-flow: wrap;
 					gap: 20px;
 					.in, .out{
 						gap: 15px;
@@ -1343,11 +1044,8 @@ main{
 					}
 				}
 				.output2{
-					display: -webkit-box;
-					display: -ms-flexbox;
 					display: flex;
-					-ms-flex-flow: wrap;
-					    flex-flow: wrap;
+					flex-flow: wrap;
 					gap: 5px;
 					margin: 10px 0 0;
 					h5{
@@ -1368,19 +1066,10 @@ main{
 		}
 		.all-carts{
 			margin: 0 0 -10px 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
 			gap: 10px;
 			.cart{
 				margin: 0 0 30px 0;
@@ -1432,12 +1121,8 @@ main{
 			}
 			.buttons{
 				margin: 10px 0 0 0;
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
+				align-items: center;
 				gap: 20px;
 				.left, .right {
 					@include hover($ohra);

@@ -83,12 +83,6 @@ img {
   vertical-align: top;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 header {
   background: url("../img/header/background_3.png") no-repeat;
   background-size: cover;
@@ -322,6 +316,7 @@ nav ul li:nth-child(3) a {
   width: 50px;
   height: 50px;
 }
+
 @keyframes scroll {
   0% {
     opacity: 1;
@@ -696,12 +691,6 @@ nav ul li:nth-child(3) a {
     height: 20px;
   }
 }
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 main {
   margin: 0 auto;
 }
@@ -922,7 +911,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   visibility: hidden;
   background: transparent;
   -webkit-backdrop-filter: blur(70px);
-  backdrop-filter: blur(70px);
+          backdrop-filter: blur(70px);
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -1007,6 +996,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   font-weight: 600;
   color: #E0B973;
 }
+
 @keyframes incorrectly {
   0% {
     transform: translateX(0px) rotate(0deg);
