@@ -1025,7 +1025,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .text h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
   main .text p {
     font-size: 16px;
