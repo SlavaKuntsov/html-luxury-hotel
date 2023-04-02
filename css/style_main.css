@@ -709,7 +709,7 @@ main {
 }
 .all-advantages .advantage .logo {
   border-radius: 50%;
-  background: #14274A;
+  background: #E0B973;
   width: 90px;
   height: 90px;
   display: flex;
@@ -893,7 +893,7 @@ main {
 }
 .main-info .info-card .card-text .text p {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 40px;
   color: #14274A;
 }
@@ -1003,7 +1003,7 @@ main {
 }
 .reviews .text .all-avatars img {
   padding: 0 0 10px;
-  height: 120px;
+  height: 100px;
 }
 
 footer {

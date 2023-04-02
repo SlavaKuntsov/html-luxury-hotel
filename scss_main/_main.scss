@@ -17,7 +17,8 @@ main{
 		flex: 1 1 250px;
 		.logo{
 			border-radius: 50%;
-			background: #14274A;
+			background: $ohra;
+
 			width:  90px;
 			height: 90px;
 			display: flex;
@@ -198,7 +199,7 @@ main{
 				}
 				p{
 					font-weight: 400;
-					font-size: 25px;
+					font-size: 26px;
 					line-height: 40px;
 					color: #14274A;
 				}
@@ -303,7 +304,7 @@ main{
 			gap: 10px;
 			img{
 				padding: 0 0 10px;
-				height: 120px;
+				height: 100px;
 			}
 		}
 	}
