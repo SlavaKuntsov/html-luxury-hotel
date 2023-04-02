@@ -1,13 +1,171 @@
 
 main{
 	@extend %max;
-	margin: 150px auto;
+	margin: 100px auto;
 }
 
 .all-advantages{
+	margin: 10px 10% 150px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	gap: 20px;
 	.advantage{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		flex: 1 1 250px;
 		.logo{
-			
+			border-radius: 50%;
+			background: #14274A;
+			width:  90px;
+			height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img{
+				width:  55px;
+				height: 55px;
+			}
+		}
+		p{
+			font-size: 28px;
+			line-height: 32px;
+			width: 130px;
+		}
+	}
+}
+
+
+.stay-here{
+	margin: 100px auto 240px;
+	display: flex;
+	flex-flow: column;
+	gap: 100px;
+	.stay-here-text{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		gap: 20px;
+		h2{
+			font-size: 60px;
+			color: $blue;
+			font-weight: 700;
+			span{
+				font-weight: 700;
+				font-size: 60px;
+				color: $ohra;
+				font-family: 'EB Garamond', serif;
+			}
+		}
+		p{
+			color: black;
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+	.stay-here-advantages{
+		position: relative;
+		.all-stay-here-advantages{
+			display: flex;
+			flex-flow: column;
+			gap: 50px;
+			.advantage{
+				display: flex;
+				flex-flow: column;
+				gap: 15px;
+				width: 700px;
+				.number{
+					width:  70px;
+					height: 70px;
+					border-radius: 50%;
+					background: $ohra;
+					color: white;
+					font-size: 30px;
+					font-family: 'Montserrat', sans-serif;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				h4{
+					font-weight: 600;
+					color: black;
+					font-size: 32px;
+					font-family: 'Montserrat', sans-serif;
+				}
+				p{
+					font-size: 26px;
+					line-height: 28px;
+				}
+			}
+		}
+		.all-image{
+			position: absolute;
+			right: 0;
+			top: 0;
+			.big-img{
+				z-index: 1;
+				position: absolute;
+				right: -120px;
+				top: 0;
+				height: 660px;
+			}
+			.small-img{
+				position: absolute;
+				right: 140px;
+				top: 200px;
+				margin: auto 0;
+				z-index: 5;
+				height: 250px;
+			}
+			.comments{
+				@include a-hover;
+				z-index: 10;
+				background: white;
+				padding: 15px 30px;
+				border-radius: 10px;
+				box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				gap: 20px;
+				width: 300px;
+				img{
+					width:  60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+				.text{
+					
+					display: flex;
+					flex-flow: column;
+					gap: 10px;
+					h5{
+						font-family: 'Montserrat', sans-serif;
+						font-size: 24px;
+						font-weight: 600;
+					}
+					p{
+						font-size: 20px;
+						font-family: 'Montserrat', sans-serif;
+					}
+				}
+			}
+			.c1{
+				position: absolute;
+				top: -40px;
+				right: 0;
+			}
+			.c2{
+				position: absolute;
+				top: 80px;
+				right: 300px;
+			}
+			.c3{
+				position: absolute;
+				top: 610px;
+				right: 0;
+			}
 		}
 	}
 }
@@ -69,6 +227,84 @@ main{
 		img.facilities{
 			height: 500px;
 			width: 850px;
+		}
+	}
+}
+
+.about-us{
+	background: $blue;
+	.block{
+		@extend %max;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		.text{
+			padding: 150px 250px 150px 0;
+			display: flex;
+			flex-flow: column;
+			gap: 40px;
+			h2{
+				font-size: 50px;
+				letter-spacing: 8px;
+				color: white;
+				padding: 0 0 25px;
+				width: 315px;
+				border-bottom: 4px solid $ohra;
+			}
+			p{
+				color: rgb(255, 255, 255);
+				font-size: 25px;
+				line-height: 34px;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.reviews{
+	@extend %max;
+	margin: 150px auto 200px;
+	display: flex;
+	flex-flow: column;
+	gap: 40px;
+	h2{
+		font-size: 50px;
+		font-weight: 700;
+		color: $blue;
+		letter-spacing: 2px;
+	}
+	.text{
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: end;
+		p{
+			font-size: 28px;
+			color: black;
+			letter-spacing: 1px;
+		}
+		.all-star{
+			display: flex;
+			flex-flow: column;
+			gap: 10px;
+			.star{
+				margin: 0 0 0 -5px;
+				display: flex;
+				flex-flow: row;
+				gap: 8px;
+				img{
+					width:  50px;
+					height: 50px;
+				}
+			}
+		}
+		.all-avatars{
+			gap: 10px;
+			img{
+				padding: 0 0 10px;
+				height: 120px;
+			}
 		}
 	}
 }

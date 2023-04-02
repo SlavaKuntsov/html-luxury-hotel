@@ -36,7 +36,7 @@ header {
 
 			}
 		}
-		li:nth-child(3){
+		li:nth-child(2){
 			a{
 				color: black;
 				font-size: 24px;
@@ -105,10 +105,10 @@ nav{
 		gap: 70px;
 		li{
 			@include slide;
-			&:not(:nth-child(3)){
+			&:not(:nth-child(2)){
 				@include a-hover;
 			}
-			&:not(:nth-child(3)):hover::before{
+			&:not(:nth-child(2)):hover::before{
 				width: 100%;
 			}
 		}
@@ -118,7 +118,7 @@ nav{
 			line-height: 30px;
 			color: #FFFFFF;
 		}
-		li:nth-child(3){
+		li:nth-child(2){
 			a{
 				font-weight: 700;
 				font-size: 22px;
@@ -261,7 +261,7 @@ nav{
 			li a{
 				font-size: 14px;
 			}
-			li:nth-child(3){
+			li:nth-child(2){
 				a{
 					font-size: 14px;
 					border-bottom: 2px solid white;
@@ -447,7 +447,7 @@ nav{
 			li a{
 				font-size: 12px;
 			}
-			li:nth-child(3){
+			li:nth-child(2){
 				a{
 					font-size: 12px;
 					border-bottom: 1.5px solid white;

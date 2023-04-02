@@ -1,4 +1,4 @@
-footer .footer-text, main, .header-main, nav {
+footer .footer-text, .reviews, .about-us .block, main, .header-main, nav {
   max-width: 1500px;
 }
 
@@ -33,7 +33,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   widows: 100%;
   font-size: 100%;
   line-height: 1;
@@ -692,7 +691,174 @@ nav ul li:nth-child(1) a {
   }
 }
 main {
-  margin: 150px auto;
+  margin: 100px auto;
+}
+
+.all-advantages {
+  margin: 10px 10% 150px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.all-advantages .advantage {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1 1 250px;
+}
+.all-advantages .advantage .logo {
+  border-radius: 50%;
+  background: #14274A;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-advantages .advantage .logo img {
+  width: 55px;
+  height: 55px;
+}
+.all-advantages .advantage p {
+  font-size: 28px;
+  line-height: 32px;
+  width: 130px;
+}
+
+.stay-here {
+  margin: 100px auto 240px;
+  display: flex;
+  flex-flow: column;
+  gap: 100px;
+}
+.stay-here .stay-here-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+.stay-here .stay-here-text h2 {
+  font-size: 60px;
+  color: #14274A;
+  font-weight: 700;
+}
+.stay-here .stay-here-text h2 span {
+  font-weight: 700;
+  font-size: 60px;
+  color: #E0B973;
+  font-family: "EB Garamond", serif;
+}
+.stay-here .stay-here-text p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.stay-here .stay-here-advantages {
+  position: relative;
+}
+.stay-here .stay-here-advantages .all-stay-here-advantages {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+.stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  width: 700px;
+}
+.stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #E0B973;
+  color: white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
+  font-weight: 600;
+  color: black;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+.stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
+  font-size: 26px;
+  line-height: 28px;
+}
+.stay-here .stay-here-advantages .all-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.stay-here .stay-here-advantages .all-image .big-img {
+  z-index: 1;
+  position: absolute;
+  right: -120px;
+  top: 0;
+  height: 660px;
+}
+.stay-here .stay-here-advantages .all-image .small-img {
+  position: absolute;
+  right: 140px;
+  top: 200px;
+  margin: auto 0;
+  z-index: 5;
+  height: 250px;
+}
+.stay-here .stay-here-advantages .all-image .comments {
+  transition: transform 0.2s ease-in-out;
+  z-index: 10;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+.stay-here .stay-here-advantages .all-image .comments:hover {
+  transform: translateY(-5px);
+}
+.stay-here .stay-here-advantages .all-image .comments img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.stay-here .stay-here-advantages .all-image .comments .text {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.stay-here .stay-here-advantages .all-image .comments .text h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.stay-here .stay-here-advantages .all-image .comments .text p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.stay-here .stay-here-advantages .all-image .c1 {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+.stay-here .stay-here-advantages .all-image .c2 {
+  position: absolute;
+  top: 80px;
+  right: 300px;
+}
+.stay-here .stay-here-advantages .all-image .c3 {
+  position: absolute;
+  top: 610px;
+  right: 0;
 }
 
 .main-info {
@@ -762,6 +928,82 @@ main {
 .main-info .info-card img.facilities {
   height: 500px;
   width: 850px;
+}
+
+.about-us {
+  background: #14274A;
+}
+.about-us .block {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.about-us .block .text {
+  padding: 150px 250px 150px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+.about-us .block .text h2 {
+  font-size: 50px;
+  letter-spacing: 8px;
+  color: white;
+  padding: 0 0 25px;
+  width: 315px;
+  border-bottom: 4px solid #E0B973;
+}
+.about-us .block .text p {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.reviews {
+  margin: 150px auto 200px;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+.reviews h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #14274A;
+  letter-spacing: 2px;
+}
+.reviews .text {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.reviews .text p {
+  font-size: 28px;
+  color: black;
+  letter-spacing: 1px;
+}
+.reviews .text .all-star {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.reviews .text .all-star .star {
+  margin: 0 0 0 -5px;
+  display: flex;
+  flex-flow: row;
+  gap: 8px;
+}
+.reviews .text .all-star .star img {
+  width: 50px;
+  height: 50px;
+}
+.reviews .text .all-avatars {
+  gap: 10px;
+}
+.reviews .text .all-avatars img {
+  padding: 0 0 10px;
+  height: 120px;
 }
 
 footer {

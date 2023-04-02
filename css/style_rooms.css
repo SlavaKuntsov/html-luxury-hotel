@@ -33,7 +33,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   widows: 100%;
   font-size: 100%;
   line-height: 1;
@@ -120,7 +119,7 @@ header {
   font-size: 24px;
   letter-spacing: 0.4px;
 }
-#burger-menu ul li:nth-child(3) a {
+#burger-menu ul li:nth-child(2) a {
   color: black;
   font-size: 24px;
   letter-spacing: 0.4px;
@@ -202,13 +201,13 @@ nav ul li::before {
 nav ul li:hover::before {
   width: 100%;
 }
-nav ul li:not(:nth-child(3)) {
+nav ul li:not(:nth-child(2)) {
   transition: transform 0.2s ease-in-out;
 }
-nav ul li:not(:nth-child(3)):hover {
+nav ul li:not(:nth-child(2)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(3)):hover::before {
+nav ul li:not(:nth-child(2)):hover::before {
   width: 100%;
 }
 nav ul li a {
@@ -217,7 +216,7 @@ nav ul li a {
   line-height: 30px;
   color: #FFFFFF;
 }
-nav ul li:nth-child(3) a {
+nav ul li:nth-child(2) a {
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
@@ -362,7 +361,7 @@ nav ul li:nth-child(3) a {
   nav ul li a {
     font-size: 14px;
   }
-  nav ul li:nth-child(3) a {
+  nav ul li:nth-child(2) a {
     font-size: 14px;
     border-bottom: 2px solid white;
   }
@@ -537,7 +536,7 @@ nav ul li:nth-child(3) a {
   nav ul li a {
     font-size: 12px;
   }
-  nav ul li:nth-child(3) a {
+  nav ul li:nth-child(2) a {
     font-size: 12px;
     border-bottom: 1.5px solid white;
   }
