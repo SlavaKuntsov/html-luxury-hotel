@@ -18,7 +18,6 @@ main{
 		.logo{
 			border-radius: 50%;
 			background: $ohra;
-
 			width:  90px;
 			height: 90px;
 			display: flex;
@@ -60,7 +59,7 @@ main{
 			}
 		}
 		p{
-			color: black;
+			color: $blue;
 			font-size: 30px;
 			text-align: center;
 		}
@@ -282,7 +281,7 @@ main{
 		align-items: end;
 		p{
 			font-size: 28px;
-			color: black;
+			color: $blue;
 			letter-spacing: 1px;
 		}
 		.all-star{
@@ -320,22 +319,13 @@ main{
 	
 	.all-advantages{
 		margin: 0px 10% 100px;
-		display: flex;
 		flex-flow: row;
-		justify-content: space-between;
 		.advantage{
-			display: flex;
-			align-items: center;
 			gap: 15px;
-			// flex: 1 1 100px;
 			.logo{
 				border-radius: 50%;
-				background: $ohra;
 				width:  55px;
 				height: 55px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				svg{
 					width:  32px;
 					height: 32px;
@@ -352,27 +342,17 @@ main{
 	
 	.stay-here{
 		margin: 100px auto 200px;
-		display: flex;
-		flex-flow: column;
 		gap: 100px;
 		.stay-here-text{
-			display: flex;
-			flex-flow: column;
-			align-items: center;
 			gap: 20px;
 			h2{
 				font-size: 35px;
-				color: $blue;
-				font-weight: 700;
 				span{
-					font-weight: 700;
 					font-size: 35px;
-					color: $ohra;
-					font-family: 'EB Garamond', serif;
 				}
 			}
 			p{
-				color: black;
+				color: $blue;
 				font-size: 18px;
 				line-height: 22px;
 				text-align: center;
@@ -380,33 +360,18 @@ main{
 			}
 		}
 		.stay-here-advantages{
-			position: relative;
 			.all-stay-here-advantages{
-				display: flex;
-				flex-flow: column;
 				gap: 50px;
 				.advantage{
-					display: flex;
-					flex-flow: column;
 					gap: 10px;
 					width: 400px;
 					.number{
 						width:  40px;
 						height: 40px;
-						border-radius: 50%;
-						background: $ohra;
-						color: white;
 						font-size: 18px;
-						font-family: 'Montserrat', sans-serif;
-						display: flex;
-						align-items: center;
-						justify-content: center;
 					}
 					h4{
-						font-weight: 600;
-						color: black;
 						font-size: 20px;
-						font-family: 'Montserrat', sans-serif;
 					}
 					p{
 						font-size: 14px;
@@ -415,54 +380,30 @@ main{
 				}
 			}
 			.all-image{
-				position: absolute;
-				right: 0;
-				top: 0;
 				.big-img{
-					z-index: 1;
-					position: absolute;
-					right: -120px;
+					right: -50px;
 					top: 0;
 					height: 520px;
 				}
 				.small-img{
-					position: absolute;
 					right: 140px;
 					top: 180px;
-					margin: auto 0;
-					z-index: 5;
 					height: 170px;
 				}
 				.comments{
-					@include a-hover;
-					z-index: 10;
-					background: white;
 					padding: 10px 20px;
-					border-radius: 10px;
-					box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
-					display: flex;
-					flex-flow: row;
-					align-items: center;
-					gap: 10px;
 					width: 190px;
 					img{
 						width:  40px;
 						height: 40px;
-						border-radius: 50%;
 					}
 					.text{
-						
-						display: flex;
-						flex-flow: column;
 						gap: 5px;
 						h5{
-							font-family: 'Montserrat', sans-serif;
 							font-size: 14px;
-							font-weight: 600;
 						}
 						p{
 							font-size: 12px;
-							font-family: 'Montserrat', sans-serif;
 						}
 					}
 				}
@@ -486,36 +427,19 @@ main{
 	}
 	
 	.main-info{
-		display: flex;
-		flex-flow: column;
 		gap: 80px;
 		.info-card{
-			display: flex;
-			flex-flow: row;
-			justify-content: space-between;
 			.card-text{
-				display: flex;
-				flex-flow: row;
-				align-items: center;
 				.text{
-					border-left: 1px solid black;
-					display: flex;
-					flex-flow: column;
-					align-items: start;
 					gap: 30px;
 					padding: 0 0 0 30px;
 					h2{
-						font-weight: 700;
 						font-size: 30px;
 						line-height: 40px;
-						letter-spacing: 0.02em;
-						color: #14274A;
 					}
 					p{
-						font-weight: 400;
 						font-size: 14px;
 						line-height: 22px;
-						color: #14274A;
 					}
 					p.room{
 						max-width: 340px;
@@ -524,14 +448,9 @@ main{
 						max-width: 320px;
 					}
 					a{
-						@include hover($ohra);
 						padding: 10px 30px;
-						background: $ohra;
-						font-weight: 400;
 						font-size: 14px;
 						line-height: 20px;
-						letter-spacing: 0.05em;
-						color: #FFFFFF;
 					}
 				}
 			}
@@ -547,31 +466,21 @@ main{
 	}
 	
 	.about-us{
-		background: $blue;
 		.block{
 			@include max_1660;
-			margin: 0 auto;
-			display: flex;
-			flex-flow: row;
-			justify-content: center;
 			.text{
 				padding: 100px 150px 100px 0;
-				display: flex;
-				flex-flow: column;
 				gap: 30px;
 				h2{
-					font-size: 32px;
+					font-size: 30px;
 					letter-spacing: 3px;
-					color: white;
 					padding: 0 0 10px;
 					width: 190px;
 					border-bottom: 2px solid $ohra;
 				}
 				p{
-					color: rgb(255, 255, 255);
 					font-size: 16px;
 					line-height: 22px;
-					font-weight: 400;
 				}
 			}
 			img{
@@ -583,11 +492,503 @@ main{
 	.reviews{
 		@include max_1660;
 		margin: 100px auto 150px;
-		display: flex;
-		flex-flow: column;
 		gap: 40px;
 		h2{
-			font-size: 32px;
+			font-size: 30px;
+		}
+		.text{
+			p{
+				font-size: 16px;
+			}
+			.all-star{
+				gap: 10px;
+				.star{
+					gap: 8px;
+					img{
+						width:  30px;
+						height: 30px;
+					}
+				}
+			}
+			.all-avatars{
+				img{
+					padding: 0 0 10px;
+					height: 65px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+	main{
+		@include max_1100;
+		margin: 50px auto 70px;
+	}
+	
+	.all-advantages{
+		margin: 0px 10% 50px;
+		.advantage{
+			gap: 10px;
+			.logo{
+				width:  40px;
+				height: 40px;
+				svg{
+					width:  25px;
+					height: 25px;
+				}
+			}
+			p{
+				font-size: 14px;
+				line-height: 18px;
+				width: 60px;
+			}
+		}
+	}
+
+	.stay-here{
+		margin: 50px auto 100px;
+		gap: 100px;
+		.stay-here-text{
+			gap: 10px;
+			h2{
+				font-size: 28px;
+				span{
+					font-size: 28px;
+				}
+			}
+			p{
+				font-size: 12px;
+				line-height: 18px;
+				padding: 0 50px;
+			}
+		}
+		.stay-here-advantages{
+			.all-stay-here-advantages{
+				gap: 30px;
+				.advantage{
+					gap: 10px;
+					width: 300px;
+					.number{
+						width:  30px;
+						height: 30px;
+						font-size: 14px;
+					}
+					h4{
+						color: black;
+						line-height: 20px;
+						font-size: 18px;
+					}
+					p{
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+			}
+			.all-image{
+				.big-img{
+					right: -50px;
+					top: 0px;
+					height: 400px;
+				}
+				.small-img{
+					right: 100px;
+					top: 160px;
+					height: 120px;
+				}
+				.comments{
+					padding: 10px 15px;
+					gap: 10px;
+					width: 150px;
+					img{
+						width:  30px;
+						height: 30px;
+					}
+					.text{
+						gap: 5px;
+						h5{
+							font-size: 12px;
+							font-weight: 600;
+						}
+						p{
+							font-size: 11px;
+						}
+					}
+				}
+				.c1{
+				}
+				.c2{
+					top: 100px;
+					right: 130px;
+				}
+				.c3{
+					top: 365px;
+					right: 0;
+				}
+			}
+		}
+	}
+	
+	.main-info{
+		gap: 50px;
+		.info-card{
+			.card-text{
+				.text{
+					gap: 20px;
+					padding: 0 0 0 20px;
+					h2{
+						font-size: 25px;
+						line-height: 24px;
+					}
+					p{
+						font-size: 12px;
+						line-height: 18px;
+					}
+					p.room{
+						max-width: 250px;
+					}
+					p.facilities{
+						max-width: 250px;
+					}
+					a{
+						padding: 10px 20px;
+						font-size: 12px;
+						line-height: 10px;
+					}
+				}
+			}
+			img.room{
+				height: 250px;
+				width: 370px;
+			}
+			img.facilities{
+				height: 225px;
+				width: 370px;
+			}
+		}
+	}
+	
+	.about-us{
+		.block{
+			@include max_1100;
+			.text{
+				padding: 70px 100px 70px 0;
+				gap: 20px;
+				h2{
+					font-size: 25px;
+					letter-spacing: 2px;
+					padding: 0 0 10px;
+					width: 145px;
+					border-bottom: 2px solid $ohra;
+				}
+				p{
+					font-size: 12px;
+					line-height: 18px;
+				}
+			}
+			img{
+				height: 365px;
+			}
+		}
+	}
+	
+	.reviews{
+		@include max_1100;
+		margin: 70px auto 120px;
+		gap: 30px;
+		h2{
+			font-size: 25px;
+			font-weight: 700;
+		}
+		.text{
+			p{
+				font-size: 14px;
+				letter-spacing: 1px;
+			}
+			.all-star{
+				gap: 10px;
+				.star{
+					gap: 5px;
+					img{
+						width:  25px;
+						height: 25px;
+					}
+				}
+			}
+			.all-avatars{
+				gap: 10px;
+				img{
+					padding: 0 0 10px;
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+	main{
+		@include max_800;
+		margin: 40px auto 70px;
+	}
+	
+	.all-advantages{
+		margin: 0px 0% 50px 10px;
+		.advantage{
+			gap: 10px;
+			p{
+				font-size: 13px;
+				line-height: 18px;
+				width: 60px;
+			}
+		}
+	}
+
+	.stay-here{
+		margin: 50px auto 70px;
+		display: flex;
+		flex-flow: column;
+		gap: 50px;
+		.stay-here-text{
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			gap: 10px;
+			h2{
+				font-size: 25px;
+				color: $blue;
+				font-weight: 700;
+				span{
+					font-weight: 700;
+					font-size: 25px;
+					color: $ohra;
+					font-family: 'EB Garamond', serif;
+				}
+			}
+			p{
+				color: $blue;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 18px;
+				text-align: center;
+				padding: 0;
+			}
+		}
+		.stay-here-advantages{
+			position: relative;
+			.all-stay-here-advantages{
+				display: flex;
+				flex-flow: column;
+				gap: 30px;
+				.advantage{
+					display: flex;
+					flex-flow: column;
+					gap: 10px;
+					width: 250px;
+					.number{
+						width:  30px;
+						height: 30px;
+						border-radius: 50%;
+						background: $ohra;
+						color: white;
+						font-size: 14px;
+						font-family: 'Montserrat', sans-serif;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					h4{
+						font-weight: 600;
+						color: black;
+						line-height: 14px;
+						font-size: 16px;
+						font-family: 'Montserrat', sans-serif;
+					}
+					p{
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+			}
+			.all-image{
+				position: absolute;
+				right: 0;
+				top: 0;
+				.big-img{
+					z-index: 1;
+					position: absolute;
+					right: -20px;
+					top: 50px;
+					height: 300px;
+				}
+				.small-img{
+					position: absolute;
+					right: 40px;
+					top: 85px;
+					margin: auto 0;
+					z-index: 5;
+					height: 100px;
+				}
+				.comments{
+					@include a-hover;
+					z-index: 10;
+					background: white;
+					padding: 8px 10px;
+					border-radius: 10px;
+					box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
+					display: flex;
+					flex-flow: row;
+					align-items: center;
+					gap: 5px;
+					width: 120px;
+					img{
+						width:  25px;
+						height: 25px;
+						border-radius: 50%;
+					}
+					.text{
+						display: flex;
+						flex-flow: column;
+						gap: 2px;
+						h5{
+							font-family: 'Montserrat', sans-serif;
+							font-size: 10px;
+							font-weight: 600;
+						}
+						p{
+							font-size: 9px;
+							font-family: 'Montserrat', sans-serif;
+						}
+					}
+				}
+				.c1{
+					position: absolute;
+					top: 25px;
+					right: 0;
+				}
+				.c2{
+					position: absolute;
+					top: 165px;
+					right: 100px;
+				}
+				.c3{
+					position: absolute;
+					top: 330px;
+					right: 0;
+				}
+			}
+		}
+	}
+	
+	.main-info{
+		display: flex;
+		flex-flow: column;
+		gap: 50px;
+		.info-card{
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+			.card-text{
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				.text{
+					border-left: 1px solid black;
+					display: flex;
+					flex-flow: column;
+					align-items: start;
+					gap: 10px;
+					padding: 0 0 0 20px;
+					h2{
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 24px;
+						letter-spacing: 0.02em;
+						color: #14274A;
+					}
+					p{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 18px;
+						color: #14274A;
+					}
+					p.room{
+						max-width: 180px;
+					}
+					p.facilities{
+						max-width: 180px;
+					}
+					a{
+						@include hover($ohra);
+						padding: 8px 15px;
+						background: $ohra;
+						font-weight: 400;
+						font-size: 8px;
+						line-height: 10px;
+						letter-spacing: 0.05em;
+						color: #FFFFFF;
+					}
+				}
+			}
+			img.room{
+				height: 180px;
+				width: 260px;
+			}
+			img.facilities{
+				height: 160px;
+				width: 260px;
+			}
+		}
+	}
+	
+	.about-us{
+		background: $blue;
+		.block{
+			@include max_800;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			.text{
+				padding: 50px 20px 50px 0;
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				h2{
+					font-size: 20px;
+					letter-spacing: 2px;
+					color: white;
+					padding: 0 0 5px;
+					width: 120px;
+					border-bottom: 1px solid $ohra;
+				}
+				p{
+					color: rgb(255, 255, 255);
+					font-size: 12px;
+					line-height: 18px;
+					font-weight: 400;
+				}
+			}
+			img{
+				width: 230px;
+				height: 290px;
+			}
+		}
+	}
+	
+	.reviews{
+		@include max_800;
+		margin: 50px auto 100px;
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		h2{
+			font-size: 20px;
 			font-weight: 700;
 			color: $blue;
 			letter-spacing: 2px;
@@ -598,7 +999,7 @@ main{
 			justify-content: space-between;
 			align-items: end;
 			p{
-				font-size: 16px;
+				font-size: 12px;
 				color: black;
 				letter-spacing: 1px;
 			}
@@ -610,10 +1011,10 @@ main{
 					margin: 0 0 0 -5px;
 					display: flex;
 					flex-flow: row;
-					gap: 8px;
+					gap: 5px;
 					img{
-						width:  30px;
-						height: 30px;
+						width:  25px;
+						height: 25px;
 					}
 				}
 			}
@@ -621,7 +1022,357 @@ main{
 				gap: 10px;
 				img{
 					padding: 0 0 10px;
-					height: 65px;
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+	main{
+		@include max_550;
+		margin: 20px auto 70px;
+		padding: 20px;
+	}
+	
+	.all-advantages{
+		margin: 0px auto 0;
+		padding: 0 0 0 10px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+		.advantage{
+			display: flex;
+			justify-content: center;
+			max-width: 155px;
+			gap: 10px;
+			.logo{
+				width:  35px;
+				height: 35px;
+				svg{
+					width:  22px;
+					height: 22px;
+				}
+			}
+			p{
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+	}
+
+	.stay-here{
+		margin: 50px auto 70px;
+		display: flex;
+		flex-flow: column;
+		gap: 30px;
+		.stay-here-text{
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			gap: 10px;
+			h2{
+				font-size: 25px;
+				color: $blue;
+				font-weight: 700;
+				span{
+					font-weight: 700;
+					font-size: 20px;
+					color: $ohra;
+					font-family: 'EB Garamond', serif;
+				}
+			}
+			p{
+				color: $blue;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 16px;
+				text-align: center;
+				padding: 0;
+			}
+		}
+		.stay-here-advantages{
+			position: relative;
+			.all-stay-here-advantages{
+				display: flex;
+				flex-flow: column;
+				gap: 30px;
+				.advantage{
+					display: flex;
+					flex-flow: column;
+					gap: 10px;
+					width: 100%;
+					.number{
+						width:  30px;
+						height: 30px;
+						border-radius: 50%;
+						background: $ohra;
+						color: white;
+						font-size: 14px;
+						font-family: 'Montserrat', sans-serif;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					h4{
+						font-weight: 600;
+						color: black;
+						line-height: 14px;
+						font-size: 16px;
+						font-family: 'Montserrat', sans-serif;
+					}
+					.number-text{
+						display: flex;
+						flex-flow: row;
+						justify-content: space-between;
+						align-items: center;
+						gap: 40px;
+						.comments{
+							@include a-hover;
+							z-index: 10;
+							background: white;
+							padding: 10px 20px;
+							border-radius: 10px;
+							box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.2);
+							display: flex;
+							flex-flow: row;
+							align-items: center;
+							gap: 10px;
+							width: 40%;
+							img{
+								width:  30px;
+								height: 30px;
+								border-radius: 50%;
+							}
+							.text{
+								width: 100%;
+								display: flex;
+								flex-flow: column;
+								gap: 2px;
+								h5{
+									font-family: 'Montserrat', sans-serif;
+									font-size: 12px;
+									font-weight: 600;
+								}
+								p{
+									white-space: nowrap;
+									font-size: 10px;
+									font-family: 'Montserrat', sans-serif;
+								}
+							}
+						}
+					}
+					p{
+						width: 50%;
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+			}
+			.all-image{
+				position: absolute;
+				right: 0;
+				top: 0;
+				.big-img{
+					display: none;
+					z-index: 1;
+					position: absolute;
+					right: 0px;
+					top: 50px;
+					height: 300px;
+				}
+				.small-img{
+					display: none;
+					position: absolute;
+					right: 40px;
+					top: 85px;
+					margin: auto 0;
+					z-index: 5;
+					height: 100px;
+				}
+				.comments{
+					display: none;
+					img{
+						width:  25px;
+						height: 25px;
+						border-radius: 50%;
+					}
+					.text{
+						display: flex;
+						flex-flow: column;
+						gap: 2px;
+						h5{
+							font-family: 'Montserrat', sans-serif;
+							font-size: 10px;
+							font-weight: 600;
+						}
+						p{
+							font-size: 9px;
+							font-family: 'Montserrat', sans-serif;
+						}
+					}
+				}
+				.c1{
+					position: absolute;
+					top: 25px;
+					right: 0;
+				}
+				.c2{
+					position: absolute;
+					top: 165px;
+					right: 100px;
+				}
+				.c3{
+					position: absolute;
+					top: 330px;
+					right: 0;
+				}
+			}
+		}
+	}
+	
+	.main-info{
+		display: flex;
+		flex-flow: column;
+		gap: 50px;
+		.info-card{
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+			.card-text{
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				.text{
+					border-left: 1px solid black;
+					display: flex;
+					flex-flow: column;
+					align-items: start;
+					gap: 10px;
+					padding: 0 0 0 20px;
+					h2{
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 24px;
+						letter-spacing: 0.02em;
+						color: #14274A;
+					}
+					p{
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 18px;
+						color: #14274A;
+					}
+					p.room{
+						max-width: 180px;
+					}
+					p.facilities{
+						max-width: 180px;
+					}
+					a{
+						@include hover($ohra);
+						padding: 8px 15px;
+						background: $ohra;
+						font-weight: 400;
+						font-size: 8px;
+						line-height: 10px;
+						letter-spacing: 0.05em;
+						color: #FFFFFF;
+					}
+				}
+			}
+			img.room{
+				height: 180px;
+				width: 260px;
+			}
+			img.facilities{
+				height: 160px;
+				width: 260px;
+			}
+		}
+	}
+	
+	.about-us{
+		background: $blue;
+		.block{
+			@include max_550;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			.text{
+				padding: 50px 20px 50px 0;
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				h2{
+					font-size: 20px;
+					letter-spacing: 2px;
+					color: white;
+					padding: 0 0 5px;
+					width: 120px;
+					border-bottom: 1px solid $ohra;
+				}
+				p{
+					color: rgb(255, 255, 255);
+					font-size: 12px;
+					line-height: 18px;
+					font-weight: 400;
+				}
+			}
+			img{
+				width: 230px;
+				height: 290px;
+			}
+		}
+	}
+	
+	.reviews{
+		@include max_550;
+		margin: 50px auto 100px;
+		display: flex;
+		flex-flow: column;
+		gap: 20px;
+		h2{
+			font-size: 20px;
+			font-weight: 700;
+			color: $blue;
+			letter-spacing: 2px;
+		}
+		.text{
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: end;
+			p{
+				font-size: 12px;
+				color: black;
+				letter-spacing: 1px;
+			}
+			.all-star{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+				.star{
+					margin: 0 0 0 -5px;
+					display: flex;
+					flex-flow: row;
+					gap: 5px;
+					img{
+						width:  25px;
+						height: 25px;
+					}
+				}
+			}
+			.all-avatars{
+				gap: 10px;
+				img{
+					padding: 0 0 10px;
+					height: 50px;
 				}
 			}
 		}

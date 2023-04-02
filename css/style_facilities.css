@@ -724,6 +724,7 @@ main .all-carts {
   justify-content: center;
 }
 main .all-carts .cartF {
+  cursor: pointer;
   position: relative;
 }
 main .all-carts .cartF .front {
