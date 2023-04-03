@@ -350,7 +350,6 @@ main{
 		.advantage{
 			gap: 15px;
 			.logo{
-				border-radius: 50%;
 				width:  55px;
 				height: 55px;
 				svg{
@@ -793,23 +792,16 @@ main{
 
 	.stay-here{
 		margin: 50px auto 70px;
-		display: flex;
 		flex-flow: column;
 		gap: 50px;
 		.stay-here-text{
-			display: flex;
-			flex-flow: column;
-			align-items: center;
 			gap: 10px;
 			h2{
 				// font-size: 25px;
-				color: $blue;
 				font-weight: 700;
 				span{
 					font-weight: 700;
 					// font-size: 25px;
-					color: $ohra;
-					font-family: 'EB Garamond', serif;
 				}
 			}
 			p{
@@ -822,34 +814,22 @@ main{
 			}
 		}
 		.stay-here-advantages{
-			position: relative;
 			.all-stay-here-advantages{
-				display: flex;
-				flex-flow: column;
 				gap: 30px;
 				.advantage{
-					display: flex;
-					flex-flow: column;
 					gap: 10px;
 					width: 250px;
 					.number{
 						width:  30px;
 						height: 30px;
-						border-radius: 50%;
-						background: $ohra;
-						color: white;
 						// font-size: 14px;
-						font-family: 'Montserrat', sans-serif;
-						display: flex;
 						align-items: center;
 						justify-content: center;
 					}
 					h4{
 						font-weight: 600;
-						color: black;
 						line-height: 14px;
 						// font-size: 16px;
-						font-family: 'Montserrat', sans-serif;
 					}
 					p{
 						// font-size: 12px;
@@ -858,68 +838,45 @@ main{
 				}
 			}
 			.all-image{
-				position: absolute;
-				right: 0;
-				top: 0;
 				.big-img{
-					z-index: 1;
-					position: absolute;
 					right: -20px;
 					top: 50px;
 					height: 300px;
 				}
 				.small-img{
-					position: absolute;
 					right: 40px;
 					top: 85px;
-					margin: auto 0;
-					z-index: 5;
 					height: 100px;
 				}
 				.comments{
-					@include a-hover;
-					z-index: 10;
-					background: white;
 					padding: 8px 10px;
-					border-radius: 10px;
-					box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
-					display: flex;
-					flex-flow: row;
-					align-items: center;
 					gap: 5px;
 					width: 130px;
 					img{
 						width:  25px;
 						height: 25px;
-						border-radius: 50%;
 					}
 					.text{
-						display: flex;
 						flex-flow: column;
 						gap: 2px;
 						h5{
-							font-family: 'Montserrat', sans-serif;
 							// font-size: 10px;
 							font-weight: 600;
 						}
 						p{
 							// font-size: 9px;
-							font-family: 'Montserrat', sans-serif;
 						}
 					}
 				}
 				.c1{
-					position: absolute;
 					top: 25px;
 					right: 0;
 				}
 				.c2{
-					position: absolute;
 					top: 165px;
 					right: 100px;
 				}
 				.c3{
-					position: absolute;
 					top: 330px;
 					right: 0;
 				}
@@ -928,21 +885,11 @@ main{
 	}
 	
 	.main-info{
-		display: flex;
-		flex-flow: column;
 		gap: 50px;
 		.info-card{
-			display: flex;
-			flex-flow: row;
-			justify-content: space-between;
-			align-items: center;
 			.card-text{
-				display: flex;
-				flex-flow: row;
-				align-items: center;
 				.text{
 					border-left: 1px solid black;
-					display: flex;
 					flex-flow: column;
 					align-items: start;
 					gap: 10px;
@@ -951,14 +898,11 @@ main{
 						font-weight: 700;
 						// font-size: 20px;
 						line-height: 24px;
-						letter-spacing: 0.02em;
-						color: #14274A;
 					}
 					p{
 						font-weight: 400;
 						// font-size: 12px;
 						line-height: 18px;
-						color: #14274A;
 					}
 					p.room{
 						max-width: 180px;
@@ -967,14 +911,10 @@ main{
 						max-width: 180px;
 					}
 					a{
-						@include hover($ohra);
 						padding: 8px 15px;
-						background: $ohra;
 						font-weight: 400;
 						font-size: 8px;
 						line-height: 10px;
-						letter-spacing: 0.05em;
-						color: #FFFFFF;
 					}
 				}
 			}

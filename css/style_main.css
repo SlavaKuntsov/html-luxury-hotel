@@ -339,32 +339,114 @@ nav ul li:nth-child(1) a {
   }
   nav .logo h3 {
     z-index: 5;
-    font-size: 26px;
     line-height: 30px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav .logo h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h5 {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   nav .logo h5 {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:after {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:before {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav ul {
     gap: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li a {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li a {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li a {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   nav ul li a {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   nav ul li:nth-child(1) a {
-    font-size: 14px;
     border-bottom: 2px solid white;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li:nth-child(1) a {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li:nth-child(1) a {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li:nth-child(1) a {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li:nth-child(1) a {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main {
     max-width: 1000px;
   }
@@ -372,22 +454,106 @@ nav ul li:nth-child(1) a {
     margin: 150px 0 120px;
   }
   .header-main .text span {
-    font-size: 25px;
     line-height: 40px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text span {
+    font-size: 13px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 20.4 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 12 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text span {
+    font-size: 25px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h1 {
-    font-size: 90px;
     line-height: 70px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 78.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 46 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h1 {
+    font-size: 96px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h2 {
-    font-size: 30px;
     line-height: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 30.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 18 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text p {
     width: 510px;
-    font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text p {
+    font-size: 9px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 11.9 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 7 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text p {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons {
     gap: 40px;
   }
@@ -400,15 +566,53 @@ nav ul li:nth-child(1) a {
     width: 20px;
     height: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .button p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .button p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll {
     gap: 5px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .scroll p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .scroll p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll img {
     width: 35px;
     height: 35px;
@@ -428,12 +632,10 @@ nav ul li:nth-child(1) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -448,9 +650,6 @@ nav ul li:nth-child(1) a {
   nav ul {
     gap: 30px;
   }
-  nav ul li a {
-    font-size: 12px;
-  }
   .header-main {
     max-width: 700px;
   }
@@ -458,20 +657,16 @@ nav ul li:nth-child(1) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -487,11 +682,7 @@ nav ul li:nth-child(1) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -513,12 +704,10 @@ nav ul li:nth-child(1) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -533,11 +722,7 @@ nav ul li:nth-child(1) a {
   nav ul {
     gap: 30px;
   }
-  nav ul li a {
-    font-size: 12px;
-  }
   nav ul li:nth-child(1) a {
-    font-size: 12px;
     border-bottom: 1.5px solid white;
   }
   .header-main {
@@ -547,20 +732,16 @@ nav ul li:nth-child(1) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -576,11 +757,7 @@ nav ul li:nth-child(1) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -590,7 +767,7 @@ nav ul li:nth-child(1) a {
 }
 @media screen and (width < 550px) {
   header {
-    height: 360px;
+    height: 380px;
     padding: 20px;
   }
   nav {
@@ -603,12 +780,10 @@ nav ul li:nth-child(1) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 16px;
     line-height: 16px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 8px;
   }
   nav .logo:after {
     width: 0;
@@ -637,20 +812,16 @@ nav ul li:nth-child(1) a {
     margin: 40px 0 30px;
   }
   .header-main .text span {
-    font-size: 14px;
     line-height: 14px;
   }
   .header-main .text h1 {
-    font-size: 50px;
     line-height: 50px;
   }
   .header-main .text h2 {
-    font-size: 16px;
     line-height: 20px;
   }
   .header-main .text p {
     width: 240px;
-    font-size: 9px;
     line-height: 12px;
   }
   .header-main .all-buttons {
@@ -660,16 +831,16 @@ nav ul li:nth-child(1) a {
   }
   .header-main .all-buttons .button {
     gap: 8px;
-    padding: 0;
-    width: 90px;
+    padding: 5px 10px;
+    width: 120px;
     border-radius: 5px;
   }
   .header-main .all-buttons .button img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
   }
   .header-main .all-buttons .button p {
-    font-size: 7px;
+    white-space: nowrap;
     line-height: 24px;
   }
   .header-main .all-buttons .scroll {
@@ -682,7 +853,6 @@ nav ul li:nth-child(1) a {
     bottom: -60px;
   }
   .header-main .all-buttons .scroll p {
-    font-size: 10px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -1027,7 +1197,6 @@ main {
     gap: 15px;
   }
   .all-advantages .advantage .logo {
-    border-radius: 50%;
     width: 55px;
     height: 55px;
   }
@@ -1715,24 +1884,17 @@ main {
   }
   .stay-here {
     margin: 50px auto 70px;
-    display: flex;
     flex-flow: column;
     gap: 50px;
   }
   .stay-here .stay-here-text {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     gap: 10px;
   }
   .stay-here .stay-here-text h2 {
-    color: #14274A;
     font-weight: 700;
   }
   .stay-here .stay-here-text h2 span {
     font-weight: 700;
-    color: #E0B973;
-    font-family: "EB Garamond", serif;
   }
   .stay-here .stay-here-text p {
     color: #14274A;
@@ -1741,127 +1903,69 @@ main {
     text-align: center;
     padding: 0;
   }
-  .stay-here .stay-here-advantages {
-    position: relative;
-  }
   .stay-here .stay-here-advantages .all-stay-here-advantages {
-    display: flex;
-    flex-flow: column;
     gap: 30px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    display: flex;
-    flex-flow: column;
     gap: 10px;
     width: 250px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background: #E0B973;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
     font-weight: 600;
-    color: black;
     line-height: 14px;
-    font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
     line-height: 18px;
   }
-  .stay-here .stay-here-advantages .all-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .stay-here .stay-here-advantages .all-image .big-img {
-    z-index: 1;
-    position: absolute;
     right: -20px;
     top: 50px;
     height: 300px;
   }
   .stay-here .stay-here-advantages .all-image .small-img {
-    position: absolute;
     right: 40px;
     top: 85px;
-    margin: auto 0;
-    z-index: 5;
     height: 100px;
   }
   .stay-here .stay-here-advantages .all-image .comments {
-    transition: transform 0.2s ease-in-out;
-    z-index: 10;
-    background: white;
     padding: 8px 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
-    display: flex;
-    flex-flow: row;
-    align-items: center;
     gap: 5px;
     width: 130px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments:hover {
-    transform: translateY(-5px);
   }
   .stay-here .stay-here-advantages .all-image .comments img {
     width: 25px;
     height: 25px;
-    border-radius: 50%;
   }
   .stay-here .stay-here-advantages .all-image .comments .text {
-    display: flex;
     flex-flow: column;
     gap: 2px;
   }
   .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
   }
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-family: "Montserrat", sans-serif;
-  }
   .stay-here .stay-here-advantages .all-image .c1 {
-    position: absolute;
     top: 25px;
     right: 0;
   }
   .stay-here .stay-here-advantages .all-image .c2 {
-    position: absolute;
     top: 165px;
     right: 100px;
   }
   .stay-here .stay-here-advantages .all-image .c3 {
-    position: absolute;
     top: 330px;
     right: 0;
   }
   .main-info {
-    display: flex;
-    flex-flow: column;
     gap: 50px;
-  }
-  .main-info .info-card {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-info .info-card .card-text {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
   }
   .main-info .info-card .card-text .text {
     border-left: 1px solid black;
-    display: flex;
     flex-flow: column;
     align-items: start;
     gap: 10px;
@@ -1870,13 +1974,10 @@ main {
   .main-info .info-card .card-text .text h2 {
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #14274A;
   }
   .main-info .info-card .card-text .text p {
     font-weight: 400;
     line-height: 18px;
-    color: #14274A;
   }
   .main-info .info-card .card-text .text p.room {
     max-width: 180px;
@@ -1885,22 +1986,10 @@ main {
     max-width: 180px;
   }
   .main-info .info-card .card-text .text a {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
     padding: 8px 15px;
-    background: #E0B973;
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-  }
-  .main-info .info-card .card-text .text a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-    background: #d7a449;
-  }
-  .main-info .info-card .card-text .text a:active {
-    background: #e5c388;
   }
   .main-info .info-card img.room {
     height: 180px;
