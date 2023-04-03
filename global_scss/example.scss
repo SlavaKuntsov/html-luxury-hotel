@@ -1,0 +1,9 @@
+@import "../global_scss/variable";
+@import "../global_scss/reset";
+
+h1{
+	@include responsive-font(60, 27);
+}
+p{
+	@include responsive-font(30, 13);
+}
