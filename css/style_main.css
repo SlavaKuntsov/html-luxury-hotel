@@ -721,9 +721,28 @@ main {
   height: 55px;
 }
 .all-advantages .advantage p {
-  font-size: 28px;
   line-height: 32px;
   width: 130px;
+}
+@media (max-width: 320px) {
+  .all-advantages .advantage p {
+    font-size: 27px;
+  }
+}
+@media (max-width: 800px) {
+  .all-advantages .advantage p {
+    font-size: calc(27px + 1.7 * ((100vw - 320px) / 1500));
+  }
+}
+@media (min-width: 800px) {
+  .all-advantages .advantage p {
+    font-size: calc(27px + 1 * (100vw / 1500));
+  }
+}
+@media (min-width: 1500px) {
+  .all-advantages .advantage p {
+    font-size: 28px;
+  }
 }
 
 .stay-here {
@@ -739,19 +758,36 @@ main {
   gap: 20px;
 }
 .stay-here .stay-here-text h2 {
-  font-size: 60px;
   color: #14274A;
   font-weight: 700;
 }
+@media (max-width: 320px) {
+  .stay-here .stay-here-text h2 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 800px) {
+  .stay-here .stay-here-text h2 {
+    font-size: calc(27px + 56.1 * ((100vw - 320px) / 1500));
+  }
+}
+@media (min-width: 800px) {
+  .stay-here .stay-here-text h2 {
+    font-size: calc(27px + 33 * (100vw / 1500));
+  }
+}
+@media (min-width: 1500px) {
+  .stay-here .stay-here-text h2 {
+    font-size: 60px;
+  }
+}
 .stay-here .stay-here-text h2 span {
   font-weight: 700;
-  font-size: 60px;
   color: #E0B973;
   font-family: "EB Garamond", serif;
 }
 .stay-here .stay-here-text p {
   color: #14274A;
-  font-size: 30px;
   text-align: center;
 }
 .stay-here .stay-here-advantages {
@@ -774,20 +810,20 @@ main {
   border-radius: 50%;
   background: #E0B973;
   color: white;
-  font-size: 30px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
+  display: none;
+}
 .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
   font-weight: 600;
   color: black;
-  font-size: 32px;
   font-family: "Montserrat", sans-serif;
 }
 .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-  font-size: 26px;
   line-height: 28px;
 }
 .stay-here .stay-here-advantages .all-image {
@@ -838,11 +874,9 @@ main {
 }
 .stay-here .stay-here-advantages .all-image .comments .text h5 {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
   font-weight: 600;
 }
 .stay-here .stay-here-advantages .all-image .comments .text p {
-  font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 .stay-here .stay-here-advantages .all-image .c1 {
@@ -886,14 +920,12 @@ main {
 }
 .main-info .info-card .card-text .text h2 {
   font-weight: 700;
-  font-size: 60px;
   line-height: 72px;
   letter-spacing: 0.02em;
   color: #14274A;
 }
 .main-info .info-card .card-text .text p {
   font-weight: 400;
-  font-size: 26px;
   line-height: 40px;
   color: #14274A;
 }
@@ -908,7 +940,6 @@ main {
   padding: 20px 60px;
   background: #E0B973;
   font-weight: 400;
-  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
@@ -929,6 +960,9 @@ main {
   height: 500px;
   width: 850px;
 }
+.main-info .mobile-info-card {
+  display: none;
+}
 
 .about-us {
   background: #14274A;
@@ -946,7 +980,6 @@ main {
   gap: 40px;
 }
 .about-us .block .text h2 {
-  font-size: 50px;
   letter-spacing: 8px;
   color: white;
   padding: 0 0 25px;
@@ -955,7 +988,6 @@ main {
 }
 .about-us .block .text p {
   color: rgb(255, 255, 255);
-  font-size: 25px;
   line-height: 34px;
   font-weight: 400;
 }
@@ -967,7 +999,6 @@ main {
   gap: 40px;
 }
 .reviews h2 {
-  font-size: 50px;
   font-weight: 700;
   color: #14274A;
   letter-spacing: 2px;
@@ -979,7 +1010,6 @@ main {
   align-items: end;
 }
 .reviews .text p {
-  font-size: 28px;
   color: #14274A;
   letter-spacing: 1px;
 }
@@ -1028,7 +1058,6 @@ main {
     height: 32px;
   }
   .all-advantages .advantage p {
-    font-size: 18px;
     line-height: 22px;
     width: 80px;
   }
@@ -1039,15 +1068,8 @@ main {
   .stay-here .stay-here-text {
     gap: 20px;
   }
-  .stay-here .stay-here-text h2 {
-    font-size: 35px;
-  }
-  .stay-here .stay-here-text h2 span {
-    font-size: 35px;
-  }
   .stay-here .stay-here-text p {
     color: #14274A;
-    font-size: 18px;
     line-height: 22px;
     text-align: center;
     padding: 0 50px;
@@ -1062,13 +1084,8 @@ main {
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
     width: 40px;
     height: 40px;
-    font-size: 18px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-size: 20px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: 14px;
     line-height: 22px;
   }
   .stay-here .stay-here-advantages .all-image .big-img {
@@ -1091,12 +1108,6 @@ main {
   }
   .stay-here .stay-here-advantages .all-image .comments .text {
     gap: 5px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: 14px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: 12px;
   }
   .stay-here .stay-here-advantages .all-image .c1 {
     position: absolute;
@@ -1121,11 +1132,9 @@ main {
     padding: 0 0 0 30px;
   }
   .main-info .info-card .card-text .text h2 {
-    font-size: 30px;
     line-height: 40px;
   }
   .main-info .info-card .card-text .text p {
-    font-size: 14px;
     line-height: 22px;
   }
   .main-info .info-card .card-text .text p.room {
@@ -1136,7 +1145,6 @@ main {
   }
   .main-info .info-card .card-text .text a {
     padding: 10px 30px;
-    font-size: 14px;
     line-height: 20px;
   }
   .main-info .info-card img.room {
@@ -1155,14 +1163,12 @@ main {
     gap: 30px;
   }
   .about-us .block .text h2 {
-    font-size: 30px;
     letter-spacing: 3px;
     padding: 0 0 10px;
     width: 190px;
     border-bottom: 2px solid #E0B973;
   }
   .about-us .block .text p {
-    font-size: 16px;
     line-height: 22px;
   }
   .about-us .block img {
@@ -1172,12 +1178,6 @@ main {
     max-width: 1000px;
     margin: 100px auto 150px;
     gap: 40px;
-  }
-  .reviews h2 {
-    font-size: 30px;
-  }
-  .reviews .text p {
-    font-size: 16px;
   }
   .reviews .text .all-star {
     gap: 10px;
@@ -1214,7 +1214,6 @@ main {
     height: 25px;
   }
   .all-advantages .advantage p {
-    font-size: 14px;
     line-height: 18px;
     width: 60px;
   }
@@ -1225,14 +1224,7 @@ main {
   .stay-here .stay-here-text {
     gap: 10px;
   }
-  .stay-here .stay-here-text h2 {
-    font-size: 28px;
-  }
-  .stay-here .stay-here-text h2 span {
-    font-size: 28px;
-  }
   .stay-here .stay-here-text p {
-    font-size: 12px;
     line-height: 18px;
     padding: 0 50px;
   }
@@ -1246,15 +1238,12 @@ main {
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
     width: 30px;
     height: 30px;
-    font-size: 14px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
     color: black;
     line-height: 20px;
-    font-size: 18px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: 12px;
     line-height: 18px;
   }
   .stay-here .stay-here-advantages .all-image .big-img {
@@ -1280,11 +1269,7 @@ main {
     gap: 5px;
   }
   .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: 12px;
     font-weight: 600;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: 11px;
   }
   .stay-here .stay-here-advantages .all-image .c2 {
     top: 100px;
@@ -1302,11 +1287,9 @@ main {
     padding: 0 0 0 20px;
   }
   .main-info .info-card .card-text .text h2 {
-    font-size: 25px;
     line-height: 24px;
   }
   .main-info .info-card .card-text .text p {
-    font-size: 12px;
     line-height: 18px;
   }
   .main-info .info-card .card-text .text p.room {
@@ -1317,7 +1300,6 @@ main {
   }
   .main-info .info-card .card-text .text a {
     padding: 10px 20px;
-    font-size: 12px;
     line-height: 10px;
   }
   .main-info .info-card img.room {
@@ -1336,14 +1318,12 @@ main {
     gap: 20px;
   }
   .about-us .block .text h2 {
-    font-size: 25px;
     letter-spacing: 2px;
     padding: 0 0 10px;
     width: 145px;
     border-bottom: 2px solid #E0B973;
   }
   .about-us .block .text p {
-    font-size: 12px;
     line-height: 18px;
   }
   .about-us .block img {
@@ -1355,11 +1335,9 @@ main {
     gap: 30px;
   }
   .reviews h2 {
-    font-size: 25px;
     font-weight: 700;
   }
   .reviews .text p {
-    font-size: 14px;
     letter-spacing: 1px;
   }
   .reviews .text .all-star {
@@ -1392,7 +1370,6 @@ main {
     gap: 10px;
   }
   .all-advantages .advantage p {
-    font-size: 13px;
     line-height: 18px;
     width: 60px;
   }
@@ -1409,19 +1386,16 @@ main {
     gap: 10px;
   }
   .stay-here .stay-here-text h2 {
-    font-size: 25px;
     color: #14274A;
     font-weight: 700;
   }
   .stay-here .stay-here-text h2 span {
     font-weight: 700;
-    font-size: 25px;
     color: #E0B973;
     font-family: "EB Garamond", serif;
   }
   .stay-here .stay-here-text p {
     color: #14274A;
-    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
     text-align: center;
@@ -1447,7 +1421,6 @@ main {
     border-radius: 50%;
     background: #E0B973;
     color: white;
-    font-size: 14px;
     font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
@@ -1457,11 +1430,9 @@ main {
     font-weight: 600;
     color: black;
     line-height: 14px;
-    font-size: 16px;
     font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: 12px;
     line-height: 18px;
   }
   .stay-here .stay-here-advantages .all-image {
@@ -1512,11 +1483,9 @@ main {
   }
   .stay-here .stay-here-advantages .all-image .comments .text h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 10px;
     font-weight: 600;
   }
   .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: 9px;
     font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-image .c1 {
@@ -1560,14 +1529,12 @@ main {
   }
   .main-info .info-card .card-text .text h2 {
     font-weight: 700;
-    font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #14274A;
   }
   .main-info .info-card .card-text .text p {
     font-weight: 400;
-    font-size: 12px;
     line-height: 18px;
     color: #14274A;
   }
@@ -1620,7 +1587,6 @@ main {
     gap: 10px;
   }
   .about-us .block .text h2 {
-    font-size: 20px;
     letter-spacing: 2px;
     color: white;
     padding: 0 0 5px;
@@ -1629,7 +1595,6 @@ main {
   }
   .about-us .block .text p {
     color: rgb(255, 255, 255);
-    font-size: 12px;
     line-height: 18px;
     font-weight: 400;
   }
@@ -1645,7 +1610,6 @@ main {
     gap: 20px;
   }
   .reviews h2 {
-    font-size: 20px;
     font-weight: 700;
     color: #14274A;
     letter-spacing: 2px;
@@ -1657,7 +1621,6 @@ main {
     align-items: end;
   }
   .reviews .text p {
-    font-size: 12px;
     color: black;
     letter-spacing: 1px;
   }
@@ -1704,16 +1667,16 @@ main {
     gap: 10px;
   }
   .all-advantages .advantage .logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   .all-advantages .advantage .logo svg {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   }
   .all-advantages .advantage p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
   }
   .stay-here {
     margin: 50px auto 70px;
@@ -1728,19 +1691,19 @@ main {
     gap: 10px;
   }
   .stay-here .stay-here-text h2 {
-    font-size: 25px;
+    font-size: 27px;
     color: #14274A;
     font-weight: 700;
   }
   .stay-here .stay-here-text h2 span {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 27px;
     color: #E0B973;
     font-family: "EB Garamond", serif;
   }
   .stay-here .stay-here-text p {
     color: #14274A;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: center;
@@ -1775,7 +1738,7 @@ main {
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
     font-weight: 600;
     color: black;
-    line-height: 14px;
+    line-height: 16px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
   }
@@ -1815,17 +1778,18 @@ main {
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
+    white-space: nowrap;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
     white-space: nowrap;
-    font-size: 10px;
+    font-size: 11px;
     font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
     width: 50%;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
   }
   .stay-here .stay-here-advantages .all-image {
@@ -1893,100 +1857,88 @@ main {
     gap: 50px;
   }
   .main-info .info-card {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
   }
-  .main-info .info-card .card-text {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-  }
-  .main-info .info-card .card-text .text {
-    border-left: 1px solid black;
+  .main-info .mobile-info-card {
     display: flex;
     flex-flow: column;
-    align-items: start;
-    gap: 10px;
-    padding: 0 0 0 20px;
+    gap: 20px;
+    align-items: center;
   }
-  .main-info .info-card .card-text .text h2 {
+  .main-info .mobile-info-card h2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #14274A;
   }
-  .main-info .info-card .card-text .text p {
+  .main-info .mobile-info-card .card img {
+    width: 100%;
+  }
+  .main-info .mobile-info-card .card .text {
+    width: 100%;
+    background: #14274A;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .main-info .mobile-info-card .card .text p {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #14274A;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
   }
-  .main-info .info-card .card-text .text p.room {
-    max-width: 180px;
-  }
-  .main-info .info-card .card-text .text p.facilities {
-    max-width: 180px;
-  }
-  .main-info .info-card .card-text .text a {
+  .main-info .mobile-info-card .card .text a {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 8px 15px;
+    padding: 10px 20px;
     background: #E0B973;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 10x;
     line-height: 10px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
   }
-  .main-info .info-card .card-text .text a:hover {
+  .main-info .mobile-info-card .card .text a:hover {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
     background: #d7a449;
   }
-  .main-info .info-card .card-text .text a:active {
+  .main-info .mobile-info-card .card .text a:active {
     background: #e5c388;
-  }
-  .main-info .info-card img.room {
-    height: 180px;
-    width: 260px;
-  }
-  .main-info .info-card img.facilities {
-    height: 160px;
-    width: 260px;
   }
   .about-us {
     background: #14274A;
   }
   .about-us .block {
+    padding: 20px;
     max-width: inherit;
     margin: 0 auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
   }
   .about-us .block .text {
-    padding: 50px 20px 50px 0;
+    padding: 0;
     display: flex;
     flex-flow: column;
     gap: 10px;
   }
   .about-us .block .text h2 {
-    font-size: 20px;
-    letter-spacing: 2px;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    letter-spacing: 3px;
     color: white;
-    padding: 0 0 5px;
-    width: 120px;
+    padding: 0 0 10px;
+    width: inherit;
     border-bottom: 1px solid #E0B973;
   }
   .about-us .block .text p {
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 400;
   }
   .about-us .block img {
+    display: none;
     width: 230px;
     height: 290px;
   }
@@ -1995,29 +1947,384 @@ main {
     margin: 50px auto 100px;
     display: flex;
     flex-flow: column;
-    gap: 20px;
+    gap: 30px;
+    padding: 20px;
   }
   .reviews h2 {
-    font-size: 20px;
+    text-align: center;
+    font-size: 26px;
     font-weight: 700;
     color: #14274A;
     letter-spacing: 2px;
   }
   .reviews .text {
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: end;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   .reviews .text p {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     letter-spacing: 1px;
   }
   .reviews .text .all-star {
     display: flex;
     flex-flow: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .reviews .text .all-star .star {
+    margin: 0 0 0 -5px;
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+  }
+  .reviews .text .all-star .star img {
+    width: 30px;
+    height: 30px;
+  }
+  .reviews .text .all-avatars {
     gap: 10px;
+    display: flex;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+  }
+  .reviews .text .all-avatars img {
+    padding: 0;
+    height: 50px;
+  }
+}
+@media screen and (width < 450px) {
+  main {
+    max-width: inherit;
+    margin: 20px auto 50px;
+    padding: 20px;
+  }
+  .all-advantages {
+    margin: 0px auto 0;
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  .all-advantages .advantage {
+    display: flex;
+    justify-content: center;
+    max-width: 110px;
+    gap: 10px;
+  }
+  .all-advantages .advantage .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .all-advantages .advantage .logo svg {
+    width: 25px;
+    height: 25px;
+  }
+  .all-advantages .advantage p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .stay-here {
+    margin: 50px auto 70px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+  }
+  .stay-here .stay-here-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .stay-here .stay-here-text h2 {
+    font-size: 27px;
+    color: #14274A;
+    font-weight: 700;
+    text-align: center;
+  }
+  .stay-here .stay-here-text h2 span {
+    font-weight: 700;
+    font-size: 27px;
+    color: #E0B973;
+    font-family: "EB Garamond", serif;
+  }
+  .stay-here .stay-here-text p {
+    color: #14274A;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    padding: 0;
+  }
+  .stay-here .stay-here-advantages {
+    position: relative;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #E0B973;
+    color: white;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
+    font-weight: 600;
+    color: black;
+    line-height: 16px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
+    transition: transform 0.2s ease-in-out;
+    z-index: 10;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.2);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments:hover {
+    transform: translateY(-5px);
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
+    white-space: nowrap;
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .stay-here .stay-here-advantages .all-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .stay-here .stay-here-advantages .all-image .big-img {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    height: 300px;
+  }
+  .stay-here .stay-here-advantages .all-image .small-img {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 85px;
+    margin: auto 0;
+    z-index: 5;
+    height: 100px;
+  }
+  .stay-here .stay-here-advantages .all-image .comments {
+    display: none;
+  }
+  .stay-here .stay-here-advantages .all-image .comments img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .stay-here .stay-here-advantages .all-image .comments .text {
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+  }
+  .stay-here .stay-here-advantages .all-image .comments .text h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .stay-here .stay-here-advantages .all-image .comments .text p {
+    font-size: 9px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .stay-here .stay-here-advantages .all-image .c1 {
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+  .stay-here .stay-here-advantages .all-image .c2 {
+    position: absolute;
+    top: 165px;
+    right: 100px;
+  }
+  .stay-here .stay-here-advantages .all-image .c3 {
+    position: absolute;
+    top: 330px;
+    right: 0;
+  }
+  .main-info {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+  }
+  .main-info .info-card {
+    display: none;
+  }
+  .main-info .mobile-info-card {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .main-info .mobile-info-card h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #14274A;
+  }
+  .main-info .mobile-info-card .card img {
+    width: 100%;
+  }
+  .main-info .mobile-info-card .card .text {
+    width: 100%;
+    background: #14274A;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .main-info .mobile-info-card .card .text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  .main-info .mobile-info-card .card .text a {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
+    padding: 10px 20px;
+    background: #E0B973;
+    font-weight: 400;
+    font-size: 10x;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  .main-info .mobile-info-card .card .text a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
+    background: #d7a449;
+  }
+  .main-info .mobile-info-card .card .text a:active {
+    background: #e5c388;
+  }
+  .about-us {
+    background: #14274A;
+  }
+  .about-us .block {
+    padding: 20px;
+    max-width: inherit;
+    margin: 0 auto;
+  }
+  .about-us .block .text {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  .about-us .block .text h2 {
+    margin: 0 auto 15px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: white;
+    padding: 0 0 8px;
+    width: inherit;
+    border-bottom: 1px solid #E0B973;
+  }
+  .about-us .block .text p {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .about-us .block img {
+    display: none;
+    width: 230px;
+    height: 290px;
+  }
+  .reviews {
+    max-width: inherit;
+    margin: 30px auto 80px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .reviews h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #14274A;
+    letter-spacing: 2px;
+  }
+  .reviews .text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .reviews .text p {
+    font-size: 14px;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .reviews .text .all-star {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    align-items: center;
   }
   .reviews .text .all-star .star {
     margin: 0 0 0 -5px;
@@ -2031,10 +2338,14 @@ main {
   }
   .reviews .text .all-avatars {
     gap: 10px;
+    display: flex;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
   }
   .reviews .text .all-avatars img {
-    padding: 0 0 10px;
-    height: 50px;
+    padding: 0;
+    height: 40px;
   }
 }
 footer {
