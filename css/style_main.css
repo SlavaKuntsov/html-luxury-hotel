@@ -2222,7 +2222,7 @@ main {
     background: #14274A;
   }
   .about-us .block {
-    padding: 20px;
+    padding: 20px 20px 40px;
     max-width: inherit;
     margin: 0 auto;
   }

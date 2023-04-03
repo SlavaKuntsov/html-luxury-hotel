@@ -1649,7 +1649,7 @@ main{
 	.about-us{
 		background: $blue;
 		.block{
-			padding: 20px;
+			padding: 20px 20px 40px;
 			@include max_550;
 			margin: 0 auto;
 			.text{
