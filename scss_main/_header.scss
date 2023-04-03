@@ -112,14 +112,14 @@ nav{
 		}
 		li a{
 			font-weight: 400;
-			font-size: 22px;
+			font-size: 24px;
 			line-height: 30px;
 			color: #FFFFFF;
 		}
 		li:nth-child(1){
 			a{
 				font-weight: 700;
-				font-size: 22px;
+				font-size: 24px;
 				line-height: 30px;
 				color: #FFFFFF;
 				border-bottom: 2px solid white;
@@ -260,12 +260,12 @@ nav{
 			gap: 50px;
 			li a{
 				// font-size: 14px;
-				@include responsive-font(14, 8);
+				@include responsive-font(16, 11);
 			}
 			li:nth-child(1){
 				a{
 					// font-size: 14px;
-					@include responsive-font(14, 8);
+					@include responsive-font(16, 11);
 					border-bottom: 2px solid white;
 				}
 			}
@@ -451,7 +451,7 @@ nav{
 			}
 		}
 		ul{
-			gap: 30px;
+			gap: 20px;
 			li a{
 				// font-size: 12px;
 			}
@@ -518,7 +518,7 @@ nav{
 
 @media screen and (width < 550px) {
 	header{
-		height: 380px;
+		height: 370px;
 		padding: 20px;
 	}
 	nav{

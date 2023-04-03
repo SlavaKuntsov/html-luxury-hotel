@@ -149,11 +149,13 @@ nav {
             padding: 25px;
             h3 {
                 z-index: 5;
-                font-size: 26px;
+                // font-size: 26px;
                 line-height: 30px;
+				@include responsive-font(26, 16);
             }
             h5 {
-                font-size: 14px;
+                // font-size: 14px;
+				@include responsive-font(14, 8);
             }
             &:after {
                 width: 45px;
@@ -169,11 +171,13 @@ nav {
         ul {
             gap: 50px;
             li a {
-                font-size: 14px;
+                // font-size: 14px;
+				@include responsive-font(16, 11);
             }
             li:nth-child(5) {
                 a {
-                    font-size: 14px;
+                    // font-size: 14px;
+					@include responsive-font(16, 11);
                     border-bottom: 2px solid white;
                 }
             }
@@ -187,7 +191,8 @@ nav {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 60px;
+            // font-size: 60px;
+			@include responsive-font(60, 30);
             line-height: 98px;
             color: #ffffff;
         }
@@ -208,12 +213,12 @@ nav {
             h3 {
                 color: white;
                 z-index: 5;
-                font-size: 20px;
+                // font-size: 20px;
                 line-height: 20px;
             }
             h5 {
                 color: white;
-                font-size: 10px;
+                // font-size: 10px;
             }
             &:after {
                 width: 0;
@@ -229,7 +234,7 @@ nav {
         ul {
             gap: 30px;
             li a {
-                font-size: 12px;
+                // font-size: 12px;
             }
         }
     }
@@ -241,7 +246,7 @@ nav {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 45px;
+            // font-size: 45px;
             line-height: 98px;
             color: #ffffff;
         }
@@ -262,12 +267,12 @@ nav {
             h3 {
                 color: white;
                 z-index: 5;
-                font-size: 20px;
+                // font-size: 20px;
                 line-height: 20px;
             }
             h5 {
                 color: white;
-                font-size: 10px;
+                // font-size: 10px;
             }
             &:after {
                 width: 0;
@@ -281,13 +286,13 @@ nav {
             }
         }
         ul {
-            gap: 30px;
+            gap: 20px;
             li a {
-                font-size: 12px;
+                // font-size: 12px;
             }
             li:nth-child(5) {
                 a {
-                    font-size: 12px;
+                    // font-size: 12px;
                     border-bottom: 1.5px solid white;
                 }
             }
@@ -301,7 +306,7 @@ nav {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 35px;
+            // font-size: 35px;
             line-height: 98px;
             color: #ffffff;
         }
@@ -323,12 +328,12 @@ nav {
             h3 {
                 color: white;
                 z-index: 5;
-                font-size: 16px;
+                // font-size: 16px;
                 line-height: 16px;
             }
             h5 {
                 color: white;
-                font-size: 8px;
+                // font-size: 8px;
             }
             &:after {
                 width: 0;
@@ -360,7 +365,7 @@ nav {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            // font-size: 30px;
             line-height: 98px;
             color: #ffffff;
         }

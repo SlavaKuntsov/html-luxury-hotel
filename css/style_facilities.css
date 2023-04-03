@@ -207,18 +207,18 @@ nav ul li:not(:nth-child(3)) {
 nav ul li:not(:nth-child(3)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(3)):hover::before {
+nav ul li:not(:nth-child(3)):hover:before {
   width: 100%;
 }
 nav ul li a {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
 }
 nav ul li:nth-child(3) a {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   border-bottom: 2px solid white;
@@ -229,7 +229,7 @@ nav ul li:nth-child(3) a {
   margin: 0 auto;
 }
 .header-main .text {
-  margin: 190px 0 110px;
+  margin: 190px 0 160px;
   display: flex;
   flex-flow: column;
   align-items: start;
@@ -266,7 +266,7 @@ nav ul li:nth-child(3) a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
 }
 .header-main .all-buttons .button {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
@@ -275,9 +275,9 @@ nav ul li:nth-child(3) a {
   justify-content: center;
   gap: 10px;
   background: #E0B973;
-  padding: 25px 0;
+  padding: 20px 0;
   border-radius: 15px;
-  width: 270px;
+  width: 240px;
 }
 .header-main .all-buttons .button:hover {
   transform: translateY(-5px);
@@ -288,12 +288,12 @@ nav ul li:nth-child(3) a {
   background: #e5c388;
 }
 .header-main .all-buttons .button img {
-  width: 28px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
 }
 .header-main .all-buttons .button p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
 }
@@ -306,14 +306,14 @@ nav ul li:nth-child(3) a {
 }
 .header-main .all-buttons .scroll p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
 .header-main .all-buttons .scroll img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 @keyframes scroll {
@@ -339,31 +339,114 @@ nav ul li:nth-child(3) a {
   }
   nav .logo h3 {
     z-index: 5;
-    font-size: 26px;
     line-height: 30px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav .logo h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h5 {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   nav .logo h5 {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:after {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:before {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav ul {
     gap: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
   nav ul li a {
-    font-size: 14px;
+    font-size: 11px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   nav ul li:nth-child(3) a {
-    font-size: 14px;
+    border-bottom: 2px solid white;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li:nth-child(3) a {
+    font-size: 11px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li:nth-child(3) a {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li:nth-child(3) a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li:nth-child(3) a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main {
     max-width: 1000px;
   }
@@ -371,22 +454,106 @@ nav ul li:nth-child(3) a {
     margin: 150px 0 120px;
   }
   .header-main .text span {
-    font-size: 25px;
     line-height: 40px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text span {
+    font-size: 13px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 20.4 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 12 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text span {
+    font-size: 25px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h1 {
-    font-size: 90px;
     line-height: 70px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 78.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 46 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h1 {
+    font-size: 96px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h2 {
-    font-size: 30px;
     line-height: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 30.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 18 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text p {
     width: 510px;
-    font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text p {
+    font-size: 9px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 11.9 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 7 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text p {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons {
     gap: 40px;
   }
@@ -399,15 +566,53 @@ nav ul li:nth-child(3) a {
     width: 20px;
     height: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .button p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .button p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll {
     gap: 5px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .scroll p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .scroll p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll img {
     width: 35px;
     height: 35px;
@@ -427,12 +632,10 @@ nav ul li:nth-child(3) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -447,13 +650,6 @@ nav ul li:nth-child(3) a {
   nav ul {
     gap: 30px;
   }
-  nav ul li a {
-    font-size: 12px;
-  }
-  nav ul li:nth-child(3) a {
-    font-size: 12px;
-    border-bottom: 1.5px solid white;
-  }
   .header-main {
     max-width: 700px;
   }
@@ -461,20 +657,16 @@ nav ul li:nth-child(3) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -490,11 +682,7 @@ nav ul li:nth-child(3) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -516,12 +704,10 @@ nav ul li:nth-child(3) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -534,13 +720,9 @@ nav ul li:nth-child(3) a {
     z-index: 1;
   }
   nav ul {
-    gap: 30px;
-  }
-  nav ul li a {
-    font-size: 12px;
+    gap: 20px;
   }
   nav ul li:nth-child(3) a {
-    font-size: 12px;
     border-bottom: 1.5px solid white;
   }
   .header-main {
@@ -550,20 +732,16 @@ nav ul li:nth-child(3) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -579,11 +757,7 @@ nav ul li:nth-child(3) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -593,7 +767,7 @@ nav ul li:nth-child(3) a {
 }
 @media screen and (width < 550px) {
   header {
-    height: 360px;
+    height: 370px;
     padding: 20px;
   }
   nav {
@@ -606,12 +780,10 @@ nav ul li:nth-child(3) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 16px;
     line-height: 16px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 8px;
   }
   nav .logo:after {
     width: 0;
@@ -640,20 +812,16 @@ nav ul li:nth-child(3) a {
     margin: 40px 0 30px;
   }
   .header-main .text span {
-    font-size: 14px;
     line-height: 14px;
   }
   .header-main .text h1 {
-    font-size: 50px;
     line-height: 50px;
   }
   .header-main .text h2 {
-    font-size: 16px;
     line-height: 20px;
   }
   .header-main .text p {
     width: 240px;
-    font-size: 9px;
     line-height: 12px;
   }
   .header-main .all-buttons {
@@ -663,16 +831,16 @@ nav ul li:nth-child(3) a {
   }
   .header-main .all-buttons .button {
     gap: 8px;
-    padding: 0;
-    width: 90px;
+    padding: 5px 10px;
+    width: 120px;
     border-radius: 5px;
   }
   .header-main .all-buttons .button img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
   }
   .header-main .all-buttons .button p {
-    font-size: 7px;
+    white-space: nowrap;
     line-height: 24px;
   }
   .header-main .all-buttons .scroll {
@@ -685,7 +853,6 @@ nav ul li:nth-child(3) a {
     bottom: -60px;
   }
   .header-main .all-buttons .scroll p {
-    font-size: 10px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -906,15 +1073,55 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text {
     margin: 60px 0;
-    gap: 10px;
+    gap: 0px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
   main .text h2 {
-    font-size: 40px;
+    font-size: 25px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .text h2 {
+    font-size: calc(25px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .text h2 {
+    font-size: calc(25px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .text h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (width < 1660px) {
   main .text p {
-    font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .text p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .text p {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .text p {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .text p {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   main .all-carts {
     display: flex;
     flex-flow: wrap;
@@ -938,9 +1145,30 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .all-carts .cartF .front .cart-text p {
     font-weight: 700;
-    font-size: 24px;
     padding: 0 0 5px 0;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cartF .front .cart-text p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cartF .front .cart-text p {
+    font-size: calc(14px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cartF .front .cart-text p {
+    font-size: calc(14px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cartF .front .cart-text p {
+    font-size: 24px;
+  }
+}
+@media screen and (width < 1660px) {
   main .all-carts .cartF .back {
     width: 400px;
     height: 280px;
@@ -953,22 +1181,87 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .all-carts .cartF .back .time h3 {
-    font-size: 28px;
     z-index: 20;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: calc(20px + 13.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: calc(20px + 8 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cartF .back .time h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cartF .back .time h4 {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cartF .back .time h4 {
+    font-size: calc(16px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .all-carts .cartF .back .time h4 {
     font-size: 22px;
-    z-index: 20;
   }
+}
+@media screen and (width < 1660px) {
   main .all-carts .cartF .back p {
-    font-size: 16px;
     padding: 0 20px 40px;
     line-height: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cartF .back p {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cartF .back p {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cartF .back p {
+    font-size: calc(12px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cartF .back p {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   main .all-carts .cartF .back span {
     width: 400px;
     height: 280px;
   }
+}
+@media screen and (width < 1660px) {
   main .offer {
     display: flex;
     flex-flow: column;
@@ -977,10 +1270,31 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 30px;
     line-height: 72px;
     color: #14274A;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .offer h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .offer h2 {
+    font-size: calc(22px + 13.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .offer h2 {
+    font-size: calc(22px + 8 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .offer h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (width < 1660px) {
   main .offer .offer-text {
     display: flex;
     flex-flow: row;
@@ -990,9 +1304,30 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .offer .offer-text p {
     color: black;
     padding: 0 0 15px 0;
-    font-size: 14px;
     font-weight: 500;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .offer .offer-text p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .offer .offer-text p {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .offer .offer-text p {
+    font-size: calc(14px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .offer .offer-text p {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments {
     margin: 60px 0 0 0;
     gap: 10px;
@@ -1000,24 +1335,110 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments h2 {
     font-size: 36px;
   }
-  main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 16px;
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments h2 {
+    font-size: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 16 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    padding: 0;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 14px;
     line-height: 30px;
     color: #14274A;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments .buttons {
     gap: 20px;
+    padding: 10px 0 0 0;
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 16px;
+    line-height: 20px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 18px;
   }
 }
 @media screen and (width < 1100px) {
@@ -1026,13 +1447,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text {
     margin: 40px 0;
+    gap: 20px;
   }
   main .text h2 {
-    font-size: 30px;
     line-height: 40px;
   }
   main .text p {
-    font-size: 14px;
     line-height: 20px;
   }
   main .all-carts {
@@ -1058,7 +1478,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
-    font-size: 15px;
     padding: 0 0 5px 0;
   }
   main .all-carts .cartF .back {
@@ -1074,15 +1493,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .all-carts .cartF .back .time h3 {
-    font-size: 18px;
     z-index: 20;
   }
   main .all-carts .cartF .back .time h4 {
-    font-size: 16px;
     z-index: 20;
   }
   main .all-carts .cartF .back p {
-    font-size: 10px;
     padding: 0 20px 0;
     line-height: 16px;
   }
@@ -1098,7 +1514,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 24px;
     line-height: 72px;
     color: #14274A;
   }
@@ -1111,7 +1526,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .offer .offer-text p {
     color: black;
     padding: 0 0 10px 0;
-    font-size: 12px;
     font-weight: 500;
   }
   main .comments {
@@ -1119,15 +1533,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 26px;
     line-height: 30px;
-  }
-  main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 14px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 12px;
     line-height: 24px;
     color: #14274A;
   }
@@ -1138,7 +1547,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 14x;
     background: #E0B973;
     color: white;
     border-radius: 8px;
@@ -1150,13 +1558,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text {
     margin: 30px 0;
+    gap: 10px;
   }
   main .text h2 {
-    font-size: 30px;
     line-height: 40px;
   }
   main .text p {
-    font-size: 12px;
     line-height: 20px;
   }
   main .all-carts {
@@ -1182,7 +1589,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
-    font-size: 17px;
     padding: 0 0 5px 0;
   }
   main .all-carts .cartF .back {
@@ -1198,15 +1604,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .all-carts .cartF .back .time h3 {
-    font-size: 20px;
     z-index: 20;
   }
   main .all-carts .cartF .back .time h4 {
-    font-size: 18px;
     z-index: 20;
   }
   main .all-carts .cartF .back p {
-    font-size: 12px;
     padding: 0 20px 0;
     line-height: 16px;
   }
@@ -1222,20 +1625,18 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 22px;
     line-height: 72px;
     color: #14274A;
   }
   main .offer .offer-text {
     display: flex;
     flex-flow: wrap;
-    gap: 0;
+    gap: 30px;
     justify-content: space-between;
   }
   main .offer .offer-text p {
     color: black;
     padding: 0 0 10px 0;
-    font-size: 12px;
     font-weight: 500;
   }
   main .comments {
@@ -1243,15 +1644,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 24px;
     line-height: 24px;
-  }
-  main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 14px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 12px;
     line-height: 14px;
     color: #14274A;
   }
@@ -1262,7 +1658,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 12px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
@@ -1277,11 +1672,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 10px 0 30px;
   }
   main .text h2 {
-    font-size: 20px;
     line-height: 20px;
   }
   main .text p {
-    font-size: 10px;
     line-height: 18px;
   }
   main .all-carts {
@@ -1310,12 +1703,35 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     right: 0;
     text-align: center;
     top: 45%;
-    font-size: 28px;
     font-weight: 500;
   }
+}
+@media screen and (width < 550px) and (max-width: 320px) {
+  main .all-carts .cartF .front span {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 550px) and (max-width: 800px) {
+  main .all-carts .cartF .front span {
+    font-size: calc(20px + 13.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 550px) and (min-width: 800px) {
+  main .all-carts .cartF .front span {
+    font-size: calc(20px + 8 * (100vw / 1660));
+  }
+}
+@media screen and (width < 550px) and (min-width: 1660px) {
+  main .all-carts .cartF .front span {
+    font-size: 28px;
+  }
+}
+@media screen and (width < 550px) {
   main .all-carts .cartF .front .cart-text {
     display: none;
   }
+}
+@media screen and (width < 550px) {
   main .all-carts .cartF .back {
     width: 330px;
     height: 200px;
@@ -1328,15 +1744,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 5px;
   }
   main .all-carts .cartF .back .time h3 {
-    font-size: 20px;
     z-index: 20;
   }
   main .all-carts .cartF .back .time h4 {
-    font-size: 16px;
     z-index: 20;
   }
   main .all-carts .cartF .back p {
-    font-size: 10px;
     padding: 0 20px 0;
     line-height: 16px;
   }
@@ -1344,6 +1757,8 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     width: 330px;
     height: 200px;
   }
+}
+@media screen and (width < 550px) {
   main .offer {
     display: flex;
     flex-flow: column;
@@ -1353,7 +1768,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .offer h2 {
     font-weight: 700;
-    font-size: 18px;
     line-height: 72px;
     color: #14274A;
   }
@@ -1371,19 +1785,20 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     display: inline-block;
     color: black;
     padding: 0 0 10px 0;
-    font-size: 12px;
     font-weight: 500;
   }
   main .offer .offer-text .offer-first {
     padding: 0;
   }
+}
+@media screen and (width < 550px) {
   main .comments {
     margin: 50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 20px;
     line-height: 18px;
+    padding: 0 0 10px;
   }
   main .comments .comments-container .comments-track {
     width: 350px;
@@ -1392,23 +1807,22 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     min-width: 350px;
   }
   main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 12px;
+    line-height: 18px;
+    padding: 0 0 5px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 10px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 8px 15px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
@@ -1423,11 +1837,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 10px 0 30px;
   }
   main .text h2 {
-    font-size: 20px;
     line-height: 20px;
   }
   main .text p {
-    font-size: 10px;
     line-height: 18px;
   }
   main .all-carts {
@@ -1446,9 +1858,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     width: 280px;
     height: 160px;
   }
-  main .all-carts .cartF .front span {
-    font-size: 22px;
-  }
   main .all-carts .cartF .front .cart-text {
     display: none;
   }
@@ -1464,15 +1873,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 5px;
   }
   main .all-carts .cartF .back .time h3 {
-    font-size: 18px;
     z-index: 20;
   }
   main .all-carts .cartF .back .time h4 {
-    font-size: 16px;
     z-index: 20;
   }
   main .all-carts .cartF .back p {
-    font-size: 10px;
     padding: 0 20px 0;
     line-height: 14px;
   }
@@ -1485,7 +1891,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 20px;
     line-height: 18px;
   }
   main .comments .comments-container .comments-track {
@@ -1495,13 +1900,11 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     min-width: 300px;
   }
   main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 12px;
     line-height: 16px;
-    padding: 10px 0 10px;
+    padding: 0;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 11px;
     line-height: 14px;
     color: #14274A;
   }
@@ -1513,8 +1916,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 8px 15px;
     background: #E0B973;
     color: white;
     border-radius: 8px;

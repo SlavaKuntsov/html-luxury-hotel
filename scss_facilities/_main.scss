@@ -218,12 +218,14 @@ main{
 		@include max_1660;
 		.text{
 			margin: 60px 0;
-			gap: 10px;
+			gap: 0px;
 			h2{
-				font-size: 40px;
+				// font-size: 40px;
+				@include responsive-font(35, 25);
 			}
 			p{
-				font-size: 16px;
+				// font-size: 16px;
+				@include responsive-font(18, 14);
 				line-height: 24px;
 			}
 		}
@@ -248,7 +250,8 @@ main{
 						bottom: -1px;
 						p{
 							font-weight: 700;
-							font-size: 24px;
+							// font-size: 24px;
+							@include responsive-font(24, 14);
 							padding: 0 0 5px 0;
 						}
 					}
@@ -263,16 +266,19 @@ main{
 					.time{
 						gap: 10px;
 						h3{
-							font-size: 28px;
+							// font-size: 28px;
+							@include responsive-font(28, 20);
 							z-index: 20;
 						}
 						h4{
-							font-size: 22px;
+							// font-size: 22px;
+							@include responsive-font(22, 16);
 							z-index: 20;
 						}
 					}
 					p{
-						font-size: 16px;
+						// font-size: 16px;
+						@include responsive-font(16, 12);
 						padding: 0 20px 40px;
 						line-height: 20px;
 					}
@@ -290,7 +296,8 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 30px;
+				// font-size: 30px;
+				@include responsive-font(30, 22);
 				line-height: 72px;
 				color: #14274A;
 			}
@@ -302,7 +309,8 @@ main{
 				p{
 					color: black;
 					padding: 0 0 15px 0;
-					font-size: 14px;
+					// font-size: 14px;
+					@include responsive-font(20, 14);
 					font-weight: 500;
 				}
 			}
@@ -312,16 +320,20 @@ main{
 			gap: 10px;
 			h2{
 				font-size: 36px;
+				@include responsive-font(36, 20);
 			}
 			.comments-container{
 				.comments-track{
 					.comment-cart{
 						p{
-							font-size: 16px;
+							// font-size: 16px;
+							padding: 0;
+							@include responsive-font(18, 14);
 						}
 						span{
 							font-weight: 400;
-							font-size: 14px;
+							// font-size: 14px;
+							@include responsive-font(16, 12);
 							line-height: 30px;
 							color: #14274A;
 						}
@@ -330,9 +342,12 @@ main{
 			}
 			.buttons{
 				gap: 20px;
+				padding: 10px 0 0 0;
 				.left, .right {
 					padding: 10px 20px;
-					font-size: 16px;
+					// font-size: 16px;
+					@include responsive-font(18, 12);
+					line-height: 20px;
 					background: $ohra;
 					color: white;
 					border-radius: 8px;
@@ -349,12 +364,13 @@ main{
 		@include max_1100;
 		.text{
 			margin: 40px 0;
+			gap: 20px;
 			h2{
-				font-size: 30px;
+				// font-size: 30px;
 				line-height: 40px;
 			}
 			p{
-				font-size: 14px;
+				// font-size: 14px;
 				line-height: 20px;
 			}
 		}
@@ -379,7 +395,7 @@ main{
 						bottom: -1px;
 						p{
 							font-weight: 600;
-							font-size: 15px;
+							// font-size: 15px;
 							padding: 0 0 5px 0;
 						}
 					}
@@ -395,16 +411,16 @@ main{
 						flex-flow: row;
 						gap: 10px;
 						h3{
-							font-size: 18px;
+							// font-size: 18px;
 							z-index: 20;
 						}
 						h4{
-							font-size: 16px;
+							// font-size: 16px;
 							z-index: 20;
 						}
 					}
 					p{
-						font-size: 10px;
+						// font-size: 10px;
 						padding: 0 20px 0;
 						line-height: 16px;
 					}
@@ -423,7 +439,7 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 24px;
+				// font-size: 24px;
 				line-height: 72px;
 				color: #14274A;
 			}
@@ -435,7 +451,7 @@ main{
 				p{
 					color: black;
 					padding: 0 0 10px 0;
-					font-size: 12px;
+					// font-size: 12px;
 					font-weight: 500;
 				}
 			}
@@ -444,7 +460,7 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 26px;
+				// font-size: 26px;
 				line-height: 30px;
 			}
 			.comments-container{
@@ -452,11 +468,11 @@ main{
 				.comments-track{
 					.comment-cart{
 						p{
-							font-size: 14px;
+							// font-size: 14px;
 						}
 						span{
 							font-weight: 400;
-							font-size: 12px;
+							// font-size: 12px;
 							line-height: 24px;
 							color: #14274A;
 						}
@@ -469,7 +485,7 @@ main{
 				gap: 20px;
 				.left, .right {
 					padding: 10px 20px;
-					font-size: 14x;
+					// font-size: 14x;
 					background: $ohra;
 					color: white;
 					border-radius: 8px;
@@ -486,12 +502,13 @@ main{
 		@include max_800;
 		.text{
 			margin: 30px 0;
+			gap: 10px;
 			h2{
-				font-size: 30px;
+				// font-size: 30px;
 				line-height: 40px;
 			}
 			p{
-				font-size: 12px;
+				// font-size: 12px;
 				line-height: 20px;
 			}
 		}
@@ -516,7 +533,7 @@ main{
 						bottom: -1px;
 						p{
 							font-weight: 600;
-							font-size: 17px;
+							// font-size: 17px;
 							padding: 0 0 5px 0;
 						}
 					}
@@ -532,16 +549,16 @@ main{
 						flex-flow: column;
 						gap: 10px;
 						h3{
-							font-size: 20px;
+							// font-size: 20px;
 							z-index: 20;
 						}
 						h4{
-							font-size: 18px;
+							// font-size: 18px;
 							z-index: 20;
 						}
 					}
 					p{
-						font-size: 12px;
+						// font-size: 12px;
 						padding: 0 20px 0;
 						line-height: 16px;
 					}
@@ -559,19 +576,19 @@ main{
 			margin: 110px 0 0 0;
 			h2{
 				font-weight: 700;
-				font-size: 22px;
+				// font-size: 22px;
 				line-height: 72px;
 				color: #14274A;
 			}
 			.offer-text{
 				display: flex;
 				flex-flow: wrap;
-				gap: 0;
+				gap: 30px;
 				justify-content: space-between;
 				p{
 					color: black;
 					padding: 0 0 10px 0;
-					font-size: 12px;
+					// font-size: 12px;
 					font-weight: 500;
 				}
 			}
@@ -580,7 +597,7 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 24px;
+				// font-size: 24px;
 				line-height: 24px;
 			}
 			.comments-container{
@@ -588,11 +605,11 @@ main{
 				.comments-track{
 					.comment-cart{
 						p{
-							font-size: 14px;
+							// font-size: 14px;
 						}
 						span{
 							font-weight: 400;
-							font-size: 12px;
+							// font-size: 12px;
 							line-height: 14px;
 							color: #14274A;
 						}
@@ -605,7 +622,7 @@ main{
 				gap: 20px;
 				.left, .right {
 					padding: 10px 20px;
-					font-size: 12px;
+					// font-size: 12px;
 					background: $ohra;
 					color: white;
 					border-radius: 8px;
@@ -624,11 +641,11 @@ main{
 		.text{
 			margin: 10px 0 30px;
 			h2{
-				font-size: 20px;
+				// font-size: 20px;
 				line-height: 20px;
 			}
 			p{
-				font-size: 10px;
+				// font-size: 10px;
 				line-height: 18px;
 			}
 		}
@@ -657,7 +674,8 @@ main{
 						right: 0;
 						text-align: center;
 						top: 45%;
-						font-size: 28px;
+						// font-size: 28px;
+						@include responsive-font(28, 20);
 						font-weight: 500;
 					}
 					.cart-text{
@@ -674,16 +692,16 @@ main{
 						flex-flow: column;
 						gap: 5px;
 						h3{
-							font-size: 20px;
+							// font-size: 20px;
 							z-index: 20;
 						}
 						h4{
-							font-size: 16px;
+							// font-size: 16px;
 							z-index: 20;
 						}
 					}
 					p{
-						font-size: 10px;
+						// font-size: 10px;
 						padding: 0 20px 0;
 						line-height: 16px;
 					}
@@ -702,7 +720,7 @@ main{
 			align-items: center;
 			h2{
 				font-weight: 700;
-				font-size: 18px;
+				// font-size: 18px;
 				line-height: 72px;
 				color: #14274A;
 			}
@@ -718,7 +736,7 @@ main{
 						display: inline-block;
 						color: black;
 						padding: 0 0 10px 0;
-						font-size: 12px;
+						// font-size: 12px;
 						font-weight: 500;
 					}
 				}
@@ -731,8 +749,9 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 20px;
+				// font-size: 20px;
 				line-height: 18px;
+				padding: 0 0 10px;
 			}
 			.comments-container{
 				.comments-track{
@@ -740,11 +759,13 @@ main{
 					.comment-cart{
 						min-width: 350px;
 						p{
-							font-size: 12px;
+							// font-size: 12px;
+							line-height: 18px;
+							padding: 0 0 5px;
 						}
 						span{
 							font-weight: 400;
-							font-size: 10px;
+							// font-size: 10px;
 							line-height: 14px;
 							color: #14274A;
 						}
@@ -752,13 +773,13 @@ main{
 				}
 			}
 			.buttons{
-				margin: 10px 0 0 0;
+				margin: 0;
 				display: flex;
 				align-items: center;
 				gap: 20px;
 				.left, .right {
-					padding: 5px 10px;
-					font-size: 12px;
+					padding: 8px 15px;
+					// font-size: 12px;
 					background: $ohra;
 					color: white;
 					border-radius: 8px;
@@ -777,11 +798,11 @@ main{
 		.text{
 			margin: 10px 0 30px;
 			h2{
-				font-size: 20px;
+				// font-size: 20px;
 				line-height: 20px;
 			}
 			p{
-				font-size: 10px;
+				// font-size: 10px;
 				line-height: 18px;
 			}
 		}
@@ -801,7 +822,7 @@ main{
 						height: 160px;
 					}
 					span{
-						font-size: 22px;
+						// font-size: 22px;
 					}
 					.cart-text{
 						display: none;
@@ -817,16 +838,16 @@ main{
 						flex-flow: row;
 						gap: 5px;
 						h3{
-							font-size: 18px;
+							// font-size: 18px;
 							z-index: 20;
 						}
 						h4{
-							font-size: 16px;
+							// font-size: 16px;
 							z-index: 20;
 						}
 					}
 					p{
-						font-size: 10px;
+						// font-size: 10px;
 						padding: 0 20px 0;
 						line-height: 14px;
 					}
@@ -841,7 +862,7 @@ main{
 			margin: 50px 0 0 0;
 			gap: 10px;
 			h2{
-				font-size: 20px;
+				// font-size: 20px;
 				line-height: 18px;
 			}
 			.comments-container{
@@ -850,13 +871,13 @@ main{
 					.comment-cart{
 						min-width: 300px;
 						p{
-							font-size: 12px;
+							// font-size: 12px;
 							line-height: 16px;
-							padding: 10px 0 10px;
+							padding: 0;
 						}
 						span{
 							font-weight: 400;
-							font-size: 11px;
+							// font-size: 11px;
 							line-height: 14px;
 							color: #14274A;
 						}
@@ -870,8 +891,8 @@ main{
 				gap: 20px;
 				.left, .right {
 					@include hover($ohra);
-					padding: 5px 10px;
-					font-size: 12px;
+					padding: 8px 15px;
+					// font-size: 12px;
 					background: $ohra;
 					color: white;
 					border-radius: 8px;

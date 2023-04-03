@@ -212,13 +212,13 @@ nav ul li:not(:nth-child(1)):hover:before {
 }
 nav ul li a {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
 }
 nav ul li:nth-child(1) a {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   border-bottom: 2px solid white;
@@ -403,22 +403,22 @@ nav ul li:nth-child(1) a {
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
   nav ul li a {
-    font-size: 8px;
+    font-size: 11px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
   nav ul li a {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
   nav ul li a {
-    font-size: calc(8px + 6 * (100vw / 1660));
+    font-size: calc(11px + 5 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
   nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (width < 1660px) {
@@ -428,22 +428,22 @@ nav ul li:nth-child(1) a {
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
   nav ul li:nth-child(1) a {
-    font-size: 8px;
+    font-size: 11px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
   nav ul li:nth-child(1) a {
-    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
   nav ul li:nth-child(1) a {
-    font-size: calc(8px + 6 * (100vw / 1660));
+    font-size: calc(11px + 5 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
   nav ul li:nth-child(1) a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (width < 1660px) {
@@ -720,7 +720,7 @@ nav ul li:nth-child(1) a {
     z-index: 1;
   }
   nav ul {
-    gap: 30px;
+    gap: 20px;
   }
   nav ul li:nth-child(1) a {
     border-bottom: 1.5px solid white;
@@ -767,7 +767,7 @@ nav ul li:nth-child(1) a {
 }
 @media screen and (width < 550px) {
   header {
-    height: 380px;
+    height: 370px;
     padding: 20px;
   }
   nav {
@@ -1281,7 +1281,7 @@ main {
 @media screen and (width < 1660px) {
   .stay-here .stay-here-text p {
     color: #14274A;
-    line-height: 22px;
+    line-height: 24px;
     text-align: center;
     padding: 0 50px;
   }
@@ -1706,7 +1706,7 @@ main {
 @media screen and (width < 1100px) {
   main {
     max-width: 700px;
-    margin: 50px auto 70px;
+    margin: 70px auto 70px;
   }
   .all-advantages {
     margin: 0px 10% 50px;
@@ -1727,14 +1727,14 @@ main {
     width: 60px;
   }
   .stay-here {
-    margin: 50px auto 100px;
+    margin: 70px auto 100px;
     gap: 100px;
   }
   .stay-here .stay-here-text {
     gap: 10px;
   }
   .stay-here .stay-here-text p {
-    line-height: 18px;
+    line-height: 20px;
     padding: 0 50px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages {
@@ -1870,7 +1870,7 @@ main {
 @media screen and (width < 800px) {
   main {
     max-width: 500px;
-    margin: 40px auto 70px;
+    margin: 70px auto 70px;
   }
   .all-advantages {
     margin: 0px 0% 50px 10px;
@@ -1883,7 +1883,7 @@ main {
     width: 60px;
   }
   .stay-here {
-    margin: 50px auto 70px;
+    margin: 60px auto 60px;
     flex-flow: column;
     gap: 50px;
   }
@@ -1899,7 +1899,7 @@ main {
   .stay-here .stay-here-text p {
     color: #14274A;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 20px;
     text-align: center;
     padding: 0;
   }
@@ -2079,7 +2079,7 @@ main {
 @media screen and (width < 550px) {
   main {
     max-width: inherit;
-    margin: 20px auto 70px;
+    margin: 30px auto 70px;
     padding: 20px;
   }
   .all-advantages {
@@ -2089,8 +2089,6 @@ main {
     justify-items: center;
   }
   .all-advantages .advantage {
-    display: flex;
-    justify-content: center;
     max-width: 155px;
     gap: 10px;
   }
@@ -2107,85 +2105,53 @@ main {
   }
   .stay-here {
     margin: 50px auto 70px;
-    display: flex;
     flex-flow: column;
     gap: 30px;
   }
   .stay-here .stay-here-text {
-    display: flex;
-    flex-flow: column;
     align-items: center;
     gap: 10px;
   }
   .stay-here .stay-here-text h2 {
-    color: #14274A;
     font-weight: 700;
   }
   .stay-here .stay-here-text h2 span {
     font-weight: 700;
-    color: #E0B973;
-    font-family: "EB Garamond", serif;
   }
   .stay-here .stay-here-text p {
-    color: #14274A;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 18px;
     text-align: center;
     padding: 0;
   }
-  .stay-here .stay-here-advantages {
-    position: relative;
-  }
   .stay-here .stay-here-advantages .all-stay-here-advantages {
-    display: flex;
-    flex-flow: column;
     gap: 30px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    display: flex;
-    flex-flow: column;
     gap: 10px;
     width: 100%;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background: #E0B973;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
     font-weight: 600;
-    color: black;
     line-height: 16px;
-    font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text {
-    display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
-    transition: transform 0.2s ease-in-out;
-    z-index: 10;
-    background: white;
     padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.2);
-    display: flex;
-    flex-flow: row;
     align-items: center;
     gap: 10px;
     width: 40%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments:hover {
-    transform: translateY(-5px);
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments img {
     width: 30px;
@@ -2200,78 +2166,27 @@ main {
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
     white-space: nowrap;
-    font-family: "Montserrat", sans-serif;
     font-size: 13px;
     font-weight: 600;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
     white-space: nowrap;
     font-size: 11px;
-    font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
     width: 50%;
     line-height: 18px;
   }
-  .stay-here .stay-here-advantages .all-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .stay-here .stay-here-advantages .all-image .big-img {
     display: none;
-    z-index: 1;
-    position: absolute;
-    right: 0px;
-    top: 50px;
-    height: 300px;
   }
   .stay-here .stay-here-advantages .all-image .small-img {
     display: none;
-    position: absolute;
-    right: 40px;
-    top: 85px;
-    margin: auto 0;
-    z-index: 5;
-    height: 100px;
   }
   .stay-here .stay-here-advantages .all-image .comments {
     display: none;
   }
-  .stay-here .stay-here-advantages .all-image .comments img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text {
-    display: flex;
-    flex-flow: column;
-    gap: 2px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-family: "Montserrat", sans-serif;
-  }
-  .stay-here .stay-here-advantages .all-image .c1 {
-    position: absolute;
-    top: 25px;
-    right: 0;
-  }
-  .stay-here .stay-here-advantages .all-image .c2 {
-    position: absolute;
-    top: 165px;
-    right: 100px;
-  }
-  .stay-here .stay-here-advantages .all-image .c3 {
-    position: absolute;
-    top: 330px;
-    right: 0;
-  }
   .main-info {
-    display: flex;
     flex-flow: column;
     gap: 50px;
   }
@@ -2279,7 +2194,6 @@ main {
     display: none;
   }
   .main-info .mobile-info-card {
-    display: flex;
     flex-flow: column;
     gap: 20px;
     align-items: center;
@@ -2317,9 +2231,7 @@ main {
   }
   .main-info .mobile-info-card .card .text {
     width: 100%;
-    background: #14274A;
     padding: 30px;
-    display: flex;
     flex-flow: column;
     align-items: start;
     gap: 20px;
@@ -2327,7 +2239,6 @@ main {
   .main-info .mobile-info-card .card .text p {
     font-weight: 300;
     line-height: 16px;
-    color: white;
   }
   .main-info .mobile-info-card .card .text a {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
@@ -2335,8 +2246,6 @@ main {
     background: #E0B973;
     font-weight: 400;
     line-height: 10px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
   }
   .main-info .mobile-info-card .card .text a:hover {
     transform: translateY(-5px);
@@ -2348,9 +2257,6 @@ main {
   }
 }
 @media screen and (width < 550px) {
-  .about-us {
-    background: #14274A;
-  }
   .about-us .block {
     padding: 20px 20px 30px;
     max-width: inherit;
@@ -2358,14 +2264,12 @@ main {
   }
   .about-us .block .text {
     padding: 0;
-    display: flex;
     flex-flow: column;
     gap: 10px;
   }
   .about-us .block .text h2 {
     margin: 0 auto 15px;
     letter-spacing: 3px;
-    color: white;
     padding: 0 0 10px;
     width: inherit;
     border-bottom: 1px solid #E0B973;
@@ -2377,15 +2281,12 @@ main {
   }
   .about-us .block img {
     display: none;
-    width: 230px;
-    height: 290px;
   }
 }
 @media screen and (width < 550px) {
   .reviews {
     max-width: inherit;
     margin: 50px auto 100px;
-    display: flex;
     flex-flow: column;
     gap: 30px;
     padding: 20px;
@@ -2393,29 +2294,24 @@ main {
   .reviews h2 {
     text-align: center;
     font-weight: 700;
-    color: #14274A;
     letter-spacing: 2px;
   }
   .reviews .text {
-    display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
   .reviews .text p {
-    color: black;
     letter-spacing: 1px;
   }
   .reviews .text .all-star {
-    display: flex;
     flex-flow: column;
     gap: 5px;
     align-items: center;
   }
   .reviews .text .all-star .star {
     margin: 0 0 0 -5px;
-    display: flex;
     flex-flow: row;
     gap: 5px;
   }
@@ -2425,9 +2321,7 @@ main {
   }
   .reviews .text .all-avatars {
     gap: 10px;
-    display: flex;
     flex-flow: column;
-    display: flex;
     align-items: center;
   }
   .reviews .text .all-avatars img {
@@ -2448,7 +2342,6 @@ main {
     justify-items: center;
   }
   .all-advantages .advantage {
-    display: flex;
     justify-content: center;
     max-width: 110px;
     gap: 10px;
@@ -2465,44 +2358,33 @@ main {
     line-height: 16px;
   }
   .stay-here {
-    margin: 70px auto 90px;
-    display: flex;
+    margin: 60px auto 90px;
     flex-flow: column;
     gap: 30px;
   }
   .stay-here .stay-here-text {
-    display: flex;
     flex-flow: column;
     align-items: center;
     gap: 10px;
   }
   .stay-here .stay-here-text h2 {
-    color: #14274A;
     font-weight: 700;
     text-align: center;
   }
   .stay-here .stay-here-text h2 span {
     font-weight: 700;
-    color: #E0B973;
-    font-family: "EB Garamond", serif;
   }
   .stay-here .stay-here-text p {
-    color: #14274A;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 18px;
     text-align: center;
     padding: 0;
   }
-  .stay-here .stay-here-advantages {
-    position: relative;
-  }
   .stay-here .stay-here-advantages .all-stay-here-advantages {
-    display: flex;
     flex-flow: column;
     gap: 40px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    display: flex;
     flex-flow: column;
     gap: 10px;
     width: 100%;
@@ -2510,125 +2392,55 @@ main {
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background: #E0B973;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
     font-weight: 600;
-    color: black;
     line-height: 16px;
-    font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text {
-    display: flex;
     flex-flow: column;
     align-items: start;
     gap: 20px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
-    transition: transform 0.2s ease-in-out;
-    z-index: 10;
-    background: white;
     padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.2);
-    display: flex;
     flex-flow: row;
     align-items: center;
     gap: 10px;
     width: 100%;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments:hover {
-    transform: translateY(-5px);
-  }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text {
     width: 100%;
-    display: flex;
     flex-flow: column;
     gap: 2px;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     white-space: nowrap;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
     white-space: nowrap;
-    font-family: "Montserrat", sans-serif;
   }
   .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
     width: 100%;
     line-height: 18px;
   }
-  .stay-here .stay-here-advantages .all-image {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .stay-here .stay-here-advantages .all-image .big-img {
     display: none;
-    z-index: 1;
-    position: absolute;
-    right: 0px;
-    top: 50px;
-    height: 300px;
   }
   .stay-here .stay-here-advantages .all-image .small-img {
     display: none;
-    position: absolute;
-    right: 40px;
-    top: 85px;
-    margin: auto 0;
-    z-index: 5;
-    height: 100px;
   }
   .stay-here .stay-here-advantages .all-image .comments {
     display: none;
   }
-  .stay-here .stay-here-advantages .all-image .comments img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text {
-    display: flex;
-    flex-flow: column;
-    gap: 2px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-family: "Montserrat", sans-serif;
-  }
-  .stay-here .stay-here-advantages .all-image .c1 {
-    position: absolute;
-    top: 25px;
-    right: 0;
-  }
-  .stay-here .stay-here-advantages .all-image .c2 {
-    position: absolute;
-    top: 165px;
-    right: 100px;
-  }
-  .stay-here .stay-here-advantages .all-image .c3 {
-    position: absolute;
-    top: 330px;
-    right: 0;
-  }
   .main-info {
-    display: flex;
     flex-flow: column;
     gap: 50px;
   }
@@ -2636,7 +2448,6 @@ main {
     display: none;
   }
   .main-info .mobile-info-card {
-    display: flex;
     flex-flow: column;
     gap: 20px;
     align-items: center;
@@ -2644,8 +2455,6 @@ main {
   .main-info .mobile-info-card h2 {
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #14274A;
     text-align: center;
   }
   .main-info .mobile-info-card .card img {
@@ -2653,9 +2462,7 @@ main {
   }
   .main-info .mobile-info-card .card .text {
     width: 100%;
-    background: #14274A;
     padding: 30px;
-    display: flex;
     flex-flow: column;
     align-items: start;
     gap: 20px;
@@ -2663,16 +2470,12 @@ main {
   .main-info .mobile-info-card .card .text p {
     font-weight: 300;
     line-height: 16px;
-    color: white;
   }
   .main-info .mobile-info-card .card .text a {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
     padding: 10px 20px;
-    background: #E0B973;
     font-weight: 400;
     line-height: 10px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
   }
   .main-info .mobile-info-card .card .text a:hover {
     transform: translateY(-5px);
@@ -2682,9 +2485,6 @@ main {
   .main-info .mobile-info-card .card .text a:active {
     background: #e5c388;
   }
-  .about-us {
-    background: #14274A;
-  }
   .about-us .block {
     padding: 20px 20px 40px;
     max-width: inherit;
@@ -2692,14 +2492,12 @@ main {
   }
   .about-us .block .text {
     padding: 0;
-    display: flex;
     flex-flow: column;
     gap: 10px;
   }
   .about-us .block .text h2 {
     margin: 0 auto 15px;
     letter-spacing: 3px;
-    color: white;
     padding: 0 0 8px;
     width: inherit;
     border-bottom: 1px solid #E0B973;
@@ -2711,13 +2509,10 @@ main {
   }
   .about-us .block img {
     display: none;
-    width: 230px;
-    height: 290px;
   }
   .reviews {
     max-width: inherit;
     margin: 30px auto 80px;
-    display: flex;
     flex-flow: column;
     gap: 30px;
     padding: 20px;
@@ -2725,23 +2520,19 @@ main {
   .reviews h2 {
     text-align: center;
     font-weight: 700;
-    color: #14274A;
     letter-spacing: 2px;
   }
   .reviews .text {
-    display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
   .reviews .text p {
-    color: black;
     letter-spacing: 1px;
     text-align: center;
   }
   .reviews .text .all-star {
-    display: flex;
     flex-flow: column;
     gap: 5px;
     align-items: center;
@@ -2758,7 +2549,6 @@ main {
   }
   .reviews .text .all-avatars {
     gap: 10px;
-    display: flex;
     flex-flow: column;
     display: flex;
     align-items: center;

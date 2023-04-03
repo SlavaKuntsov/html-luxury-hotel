@@ -97,7 +97,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 100;
-  transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out, display 1s ease-in-out;
   overflow: auto;
   padding: 20px;
 }
@@ -116,12 +116,12 @@ header {
 }
 #burger-menu ul li a {
   color: black;
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 0.4px;
 }
 #burger-menu ul li:nth-child(2) a {
   color: black;
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 0.4px;
   border-bottom: 2px solid black;
 }
@@ -207,18 +207,18 @@ nav ul li:not(:nth-child(2)) {
 nav ul li:not(:nth-child(2)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(2)):hover::before {
+nav ul li:not(:nth-child(2)):hover:before {
   width: 100%;
 }
 nav ul li a {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
 }
 nav ul li:nth-child(2) a {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #FFFFFF;
   border-bottom: 2px solid white;
@@ -237,27 +237,27 @@ nav ul li:nth-child(2) a {
 .header-main .text span {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 45px;
+  font-size: 50px;
   line-height: 61px;
   color: #FFFFFF;
 }
 .header-main .text h1 {
   font-weight: 700;
-  font-size: 134px;
-  line-height: 120px;
+  font-size: 154px;
+  line-height: 130px;
   letter-spacing: 0.07em;
   color: #FFFFFF;
 }
 .header-main .text h2 {
   font-size: 60px;
-  line-height: 60px;
+  line-height: 72px;
   letter-spacing: 0.4em;
   color: #FFFFFF;
 }
 .header-main .text p {
   width: 580px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 30px;
   letter-spacing: 0.1em;
   color: #FFFFFF;
@@ -339,32 +339,114 @@ nav ul li:nth-child(2) a {
   }
   nav .logo h3 {
     z-index: 5;
-    font-size: 26px;
     line-height: 30px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav .logo h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h5 {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   nav .logo h5 {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:after {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav .logo:before {
     width: 45px;
     height: 45px;
     z-index: 1;
   }
+}
+@media screen and (width < 1660px) {
   nav ul {
     gap: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
   nav ul li a {
-    font-size: 14px;
+    font-size: 11px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   nav ul li:nth-child(2) a {
-    font-size: 14px;
     border-bottom: 2px solid white;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li:nth-child(2) a {
+    font-size: 11px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li:nth-child(2) a {
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li:nth-child(2) a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li:nth-child(2) a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main {
     max-width: 1000px;
   }
@@ -372,22 +454,106 @@ nav ul li:nth-child(2) a {
     margin: 150px 0 120px;
   }
   .header-main .text span {
-    font-size: 25px;
     line-height: 40px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text span {
+    font-size: 13px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 20.4 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text span {
+    font-size: calc(13px + 12 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text span {
+    font-size: 25px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h1 {
-    font-size: 90px;
     line-height: 70px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 78.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h1 {
+    font-size: calc(50px + 46 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h1 {
+    font-size: 96px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text h2 {
-    font-size: 30px;
     line-height: 50px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 30.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text h2 {
+    font-size: calc(16px + 18 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text h2 {
+    font-size: 34px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .text p {
     width: 510px;
-    font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .text p {
+    font-size: 9px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 11.9 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .text p {
+    font-size: calc(9px + 7 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main .text p {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons {
     gap: 40px;
   }
@@ -400,15 +566,53 @@ nav ul li:nth-child(2) a {
     width: 20px;
     height: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .button p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .button p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .button p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll {
     gap: 5px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main .all-buttons .scroll p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main .all-buttons .scroll p {
+    font-size: calc(10px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   .header-main .all-buttons .scroll p {
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   .header-main .all-buttons .scroll img {
     width: 35px;
     height: 35px;
@@ -428,12 +632,10 @@ nav ul li:nth-child(2) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -448,9 +650,6 @@ nav ul li:nth-child(2) a {
   nav ul {
     gap: 30px;
   }
-  nav ul li a {
-    font-size: 12px;
-  }
   .header-main {
     max-width: 700px;
   }
@@ -458,20 +657,16 @@ nav ul li:nth-child(2) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -487,11 +682,7 @@ nav ul li:nth-child(2) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -513,12 +704,10 @@ nav ul li:nth-child(2) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 20px;
     line-height: 20px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 10px;
   }
   nav .logo:after {
     width: 0;
@@ -531,13 +720,9 @@ nav ul li:nth-child(2) a {
     z-index: 1;
   }
   nav ul {
-    gap: 30px;
-  }
-  nav ul li a {
-    font-size: 12px;
+    gap: 20px;
   }
   nav ul li:nth-child(2) a {
-    font-size: 12px;
     border-bottom: 1.5px solid white;
   }
   .header-main {
@@ -547,20 +732,16 @@ nav ul li:nth-child(2) a {
     margin: 100px 0 60px;
   }
   .header-main .text span {
-    font-size: 18px;
     line-height: 30px;
   }
   .header-main .text h1 {
-    font-size: 70px;
     line-height: 60px;
   }
   .header-main .text h2 {
-    font-size: 24px;
     line-height: 40px;
   }
   .header-main .text p {
     width: 300px;
-    font-size: 12px;
     line-height: 20px;
   }
   .header-main .all-buttons {
@@ -576,11 +757,7 @@ nav ul li:nth-child(2) a {
     width: 18px;
     height: 18px;
   }
-  .header-main .all-buttons .button p {
-    font-size: 10px;
-  }
   .header-main .all-buttons .scroll p {
-    font-size: 12px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -590,7 +767,7 @@ nav ul li:nth-child(2) a {
 }
 @media screen and (width < 550px) {
   header {
-    height: 360px;
+    height: 370px;
     padding: 20px;
   }
   nav {
@@ -603,12 +780,10 @@ nav ul li:nth-child(2) a {
   nav .logo h3 {
     color: white;
     z-index: 5;
-    font-size: 16px;
     line-height: 16px;
   }
   nav .logo h5 {
     color: white;
-    font-size: 8px;
   }
   nav .logo:after {
     width: 0;
@@ -637,20 +812,16 @@ nav ul li:nth-child(2) a {
     margin: 40px 0 30px;
   }
   .header-main .text span {
-    font-size: 14px;
     line-height: 14px;
   }
   .header-main .text h1 {
-    font-size: 50px;
     line-height: 50px;
   }
   .header-main .text h2 {
-    font-size: 16px;
     line-height: 20px;
   }
   .header-main .text p {
     width: 240px;
-    font-size: 9px;
     line-height: 12px;
   }
   .header-main .all-buttons {
@@ -660,16 +831,16 @@ nav ul li:nth-child(2) a {
   }
   .header-main .all-buttons .button {
     gap: 8px;
-    padding: 0;
-    width: 90px;
+    padding: 5px 10px;
+    width: 120px;
     border-radius: 5px;
   }
   .header-main .all-buttons .button img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
   }
   .header-main .all-buttons .button p {
-    font-size: 7px;
+    white-space: nowrap;
     line-height: 24px;
   }
   .header-main .all-buttons .scroll {
@@ -682,7 +853,6 @@ nav ul li:nth-child(2) a {
     bottom: -60px;
   }
   .header-main .all-buttons .scroll p {
-    font-size: 10px;
     line-height: 15px;
   }
   .header-main .all-buttons .scroll img {
@@ -874,6 +1044,7 @@ main .comments .comments-container .comments-track .comment-cart p {
   font-size: 24px;
   line-height: 37px;
   color: #14274A;
+  padding: 0 0 10px;
 }
 main .comments .comments-container .comments-track .comment-cart span {
   font-weight: 400;
@@ -1023,60 +1194,239 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .text {
     margin: 60px 0;
-    gap: 10px;
+    gap: 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .text h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .text h2 {
+    font-size: calc(25px + 17 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .text h2 {
+    font-size: calc(25px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .text h2 {
     font-size: 35px;
   }
+}
+@media screen and (width < 1660px) {
   main .text p {
-    font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .text p {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .text p {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .text p {
+    font-size: calc(12px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .text p {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   main .info .top .date {
     gap: 70px;
   }
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .top .date .in label, main .info .top .date .out label {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .info .top .date .in label, main .info .top .date .out label {
     font-size: 18px;
   }
+}
+@media screen and (width < 1660px) {
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 16px;
     padding: 10px 20px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: calc(10px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .info .top .date .in input, main .info .top .date .out input {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   main .info .top .date .radio {
     gap: 15px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .top .date .radio .label {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .top .date .radio .label {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .top .date .radio .label {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .info .top .date .radio .label {
     font-size: 18px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .top .date .radio .input {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .top .date .radio .input {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .top .date .radio .input {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .info .top .date .radio .input {
     font-size: 18px;
   }
+}
+@media screen and (width < 1660px) {
   main .info .top .date .radio .input input {
     padding: 10px 20px;
   }
+}
+@media screen and (width < 1660px) {
   main .info .top .reserv {
-    font-size: 20px;
     padding: 10px 60px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .top .reserv {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .top .reserv {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .top .reserv {
+    font-size: calc(14px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .info .top .reserv {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) {
   main .info .top .output2 {
     display: none;
   }
+}
+@media screen and (width < 1660px) {
   main .info .bottom .output {
     flex-flow: row;
     gap: 10px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .info .bottom .output h5 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .bottom .output h5 {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .bottom .output h5 {
+    font-size: calc(16px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .info .bottom .output h5 {
     font-size: 22px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
   main .info .bottom .output h4 {
-    font-size: 24px;
+    font-size: 16px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .info .bottom .output h4 {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .info .bottom .output h4 {
+    font-size: calc(16px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .info .bottom .output h4 {
+    font-size: 22px;
+  }
+}
+@media screen and (width < 1660px) {
   main .info .bottom .reserv {
     display: none;
   }
+}
+@media screen and (width < 1660px) {
   main .all-carts {
     margin: 0 0 100px 0;
     display: flex;
@@ -1097,40 +1447,167 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     border-radius: 8px;
   }
   main .all-carts .cart h5 {
-    font-size: 24px;
     line-height: 24px;
     padding: 0 0 5px 0;
   }
-  main .all-carts .cart p {
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cart h5 {
     font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cart h5 {
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cart h5 {
+    font-size: calc(16px + 8 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cart h5 {
+    font-size: 24px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .all-carts .cart p {
     font-weight: 500;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cart p {
+    font-size: 10px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cart p {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cart p {
+    font-size: calc(10px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cart p {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments {
     margin: -50px 0 0 0;
     gap: 10px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 27.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 16 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
   main .comments h2 {
     font-size: 36px;
   }
+}
+@media screen and (width < 1660px) {
   main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 16px;
+    padding: 0;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 14px;
     line-height: 30px;
     color: #14274A;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
   main .comments .buttons {
     gap: 20px;
+    padding: 10px 0 0 0;
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 16px;
+    line-height: 20px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   #form form {
     padding: 20px 30px 30px;
     width: 400px;
@@ -1140,20 +1617,43 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     width: 30px;
     height: 30px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
   #form form h1 {
-    font-size: 28px;
+    font-size: 14px;
   }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  #form form h1 {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  #form form h1 {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  #form form h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
   #form form input {
     padding: 8px 15px;
     font-weight: 500;
     font-size: 14px;
   }
+}
+@media screen and (width < 1660px) {
   #form form ::-moz-placeholder {
     font-weight: 300;
   }
   #form form ::placeholder {
     font-weight: 300;
   }
+}
+@media screen and (width < 1660px) {
   #form form .all-input {
     display: flex;
     flex-flow: column;
@@ -1174,6 +1674,8 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     flex-flow: column;
     gap: 8px;
   }
+}
+@media screen and (width < 1660px) {
   #form form .output {
     display: flex;
     flex-flow: column;
@@ -1199,11 +1701,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 40px 0;
   }
   main .text h2 {
-    font-size: 30px;
     line-height: 40px;
   }
   main .text p {
-    font-size: 14px;
     line-height: 20px;
   }
   main .info {
@@ -1219,43 +1719,78 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in label, main .info .top .date .out label {
-    font-size: 18px;
-  }
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 14px;
     padding: 10px 20px;
   }
   main .info .top .date .radio {
     gap: 15px;
   }
-  main .info .top .date .radio .label {
-    font-size: 18px;
-  }
   main .info .top .date .radio .input {
     gap: 10px;
-    font-size: 16px;
   }
   main .info .top .date .radio .input input {
     padding: 10px 20px;
   }
   main .info .top .output2 {
+    display: block;
     gap: 10px;
   }
   main .info .top .output2 h5 {
-    font-size: 18px;
+    font-weight: 400;
   }
+}
+@media screen and (width < 1100px) and (max-width: 320px) {
+  main .info .top .output2 h5 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1100px) and (max-width: 800px) {
+  main .info .top .output2 h5 {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1100px) and (min-width: 800px) {
+  main .info .top .output2 h5 {
+    font-size: calc(16px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1100px) and (min-width: 1660px) {
+  main .info .top .output2 h5 {
+    font-size: 22px;
+  }
+}
+@media screen and (width < 1100px) and (max-width: 320px) {
   main .info .top .output2 h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
+}
+@media screen and (width < 1100px) and (max-width: 800px) {
+  main .info .top .output2 h4 {
+    font-size: calc(16px + 10.2 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1100px) and (min-width: 800px) {
+  main .info .top .output2 h4 {
+    font-size: calc(16px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1100px) and (min-width: 1660px) {
+  main .info .top .output2 h4 {
+    font-size: 22px;
+  }
+}
+@media screen and (width < 1100px) {
   main .info .top .reserv {
-    font-size: 18px;
     padding: 10px 30px;
     letter-spacing: 1.4px;
   }
+}
+@media screen and (width < 1100px) {
   main .info .bottom {
     display: none;
   }
+}
+@media screen and (width < 1100px) {
   main .all-carts {
     margin: 0 0 100px 0;
     display: flex;
@@ -1276,28 +1811,23 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     border-radius: 8px;
   }
   main .all-carts .cart h5 {
-    font-size: 20px;
     line-height: 24px;
     padding: 0 0 3px 0;
   }
   main .all-carts .cart p {
-    font-size: 13px;
     font-weight: 500;
   }
+}
+@media screen and (width < 1100px) {
   main .comments {
     margin: -50px 0 0 0;
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 26px;
     line-height: 30px;
-  }
-  main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 14px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 12px;
     line-height: 24px;
     color: #14274A;
   }
@@ -1308,11 +1838,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 14x;
     background: #E0B973;
     color: white;
     border-radius: 8px;
   }
+}
+@media screen and (width < 1100px) {
   #form form {
     padding: 20px 30px 30px;
     width: 350px;
@@ -1382,11 +1913,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 30px 0;
   }
   main .text h2 {
-    font-size: 30px;
     line-height: 40px;
   }
   main .text p {
-    font-size: 12px;
     line-height: 20px;
   }
   main .info {
@@ -1396,27 +1925,19 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 40px;
   }
   main .info .top .date {
-    gap: 55px;
+    gap: 50px;
   }
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in label, main .info .top .date .out label {
-    font-size: 16px;
-  }
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 12px;
     padding: 8px 15px;
   }
   main .info .top .date .radio {
     gap: 15px;
   }
-  main .info .top .date .radio .label {
-    font-size: 16px;
-  }
   main .info .top .date .radio .input {
     gap: 10px;
-    font-size: 14px;
   }
   main .info .top .date .radio .input input {
     padding: 10px 20px;
@@ -1427,15 +1948,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .info .top .output2 h5 {
-    font-size: 16px;
     font-weight: 400;
   }
   main .info .top .output2 h4 {
-    font-size: 18px;
     font-weight: 600;
   }
   main .info .top .reserv {
-    font-size: 14px;
     padding: 8px 20px;
   }
   main .info .bottom {
@@ -1467,12 +1985,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     transform: scale(none);
   }
   main .all-carts .cart h5 {
-    font-size: 18px;
     line-height: 18px;
     padding: 0 0 3px 0;
   }
   main .all-carts .cart p {
-    font-size: 10px;
     font-weight: 500;
   }
   main .comments {
@@ -1480,15 +1996,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 24px;
     line-height: 24px;
-  }
-  main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 14px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 12px;
     line-height: 14px;
     color: #14274A;
   }
@@ -1499,7 +2010,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     padding: 10px 20px;
-    font-size: 12px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
@@ -1514,11 +2024,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 10px 0 30px;
   }
   main .text h2 {
-    font-size: 20px;
     line-height: 20px;
   }
   main .text p {
-    font-size: 10px;
     line-height: 18px;
   }
   main .info {
@@ -1534,22 +2042,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in label, main .info .top .date .out label {
-    font-size: 14px;
-  }
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 10px;
     padding: 8px 15px;
   }
   main .info .top .date .radio {
     gap: 15px;
   }
-  main .info .top .date .radio .label {
-    font-size: 14px;
-  }
   main .info .top .date .radio .input {
     gap: 10px;
-    font-size: 12px;
   }
   main .info .top .date .radio .input input {
     padding: 10px 20px;
@@ -1557,14 +2057,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .output2 {
     gap: 10px;
   }
-  main .info .top .output2 h5 {
-    font-size: 14px;
-  }
-  main .info .top .output2 h4 {
-    font-size: 16px;
-  }
   main .info .top .reserv {
-    font-size: 14px;
     padding: 8px 20px;
   }
   main .info .bottom {
@@ -1590,12 +2083,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     border-radius: 8px;
   }
   main .all-carts .cart h5 {
-    font-size: 16px;
     line-height: 18px;
     padding: 0 0 3px 0;
   }
   main .all-carts .cart p {
-    font-size: 10px;
     font-weight: 500;
   }
   main .comments {
@@ -1603,8 +2094,8 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 20px;
     line-height: 18px;
+    padding: 0 0 10px;
   }
   main .comments .comments-container .comments-track {
     width: 350px;
@@ -1613,23 +2104,22 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     min-width: 350px;
   }
   main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 12px;
+    line-height: 18px;
+    padding: 0 0 5px;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 10px;
     line-height: 14px;
     color: #14274A;
   }
   main .comments .buttons {
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 20px;
   }
   main .comments .buttons .left, main .comments .buttons .right {
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 8px 15px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
@@ -1644,11 +2134,9 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     margin: 10px 0 30px;
   }
   main .text h2 {
-    font-size: 20px;
     line-height: 20px;
   }
   main .text p {
-    font-size: 10px;
     line-height: 18px;
   }
   main .info {
@@ -1665,22 +2153,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date .in, main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in label, main .info .top .date .out label {
-    font-size: 14px;
-  }
   main .info .top .date .in input, main .info .top .date .out input {
-    font-size: 10px;
     padding: 8px 15px;
   }
   main .info .top .date .radio {
     gap: 8px;
   }
-  main .info .top .date .radio .label {
-    font-size: 14px;
-  }
   main .info .top .date .radio .input {
     gap: 10px;
-    font-size: 14px;
   }
   main .info .top .date .radio .input input {
     padding: 10px 20px;
@@ -1690,15 +2170,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     flex-flow: wrap;
     gap: 5px;
     margin: 10px 0 0;
-  }
-  main .info .top .output2 h5 {
-    font-size: 14px;
-  }
-  main .info .top .output2 h4 {
-    font-size: 16px;
-  }
-  main .info .top .reserv {
-    font-size: 14px;
   }
   main .info .bottom {
     display: none;
@@ -1724,12 +2195,10 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     border-radius: 8px;
   }
   main .all-carts .cart h5 {
-    font-size: 16px;
     line-height: 18px;
     padding: 0 0 3px 0;
   }
   main .all-carts .cart p {
-    font-size: 10px;
     font-weight: 500;
   }
   main .comments {
@@ -1737,7 +2206,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 10px;
   }
   main .comments h2 {
-    font-size: 20px;
     line-height: 18px;
   }
   main .comments .comments-container .comments-track {
@@ -1747,13 +2215,11 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     min-width: 300px;
   }
   main .comments .comments-container .comments-track .comment-cart p {
-    font-size: 12px;
     line-height: 16px;
-    padding: 10px 0 10px;
+    padding: 0;
   }
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    font-size: 11px;
     line-height: 14px;
     color: #14274A;
   }
@@ -1765,8 +2231,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   main .comments .buttons .left, main .comments .buttons .right {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 8px 15px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
