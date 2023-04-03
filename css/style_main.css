@@ -724,26 +724,6 @@ main {
   line-height: 32px;
   width: 130px;
 }
-@media (max-width: 320px) {
-  .all-advantages .advantage p {
-    font-size: 27px;
-  }
-}
-@media (max-width: 800px) {
-  .all-advantages .advantage p {
-    font-size: calc(27px + 1.7 * ((100vw - 320px) / 1500));
-  }
-}
-@media (min-width: 800px) {
-  .all-advantages .advantage p {
-    font-size: calc(27px + 1 * (100vw / 1500));
-  }
-}
-@media (min-width: 1500px) {
-  .all-advantages .advantage p {
-    font-size: 28px;
-  }
-}
 
 .stay-here {
   margin: 100px auto 240px;
@@ -760,26 +740,6 @@ main {
 .stay-here .stay-here-text h2 {
   color: #14274A;
   font-weight: 700;
-}
-@media (max-width: 320px) {
-  .stay-here .stay-here-text h2 {
-    font-size: 27px;
-  }
-}
-@media (max-width: 800px) {
-  .stay-here .stay-here-text h2 {
-    font-size: calc(27px + 56.1 * ((100vw - 320px) / 1500));
-  }
-}
-@media (min-width: 800px) {
-  .stay-here .stay-here-text h2 {
-    font-size: calc(27px + 33 * (100vw / 1500));
-  }
-}
-@media (min-width: 1500px) {
-  .stay-here .stay-here-text h2 {
-    font-size: 60px;
-  }
 }
 .stay-here .stay-here-text h2 span {
   font-weight: 700;

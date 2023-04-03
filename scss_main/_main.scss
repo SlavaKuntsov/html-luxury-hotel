@@ -30,7 +30,7 @@ main{
 		}
 		p{
 			// font-size: 28px;
-			@include responsive-font(28, 27);
+			// @include responsive-font(28, 27);
 			line-height: 32px;
 			width: 130px;
 		}
@@ -50,7 +50,7 @@ main{
 		gap: 20px;
 		h2{
 			// font-size: 60px;
-			@include responsive-font(60, 27);
+			// @include responsive-font(60, 27);
 			color: $blue;
 			font-weight: 700;
 			span{
