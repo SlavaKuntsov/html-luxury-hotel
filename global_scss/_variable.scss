@@ -74,7 +74,7 @@ $blue: #14274A;
 	}
 }
 
-$maxWidth: 1500;
+$maxWidth: 1660;
 
 @mixin responsive-font($maxSize, $minSize) {
 	$addSize: $maxSize - $minSize;

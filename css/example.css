@@ -85,15 +85,15 @@ img {
 }
 @media (max-width: 800px) {
   h1 {
-    font-size: calc(27px + 56.1 * ((100vw - 320px) / 1500));
+    font-size: calc(27px + 56.1 * ((100vw - 320px) / 1660));
   }
 }
 @media (min-width: 800px) {
   h1 {
-    font-size: calc(27px + 33 * (100vw / 1500));
+    font-size: calc(27px + 33 * (100vw / 1660));
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1660px) {
   h1 {
     font-size: 60px;
   }
@@ -106,15 +106,15 @@ img {
 }
 @media (max-width: 800px) {
   p {
-    font-size: calc(13px + 28.9 * ((100vw - 320px) / 1500));
+    font-size: calc(13px + 28.9 * ((100vw - 320px) / 1660));
   }
 }
 @media (min-width: 800px) {
   p {
-    font-size: calc(13px + 17 * (100vw / 1500));
+    font-size: calc(13px + 17 * (100vw / 1660));
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1660px) {
   p {
     font-size: 30px;
   }

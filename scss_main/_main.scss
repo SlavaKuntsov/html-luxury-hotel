@@ -29,8 +29,8 @@ main{
 			}
 		}
 		p{
-			// font-size: 28px;
-			// @include responsive-font(28, 27);
+			font-size: 28px;
+			// @include responsive-font(28, 14);
 			line-height: 32px;
 			width: 130px;
 		}
@@ -49,20 +49,22 @@ main{
 		align-items: center;
 		gap: 20px;
 		h2{
-			// font-size: 60px;
+			font-size: 60px;
 			// @include responsive-font(60, 27);
 			color: $blue;
 			font-weight: 700;
 			span{
 				font-weight: 700;
-				// font-size: 60px;
+				font-size: 60px;
+				// @include responsive-font(60, 27);
 				color: $ohra;
 				font-family: 'EB Garamond', serif;
 			}
 		}
 		p{
 			color: $blue;
-			// font-size: 30px;
+			font-size: 30px;
+			// @include responsive-font(30, 14);
 			text-align: center;
 		}
 	}
@@ -83,7 +85,8 @@ main{
 					border-radius: 50%;
 					background: $ohra;
 					color: white;
-					// font-size: 30px;
+					font-size: 30px;
+					// @include responsive-font(30, 14);
 					font-family: 'Montserrat', sans-serif;
 					display: flex;
 					align-items: center;
@@ -97,11 +100,13 @@ main{
 				h4{
 					font-weight: 600;
 					color: black;
-					// font-size: 32px;
+					font-size: 32px;
+					// @include responsive-font(32, 16);
 					font-family: 'Montserrat', sans-serif;
 				}
 				p{
-					// font-size: 26px;
+					font-size: 26px;
+					// @include responsive-font(26, 14);
 					line-height: 28px;
 				}
 			}
@@ -149,11 +154,16 @@ main{
 					gap: 10px;
 					h5{
 						font-family: 'Montserrat', sans-serif;
-						// font-size: 24px;
+						font-size: 24px;
+						// @include responsive-font(24, 10);
 						font-weight: 600;
+						white-space: nowrap;
+
 					}
 					p{
-						// font-size: 20px;
+						white-space: nowrap;
+						font-size: 20px;
+						// @include responsive-font(20, 9);
 						font-family: 'Montserrat', sans-serif;
 					}
 				}
@@ -198,14 +208,16 @@ main{
 				padding: 0 0 0 50px;
 				h2{
 					font-weight: 700;
-					// font-size: 60px;
+					font-size: 60px;
+					// @include responsive-font(60, 27);
 					line-height: 72px;
 					letter-spacing: 0.02em;
 					color: #14274A;
 				}
 				p{
 					font-weight: 400;
-					// font-size: 26px;
+					font-size: 26px;
+					// @include responsive-font(26, 16);
 					line-height: 40px;
 					color: #14274A;
 				}
@@ -220,7 +232,8 @@ main{
 					padding: 20px 60px;
 					background: $ohra;
 					font-weight: 400;
-					// font-size: 20px;
+					font-size: 20px;
+					// @include responsive-font(20, 18);
 					line-height: 24px;
 					letter-spacing: 0.05em;
 					color: #FFFFFF;
@@ -255,7 +268,8 @@ main{
 			flex-flow: column;
 			gap: 40px;
 			h2{
-				// font-size: 50px;
+				font-size: 50px;
+				// @include responsive-font(50, 22);
 				letter-spacing: 8px;
 				color: white;
 				padding: 0 0 25px;
@@ -264,7 +278,8 @@ main{
 			}
 			p{
 				color: rgb(255, 255, 255);
-				// font-size: 25px;
+				font-size: 25px;
+				// @include responsive-font(25, 13);
 				line-height: 34px;
 				font-weight: 400;
 			}
@@ -279,7 +294,8 @@ main{
 	flex-flow: column;
 	gap: 40px;
 	h2{
-		// font-size: 50px;
+		font-size: 50px;
+		// @include responsive-font(50, 22);
 		font-weight: 700;
 		color: $blue;
 		letter-spacing: 2px;
@@ -290,7 +306,8 @@ main{
 		justify-content: space-between;
 		align-items: end;
 		p{
-			// // font-size: 28px;
+			font-size: 28px;
+			// @include responsive-font(28, 13);
 			color: $blue;
 			letter-spacing: 1px;
 		}
@@ -343,6 +360,7 @@ main{
 			}
 			p{
 				// font-size: 18px;
+				@include responsive-font(18, 12);
 				line-height: 22px;
 				width: 80px;
 			}
@@ -357,13 +375,16 @@ main{
 			gap: 20px;
 			h2{
 				// font-size: 35px;
+				@include responsive-font(35, 25);
 				span{
 					// font-size: 35px;
+					@include responsive-font(35, 25);
 				}
 			}
 			p{
 				color: $blue;
 				// font-size: 18px;
+				@include responsive-font(18, 14);
 				line-height: 22px;
 				text-align: center;
 				padding: 0 50px;
@@ -379,12 +400,15 @@ main{
 						width:  40px;
 						height: 40px;
 						// font-size: 18px;
+						@include responsive-font(18, 14);
 					}
 					h4{
 						// font-size: 20px;
+						@include responsive-font(20, 16);
 					}
 					p{
 						// font-size: 14px;
+						@include responsive-font(14, 12);
 						line-height: 22px;
 					}
 				}
@@ -402,7 +426,7 @@ main{
 				}
 				.comments{
 					padding: 10px 20px;
-					width: 190px;
+					width: 200px;
 					img{
 						width:  40px;
 						height: 40px;
@@ -411,9 +435,11 @@ main{
 						gap: 5px;
 						h5{
 							// font-size: 14px;
+							@include responsive-font(14, 10);
 						}
 						p{
 							// font-size: 12px;
+							@include responsive-font(14, 8);
 						}
 					}
 				}
@@ -445,10 +471,12 @@ main{
 					padding: 0 0 0 30px;
 					h2{
 						// font-size: 30px;
+						@include responsive-font(30, 22);
 						line-height: 40px;
 					}
 					p{
 						// font-size: 14px;
+						@include responsive-font(14, 12);
 						line-height: 22px;
 					}
 					p.room{
@@ -460,6 +488,7 @@ main{
 					a{
 						padding: 10px 30px;
 						// font-size: 14px;
+						@include responsive-font(14, 8);
 						line-height: 20px;
 					}
 				}
@@ -483,6 +512,7 @@ main{
 				gap: 30px;
 				h2{
 					// font-size: 30px;
+					@include responsive-font(30, 22);
 					letter-spacing: 3px;
 					padding: 0 0 10px;
 					width: 190px;
@@ -490,6 +520,7 @@ main{
 				}
 				p{
 					// font-size: 16px;
+					@include responsive-font(16, 12);
 					line-height: 22px;
 				}
 			}
@@ -505,10 +536,12 @@ main{
 		gap: 40px;
 		h2{
 			// font-size: 30px;
+			@include responsive-font(30, 22);
 		}
 		.text{
 			p{
 				// font-size: 16px;
+				@include responsive-font(14, 12);
 			}
 			.all-star{
 				gap: 10px;
@@ -611,7 +644,7 @@ main{
 				.comments{
 					padding: 10px 15px;
 					gap: 10px;
-					width: 150px;
+					width: 160px;
 					img{
 						width:  30px;
 						height: 30px;
@@ -690,7 +723,7 @@ main{
 					// font-size: 25px;
 					letter-spacing: 2px;
 					padding: 0 0 10px;
-					width: 145px;
+					width: 155px;
 					border-bottom: 2px solid $ohra;
 				}
 				p{
@@ -782,7 +815,7 @@ main{
 			p{
 				color: $blue;
 				// font-size: 12px;
-				font-weight: 500;
+				font-weight: 400;
 				line-height: 18px;
 				text-align: center;
 				padding: 0;
@@ -854,7 +887,7 @@ main{
 					flex-flow: row;
 					align-items: center;
 					gap: 5px;
-					width: 120px;
+					width: 130px;
 					img{
 						width:  25px;
 						height: 25px;
@@ -974,14 +1007,14 @@ main{
 					letter-spacing: 2px;
 					color: white;
 					padding: 0 0 5px;
-					width: 120px;
+					width: 150px;
 					border-bottom: 1px solid $ohra;
 				}
 				p{
 					color: rgb(255, 255, 255);
 					// font-size: 12px;
 					line-height: 18px;
-					font-weight: 400;
+					font-weight: 300;
 				}
 			}
 			img{
@@ -1050,10 +1083,10 @@ main{
 	
 	.all-advantages{
 		margin: 0px auto 0;
-		padding: 0 0 0 10px;
-		display: flex;
-		flex-flow: wrap;
-		justify-content: space-evenly;
+		// padding: 0 0 0 10px;
+		display: grid;
+		grid-template: 50px 2fr / 50% 2fr;
+		justify-items: center;
 		.advantage{
 			display: flex;
 			justify-content: center;
@@ -1068,7 +1101,7 @@ main{
 				}
 			}
 			p{
-				font-size: 14px;
+				// font-size: 14px;
 				line-height: 16px;
 			}
 		}
@@ -1085,19 +1118,19 @@ main{
 			align-items: center;
 			gap: 10px;
 			h2{
-				font-size: 27px;
+				// font-size: 27px;
 				color: $blue;
 				font-weight: 700;
 				span{
 					font-weight: 700;
-					font-size: 27px;
+					// font-size: 27px;
 					color: $ohra;
 					font-family: 'EB Garamond', serif;
 				}
 			}
 			p{
 				color: $blue;
-				font-size: 13px;
+				// font-size: 13px;
 				font-weight: 400;
 				line-height: 16px;
 				text-align: center;
@@ -1121,7 +1154,7 @@ main{
 						border-radius: 50%;
 						background: $ohra;
 						color: white;
-						font-size: 14px;
+						// font-size: 14px;
 						font-family: 'Montserrat', sans-serif;
 						display: flex;
 						align-items: center;
@@ -1131,7 +1164,7 @@ main{
 						font-weight: 600;
 						color: black;
 						line-height: 16px;
-						font-size: 16px;
+						// font-size: 16px;
 						font-family: 'Montserrat', sans-serif;
 					}
 					.number-text{
@@ -1163,10 +1196,10 @@ main{
 								flex-flow: column;
 								gap: 2px;
 								h5{
+									white-space: nowrap;
 									font-family: 'Montserrat', sans-serif;
 									font-size: 13px;
 									font-weight: 600;
-									white-space: nowrap;
 								}
 								p{
 									white-space: nowrap;
@@ -1178,7 +1211,7 @@ main{
 					}
 					p{
 						width: 50%;
-						font-size: 14px;
+						// font-size: 14px;
 						line-height: 18px;
 					}
 				}
@@ -1217,11 +1250,11 @@ main{
 						gap: 2px;
 						h5{
 							font-family: 'Montserrat', sans-serif;
-							font-size: 10px;
+							// font-size: 10px;
 							font-weight: 600;
 						}
 						p{
-							font-size: 9px;
+							// font-size: 9px;
 							font-family: 'Montserrat', sans-serif;
 						}
 					}
@@ -1259,7 +1292,8 @@ main{
 			align-items: center;
 			h2{
 				font-weight: 700;
-				font-size: 26px;
+				// font-size: 26px;
+				@include responsive-font(30, 22);
 				line-height: 24px;
 				letter-spacing: 0.02em;
 				color: #14274A;
@@ -1277,9 +1311,9 @@ main{
 					align-items: start;
 					gap: 20px;
 					p{
-						font-weight: 400;
-						font-size: 14px;
-						line-height: 20px;
+						font-weight: 300;
+						// font-size: 14px;
+						line-height: 16px;
 						color: white;
 					}
 					a{
@@ -1287,7 +1321,7 @@ main{
 						padding: 10px 20px;
 						background: $ohra;
 						font-weight: 400;
-						font-size: 10x;
+						// font-size: 10x;
 						line-height: 10px;
 						letter-spacing: 0.05em;
 						color: #FFFFFF;
@@ -1300,7 +1334,7 @@ main{
 	.about-us{
 		background: $blue;
 		.block{
-			padding: 20px;
+			padding: 20px 20px 30px;
 			@include max_550;
 			margin: 0 auto;
 			.text{
@@ -1310,7 +1344,7 @@ main{
 				gap: 10px;
 				h2{
 					margin: 0 auto 15px;
-					font-size: 24px;
+					// font-size: 24px;
 					letter-spacing: 3px;
 					color: white;
 					padding: 0 0 10px;
@@ -1319,7 +1353,7 @@ main{
 				}
 				p{
 					color: rgb(255, 255, 255);
-					font-size: 14px;
+					// font-size: 14px;
 					line-height: 18px;
 					font-weight: 400;
 				}
@@ -1341,7 +1375,7 @@ main{
 		padding: 20px;
 		h2{
 			text-align: center;
-			font-size: 26px;
+			// font-size: 26px;
 			font-weight: 700;
 			color: $blue;
 			letter-spacing: 2px;
@@ -1353,7 +1387,7 @@ main{
 			align-items: center;
 			gap: 20px;
 			p{
-				font-size: 14px;
+				// font-size: 14px;
 				color: black;
 				letter-spacing: 1px;
 			}
@@ -1399,10 +1433,9 @@ main{
 	
 	.all-advantages{
 		margin: 0px auto 0;
-		padding: 0 0 0 10px;
-		display: flex;
-		flex-flow: wrap;
-		justify-content: space-evenly;
+		display: grid;
+		grid-template: 50px 2fr / 50% 2fr;
+		justify-items: center;
 		.advantage{
 			display: flex;
 			justify-content: center;
@@ -1417,14 +1450,14 @@ main{
 				}
 			}
 			p{
-				font-size: 14px;
+				// font-size: 14px;
 				line-height: 16px;
 			}
 		}
 	}
 
 	.stay-here{
-		margin: 50px auto 70px;
+		margin: 70px auto 90px;
 		display: flex;
 		flex-flow: column;
 		gap: 30px;
@@ -1434,20 +1467,20 @@ main{
 			align-items: center;
 			gap: 10px;
 			h2{
-				font-size: 27px;
+				// font-size: 27px;
 				color: $blue;
 				font-weight: 700;
 				text-align: center;
 				span{
 					font-weight: 700;
-					font-size: 27px;
+					// font-size: 27px;
 					color: $ohra;
 					font-family: 'EB Garamond', serif;
 				}
 			}
 			p{
 				color: $blue;
-				font-size: 13px;
+				// font-size: 14px;
 				font-weight: 400;
 				line-height: 16px;
 				text-align: center;
@@ -1471,7 +1504,7 @@ main{
 						border-radius: 50%;
 						background: $ohra;
 						color: white;
-						font-size: 14px;
+						// font-size: 14px;
 						font-family: 'Montserrat', sans-serif;
 						display: flex;
 						align-items: center;
@@ -1481,7 +1514,7 @@ main{
 						font-weight: 600;
 						color: black;
 						line-height: 16px;
-						font-size: 16px;
+						// font-size: 16px;
 						font-family: 'Montserrat', sans-serif;
 					}
 					.number-text{
@@ -1513,13 +1546,13 @@ main{
 								gap: 2px;
 								h5{
 									font-family: 'Montserrat', sans-serif;
-									font-size: 13px;
+									// font-size: 13px;
 									font-weight: 600;
 									white-space: nowrap;
 								}
 								p{
 									white-space: nowrap;
-									font-size: 11px;
+									// font-size: 11px;
 									font-family: 'Montserrat', sans-serif;
 								}
 							}
@@ -1527,7 +1560,7 @@ main{
 					}
 					p{
 						width: 100%;
-						font-size: 14px;
+						// font-size: 14px;
 						line-height: 18px;
 					}
 				}
@@ -1566,11 +1599,11 @@ main{
 						gap: 2px;
 						h5{
 							font-family: 'Montserrat', sans-serif;
-							font-size: 10px;
+							// font-size: 10px;
 							font-weight: 600;
 						}
 						p{
-							font-size: 9px;
+							// font-size: 9px;
 							font-family: 'Montserrat', sans-serif;
 						}
 					}
@@ -1608,10 +1641,11 @@ main{
 			align-items: center;
 			h2{
 				font-weight: 700;
-				font-size: 26px;
+				// font-size: 27px;
 				line-height: 24px;
 				letter-spacing: 0.02em;
 				color: #14274A;
+				text-align: center;
 			}
 			.card{
 				img{
@@ -1626,9 +1660,9 @@ main{
 					align-items: start;
 					gap: 20px;
 					p{
-						font-weight: 400;
-						font-size: 14px;
-						line-height: 20px;
+						font-weight: 300;
+						// font-size: 14px;
+						line-height: 16px;
 						color: white;
 					}
 					a{
@@ -1636,7 +1670,7 @@ main{
 						padding: 10px 20px;
 						background: $ohra;
 						font-weight: 400;
-						font-size: 10x;
+						// font-size: 10x;
 						line-height: 10px;
 						letter-spacing: 0.05em;
 						color: #FFFFFF;
@@ -1659,7 +1693,7 @@ main{
 				gap: 10px;
 				h2{
 					margin: 0 auto 15px;
-					font-size: 22px;
+					// font-size: 22px;
 					letter-spacing: 3px;
 					color: white;
 					padding: 0 0 8px;
@@ -1668,7 +1702,7 @@ main{
 				}
 				p{
 					color: rgb(255, 255, 255);
-					font-size: 13px;
+					// font-size: 13px;
 					line-height: 18px;
 					font-weight: 400;
 				}
@@ -1690,7 +1724,7 @@ main{
 		padding: 20px;
 		h2{
 			text-align: center;
-			font-size: 24px;
+			// font-size: 24px;
 			font-weight: 700;
 			color: $blue;
 			letter-spacing: 2px;
@@ -1702,7 +1736,7 @@ main{
 			align-items: center;
 			gap: 20px;
 			p{
-				font-size: 14px;
+				// font-size: 14px;
 				color: black;
 				letter-spacing: 1px;
 				text-align: center;
