@@ -378,3 +378,33 @@ if (cartF) {
         });
     });
 }
+
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", function () {
+	console.log("dom ok")	
+
+	const animateItems = document.querySelectorAll(".animate")
+
+	function scrollAnimation () {
+		let scrollCenter = (window.innerHeight / 1.3) + window.scrollY
+
+		animateItems.forEach(item => {
+			let offsetItem = window.pageYOffset + item.getBoundingClientRect().top
+
+			if(scrollCenter >= offsetItem) {
+				item.classList.add("animate")
+				console.log("add")
+			}
+			else{
+				item.classList.remove("animate")
+				console.log("remove")
+			}
+		})
+	}
+
+	scrollAnimation()
+	window.addEventListener("scroll", function () {
+		scrollAnimation()
+	})
+})
