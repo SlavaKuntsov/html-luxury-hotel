@@ -98,6 +98,23 @@ $maxWidth: 1660;
 } 
 
 
+.item{
+	transform: translateX(-50px);
+	opacity: 0;
+	transition: all .6s ease-in-out;
+}
+.item-left{
+	transform: translateX(50px);
+	opacity: 0;
+	transition: all .6s ease-in-out;
+}
+
+.animate {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+
 // @mixin sm-hover {
 // 	transition: box-shadow 0.1s ease-in-out, transform 0.2s ease-in-out;
 // 	&:hover{
