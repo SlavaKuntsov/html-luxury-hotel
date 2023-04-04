@@ -2,6 +2,23 @@ footer .footer-text, main, .header-main, nav {
   max-width: 1500px;
 }
 
+.item {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.item-left {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 * {
   padding: 0;
   margin: 0;

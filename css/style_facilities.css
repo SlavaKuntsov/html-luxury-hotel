@@ -2,6 +2,23 @@ footer .footer-text, main, .header-main, nav {
   max-width: 1500px;
 }
 
+.item {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.item-left {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1237,17 +1254,17 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
   main .all-carts .cartF .back p {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
   main .all-carts .cartF .back p {
-    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1660));
+    font-size: calc(9px + 11.9 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
   main .all-carts .cartF .back p {
-    font-size: calc(12px + 4 * (100vw / 1660));
+    font-size: calc(9px + 7 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
