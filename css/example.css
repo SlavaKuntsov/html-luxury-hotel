@@ -1,13 +1,19 @@
 .item {
   transform: translateX(-50px);
   opacity: 0;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .item-left {
   transform: translateX(50px);
   opacity: 0;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.item-img {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .animate {

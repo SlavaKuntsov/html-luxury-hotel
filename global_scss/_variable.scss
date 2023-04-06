@@ -101,12 +101,17 @@ $maxWidth: 1660;
 .item{
 	transform: translateX(-50px);
 	opacity: 0;
-	transition: all .6s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 .item-left{
 	transform: translateX(50px);
 	opacity: 0;
-	transition: all .6s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.item-img{
+	transform: translateX(50px);
+	opacity: 0;
+	transition: all .5s ease-in-out;
 }
 
 .animate {
