@@ -1013,7 +1013,7 @@ main .all-carts .cart {
   cursor: pointer;
   margin: 0 0 30px 0;
   width: 30%;
-  transition: filter 0.4s ease-in-out;
+  transition: filter 0.3s ease-in-out;
 }
 main .all-carts .cart .cart-img {
   margin: 0 0 10px 0;
@@ -1640,43 +1640,20 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     width: 30px;
     height: 30px;
   }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
   #form form h1 {
-    font-size: 14px;
+    font-size: 28px;
   }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  #form form h1 {
-    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  #form form h1 {
-    font-size: calc(14px + 4 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  #form form h1 {
-    font-size: 18px;
-  }
-}
-@media screen and (width < 1660px) {
   #form form input {
     padding: 8px 15px;
     font-weight: 500;
     font-size: 14px;
   }
-}
-@media screen and (width < 1660px) {
   #form form ::-moz-placeholder {
     font-weight: 300;
   }
   #form form ::placeholder {
     font-weight: 300;
   }
-}
-@media screen and (width < 1660px) {
   #form form .all-input {
     display: flex;
     flex-flow: column;
@@ -1684,7 +1661,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   #form form .all-input label {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
   }
   #form form .all-input .name, #form form .all-input .email {
@@ -1697,8 +1674,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     flex-flow: column;
     gap: 8px;
   }
-}
-@media screen and (width < 1660px) {
   #form form .output {
     display: flex;
     flex-flow: column;
@@ -1706,12 +1681,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
   #form form .output p {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
   }
   #form form .output p span {
-    line-height: 20px;
-    font-size: 20px;
+    line-height: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #E0B973;
   }
@@ -1877,9 +1852,6 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     height: 30px;
     top: 20px;
     right: 20px;
-  }
-  #form form h1 {
-    font-size: 26px;
   }
   #form form input {
     padding: 8px 15px;

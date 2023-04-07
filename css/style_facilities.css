@@ -1173,17 +1173,17 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
   main .all-carts .cartF .front .cart-text p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
   main .all-carts .cartF .front .cart-text p {
-    font-size: calc(14px + 17 * ((100vw - 320px) / 1660));
+    font-size: calc(13px + 18.7 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
   main .all-carts .cartF .front .cart-text p {
-    font-size: calc(14px + 10 * (100vw / 1660));
+    font-size: calc(13px + 11 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
@@ -1260,17 +1260,17 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
   main .all-carts .cartF .back p {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
   main .all-carts .cartF .back p {
-    font-size: calc(9px + 11.9 * ((100vw - 320px) / 1660));
+    font-size: calc(11px + 8.5 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
   main .all-carts .cartF .back p {
-    font-size: calc(9px + 7 * (100vw / 1660));
+    font-size: calc(11px + 5 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
@@ -1495,7 +1495,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     height: 180px;
   }
   main .all-carts .cartF .front .cart-text {
-    width: 200px;
+    width: 230px;
     padding: 8px 40px 0;
     bottom: -1px;
   }

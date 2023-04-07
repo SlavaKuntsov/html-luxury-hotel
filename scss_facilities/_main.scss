@@ -251,7 +251,7 @@ main{
 						p{
 							font-weight: 700;
 							// font-size: 24px;
-							@include responsive-font(24, 14);
+							@include responsive-font(24, 13);
 							padding: 0 0 5px 0;
 						}
 					}
@@ -278,7 +278,7 @@ main{
 					}
 					p{
 						// font-size: 16px;
-						@include responsive-font(16, 9);
+						@include responsive-font(16, 11);
 						padding: 0 20px 40px;
 						line-height: 20px;
 					}
@@ -390,7 +390,7 @@ main{
 						height: 180px;
 					}
 					.cart-text{
-						width: 200px;
+						width: 230px;
 						padding: 8px 40px 0;
 						bottom: -1px;
 						p{

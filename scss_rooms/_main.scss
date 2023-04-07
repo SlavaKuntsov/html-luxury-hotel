@@ -129,7 +129,7 @@ main{
 			cursor: pointer;
 			margin: 0 0 30px 0;
 			width: 30%;
-			transition: filter .4s ease-in-out;
+			transition: filter .3s ease-in-out;
 			.cart-img{
 				margin: 0 0 10px 0;
 				overflow: hidden;
@@ -486,8 +486,8 @@ main{
 				height: 30px;
 			}
 			h1{
-				// font-size: 28px;
-				@include responsive-font(18, 14);
+				font-size: 28px;
+				// @include responsive-font(18, 14);
 			}
 			input{
 				padding: 8px 15px;
@@ -503,7 +503,7 @@ main{
 				gap: 20px;
 				label{
 					color: white;
-					font-size: 16px;
+					font-size: 14px;
 					font-weight: 500;
 					
 				}
@@ -525,11 +525,11 @@ main{
 				gap: 10px;
 				p{
 					color: white;
-					font-size: 18px;
+					font-size: 14px;
 					font-weight: 500;
 					span{
-						line-height: 20px;
-						font-size: 20px;
+						line-height: 18px;
+						font-size: 16px;
 						font-weight: 600;		
 						color: $ohra;			
 					}
@@ -689,7 +689,7 @@ main{
 				right: 20px;
 			}
 			h1{
-				font-size: 26px;
+				// font-size: 26px;
 			}
 			input{
 				padding: 8px 15px;

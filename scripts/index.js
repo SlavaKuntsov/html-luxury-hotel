@@ -1,3 +1,5 @@
+// ==============	burger menu		==============
+
 let bool = false;
 
 let menuOpen = document.getElementById("open");
@@ -23,7 +25,7 @@ menuClose.addEventListener("click", function () {
     window.onscroll = function () {};
 });
 
-// ===============================================
+// ==============	carts in "Room" page	==============
 
 let allCarts = document.getElementById("all-carts");
 
@@ -137,8 +139,11 @@ if (allCarts) {
         }
     }
 
+			// ======== reserve form =================
+
 	let reserv = document.getElementById("reserv")
 	let form = document.getElementById("form")
+	let formContainer = document.querySelector("form")
 	let formClose = document.getElementById("formClose")
 
 	let inDateOutput = document.getElementById("in-output")
@@ -146,6 +151,9 @@ if (allCarts) {
 	let roomDateOutput = document.getElementById("room-output")
 	let personDateOutput = document.getElementById("person-output")
 
+	let body = document.querySelector("body")
+
+	body.style.overflow = "auto";
 	
     reserv.addEventListener("click", function () {
         console.log(1);
@@ -163,10 +171,8 @@ if (allCarts) {
 			console.log(2)
 			form.style.visibility = "visible";
 			form.style.opacity = "1";
+			body.style.overflow = "hidden";
 
-			window.onscroll = function () {
-				window.scrollTo(0, 0);
-			};
 
 			inDateOutput.innerHTML = `Date-in: <span>${inDate.value}</span> `;
 			outDateOutput.innerHTML = `Date-out: <span>${outDate.value}</span>`;
@@ -182,16 +188,12 @@ if (allCarts) {
 	formClose.addEventListener("click", function() {
 		form.style.visibility = "hidden";
 		form.style.opacity = "0";
-
-		window.onscroll = function () {};
+		body.style.overflow = "auto";
 	})
-
 
 	form.addEventListener("submit", function() {
 		form.style.visibility = "hidden";
 		form.style.opacity = "0";
-
-		window.onscroll = function () {};
 
 		function formCloseAlert() {
 			alert(1)
@@ -199,6 +201,10 @@ if (allCarts) {
 
 		setTimeout(formCloseAlert, 800)
 	})
+
+	if (document.documentElement.clientHeight < 576) {
+		formContainer.style.margin = "200px 0 0 0"
+	}
 }
 
 // ========================================
@@ -211,7 +217,7 @@ if (viewMap) {
     });
 }
 
-// ========================================
+// ==============	comments slider	==============
 
 let track = document.getElementById("track");
 
@@ -266,7 +272,7 @@ if (track) {
     checkButtons();
 }
 
-// =================================
+// ==============	facilities in "Facilities" page	==============
 
 let allFacilities = document.getElementById("facilities");
 
@@ -275,37 +281,37 @@ let allFacilitiesArray = [
         title: "Restaurants",
         img: "../img/main/restaurant.png",
         time: "7.00 - 11.00",
-        text: "",
+        text: "The restaurant of the hotel provides visitors with the opportunity to enjoy different cuisines of the world. In addition, every day a wide range of original dishes are available.",
     },
     {
         title: "Poolside Bar",
         img: "../img/main/bar.png",
         time: "21.00 - 24.00",
-        text: "",
+        text: "The pool bar is the best solution to fully enjoy your vacation and not experience inconvenience due to high temperatures. Bartenders are at your service, who will offer you original cocktails.",
     },
     {
         title: "Swimming Pool",
         img: "../img/main/pool.png",
         time: "12.00 - 17.00",
-        text: "If you do not like the sea with its fauna, then we suggest visiting the pool with crystal clear water; there is also a shallow pool so that parents remain calm about the safety of their children",
+        text: "The pool is a great option for those who do not like strong waves and endless sand. We offer you to swim in crystal clear water and sunbathe in the sun near the water.",
     },
     {
         title: "The Gym",
         img: "../img/main/gym.png",
         time: "12.00 - 17.00",
-        text: "",
+        text: "If you don't want to lose your shape during your vacation, we suggest you visit the gym. A gorgeous view of the sea adds strength and lifts the mood during training. There is always an opportunity to play team sports on the open-air sports ground.",
     },
     {
         title: "Spa",
         img: "../img/main/spa.png",
         time: "12.00 - 19.00",
-        text: "",
+        text: "There is peace and tranquility in this place, no one will distract you here, and the staff with higher medical education will do everything possible so that during the massage and other procedures you forget about all the problems.",
     },
     {
         title: "Laundry",
         img: "../img/main/laundry.png",
         time: "9.00 - 19.00",
-        text: "",
+        text: "In order not to worry about any household worries during your vacation, our hotel has a laundry room. You can be sure of maintaining the quality of your things, the maids will make sure that the clothes are in perfect condition.",
     },
 ];
 
@@ -335,7 +341,7 @@ if(allFacilities) {
 }
 
 
-// ------------------------
+// ==============	card flip in "Facilities" page	==============
 
 let cartF = document.querySelectorAll(".cartF");
 
@@ -379,7 +385,7 @@ if (cartF) {
     });
 }
 
-// ==========================================
+// ==============	add animation	==============
 
 document.addEventListener("DOMContentLoaded", function () {
 	console.log("dom ok")	
