@@ -26,6 +26,14 @@ aside {
     display: block;
 }
 
+// ========== will change for gsap
+
+.content{
+	will-change: transform;
+}
+
+// ========== will change for gsap
+
 html,
 body {
     // height: 100%;
@@ -36,6 +44,7 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 input,
 button,

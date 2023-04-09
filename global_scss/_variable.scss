@@ -43,7 +43,7 @@ $blue: #14274A;
 		left: 0;
 		background: white;
 		z-index: 10;
-		transition: width .5s ease-in-out;
+		transition: width .6s ease-in-out;
 	}
 	&:hover::before{
 		width: 100%;
@@ -78,7 +78,7 @@ $maxWidth: 1660;
 
 @mixin responsive-font($maxSize, $minSize) {
 	$addSize: $maxSize - $minSize;
-	$addMobileSize: $addSize + $addSize * 0.7;
+	$addMobileSize: $addSize + $addSize * 0.6;
 
 	@media (max-width: 320px) {
 		font-size: #{$minSize + px};
@@ -99,19 +99,22 @@ $maxWidth: 1660;
 
 
 .item{
-	transform: translateX(-50px);
+	transform: translateX(-100%);
 	opacity: 0;
-	transition: all .5s ease-in-out;
+	transition: all .7s ease-in-out;
+	will-change: transform, opacity;
 }
 .item-left{
-	transform: translateX(50px);
+	transform: translateX(100%);
 	opacity: 0;
-	transition: all .5s ease-in-out;
+	transition: all .7s ease-in-out;
+	will-change: transform, opacity;
 }
 .item-img{
-	transform: translateX(50px);
+	transform: translateX(100%);
 	opacity: 0;
-	transition: all .5s ease-in-out;
+	transition: all .7s ease-in-out;
+	will-change: transform, opacity;
 }
 
 .animate {
