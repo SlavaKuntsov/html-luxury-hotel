@@ -51,6 +51,7 @@ main{
 				// position: relative;
 				transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 				transform: perspective(900px) rotateY(0deg);
+				will-change: transform, z-index;
 				img{
 					border-radius: 15px;
 					width: 600px;
@@ -89,6 +90,7 @@ main{
 				height: 400px;
 				transition: transform .8s ease-in-out, z-index .8s ease-in-out;
 				transform: perspective(900px) rotateY(180deg);
+				will-change: transform, z-index;
 				border-radius: 16px;
 				// border: 2px solid #14274A;
 				padding: 30px;

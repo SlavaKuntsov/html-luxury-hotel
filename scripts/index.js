@@ -1,3 +1,78 @@
+// ==============	gsap scroll		==============
+let wrapper = document.querySelector(".wrapper")
+if(wrapper) {
+	console.log(1)
+	gsap.registerPlugin(ScrollSmoother)
+	
+	ScrollSmoother.create({
+		wrapper: '.wrapper',
+		content: '.content',
+		smooth: 2,
+	})
+}
+
+// ==============	add animation	==============
+
+document.addEventListener("DOMContentLoaded", function () {
+	console.log("dom ok")	
+
+	const animateItems = document.querySelectorAll(".animate")
+
+	function scrollAnimation () {
+		// ok
+		let scrollCenter = (window.innerHeight / 1.1)
+		// let scrollCenterPlusScroll = (window.innerHeight / 1.3) + window.scrollY
+
+		animateItems.forEach(item => {
+
+			// // 2 вариант
+			let itemHeight = item.offsetHeight
+			// let itemOffset = offset(item).top
+
+			// let itemPoint = (window.innerHeight - itemHeight ) * 10
+
+			// if(itemPoint > window.innerHeight) {
+			// 	itemPoint = window.innerHeight - (window.innerHeight / 2) / 4
+			// }
+
+
+			// if((scrollY > itemOffset - itemPoint - (itemHeight / 2) ) && scrollY < (itemOffset - (itemHeight / 2) )) {
+			// 	item.classList.add("animate")
+			// }
+			// else{
+			// 	item.classList.remove("animate")
+			// }
+
+			// // 1 вариант
+			let offsetItem = item.getBoundingClientRect().top
+			// let offsetItemSCroll = window.pageYOffset + item.getBoundingClientRect().top
+			// let offsetItem = item.offsetTop + (item.offsetHeight / 2);
+
+			if(scrollCenter < offsetItem + (itemHeight / 1.5)) {
+				item.classList.remove("animate")
+			}
+			if(scrollCenter > offsetItem + (itemHeight / 3)) {
+				item.classList.add("animate")
+			}
+		})
+	}
+
+	function offset(item) {
+		let rect = item.getBoundingClientRect()
+		let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+		let scrollTop = window.pageYOffset || document.documentElement.scrollTop
+		return{
+			top: rect.top + scrollTop,
+			left: rect.left + scrollLeft
+		}
+	}
+
+	scrollAnimation()
+	window.addEventListener("scroll", function () {
+		scrollAnimation()
+	})
+})
+
 // ==============	burger menu		==============
 
 let bool = false;
@@ -384,33 +459,3 @@ if (cartF) {
         });
     });
 }
-
-// ==============	add animation	==============
-
-document.addEventListener("DOMContentLoaded", function () {
-	console.log("dom ok")	
-
-	const animateItems = document.querySelectorAll(".animate")
-
-	function scrollAnimation () {
-		let scrollCenter = (window.innerHeight / 1.3) + window.scrollY
-
-		animateItems.forEach(item => {
-			let offsetItem = window.pageYOffset + item.getBoundingClientRect().top
-
-			if(scrollCenter >= offsetItem) {
-				item.classList.add("animate")
-				console.log("add")
-			}
-			else{
-				item.classList.remove("animate")
-				console.log("remove")
-			}
-		})
-	}
-
-	scrollAnimation()
-	window.addEventListener("scroll", function () {
-		scrollAnimation()
-	})
-})
