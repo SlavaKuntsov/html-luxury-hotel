@@ -914,7 +914,7 @@ nav ul li:nth-child(3) a {
   }
 }
 body {
-  overflow: visible !important;
+  overflow: hidden visible !important;
 }
 
 main {
