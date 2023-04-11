@@ -1,15 +1,44 @@
 // ==============	gsap scroll		==============
-let wrapper = document.querySelector(".wrapper")
 
-if(wrapper) {
-	gsap.registerPlugin(ScrollSmoother)
-	console.log("gsap ok")
-	ScrollSmoother.create({
-		wrapper: '.wrapper',
-		content: '.content',
-		smooth: 2,
+
+["DOMContentLoaded", "resize"].forEach(e => {
+	window.addEventListener(e, function() {
+
+		let wrapper = document.querySelector(".wrapper")
+		let content = document.querySelector(".content")
+
+		// wrapper.classList.remove("wrapper")
+		// content.classList.remove("content")
+		
+		
+
+		// wrapper.classList.add("scroll_wrapper")
+		// content.classList.add("scroll_content")
+
+		let scroll_wrapper = document.querySelector(".scroll_wrapper")
+		let scroll_content = document.querySelector(".scroll_content")
+
+		if (window.innerWidth <= 550) {
+		}
+		else{
+			// scroll_wrapper.classList.add("wrapper")
+			// scroll_content.classList.add("content")
+
+			if(wrapper) {
+				gsap.registerPlugin(ScrollSmoother)
+			
+				console.log("gsap ok")
+				
+				ScrollSmoother.create({
+					wrapper: '.wrapper',
+					content: '.content',
+					smooth: 2,
+					ignoreMobileResize: true
+				})
+			}
+		}
 	})
-}
+})
 
 // ==============	add animation	==============
 
@@ -308,16 +337,23 @@ if (track) {
 
     let position = 0;
     let itemWidth;
-    if (window.innerWidth > 550) {
-        itemWidth = 500;
-    }
-    if (window.innerWidth < 550 && window.innerWidth > 450) {
-        itemWidth = 350;
-    }
-    if (window.innerWidth < 450) {
-        itemWidth = 300;
-    }
 
+	["DOMContentLoaded", "resize"].forEach(e => {
+		window.addEventListener(e, function() {
+			if (window.innerWidth > 550) {
+				itemWidth = 500;
+			}
+			if (window.innerWidth < 550 && window.innerWidth > 450) {
+				itemWidth = 350;
+			}
+			if (window.innerWidth < 450) {
+				itemWidth = 300;
+			}
+			
+			console.log(itemWidth)
+		})
+	})
+	
     leftBtn.addEventListener("click", () => {
         position += itemWidth;
         setPosition();

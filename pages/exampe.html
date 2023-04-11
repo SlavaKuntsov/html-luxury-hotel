@@ -6,10 +6,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<link rel="stylesheet" href="../css/example.css">
+	<!-- <link rel="stylesheet" href="../css/example.css"> -->
+	<style>
+		.wrapper {
+			background: red;
+		}
+		.wrapper h1{
+			background: blue;
+		}
+		h1{
+			background: green;
+		}
+		#btn{
+			padding: 10px 20px;
+			border: 1px solid black;
+			display: inline-block;
+		}
+	</style>
 </head>
 <body>
-	<h1>Lorem ipsum dolor sit amet.</h1>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit et qui iure sed tempora error harum, labore nulla fuga, accusantium voluptates? Quasi perspiciatis debitis natus perferendis officia. Esse, reiciendis?</p>
+	<div class="wrapper">
+		<h1>Lorem ipsum dolor sit amet.</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+			Ratione odit et qui iure sed tempora error harum, labore nulla fuga, 
+			accusantium voluptates? Quasi perspiciatis debitis natus perferendis officia. Esse, reiciendis?</p>
+	</div>
+	<div id="btn">btn</div>
+
+	<script>
+		btn.addEventListener("click", function() {
+			let wrapper = document.querySelector(".wrapper")
+
+			wrapper.outerHTML = wrapper.innerHTML;
+		})
+	</script>
 </body>
 </html>
