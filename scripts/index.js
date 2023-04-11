@@ -1,9 +1,8 @@
 // ==============	gsap scroll		==============
 let wrapper = document.querySelector(".wrapper")
 if(wrapper) {
-	console.log(1)
 	gsap.registerPlugin(ScrollSmoother)
-	
+	console.log("gsap ok")
 	ScrollSmoother.create({
 		wrapper: '.wrapper',
 		content: '.content',
@@ -14,7 +13,6 @@ if(wrapper) {
 // ==============	add animation	==============
 
 document.addEventListener("DOMContentLoaded", function () {
-	console.log("dom ok")	
 
 	const animateItems = document.querySelectorAll(".animate")
 
@@ -81,6 +79,7 @@ let menuOpen = document.getElementById("open");
 let menuClose = document.getElementById("close");
 let menu = document.querySelector("#burger-menu");
 
+window.onscroll = function () {};
 menuOpen.addEventListener("click", function () {
     if (!bool) {
         menu.style.left = "0";
@@ -228,7 +227,9 @@ if (allCarts) {
 
 	let body = document.querySelector("body")
 
-	body.style.overflow = "auto";
+	body.style.overflowX = "hidden";
+	body.style.overflowY = "auto";
+
 	
     reserv.addEventListener("click", function () {
         console.log(1);

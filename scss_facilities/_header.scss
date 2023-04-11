@@ -293,7 +293,7 @@ nav{
 			p{
 				width: 510px;
 				// font-size: 16px;
-				@include responsive-font(16, 9);
+				@include responsive-font(16, 12);
 				line-height: 24px;
 			}
 		}
@@ -309,14 +309,14 @@ nav{
 				}
 				p{
 					// font-size: 14px;
-					@include responsive-font(14, 10);
+					@include responsive-font(14, 12);
 				}
 			}
 			.scroll{
 				gap: 5px;
 				p{
 					// font-size: 14px;
-					@include responsive-font(14, 10);
+					@include responsive-font(14, 14);
 				}
 				img{
 					width:  35px;
@@ -518,11 +518,12 @@ nav{
 
 @media screen and (width < 550px) {
 	header{
-		height: 370px;
+		height: 650px;
 		padding: 20px;
 	}
 	nav{
 		@include max_550;
+		margin: 0 0 100px 0;
 		.logo{
 			padding: 10px;
 			background: transparent;
@@ -560,6 +561,9 @@ nav{
 	}
 	.header-main{
 		@include max_550;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
 		.text{
 			margin: 40px 0 30px;
 			span{
@@ -577,16 +581,17 @@ nav{
 			p{
 				width: 240px;
 				// font-size: 9px;
-				line-height: 12px;
+				line-height: 14px;
+				padding: 10px 0 0 0;
 			}
 		}
 		.all-buttons{
-			gap: 20px;
 			align-items: start;
 			position: relative;
+			gap: 160px;
 			.button{
 				gap: 8px;
-				padding: 5px 10px;
+				padding: 8px 15px;
 				width: 120px;
 				border-radius: 5px;
 				img{
@@ -600,20 +605,17 @@ nav{
 				}
 			}
 			.scroll{
-				position: absolute;
-				margin-left: auto;
-				margin-right: auto;
-				left: 0;
-				right: 0;
-				text-align: center;
-				bottom: -60px;
+				display: flex;
+				flex-flow: column;
+				position: relative;
+				width: 100%;
 				p{
 					// font-size: 10px;
 					line-height: 15px;
 				}
 				img{
-					width:  20px;
-					height: 20px;
+					width:  28px;
+					height: 28px;
 				}
 			}
 		}

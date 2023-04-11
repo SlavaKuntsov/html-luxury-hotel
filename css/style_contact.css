@@ -1,1 +1,1989 @@
-footer .footer-text,main,nav{max-width:1500px}.item{transform:translateX(-100%);opacity:0;transition:all .7s ease-in-out;will-change:transform,opacity}.item-left{transform:translateX(100%);opacity:0;transition:all .7s ease-in-out;will-change:transform,opacity}.item-img{transform:translateX(100%);opacity:0;transition:all .7s ease-in-out;will-change:transform,opacity}.animate{transform:translateX(0px);opacity:1}*{padding:0;margin:0;border:0}*,*:before,*:after{box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}.content{will-change:transform}html,body{widows:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}input,button,textarea{font-family:inherit}input:-ms-clear{display:none}button{cursor:pointer}button:-moz-focus-iner{padding:0;border:0}a{text-decoration:none;color:#fff}a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}html::-webkit-scrollbar{width:16px}html::-webkit-scrollbar-track{background-color:#fff;border-radius:100px}html::-webkit-scrollbar-thumb{border:2px solid #fff;background-color:#d4aa70;border-radius:100px;-webkit-transition:border .4s ease;transition:border .4s ease}html::-webkit-scrollbar-thumb:hover{border:0px}header{background:#14274a;height:465px}#burger-menu{position:fixed;top:0;left:100%;background:#fff;width:100%;height:100%;z-index:100;transition:left .5s ease-in-out,display 1s ease-in-out;overflow:auto;padding:20px}#burger-menu img{width:40px;height:40px;position:absolute;top:20px;right:20px}#burger-menu ul{margin:60px 0 0 0}#burger-menu ul li{padding:0 0 13px 0}#burger-menu ul li a{color:#000;font-size:24px;letter-spacing:.4px}#burger-menu ul li:nth-child(5) a{color:#000;font-size:24px;letter-spacing:.4px;border-bottom:2px solid #000}nav{z-index:1;margin:0 auto;display:flex;flex-flow:row;justify-content:space-between}nav .logo{position:relative;background:#e0b973;border-radius:50px;padding:40px 35px;display:flex;flex-flow:column;align-items:center}nav .logo h3{font-weight:700;font-size:40px;line-height:48px;letter-spacing:.15em;color:#14274a}nav .logo h5{font-weight:700;font-size:18px;line-height:18px;letter-spacing:.6em;color:#14274a}nav .logo:after{content:"";position:absolute;left:0;top:0;width:50px;height:50px;background:#e0b973}nav .logo:before{content:"";position:absolute;right:0;top:0;width:50px;height:50px;background:#e0b973}nav .burger{display:none}nav ul{display:flex;align-items:center;gap:70px}nav ul li{transition:transform .2s ease-in-out;position:relative;cursor:pointer}nav ul li::before{content:"";height:2px;width:0;position:absolute;bottom:0;left:0;background:#fff;z-index:10;transition:width .6s ease-in-out}nav ul li:hover::before{width:100%}nav ul li:not(:nth-child(5)){transition:transform .2s ease-in-out}nav ul li:not(:nth-child(5)):hover{transform:translateY(-5px)}nav ul li:not(:nth-child(5)):hover::before{width:100%}nav ul li a{font-weight:400;font-size:22px;line-height:30px;color:#fff}nav ul li:nth-child(5) a{font-weight:700;font-size:22px;line-height:30px;color:#fff;border-bottom:2px solid #fff}.header-main{margin:60px auto 0;display:flex;justify-content:center}.header-main h1{font-family:"Montserrat";font-style:normal;font-weight:700;font-size:80px;line-height:98px;color:#fff}@media screen and (width < 1660px){header{height:420px}nav{max-width:1000px}nav .logo{padding:25px}nav .logo h3{z-index:5;line-height:30px}}@media screen and (width < 1660px)and (max-width: 320px){nav .logo h3{font-size:16px}}@media screen and (width < 1660px)and (max-width: 800px){nav .logo h3{font-size:calc(16px + 16 * ((100vw - 320px) / 1660))}}@media screen and (width < 1660px)and (min-width: 800px){nav .logo h3{font-size:calc(16px + 10 * (100vw / 1660))}}@media screen and (width < 1660px)and (min-width: 1660px){nav .logo h3{font-size:26px}}@media screen and (width < 1660px)and (max-width: 320px){nav .logo h5{font-size:8px}}@media screen and (width < 1660px)and (max-width: 800px){nav .logo h5{font-size:calc(8px + 9.6 * ((100vw - 320px) / 1660))}}@media screen and (width < 1660px)and (min-width: 800px){nav .logo h5{font-size:calc(8px + 6 * (100vw / 1660))}}@media screen and (width < 1660px)and (min-width: 1660px){nav .logo h5{font-size:14px}}@media screen and (width < 1660px){nav .logo:after{width:45px;height:45px;z-index:1}}@media screen and (width < 1660px){nav .logo:before{width:45px;height:45px;z-index:1}}@media screen and (width < 1660px){nav ul{gap:50px}}@media screen and (width < 1660px)and (max-width: 320px){nav ul li a{font-size:11px}}@media screen and (width < 1660px)and (max-width: 800px){nav ul li a{font-size:calc(11px + 8 * ((100vw - 320px) / 1660))}}@media screen and (width < 1660px)and (min-width: 800px){nav ul li a{font-size:calc(11px + 5 * (100vw / 1660))}}@media screen and (width < 1660px)and (min-width: 1660px){nav ul li a{font-size:16px}}@media screen and (width < 1660px){nav ul li:nth-child(5) a{border-bottom:2px solid #fff}}@media screen and (width < 1660px)and (max-width: 320px){nav ul li:nth-child(5) a{font-size:11px}}@media screen and (width < 1660px)and (max-width: 800px){nav ul li:nth-child(5) a{font-size:calc(11px + 8 * ((100vw - 320px) / 1660))}}@media screen and (width < 1660px)and (min-width: 800px){nav ul li:nth-child(5) a{font-size:calc(11px + 5 * (100vw / 1660))}}@media screen and (width < 1660px)and (min-width: 1660px){nav ul li:nth-child(5) a{font-size:16px}}@media screen and (width < 1660px){.header-main{margin:90px auto 0;display:flex;justify-content:center}.header-main h1{font-family:"Montserrat";font-style:normal;font-weight:700;line-height:98px;color:#fff}}@media screen and (width < 1660px)and (max-width: 320px){.header-main h1{font-size:30px}}@media screen and (width < 1660px)and (max-width: 800px){.header-main h1{font-size:calc(30px + 48 * ((100vw - 320px) / 1660))}}@media screen and (width < 1660px)and (min-width: 800px){.header-main h1{font-size:calc(30px + 30 * (100vw / 1660))}}@media screen and (width < 1660px)and (min-width: 1660px){.header-main h1{font-size:60px}}@media screen and (width < 1100px){header{height:330px}nav{max-width:700px}nav .logo{padding:15px 10px;background:rgba(0,0,0,0)}nav .logo h3{color:#fff;z-index:5;line-height:20px}nav .logo h5{color:#fff}nav .logo:after{width:0;height:0;z-index:1}nav .logo:before{width:0;height:0;z-index:1}nav ul{gap:30px}.header-main{margin:55px auto 0;display:flex;justify-content:center}.header-main h1{font-family:"Montserrat";font-style:normal;font-weight:700;line-height:98px;color:#fff}}@media screen and (width < 800px){header{height:280px}nav{max-width:500px}nav .logo{padding:15px 10px;background:rgba(0,0,0,0)}nav .logo h3{color:#fff;z-index:5;line-height:20px}nav .logo h5{color:#fff}nav .logo:after{width:0;height:0;z-index:1}nav .logo:before{width:0;height:0;z-index:1}nav ul{gap:20px}nav ul li:nth-child(5) a{border-bottom:1.5px solid #fff}.header-main{margin:35px auto 0;display:flex;justify-content:center}.header-main h1{font-family:"Montserrat";font-style:normal;font-weight:700;line-height:98px;color:#fff}}@media screen and (width < 550px){header{height:230px;padding:20px}nav{max-width:inherit}nav .logo{padding:10px;background:rgba(0,0,0,0)}nav .logo h3{color:#fff;z-index:5;line-height:16px}nav .logo h5{color:#fff}nav .logo:after{width:0;height:0;z-index:1}nav .logo:before{width:0;height:0;z-index:1}nav ul{display:none}nav .burger{display:block}nav .burger img{width:35px;height:35px}.header-main{margin:0 auto;display:flex;justify-content:center}.header-main h1{font-family:"Montserrat";font-style:normal;font-weight:700;line-height:98px;color:#fff}}main{margin:0 auto}main .text{margin:200px 0 150px 0;display:flex;flex-flow:column;align-items:start;gap:20px}main .text h2{font-weight:700;font-size:60px;line-height:72px;color:#14274a}main .text p{font-weight:400;font-size:29px;line-height:37px;color:#14274a}main .info{display:flex;flex-flow:row;justify-content:space-between;margin:0 0 200px 0}main .info .email{display:flex;flex-flow:column;gap:20px}main .info .email p{font-weight:400;font-size:25px;line-height:49px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:35px;line-height:49px;color:#14274a}main .info .email a img{width:60px}main .info form{display:flex;flex-flow:column;gap:20px;align-items:end}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:10px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:25px;font-weight:600;line-height:29px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:570px;height:350px;font-family:"Montserrat";font-style:normal;font-size:30px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:570px;height:80px;padding:0 20px}main .info form input[type=submit]{width:200px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:25px;line-height:30px;color:#fff;background:#e0b973;padding:15px 20px;margin:20px 0 0 0}@media screen and (width < 1660px){main{max-width:1000px}main .text{margin:100px 0 100px 0;gap:10px}main .text h2{font-size:40px;line-height:50px}main .text p{font-size:16px;line-height:24px}main .info{display:flex;flex-flow:row;justify-content:space-between;margin:0 0 180px 0}main .info .email{display:flex;flex-flow:column;gap:10px}main .info .email p{font-weight:400;font-size:22px;line-height:49px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:22px;line-height:49px;color:#14274a}main .info .email a img{width:40px}main .info form{display:flex;flex-flow:column;gap:20px;align-items:end}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:5px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:20px;font-weight:600;line-height:29px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:450px;height:250px;font-family:"Montserrat";font-style:normal;font-size:18px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:450px;height:50px;padding:0 20px}main .info form input[type=submit]{width:180px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:18px;line-height:30px;color:#fff;background:#e0b973;padding:10px 15px;margin:20px 0 0 0}}@media screen and (width < 1100px){main{max-width:700px}main .text{margin:80px 0 80px 0}main .text h2{font-size:30px;line-height:30px}main .text p{font-size:14px;line-height:20px}main .info{display:flex;flex-flow:row;justify-content:space-between;margin:0 0 180px 0;gap:50px}main .info .email{display:flex;flex-flow:column;gap:5px}main .info .email p{font-weight:400;font-size:18px;line-height:24px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:18px;line-height:49px;color:#14274a}main .info .email a img{width:30px}main .info form{display:flex;flex-flow:column;gap:20px;align-items:end}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:5px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:16px;font-weight:600;line-height:29px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:320px;height:250px;font-family:"Montserrat";font-style:normal;font-size:14px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:320px;height:40px;padding:0 20px}main .info form input[type=submit]{width:150px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:16px;line-height:20px;color:#fff;background:#e0b973;padding:10px 10px;margin:20px 0 0 0}}@media screen and (width < 800px){main{max-width:500px}main .text{margin:30px 0}main .text h2{font-size:30px;line-height:25px}main .text p{font-size:12px;line-height:20px}main .info{display:flex;flex-flow:column;justify-content:start;margin:40px 0 120px 0;gap:40px}main .info .email{display:flex;flex-flow:column;gap:5px}main .info .email p{font-weight:400;font-size:16px;line-height:16px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:16px;line-height:30px;color:#14274a}main .info .email a img{width:25px}main .info form{display:flex;flex-flow:column;gap:20px;align-items:start}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:5px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:16px;font-weight:600;line-height:29px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:320px;height:150px;font-family:"Montserrat";font-style:normal;font-size:14px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:320px;height:40px;padding:0 20px}main .info form input[type=submit]{width:150px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:14px;line-height:20px;color:#fff;background:#e0b973;padding:10px 10px;margin:20px 0 0 0}}@media screen and (width < 550px){main{max-width:inherit;padding:20px}main .text{margin:10px 0 30px}main .text h2{font-size:22px;line-height:20px}main .text p{font-size:14px;line-height:15px}main .info{display:flex;flex-flow:column;justify-content:start;margin:40px 0 50px 0;gap:20px}main .info .email{display:flex;flex-flow:column;gap:5px}main .info .email p{font-weight:400;font-size:15px;line-height:16px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:15px;line-height:30px;color:#14274a}main .info .email a img{width:25px}main .info form{display:flex;flex-flow:column;gap:10px;align-items:start}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:5px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:16px;font-weight:600;line-height:15px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:320px;height:150px;font-family:"Montserrat";font-style:normal;font-size:14px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:320px;height:40px;padding:0 20px}main .info form input[type=submit]{width:150px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:14px;line-height:20px;color:#fff;background:#e0b973;padding:10px 10px;margin:20px 0 0 0}}@media screen and (width < 450px){main{max-width:inherit;padding:20px}main .text{margin:10px 0 30px}main .text h2{font-size:20px;line-height:15px}main .text p{font-size:13px;line-height:15px}main .info{display:flex;flex-flow:column;justify-content:start;margin:40px 0 20px 0;gap:20px}main .info .email{display:flex;flex-flow:column;gap:5px}main .info .email p{font-weight:400;font-size:15px;line-height:16px;color:#14274a}main .info .email a{display:flex;align-items:center;gap:10px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:15px;line-height:30px;color:#14274a}main .info .email a img{width:25px}main .info form{display:flex;flex-flow:column;gap:10px;align-items:start}main .info form .name,main .info form .emailAddress,main .info form .message{display:flex;flex-flow:column;gap:5px}main .info form .name label,main .info form .emailAddress label,main .info form .message label{font-weight:400;font-size:14px;font-weight:600;line-height:15px;color:#14274a}main .info form .name textarea,main .info form .name input,main .info form .emailAddress textarea,main .info form .emailAddress input,main .info form .message textarea,main .info form .message input{border:1px solid #14274a;resize:none;width:280px;height:120px;font-family:"Montserrat";font-style:normal;font-size:12px;padding:10px 20px;font-weight:500}main .info form .name input,main .info form .emailAddress input,main .info form .message input{width:280px;height:35px;padding:0 20px}main .info form input[type=submit]{width:120px;font-family:"Montserrat";font-style:normal;font-weight:700;font-size:14px;line-height:20px;color:#fff;background:#e0b973;padding:10px 10px;margin:20px 0 0 0}}footer{background:#14274a;width:100%;margin:120px 0 0 0;position:relative}footer::after{content:"";position:absolute;width:80px;height:80px;background:#14274a;top:-40px;transform:rotate(45deg);margin:auto;left:0;right:0}footer .email-top{display:none}footer .footer-text{display:flex;flex-flow:row;gap:120px;margin:0 auto;padding:70px 0;display:flex;flex-flow:row}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{font-weight:700;font-size:30px;line-height:30px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:16px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:18px;line-height:17px;padding:0 0 5px 0;color:#fff}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-second a{font-weight:400;font-size:20px;line-height:28px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:20px;line-height:20px}footer .footer-text .footer-fourth{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-fourth p{font-weight:400;font-size:22px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=email]{background:#14274a;font-family:"Montserrat";border:2px solid #e0b973;border-right:none;font-size:24px;padding:25px 35px;border-radius:5px 0 0 5px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder{font-family:"Montserrat";font-weight:400;font-size:24px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::placeholder{font-family:"Montserrat";font-weight:400;font-size:24px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=submit]{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:24px;line-height:20px;color:#14274a;background:#e0b973;padding:29px 35px 29px;margin-left:-4px;border:2px solid #e0b973;border-radius:0 5px 5px 0;font-weight:500;color:#fff}@media screen and (width < 1660px){footer::after{width:80px;height:80px;top:-30px;margin:auto;left:0;right:0}footer .email-top{display:none}footer .footer-text{max-width:1000px;display:flex;flex-flow:row;gap:60px;margin:0 auto;padding:70px 0;display:flex;flex-flow:row}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{font-weight:700;font-size:26px;line-height:30px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:12px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:12px;line-height:17px;padding:0 0 5px 0;color:#fff;padding:0 0 3px 0}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-second a{font-weight:400;font-size:14px;line-height:20px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:14px;line-height:20px}footer .footer-text .footer-fourth{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-fourth p{font-weight:400;font-size:14px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form{display:flex;flex-flow:row}footer .footer-text .footer-fourth form input[type=email]{background:#14274a;font-family:"Montserrat";border:2px solid #e0b973;border-right:none;font-size:16px;padding:15px 25px;border-radius:5px 0 0 5px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder{font-family:"Montserrat";font-weight:400;font-size:16px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::placeholder{font-family:"Montserrat";font-weight:400;font-size:16px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=submit]{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:18px;line-height:20px;color:#14274a;background:#e0b973;padding:15px 30px 19px;margin-left:-4px;border:2px solid #e0b973;border-radius:0 5px 5px 0;font-weight:500;color:#fff}}@media screen and (width < 1100px){footer{display:flex;flex-flow:column;gap:20px;align-items:center}footer::after{width:60px;height:60px;top:-25px;z-index:-1}footer .email-top{margin:40px 0 0 0;display:flex;align-items:center;gap:20px}footer .email-top p{font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form input[type=email]{background:#14274a;font-family:"Montserrat";border:2px solid #e0b973;border-right:none;font-size:12px;padding:8px 20px;border-radius:5px 0 0 5px;color:#fff}footer .email-top form input[type=email]::-moz-placeholder{font-family:"Montserrat";font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form input[type=email]::placeholder{font-family:"Montserrat";font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form input[type=submit]{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:12px;line-height:17px;color:#14274a;background:#e0b973;padding:7px 20px 6px;margin-left:-4px;border:2px solid #e0b973;border-radius:0 5px 5px 0}footer .footer-text{max-width:700px;gap:110px;margin:0 auto;padding:40px 0;display:flex;flex-flow:row}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{font-weight:700;font-size:20px;line-height:20px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:9px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:10px;line-height:17px;padding:0 0 5px 0;color:#fff;padding:0 0 3px 0}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-second a{font-weight:400;font-size:10px;line-height:20px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-third img{height:12px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:10px;line-height:20px}footer .footer-text .footer-fourth{display:none;flex-flow:column;gap:20px}footer .footer-text .footer-fourth p{font-weight:400;font-size:14px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form{display:flex;flex-flow:row}footer .footer-text .footer-fourth form input[type=email]{background:#14274a;font-family:"Montserrat";border:2px solid #e0b973;border-right:none;font-size:16px;padding:15px 25px;border-radius:5px 0 0 5px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder{font-family:"Montserrat";font-weight:400;font-size:16px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=email]::placeholder{font-family:"Montserrat";font-weight:400;font-size:16px;line-height:20px;color:#fff}footer .footer-text .footer-fourth form input[type=submit]{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:18px;line-height:20px;color:#14274a;background:#e0b973;padding:15px 30px 19px;margin-left:-4px;border:2px solid #e0b973;border-radius:0 5px 5px 0;font-weight:500;color:#fff}}@media screen and (width < 800px){footer{display:flex;flex-flow:column;gap:20px;align-items:center;margin:70px 0 0 0}footer::after{width:60px;height:60px;top:-25px;z-index:-1}footer .email-top{margin:40px 0 0 0;display:flex;align-items:center;gap:20px}footer .email-top p{font-weight:400;font-size:14px;line-height:20px;color:#fff}footer .email-top form input[type=email]{background:#14274a;font-family:"Montserrat";border:2px solid #e0b973;border-right:none;font-size:12px;padding:8px 20px;border-radius:5px 0 0 5px;color:#fff}footer .email-top form input[type=email]::-moz-placeholder{font-family:"Montserrat";font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form input[type=email]::placeholder{font-family:"Montserrat";font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form input[type=submit]{font-family:"Montserrat";font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#14274a;background:#e0b973;padding:8px 20px 8px;margin-left:-4px;border:2px solid #e0b973;border-radius:0 5px 5px 0}footer .footer-text{max-width:500px;display:flex;flex-flow:row;gap:60px;margin:0 auto;padding:30px 0;display:flex;flex-flow:row}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:20px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{font-weight:700;font-size:18px;line-height:20px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:8px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:8px;line-height:17px;padding:0 0 5px 0;color:#fff;padding:0 0 3px 0}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:15px}footer .footer-text .footer-second a{font-weight:400;font-size:10px;line-height:20px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:15px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:10px;line-height:20px}footer .footer-text .footer-fourth{display:none}}@media screen and (width < 550px){footer{margin:70px 0 0 0;gap:20px}footer::after{width:60px;height:60px;top:-25px;z-index:-1}footer .email-top{padding:0 20px;margin:20px 0 0 0;gap:10px;display:flex;flex-flow:column}footer .email-top p{font-weight:400;font-size:10px;line-height:20px;color:#fff}footer .email-top form{display:flex;align-items:center}footer .email-top form input[type=email]{border:2px solid #e0b973;border-right:none;font-size:8px;padding:7px 20px;border-radius:5px 0 0 5px}footer .email-top form input[type=email]::-moz-placeholder{font-weight:300;font-size:8px}footer .email-top form input[type=email]::placeholder{font-weight:300;font-size:8px}footer .email-top form input[type=submit]{font-weight:400;font-size:10px;line-height:8.5px;padding:8px 10px;margin-left:-4px;margin-top:0px;border:2px solid #e0b973;border-radius:0 5px 5px 0}footer .footer-text{max-width:inherit;display:flex;gap:60px;padding:20px;display:flex;flex-flow:row}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{padding:5px 0 0 0;font-weight:700;font-size:16px;line-height:14px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:6px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:8px;line-height:10px;color:#fff;padding:0 0 3px 0}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-second a{font-weight:400;font-size:9px;line-height:20px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-third img{height:14px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:9px;line-height:20px}footer .footer-text .footer-fourth{display:none}}@media screen and (width < 400px){footer{margin:70px 0 0 0;gap:10px}footer::after{width:40px;height:40px;top:-15px;z-index:-1}footer .email-top{padding:0 20px;margin:20px 0 0 0;gap:10px;display:flex;flex-flow:column}footer .email-top p{font-weight:400;font-size:12px;line-height:20px;color:#fff}footer .email-top form{display:flex;align-items:center}footer .email-top form input[type=email]{border:2px solid #e0b973;border-right:none;font-size:10px;padding:7px 20px;border-radius:5px 0 0 5px}footer .email-top form input[type=email]::-moz-placeholder{font-weight:300;font-size:10px}footer .email-top form input[type=email]::placeholder{font-weight:300;font-size:10px}footer .email-top form input[type=submit]{font-weight:400;font-size:10px;line-height:8.5px;padding:8px 10px;margin-left:-4px;margin-top:0px;border:2px solid #e0b973;border-radius:0 5px 5px 0}footer .footer-text{max-width:inherit;display:flex;flex-flow:wrap;justify-content:center;gap:60px;margin:0 auto;padding:20px}footer .footer-text .footer-first{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-first .top{display:flex;flex-flow:column;gap:5px}footer .footer-text .footer-first .top h5{padding:5px 0 0 0;font-weight:700;font-size:16px;line-height:12px;letter-spacing:.15em;color:#fff}footer .footer-text .footer-first .top h6{font-weight:700;font-size:8px;line-height:11px;letter-spacing:.6em;color:#fff}footer .footer-text .footer-first .bottom p{font-weight:400;font-size:8px;line-height:10px;color:#fff;padding:0 0 3px 0}footer .footer-text .footer-second{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-second a{font-weight:400;font-size:11px;line-height:20px}footer .footer-text .footer-third{display:flex;flex-flow:column;gap:10px}footer .footer-text .footer-third img{height:14px}footer .footer-text .footer-third a{gap:10px;display:flex;align-items:center;font-weight:400;font-size:11px;line-height:20px}footer .footer-text .footer-fourth{display:none}}
+footer .footer-text, main, nav {
+  max-width: 1500px;
+}
+
+.item {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.item-left {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.item-img {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+.content {
+  will-change: transform;
+}
+
+html,
+body {
+  widows: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-iner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html::-webkit-scrollbar {
+  width: 16px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border: 2px solid #ffffff;
+  background-color: #d4aa70;
+  border-radius: 100px;
+  -webkit-transition: border 0.4s ease;
+  transition: border 0.4s ease;
+}
+html::-webkit-scrollbar-thumb:hover {
+  border: 0px;
+}
+
+header {
+  background: #14274a;
+  height: 465px;
+}
+
+#burger-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: left 0.5s ease-in-out, display 1s ease-in-out;
+  overflow: auto;
+  padding: 20px;
+}
+#burger-menu img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#burger-menu ul {
+  margin: 60px 0 0 0;
+}
+#burger-menu ul li {
+  padding: 0 0 13px 0;
+}
+#burger-menu ul li a {
+  color: black;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+}
+#burger-menu ul li:nth-child(5) a {
+  color: black;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  border-bottom: 2px solid black;
+}
+
+nav {
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+nav .logo {
+  position: relative;
+  background: #E0B973;
+  border-radius: 50px;
+  padding: 40px 35px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+nav .logo h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.15em;
+  color: #14274a;
+}
+nav .logo h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.6em;
+  color: #14274a;
+}
+nav .logo:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #E0B973;
+}
+nav .logo:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #E0B973;
+}
+nav .burger {
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+nav ul li {
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+nav ul li::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  transition: width 0.6s ease-in-out;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav ul li:not(:nth-child(5)) {
+  transition: transform 0.2s ease-in-out;
+}
+nav ul li:not(:nth-child(5)):hover {
+  transform: translateY(-5px);
+}
+nav ul li:not(:nth-child(5)):hover::before {
+  width: 100%;
+}
+nav ul li a {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+}
+nav ul li:nth-child(5) a {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+}
+
+.header-main {
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.header-main h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  color: #ffffff;
+}
+
+@media screen and (width < 1660px) {
+  header {
+    height: 420px;
+  }
+  nav {
+    max-width: 1000px;
+  }
+  nav .logo {
+    padding: 25px;
+  }
+  nav .logo h3 {
+    z-index: 5;
+    line-height: 30px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h3 {
+    font-size: calc(16px + 10 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav .logo h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav .logo h5 {
+    font-size: 8px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 9.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav .logo h5 {
+    font-size: calc(8px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav .logo h5 {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) {
+  nav .logo:after {
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+  }
+}
+@media screen and (width < 1660px) {
+  nav .logo:before {
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+  }
+}
+@media screen and (width < 1660px) {
+  nav ul {
+    gap: 50px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li a {
+    font-size: 11px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
+  nav ul li:nth-child(5) a {
+    border-bottom: 2px solid white;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  nav ul li:nth-child(5) a {
+    font-size: 11px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  nav ul li:nth-child(5) a {
+    font-size: calc(11px + 8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  nav ul li:nth-child(5) a {
+    font-size: calc(11px + 5 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  nav ul li:nth-child(5) a {
+    font-size: 16px;
+  }
+}
+@media screen and (width < 1660px) {
+  .header-main {
+    margin: 90px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    color: #ffffff;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  .header-main h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  .header-main h1 {
+    font-size: calc(30px + 48 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  .header-main h1 {
+    font-size: calc(30px + 30 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  .header-main h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (width < 1100px) {
+  header {
+    height: 330px;
+  }
+  nav {
+    max-width: 700px;
+  }
+  nav .logo {
+    padding: 15px 10px;
+    background: transparent;
+  }
+  nav .logo h3 {
+    color: white;
+    z-index: 5;
+    line-height: 20px;
+  }
+  nav .logo h5 {
+    color: white;
+  }
+  nav .logo:after {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav .logo:before {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  .header-main {
+    margin: 55px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    color: #ffffff;
+  }
+}
+@media screen and (width < 800px) {
+  header {
+    height: 280px;
+  }
+  nav {
+    max-width: 500px;
+  }
+  nav .logo {
+    padding: 15px 10px;
+    background: transparent;
+  }
+  nav .logo h3 {
+    color: white;
+    z-index: 5;
+    line-height: 20px;
+  }
+  nav .logo h5 {
+    color: white;
+  }
+  nav .logo:after {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav .logo:before {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav ul {
+    gap: 20px;
+  }
+  nav ul li:nth-child(5) a {
+    border-bottom: 1.5px solid white;
+  }
+  .header-main {
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    color: #ffffff;
+  }
+}
+@media screen and (width < 550px) {
+  header {
+    height: 230px;
+    padding: 20px;
+  }
+  nav {
+    max-width: inherit;
+  }
+  nav .logo {
+    padding: 10px;
+    background: transparent;
+  }
+  nav .logo h3 {
+    color: white;
+    z-index: 5;
+    line-height: 16px;
+  }
+  nav .logo h5 {
+    color: white;
+  }
+  nav .logo:after {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav .logo:before {
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .burger img {
+    width: 35px;
+    height: 35px;
+  }
+  .header-main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .header-main h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    color: #ffffff;
+  }
+}
+main {
+  margin: 0 auto;
+}
+main .text {
+  margin: 200px 0 150px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 20px;
+}
+main .text h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  color: #14274A;
+}
+main .text p {
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 37px;
+  color: #14274A;
+}
+main .info {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0 0 200px 0;
+}
+main .info .email {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+main .info .email p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 49px;
+  color: #14274A;
+}
+main .info .email a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 49px;
+  color: #14274A;
+}
+main .info .email a img {
+  width: 60px;
+}
+main .info form {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: end;
+}
+main .info form .name, main .info form .emailAddress, main .info form .message {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+  font-weight: 400;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #14274A;
+}
+main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+  border: 1px solid #14274A;
+  resize: none;
+  width: 570px;
+  height: 350px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+  width: 570px;
+  height: 80px;
+  padding: 0 20px;
+}
+main .info form input[type=submit] {
+  width: 200px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background: #E0B973;
+  padding: 15px 20px;
+  margin: 20px 0 0 0;
+}
+
+@media screen and (width < 1660px) {
+  main {
+    max-width: 1000px;
+  }
+  main .text {
+    margin: 100px 0 100px 0;
+    gap: 10px;
+  }
+  main .text h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  main .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main .info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 0 180px 0;
+  }
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  main .info .email p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 49px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 49px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 40px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: end;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 450px;
+    height: 250px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 180px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #E0B973;
+    padding: 10px 15px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (width < 1100px) {
+  main {
+    max-width: 700px;
+  }
+  main .text {
+    margin: 80px 0 80px 0;
+  }
+  main .text h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  main .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  main .info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 0 180px 0;
+    gap: 50px;
+  }
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info .email p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 49px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 30px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: end;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 250px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E0B973;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (width < 800px) {
+  main {
+    max-width: 500px;
+  }
+  main .text {
+    margin: 30px 0;
+  }
+  main .text h2 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  main .text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  main .info {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 120px 0;
+    gap: 40px;
+  }
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info .email p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: start;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E0B973;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (width < 550px) {
+  main {
+    max-width: inherit;
+    padding: 20px;
+  }
+  main .text {
+    margin: 10px 0 30px;
+  }
+  main .text h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  main .text p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  main .info {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 50px 0;
+    gap: 20px;
+  }
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info .email p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: start;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 320px;
+    height: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 320px;
+    height: 40px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 150px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E0B973;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+  }
+}
+@media screen and (width < 450px) {
+  main {
+    max-width: inherit;
+    padding: 20px;
+  }
+  main .text {
+    margin: 10px 0 30px;
+  }
+  main .text h2 {
+    font-size: 20px;
+    line-height: 15px;
+  }
+  main .text p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  main .info {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    margin: 40px 0 20px 0;
+    gap: 20px;
+  }
+  main .info .email {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info .email p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #14274A;
+  }
+  main .info .email a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: #14274A;
+  }
+  main .info .email a img {
+    width: 25px;
+  }
+  main .info form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: start;
+  }
+  main .info form .name, main .info form .emailAddress, main .info form .message {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  main .info form .name label, main .info form .emailAddress label, main .info form .message label {
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #14274A;
+  }
+  main .info form .name textarea, main .info form .name input, main .info form .emailAddress textarea, main .info form .emailAddress input, main .info form .message textarea, main .info form .message input {
+    border: 1px solid #14274A;
+    resize: none;
+    width: 280px;
+    height: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 12px;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  main .info form .name input, main .info form .emailAddress input, main .info form .message input {
+    width: 280px;
+    height: 35px;
+    padding: 0 20px;
+  }
+  main .info form input[type=submit] {
+    width: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E0B973;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+  }
+}
+footer {
+  background: #14274A;
+  width: 100%;
+  margin: 120px 0 0 0;
+  position: relative;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #14274A;
+  top: -40px;
+  transform: rotate(45deg);
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+footer .email-top {
+  display: none;
+}
+footer .footer-text {
+  display: flex;
+  flex-flow: row;
+  gap: 120px;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-flow: row;
+}
+footer .footer-text .footer-first {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-first .top {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+footer .footer-text .footer-first .top h5 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  color: white;
+}
+footer .footer-text .footer-first .top h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 11px;
+  letter-spacing: 0.6em;
+  color: white;
+}
+footer .footer-text .footer-first .bottom p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  padding: 0 0 5px 0;
+  color: white;
+}
+footer .footer-text .footer-second {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-second a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+footer .footer-text .footer-third {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-third a {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+footer .footer-text .footer-fourth {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .footer-text .footer-fourth p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email] {
+  background: #14274A;
+  font-family: "Montserrat";
+  border: 2px solid #E0B973;
+  border-right: none;
+  font-size: 24px;
+  padding: 25px 35px;
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=email]::placeholder {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: white;
+}
+footer .footer-text .footer-fourth form input[type=submit] {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: #14274A;
+  background: #E0B973;
+  padding: 29px 35px 29px;
+  margin-left: -4px;
+  border: 2px solid #E0B973;
+  border-radius: 0 5px 5px 0;
+  font-weight: 500;
+  color: white;
+}
+
+@media screen and (width < 1660px) {
+  footer::after {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  footer .email-top {
+    display: none;
+  }
+  footer .footer-text {
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-fourth p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form {
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-fourth form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 15px 30px 19px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+    color: white;
+  }
+}
+@media screen and (width < 1100px) {
+  footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 7px 20px 6px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: 700px;
+    gap: 110px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-third img {
+    height: 12px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-fourth p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form {
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-fourth form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .footer-text .footer-fourth form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 15px 30px 19px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+    color: white;
+  }
+}
+@media screen and (width < 800px) {
+  footer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+    margin: 70px 0 0 0;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    margin: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email] {
+    background: #14274A;
+    font-family: "Montserrat";
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 12px;
+    padding: 8px 20px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form input[type=submit] {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #14274A;
+    background: #E0B973;
+    padding: 8px 20px 8px;
+    margin-left: -4px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: 500px;
+    display: flex;
+    flex-flow: row;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 17px;
+    padding: 0 0 5px 0;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+  }
+}
+@media screen and (width < 550px) {
+  footer {
+    margin: 70px 0 0 0;
+    gap: 20px;
+  }
+  footer::after {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    z-index: -1;
+  }
+  footer .email-top {
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form {
+    display: flex;
+    align-items: center;
+  }
+  footer .email-top form input[type=email] {
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 8px;
+    padding: 7px 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-weight: 300;
+    font-size: 8px;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-weight: 300;
+    font-size: 8px;
+  }
+  footer .email-top form input[type=submit] {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 8.5px;
+    padding: 8px 10px;
+    margin-left: -4px;
+    margin-top: 0px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: inherit;
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    padding: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-third img {
+    height: 14px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+  }
+}
+@media screen and (width < 400px) {
+  footer {
+    margin: 70px 0 0 0;
+    gap: 10px;
+  }
+  footer::after {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    z-index: -1;
+  }
+  footer .email-top {
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+    gap: 10px;
+    display: flex;
+    flex-flow: column;
+  }
+  footer .email-top p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  footer .email-top form {
+    display: flex;
+    align-items: center;
+  }
+  footer .email-top form input[type=email] {
+    border: 2px solid #E0B973;
+    border-right: none;
+    font-size: 10px;
+    padding: 7px 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  footer .email-top form input[type=email]::-moz-placeholder {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  footer .email-top form input[type=email]::placeholder {
+    font-weight: 300;
+    font-size: 10px;
+  }
+  footer .email-top form input[type=submit] {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 8.5px;
+    padding: 8px 10px;
+    margin-left: -4px;
+    margin-top: 0px;
+    border: 2px solid #E0B973;
+    border-radius: 0 5px 5px 0;
+  }
+  footer .footer-text {
+    max-width: inherit;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  footer .footer-text .footer-first {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-first .top {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+  footer .footer-text .footer-first .top h5 {
+    padding: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.15em;
+    color: white;
+  }
+  footer .footer-text .footer-first .top h6 {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 11px;
+    letter-spacing: 0.6em;
+    color: white;
+  }
+  footer .footer-text .footer-first .bottom p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    padding: 0 0 3px 0;
+  }
+  footer .footer-text .footer-second {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-second a {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-third {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  footer .footer-text .footer-third img {
+    height: 14px;
+  }
+  footer .footer-text .footer-third a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  footer .footer-text .footer-fourth {
+    display: none;
+  }
+}
