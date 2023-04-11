@@ -1,3 +1,7 @@
+.wrapper{
+	overflow-x: hidden !important;
+}
+
 main{
 	@extend %max;
 	margin: 0 auto;

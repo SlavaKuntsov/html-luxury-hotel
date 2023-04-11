@@ -1,5 +1,6 @@
 // ==============	gsap scroll		==============
 let wrapper = document.querySelector(".wrapper")
+
 if(wrapper) {
 	gsap.registerPlugin(ScrollSmoother)
 	console.log("gsap ok")
