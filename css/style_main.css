@@ -913,6 +913,10 @@ nav ul li:nth-child(1) a {
     height: 28px;
   }
 }
+body {
+  overflow: visible !important;
+}
+
 main {
   margin: 100px auto;
 }

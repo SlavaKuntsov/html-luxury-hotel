@@ -586,6 +586,10 @@ nav ul li:nth-child(5) a {
     color: #ffffff;
   }
 }
+body {
+  overflow: visible !important;
+}
+
 main {
   margin: 0 auto;
 }
