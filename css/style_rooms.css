@@ -913,7 +913,7 @@ nav ul li:nth-child(2) a {
     height: 28px;
   }
 }
-.wrapper {
+body {
   overflow: visible !important;
 }
 
