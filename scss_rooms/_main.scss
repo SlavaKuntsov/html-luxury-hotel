@@ -2,6 +2,10 @@ body{
 	overflow: hidden visible !important;
 }
 
+.wrapper{
+	overflow: hidden;
+}
+
 main{
 	@extend %max;
 	margin: 0 auto;

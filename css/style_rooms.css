@@ -917,6 +917,10 @@ body {
   overflow: hidden visible !important;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 main {
   margin: 0 auto;
 }
