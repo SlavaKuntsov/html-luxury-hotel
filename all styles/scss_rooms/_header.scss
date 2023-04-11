@@ -1,5 +1,5 @@
 header {
-	background: url("../img/header/background_2.png") no-repeat;
+	background: url("../../img/header/background_3.png") no-repeat;
 	background-size: cover;
 	background-position: center top;
 	height: 1080px;
@@ -34,7 +34,7 @@ header {
 
 			}
 		}
-		li:nth-child(3){
+		li:nth-child(2){
 			a{
 				color: black;
 				font-size: 26px;
@@ -103,10 +103,10 @@ nav{
 		gap: 70px;
 		li{
 			@include slide;
-			&:not(:nth-child(3)){
+			&:not(:nth-child(2)){
 				@include a-hover;
 			}
-			&:not(:nth-child(3)):hover:before{
+			&:not(:nth-child(2)):hover:before{
 				width: 100%;
 			}
 		}
@@ -116,7 +116,7 @@ nav{
 			line-height: 30px;
 			color: #FFFFFF;
 		}
-		li:nth-child(3){
+		li:nth-child(2){
 			a{
 				font-weight: 700;
 				font-size: 24px;
@@ -262,7 +262,7 @@ nav{
 				// font-size: 14px;
 				@include responsive-font(16, 11);
 			}
-			li:nth-child(3){
+			li:nth-child(2){
 				a{
 					// font-size: 14px;
 					@include responsive-font(16, 11);
@@ -455,7 +455,7 @@ nav{
 			li a{
 				// font-size: 12px;
 			}
-			li:nth-child(3){
+			li:nth-child(2){
 				a{
 					// font-size: 12px;
 					border-bottom: 1.5px solid white;

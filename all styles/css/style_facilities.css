@@ -1,4 +1,4 @@
-footer .footer-text, .reviews, .about-us .block, main, .header-main, nav {
+footer .footer-text, main, .header-main, nav {
   max-width: 1500px;
 }
 
@@ -134,7 +134,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 header {
-  background: url("../img/header/background.png") no-repeat;
+  background: url("../../img/header/background_2.png") no-repeat;
   background-size: cover;
   background-position: center top;
   height: 1080px;
@@ -170,7 +170,7 @@ header {
   font-size: 26px;
   letter-spacing: 0.4px;
 }
-#burger-menu ul li:nth-child(1) a {
+#burger-menu ul li:nth-child(3) a {
   color: black;
   font-size: 26px;
   letter-spacing: 0.4px;
@@ -252,13 +252,13 @@ nav ul li::before {
 nav ul li:hover::before {
   width: 100%;
 }
-nav ul li:not(:nth-child(1)) {
+nav ul li:not(:nth-child(3)) {
   transition: transform 0.2s ease-in-out;
 }
-nav ul li:not(:nth-child(1)):hover {
+nav ul li:not(:nth-child(3)):hover {
   transform: translateY(-5px);
 }
-nav ul li:not(:nth-child(1)):hover:before {
+nav ul li:not(:nth-child(3)):hover:before {
   width: 100%;
 }
 nav ul li a {
@@ -267,7 +267,7 @@ nav ul li a {
   line-height: 30px;
   color: #FFFFFF;
 }
-nav ul li:nth-child(1) a {
+nav ul li:nth-child(3) a {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -473,27 +473,27 @@ nav ul li:nth-child(1) a {
   }
 }
 @media screen and (width < 1660px) {
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     border-bottom: 2px solid white;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     font-size: 11px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     font-size: calc(11px + 8 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     font-size: calc(11px + 5 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     font-size: 16px;
   }
 }
@@ -773,7 +773,7 @@ nav ul li:nth-child(1) a {
   nav ul {
     gap: 20px;
   }
-  nav ul li:nth-child(1) a {
+  nav ul li:nth-child(3) a {
     border-bottom: 1.5px solid white;
   }
   .header-main {
@@ -918,1713 +918,1075 @@ body {
 }
 
 main {
-  margin: 100px auto;
+  margin: 0 auto;
 }
-
-.all-advantages {
-  margin: 10px 10% 150px;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-.all-advantages .advantage {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex: 1 1 250px;
-}
-.all-advantages .advantage .logo {
-  border-radius: 50%;
-  background: #E0B973;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.all-advantages .advantage .logo img {
-  width: 55px;
-  height: 55px;
-}
-.all-advantages .advantage p {
-  font-size: 28px;
-  line-height: 32px;
-  width: 130px;
-}
-
-.stay-here {
-  margin: 100px auto 240px;
-  display: flex;
-  flex-flow: column;
-  gap: 100px;
-}
-.stay-here .stay-here-text {
+main .text {
+  margin: 100px 0 80px 0;
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
-.stay-here .stay-here-text h2 {
-  font-size: 60px;
-  color: #14274A;
-  font-weight: 700;
-}
-.stay-here .stay-here-text h2 span {
-  font-weight: 700;
-  font-size: 60px;
-  color: #E0B973;
-  font-family: "EB Garamond", serif;
-}
-.stay-here .stay-here-text p {
-  color: #14274A;
-  font-size: 30px;
-  text-align: center;
-}
-.stay-here .stay-here-advantages {
-  position: relative;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages {
-  display: flex;
-  flex-flow: column;
-  gap: 50px;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-  display: flex;
-  flex-flow: column;
-  gap: 15px;
-  width: 700px;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #E0B973;
-  color: white;
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
-  display: none;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-  font-weight: 600;
-  color: black;
-  font-size: 32px;
-  font-family: "Montserrat", sans-serif;
-}
-.stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-  font-size: 26px;
-  line-height: 28px;
-}
-.stay-here .stay-here-advantages .all-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.stay-here .stay-here-advantages .all-image .big-img {
-  z-index: 1;
-  position: absolute;
-  right: -120px;
-  top: 0;
-  height: 660px;
-}
-.stay-here .stay-here-advantages .all-image .small-img {
-  position: absolute;
-  right: 140px;
-  top: 200px;
-  margin: auto 0;
-  z-index: 5;
-  height: 250px;
-}
-.stay-here .stay-here-advantages .all-image .comments {
-  transition: transform 0.2s ease-in-out;
-  z-index: 10;
-  background: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  gap: 20px;
-  width: 300px;
-}
-.stay-here .stay-here-advantages .all-image .comments:hover {
-  transform: translateY(-5px);
-}
-.stay-here .stay-here-advantages .all-image .comments img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.stay-here .stay-here-advantages .all-image .comments .text {
-  display: flex;
-  flex-flow: column;
-  gap: 10px;
-}
-.stay-here .stay-here-advantages .all-image .comments .text h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.stay-here .stay-here-advantages .all-image .comments .text p {
-  white-space: nowrap;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-}
-.stay-here .stay-here-advantages .all-image .c1 {
-  position: absolute;
-  top: -40px;
-  right: 0;
-}
-.stay-here .stay-here-advantages .all-image .c2 {
-  position: absolute;
-  top: 80px;
-  right: 300px;
-}
-.stay-here .stay-here-advantages .all-image .c3 {
-  position: absolute;
-  top: 610px;
-  right: 0;
-}
-
-.main-info {
-  display: flex;
-  flex-flow: column;
-  gap: 80px;
-}
-.main-info .info-card {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-.main-info .info-card .card-text {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-}
-.main-info .info-card .card-text .text {
-  border-left: 2px solid black;
-  display: flex;
-  flex-flow: column;
-  align-items: start;
-  gap: 30px;
-  padding: 0 0 0 50px;
-}
-.main-info .info-card .card-text .text h2 {
+main .text h2 {
   font-weight: 700;
   font-size: 60px;
   line-height: 72px;
-  letter-spacing: 0.02em;
-  color: #14274a;
+  letter-spacing: 0.05em;
+  color: #14274A;
 }
-.main-info .info-card .card-text .text p {
+main .text p {
   font-weight: 400;
-  font-size: 26px;
-  line-height: 40px;
-  color: #14274a;
+  font-size: 25px;
+  line-height: 30px;
+  color: #14274A;
+  text-align: center;
 }
-.main-info .info-card .card-text .text p.room {
-  max-width: 540px;
+main .all-carts {
+  display: flex;
+  flex-flow: wrap;
+  gap: 60px;
+  justify-content: center;
 }
-.main-info .info-card .card-text .text p.facilities {
-  max-width: 520px;
+main .all-carts .cartF {
+  cursor: pointer;
+  position: relative;
 }
-.main-info .info-card .card-text .text a {
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-  padding: 20px 60px;
-  background: #E0B973;
+main .all-carts .cartF .front {
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+  transform: perspective(900px) rotateY(0deg);
+  will-change: transform, z-index;
+}
+main .all-carts .cartF .front img {
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+  z-index: 10;
+}
+main .all-carts .cartF .front span {
+  display: none;
+}
+main .all-carts .cartF .front .cart-text {
+  border-radius: 8px 8px 0 0;
+  width: 320px;
+  background: white;
+  padding: 10px 40px 0;
+  bottom: -1px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+main .all-carts .cartF .front .cart-text p {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #14274A;
+  padding: 0 0 5px 0;
+}
+main .all-carts .cartF .back {
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -10;
+  width: 600px;
+  height: 400px;
+  transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+  transform: perspective(900px) rotateY(180deg);
+  will-change: transform, z-index;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  color: white;
+}
+main .all-carts .cartF .back .time {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  align-items: center;
+}
+main .all-carts .cartF .back .time h3 {
+  font-size: 40px;
+  z-index: 20;
+}
+main .all-carts .cartF .back .time h4 {
+  font-size: 30px;
+  z-index: 20;
+}
+main .all-carts .cartF .back p {
+  font-weight: 500;
+  text-align: center;
+  font-size: 24px;
+  z-index: 20;
+  padding: 0 20px;
+  line-height: 28px;
+}
+main .all-carts .cartF .back span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  z-index: 10;
+  width: 600px;
+  height: 400px;
+  background: rgba(37, 37, 37, 0.3);
+}
+main .offer {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  margin: 110px 0 0 0;
+}
+main .offer h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 72px;
+  color: #14274A;
+}
+main .offer .offer-text {
+  display: flex;
+  flex-flow: wrap;
+  gap: 0;
+  justify-content: space-between;
+}
+main .offer .offer-text p {
+  color: black;
+  padding: 0 0 15px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+main .comments {
+  margin: 110px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+main .comments h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+  color: #14274A;
+}
+main .comments .comments-container {
+  overflow: hidden;
+}
+main .comments .comments-container .comments-track {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart {
+  min-width: 500px;
+}
+main .comments .comments-container .comments-track .comment-cart p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #14274A;
+}
+main .comments .comments-container .comments-track .comment-cart span {
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.05em;
-  color: #ffffff;
+  line-height: 30px;
+  color: #14274A;
 }
-.main-info .info-card .card-text .text a:hover {
+main .comments .buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .comments .buttons .left, main .comments .buttons .right {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
+  padding: 10px 20px;
+  font-size: 28px;
+  background: #E0B973;
+  color: white;
+  border-radius: 8px;
+}
+main .comments .buttons .left:hover, main .comments .buttons .right:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
   background: #d7a449;
 }
-.main-info .info-card .card-text .text a:active {
+main .comments .buttons .left:active, main .comments .buttons .right:active {
   background: #e5c388;
-}
-.main-info .info-card img.room {
-  height: 550px;
-  width: 850px;
-}
-.main-info .info-card img.facilities {
-  height: 500px;
-  width: 850px;
-}
-.main-info .mobile-info-card {
-  display: none;
-}
-
-.about-us {
-  background: #14274A;
-}
-.about-us .block {
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-.about-us .block .text {
-  padding: 150px 250px 150px 0;
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-}
-.about-us .block .text h2 {
-  font-size: 50px;
-  letter-spacing: 8px;
-  color: white;
-  padding: 0 0 25px;
-  width: 315px;
-  border-bottom: 4px solid #E0B973;
-}
-.about-us .block .text p {
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  line-height: 34px;
-  font-weight: 400;
-}
-
-.reviews {
-  margin: 150px auto 200px;
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-}
-.reviews h2 {
-  font-size: 50px;
-  font-weight: 700;
-  color: #14274A;
-  letter-spacing: 2px;
-}
-.reviews .text {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: end;
-}
-.reviews .text p {
-  font-size: 28px;
-  color: #14274A;
-  letter-spacing: 1px;
-}
-.reviews .text .all-star {
-  display: flex;
-  flex-flow: column;
-  gap: 10px;
-}
-.reviews .text .all-star .star {
-  margin: 0 0 0 -5px;
-  display: flex;
-  flex-flow: row;
-  gap: 8px;
-}
-.reviews .text .all-star .star img {
-  width: 50px;
-  height: 50px;
-}
-.reviews .text .all-avatars {
-  gap: 10px;
-}
-.reviews .text .all-avatars img {
-  padding: 0 0 10px;
-  height: 100px;
 }
 
 @media screen and (width < 1660px) {
   main {
     max-width: 1000px;
-    margin: 90px auto;
   }
-  .all-advantages {
-    margin: 0px 10% 100px;
-    flex-flow: row;
-  }
-  .all-advantages .advantage {
-    gap: 15px;
-  }
-  .all-advantages .advantage .logo {
-    width: 55px;
-    height: 55px;
-  }
-  .all-advantages .advantage .logo svg {
-    width: 32px;
-    height: 32px;
-  }
-  .all-advantages .advantage p {
-    line-height: 22px;
-    width: 80px;
+  main .text {
+    margin: 60px 0;
+    gap: 0px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .all-advantages .advantage p {
-    font-size: 12px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .all-advantages .advantage p {
-    font-size: calc(12px + 9.6 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .all-advantages .advantage p {
-    font-size: calc(12px + 6 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .all-advantages .advantage p {
-    font-size: 18px;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here {
-    margin: 100px auto 200px;
-    gap: 100px;
-  }
-  .stay-here .stay-here-text {
-    gap: 20px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-text h2 {
+  main .text h2 {
     font-size: 25px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-text h2 {
+  main .text h2 {
     font-size: calc(25px + 16 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-text h2 {
+  main .text h2 {
     font-size: calc(25px + 10 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-text h2 {
-    font-size: 35px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-text h2 span {
-    font-size: 25px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-text h2 span {
-    font-size: calc(25px + 16 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-text h2 span {
-    font-size: calc(25px + 10 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-text h2 span {
+  main .text h2 {
     font-size: 35px;
   }
 }
 @media screen and (width < 1660px) {
-  .stay-here .stay-here-text p {
-    color: #14274A;
+  main .text p {
     line-height: 24px;
-    text-align: center;
-    padding: 0 50px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-text p {
+  main .text p {
     font-size: 14px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-text p {
+  main .text p {
     font-size: calc(14px + 6.4 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-text p {
+  main .text p {
     font-size: calc(14px + 4 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-text p {
+  main .text p {
     font-size: 18px;
   }
 }
 @media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages {
-    gap: 50px;
+  main .all-carts {
+    display: flex;
+    flex-flow: wrap;
+    gap: 60px;
+    justify-content: center;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    gap: 10px;
+  main .all-carts .cartF .front {
     width: 400px;
+    height: 280px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    width: 40px;
-    height: 40px;
+  main .all-carts .cartF .front img {
+    width: 400px;
+    height: 280px;
+  }
+  main .all-carts .cartF .front .cart-text {
+    width: 300px;
+    padding: 10px 40px 0;
+    bottom: -1px;
+  }
+  main .all-carts .cartF .front .cart-text p {
+    font-weight: 700;
+    padding: 0 0 5px 0;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    font-size: 14px;
+  main .all-carts .cartF .front .cart-text p {
+    font-size: 13px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    font-size: calc(14px + 6.4 * ((100vw - 320px) / 1660));
+  main .all-carts .cartF .front .cart-text p {
+    font-size: calc(13px + 17.6 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    font-size: calc(14px + 4 * (100vw / 1660));
+  main .all-carts .cartF .front .cart-text p {
+    font-size: calc(13px + 11 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    font-size: 18px;
+  main .all-carts .cartF .front .cart-text p {
+    font-size: 24px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .all-carts .cartF .back {
+    width: 400px;
+    height: 280px;
+    border-radius: 15px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    padding: 20px;
+  }
+  main .all-carts .cartF .back .time {
+    gap: 10px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    z-index: 20;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
+  main .all-carts .cartF .back .time h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: calc(20px + 12.8 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: calc(20px + 8 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .all-carts .cartF .back .time h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .all-carts .cartF .back .time h4 {
     font-size: 16px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-size: calc(16px + 6.4 * ((100vw - 320px) / 1660));
+  main .all-carts .cartF .back .time h4 {
+    font-size: calc(16px + 9.6 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-size: calc(16px + 4 * (100vw / 1660));
+  main .all-carts .cartF .back .time h4 {
+    font-size: calc(16px + 6 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-size: 20px;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    line-height: 22px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: 12px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: calc(12px + 3.2 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: calc(12px + 2 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    font-size: 14px;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-image .big-img {
-    right: -50px;
-    top: 0;
-    height: 520px;
-  }
-  .stay-here .stay-here-advantages .all-image .small-img {
-    right: 140px;
-    top: 180px;
-    height: 170px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments {
-    padding: 10px 20px;
-    width: 200px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments img {
-    width: 40px;
-    height: 40px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text {
-    gap: 5px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: 10px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: calc(10px + 6.4 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: calc(10px + 4 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-size: 14px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: 8px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: calc(8px + 9.6 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: calc(8px + 6 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .stay-here .stay-here-advantages .all-image .comments .text p {
-    font-size: 14px;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-image .c1 {
-    position: absolute;
-    top: -40px;
-    right: 0;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-image .c2 {
-    position: absolute;
-    top: 100px;
-    right: 200px;
-  }
-}
-@media screen and (width < 1660px) {
-  .stay-here .stay-here-advantages .all-image .c3 {
-    position: absolute;
-    top: 490px;
-    right: 0;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info {
-    gap: 80px;
-  }
-  .main-info .info-card .card-text .text {
-    gap: 30px;
-    padding: 0 0 0 30px;
-  }
-  .main-info .info-card .card-text .text h2 {
-    line-height: 40px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .main-info .info-card .card-text .text h2 {
+  main .all-carts .cartF .back .time h4 {
     font-size: 22px;
   }
 }
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .main-info .info-card .card-text .text h2 {
-    font-size: calc(22px + 12.8 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .main-info .info-card .card-text .text h2 {
-    font-size: calc(22px + 8 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .main-info .info-card .card-text .text h2 {
-    font-size: 30px;
-  }
-}
 @media screen and (width < 1660px) {
-  .main-info .info-card .card-text .text p {
-    line-height: 22px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .main-info .info-card .card-text .text p {
-    font-size: 12px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .main-info .info-card .card-text .text p {
-    font-size: calc(12px + 3.2 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .main-info .info-card .card-text .text p {
-    font-size: calc(12px + 2 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .main-info .info-card .card-text .text p {
-    font-size: 14px;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info .info-card .card-text .text p.room {
-    max-width: 340px;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info .info-card .card-text .text p.facilities {
-    max-width: 320px;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info .info-card .card-text .text a {
-    padding: 10px 30px;
+  main .all-carts .cartF .back p {
+    padding: 0 20px 40px;
     line-height: 20px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .main-info .info-card .card-text .text a {
-    font-size: 8px;
+  main .all-carts .cartF .back p {
+    font-size: 11px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .main-info .info-card .card-text .text a {
-    font-size: calc(8px + 9.6 * ((100vw - 320px) / 1660));
+  main .all-carts .cartF .back p {
+    font-size: calc(11px + 8 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .main-info .info-card .card-text .text a {
-    font-size: calc(8px + 6 * (100vw / 1660));
+  main .all-carts .cartF .back p {
+    font-size: calc(11px + 5 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .main-info .info-card .card-text .text a {
-    font-size: 14px;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info .info-card img.room {
-    height: 300px;
-    width: 480px;
-  }
-}
-@media screen and (width < 1660px) {
-  .main-info .info-card img.facilities {
-    height: 270px;
-    width: 480px;
-  }
-}
-@media screen and (width < 1660px) {
-  .about-us .block {
-    max-width: 1000px;
-  }
-  .about-us .block .text {
-    padding: 100px 150px 100px 0;
-    gap: 30px;
-  }
-  .about-us .block .text h2 {
-    letter-spacing: 3px;
-    padding: 0 0 10px;
-    width: 190px;
-    border-bottom: 2px solid #E0B973;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .about-us .block .text h2 {
-    font-size: 22px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .about-us .block .text h2 {
-    font-size: calc(22px + 12.8 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .about-us .block .text h2 {
-    font-size: calc(22px + 8 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .about-us .block .text h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (width < 1660px) {
-  .about-us .block .text p {
-    line-height: 22px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 320px) {
-  .about-us .block .text p {
-    font-size: 12px;
-  }
-}
-@media screen and (width < 1660px) and (max-width: 800px) {
-  .about-us .block .text p {
-    font-size: calc(12px + 6.4 * ((100vw - 320px) / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 800px) {
-  .about-us .block .text p {
-    font-size: calc(12px + 4 * (100vw / 1660));
-  }
-}
-@media screen and (width < 1660px) and (min-width: 1660px) {
-  .about-us .block .text p {
+  main .all-carts .cartF .back p {
     font-size: 16px;
   }
 }
 @media screen and (width < 1660px) {
-  .about-us .block img {
-    height: 440px;
+  main .all-carts .cartF .back span {
+    width: 400px;
+    height: 280px;
   }
 }
 @media screen and (width < 1660px) {
-  .reviews {
-    max-width: 1000px;
-    margin: 100px auto 150px;
-    gap: 40px;
+  main .offer {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    margin: 110px 0 0 0;
+  }
+  main .offer h2 {
+    font-weight: 700;
+    line-height: 72px;
+    color: #14274A;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .reviews h2 {
+  main .offer h2 {
     font-size: 22px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .reviews h2 {
+  main .offer h2 {
     font-size: calc(22px + 12.8 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .reviews h2 {
+  main .offer h2 {
     font-size: calc(22px + 8 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .reviews h2 {
+  main .offer h2 {
     font-size: 30px;
   }
 }
+@media screen and (width < 1660px) {
+  main .offer .offer-text {
+    display: flex;
+    flex-flow: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+  main .offer .offer-text p {
+    color: black;
+    padding: 0 0 15px 0;
+    font-weight: 500;
+  }
+}
 @media screen and (width < 1660px) and (max-width: 320px) {
-  .reviews .text p {
+  main .offer .offer-text p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .offer .offer-text p {
+    font-size: calc(14px + 9.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .offer .offer-text p {
+    font-size: calc(14px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .offer .offer-text p {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .comments {
+    margin: 60px 0 0 0;
+    gap: 10px;
+  }
+  main .comments h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 25.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments h2 {
+    font-size: calc(20px + 16 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    padding: 0;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 14px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 6.4 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: calc(14px + 4 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .comments-container .comments-track .comment-cart p {
+    font-size: 18px;
+  }
+}
+@media screen and (width < 1660px) {
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-weight: 400;
+    line-height: 30px;
+    color: #14274A;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .comments-container .comments-track .comment-cart span {
     font-size: 12px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  .reviews .text p {
-    font-size: calc(12px + 3.2 * ((100vw - 320px) / 1660));
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 6.4 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  .reviews .text p {
-    font-size: calc(12px + 2 * (100vw / 1660));
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: calc(12px + 4 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  .reviews .text p {
-    font-size: 14px;
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-size: 16px;
   }
 }
 @media screen and (width < 1660px) {
-  .reviews .text .all-star {
-    gap: 10px;
+  main .comments .buttons {
+    gap: 20px;
+    padding: 10px 0 0 0;
   }
-  .reviews .text .all-star .star {
-    gap: 8px;
-  }
-  .reviews .text .all-star .star img {
-    width: 30px;
-    height: 30px;
+  main .comments .buttons .left, main .comments .buttons .right {
+    padding: 10px 20px;
+    line-height: 20px;
+    background: #E0B973;
+    color: white;
+    border-radius: 8px;
   }
 }
-@media screen and (width < 1660px) {
-  .reviews .text .all-avatars img {
-    padding: 0 0 10px;
-    height: 65px;
+@media screen and (width < 1660px) and (max-width: 320px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 12px;
+  }
+}
+@media screen and (width < 1660px) and (max-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 9.6 * ((100vw - 320px) / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 800px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: calc(12px + 6 * (100vw / 1660));
+  }
+}
+@media screen and (width < 1660px) and (min-width: 1660px) {
+  main .comments .buttons .left, main .comments .buttons .right {
+    font-size: 18px;
   }
 }
 @media screen and (width < 1100px) {
   main {
     max-width: 700px;
-    margin: 70px auto 70px;
   }
-  .all-advantages {
-    margin: 0px 10% 50px;
+  main .text {
+    margin: 40px 0;
+    gap: 20px;
   }
-  .all-advantages .advantage {
-    gap: 10px;
+  main .text h2 {
+    line-height: 40px;
   }
-  .all-advantages .advantage .logo {
-    width: 40px;
-    height: 40px;
-  }
-  .all-advantages .advantage .logo svg {
-    width: 25px;
-    height: 25px;
-  }
-  .all-advantages .advantage p {
-    line-height: 18px;
-    width: 60px;
-  }
-  .stay-here {
-    margin: 70px auto 100px;
-    gap: 100px;
-  }
-  .stay-here .stay-here-text {
-    gap: 10px;
-  }
-  .stay-here .stay-here-text p {
+  main .text p {
     line-height: 20px;
-    padding: 0 50px;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages {
-    gap: 30px;
+  main .all-carts {
+    display: flex;
+    flex-flow: wrap;
+    gap: 60px;
+    justify-content: center;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    gap: 10px;
+  main .all-carts .cartF .front {
     width: 300px;
+    height: 180px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    width: 30px;
-    height: 30px;
+  main .all-carts .cartF .front img {
+    width: 300px;
+    height: 180px;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    color: black;
-    line-height: 20px;
+  main .all-carts .cartF .front .cart-text {
+    width: 230px;
+    padding: 8px 40px 0;
+    bottom: -1px;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    line-height: 18px;
-  }
-  .stay-here .stay-here-advantages .all-image .big-img {
-    right: -50px;
-    top: 0px;
-    height: 400px;
-  }
-  .stay-here .stay-here-advantages .all-image .small-img {
-    right: 100px;
-    top: 160px;
-    height: 120px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments {
-    padding: 10px 15px;
-    gap: 10px;
-    width: 160px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments img {
-    width: 30px;
-    height: 30px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text {
-    gap: 5px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
+  main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
+    padding: 0 0 5px 0;
   }
-  .stay-here .stay-here-advantages .all-image .c2 {
-    top: 100px;
-    right: 130px;
+  main .all-carts .cartF .back {
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    padding: 20px;
   }
-  .stay-here .stay-here-advantages .all-image .c3 {
-    top: 365px;
-    right: 0;
+  main .all-carts .cartF .back .time {
+    flex-flow: row;
+    gap: 10px;
   }
-  .main-info {
-    gap: 50px;
+  main .all-carts .cartF .back .time h3 {
+    z-index: 20;
   }
-  .main-info .info-card .card-text .text {
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    padding: 0 20px 0;
+    line-height: 16px;
+  }
+  main .all-carts .cartF .back span {
+    width: 300px;
+    height: 180px;
+  }
+  main .offer {
+    display: flex;
+    flex-flow: column;
     gap: 20px;
-    padding: 0 0 0 20px;
+    margin: 110px 0 0 0;
   }
-  .main-info .info-card .card-text .text h2 {
-    line-height: 24px;
-  }
-  .main-info .info-card .card-text .text p {
-    line-height: 18px;
-  }
-  .main-info .info-card .card-text .text p.room {
-    max-width: 250px;
-  }
-  .main-info .info-card .card-text .text p.facilities {
-    max-width: 250px;
-  }
-  .main-info .info-card .card-text .text a {
-    padding: 10px 20px;
-    line-height: 10px;
-  }
-  .main-info .info-card img.room {
-    height: 250px;
-    width: 370px;
-  }
-  .main-info .info-card img.facilities {
-    height: 225px;
-    width: 370px;
-  }
-  .about-us .block {
-    max-width: 700px;
-  }
-  .about-us .block .text {
-    padding: 70px 100px 70px 0;
-    gap: 20px;
-  }
-  .about-us .block .text h2 {
-    letter-spacing: 2px;
-    padding: 0 0 10px;
-    width: 155px;
-    border-bottom: 2px solid #E0B973;
-  }
-  .about-us .block .text p {
-    line-height: 18px;
-  }
-  .about-us .block img {
-    height: 382px;
-  }
-  .reviews {
-    max-width: 700px;
-    margin: 70px auto 120px;
-    gap: 30px;
-  }
-  .reviews h2 {
+  main .offer h2 {
     font-weight: 700;
+    line-height: 72px;
+    color: #14274A;
   }
-  .reviews .text p {
-    letter-spacing: 1px;
+  main .offer .offer-text {
+    display: flex;
+    flex-flow: row;
+    gap: 0;
+    justify-content: space-between;
   }
-  .reviews .text .all-star {
+  main .offer .offer-text p {
+    color: black;
+    padding: 0 0 10px 0;
+    font-weight: 500;
+  }
+  main .comments {
+    margin: 50px 0 0 0;
     gap: 10px;
   }
-  .reviews .text .all-star .star {
-    gap: 5px;
+  main .comments h2 {
+    line-height: 30px;
   }
-  .reviews .text .all-star .star img {
-    width: 25px;
-    height: 25px;
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-weight: 400;
+    line-height: 24px;
+    color: #14274A;
   }
-  .reviews .text .all-avatars {
-    gap: 10px;
+  main .comments .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
-  .reviews .text .all-avatars img {
-    padding: 0 0 10px;
-    height: 50px;
+  main .comments .buttons .left, main .comments .buttons .right {
+    padding: 10px 20px;
+    background: #E0B973;
+    color: white;
+    border-radius: 8px;
   }
 }
 @media screen and (width < 800px) {
   main {
     max-width: 500px;
-    margin: 70px auto 70px;
   }
-  .all-advantages {
-    margin: 0px 0% 50px 10px;
-  }
-  .all-advantages .advantage {
+  main .text {
+    margin: 30px 0;
     gap: 10px;
   }
-  .all-advantages .advantage p {
-    line-height: 18px;
-    width: 60px;
+  main .text h2 {
+    line-height: 40px;
   }
-  .stay-here {
-    margin: 60px auto 60px;
-    flex-flow: column;
-    gap: 50px;
-  }
-  .stay-here .stay-here-text {
-    gap: 10px;
-  }
-  .stay-here .stay-here-text h2 {
-    font-weight: 700;
-  }
-  .stay-here .stay-here-text h2 span {
-    font-weight: 700;
-  }
-  .stay-here .stay-here-text p {
-    color: #14274A;
-    font-weight: 400;
+  main .text p {
     line-height: 20px;
-    text-align: center;
-    padding: 0;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages {
-    gap: 30px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    gap: 10px;
-    width: 250px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    width: 30px;
-    height: 30px;
-    align-items: center;
+  main .all-carts {
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
     justify-content: center;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
+  main .all-carts .cartF .front {
+    width: 400px;
+    height: 240px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
+    width: 400px;
+    height: 240px;
+  }
+  main .all-carts .cartF .front .cart-text {
+    width: 220px;
+    padding: 8px 40px 0;
+    bottom: -1px;
+  }
+  main .all-carts .cartF .front .cart-text p {
     font-weight: 600;
+    padding: 0 0 5px 0;
+  }
+  main .all-carts .cartF .back {
+    width: 400px;
+    height: 240px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: column;
+    gap: 10px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    padding: 0 20px 0;
     line-height: 16px;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    line-height: 18px;
+  main .all-carts .cartF .back span {
+    width: 400px;
+    height: 240px;
   }
-  .stay-here .stay-here-advantages .all-image .big-img {
-    right: -20px;
-    top: 50px;
-    height: 300px;
-  }
-  .stay-here .stay-here-advantages .all-image .small-img {
-    right: 40px;
-    top: 85px;
-    height: 100px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments {
-    padding: 8px 10px;
-    gap: 5px;
-    width: 130px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments img {
-    width: 25px;
-    height: 25px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text {
-    flex-flow: column;
-    gap: 2px;
-  }
-  .stay-here .stay-here-advantages .all-image .comments .text h5 {
-    font-weight: 600;
-  }
-  .stay-here .stay-here-advantages .all-image .c1 {
-    top: 25px;
-    right: 0;
-  }
-  .stay-here .stay-here-advantages .all-image .c2 {
-    top: 165px;
-    right: 100px;
-  }
-  .stay-here .stay-here-advantages .all-image .c3 {
-    top: 330px;
-    right: 0;
-  }
-  .main-info {
-    gap: 50px;
-  }
-  .main-info .info-card .card-text .text {
-    border-left: 1px solid black;
-    flex-flow: column;
-    align-items: start;
-    gap: 10px;
-    padding: 0 0 0 20px;
-  }
-  .main-info .info-card .card-text .text h2 {
-    font-weight: 700;
-    line-height: 24px;
-  }
-  .main-info .info-card .card-text .text p {
-    font-weight: 400;
-    line-height: 18px;
-  }
-  .main-info .info-card .card-text .text p.room {
-    max-width: 180px;
-  }
-  .main-info .info-card .card-text .text p.facilities {
-    max-width: 180px;
-  }
-  .main-info .info-card .card-text .text a {
-    padding: 8px 15px;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-  }
-  .main-info .info-card img.room {
-    height: 180px;
-    width: 260px;
-  }
-  .main-info .info-card img.facilities {
-    height: 160px;
-    width: 260px;
-  }
-  .about-us {
-    background: #14274A;
-  }
-  .about-us .block {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-  }
-  .about-us .block .text {
-    padding: 50px 20px 50px 0;
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-  }
-  .about-us .block .text h2 {
-    letter-spacing: 2px;
-    color: white;
-    padding: 0 0 5px;
-    width: 150px;
-    border-bottom: 1px solid #E0B973;
-  }
-  .about-us .block .text p {
-    color: rgb(255, 255, 255);
-    line-height: 18px;
-    font-weight: 300;
-  }
-  .about-us .block img {
-    width: 230px;
-    height: 315px;
-  }
-  .reviews {
-    max-width: 500px;
-    margin: 50px auto 100px;
+  main .offer {
     display: flex;
     flex-flow: column;
     gap: 20px;
+    margin: 110px 0 0 0;
   }
-  .reviews h2 {
+  main .offer h2 {
     font-weight: 700;
+    line-height: 72px;
     color: #14274A;
-    letter-spacing: 2px;
   }
-  .reviews .text {
+  main .offer .offer-text {
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
+    gap: 30px;
     justify-content: space-between;
-    align-items: end;
   }
-  .reviews .text p {
+  main .offer .offer-text p {
     color: black;
-    letter-spacing: 1px;
+    padding: 0 0 10px 0;
+    font-weight: 500;
   }
-  .reviews .text .all-star {
-    display: flex;
-    flex-flow: column;
+  main .comments {
+    margin: 50px 0 0 0;
     gap: 10px;
   }
-  .reviews .text .all-star .star {
-    margin: 0 0 0 -5px;
+  main .comments h2 {
+    line-height: 24px;
+  }
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-weight: 400;
+    line-height: 14px;
+    color: #14274A;
+  }
+  main .comments .buttons {
     display: flex;
-    flex-flow: row;
-    gap: 5px;
+    align-items: center;
+    gap: 20px;
   }
-  .reviews .text .all-star .star img {
-    width: 25px;
-    height: 25px;
-  }
-  .reviews .text .all-avatars {
-    gap: 10px;
-  }
-  .reviews .text .all-avatars img {
-    padding: 0 0 10px;
-    height: 50px;
+  main .comments .buttons .left, main .comments .buttons .right {
+    padding: 10px 20px;
+    background: #E0B973;
+    color: white;
+    border-radius: 8px;
   }
 }
 @media screen and (width < 550px) {
   main {
     max-width: inherit;
-    margin: 30px auto 70px;
     padding: 20px;
   }
-  .all-advantages {
-    margin: 0px auto 0;
-    display: grid;
-    grid-template: 50px 2fr/50% 2fr;
-    justify-items: center;
+  main .text {
+    margin: 10px 0 30px;
   }
-  .all-advantages .advantage {
-    max-width: 155px;
-    gap: 10px;
+  main .text h2 {
+    line-height: 20px;
   }
-  .all-advantages .advantage .logo {
-    width: 40px;
-    height: 40px;
-  }
-  .all-advantages .advantage .logo svg {
-    width: 25px;
-    height: 25px;
-  }
-  .all-advantages .advantage p {
-    line-height: 16px;
-  }
-  .stay-here {
-    margin: 50px auto 70px;
-    flex-flow: column;
-    gap: 30px;
-  }
-  .stay-here .stay-here-text {
-    align-items: center;
-    gap: 10px;
-  }
-  .stay-here .stay-here-text h2 {
-    font-weight: 700;
-  }
-  .stay-here .stay-here-text h2 span {
-    font-weight: 700;
-  }
-  .stay-here .stay-here-text p {
-    font-weight: 400;
+  main .text p {
     line-height: 18px;
-    text-align: center;
-    padding: 0;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages {
-    gap: 30px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    gap: 10px;
-    width: 100%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    width: 30px;
-    height: 30px;
-    align-items: center;
+  main .all-carts {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
     justify-content: center;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-weight: 600;
-    line-height: 16px;
+  main .all-carts .cartF .front {
+    width: 330px;
+    height: 200px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  main .all-carts .cartF .front img {
+    width: 330px;
+    height: 200px;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
-    border-radius: 10px;
-    display: flex;
-    padding: 10px 20px;
-    align-items: center;
-    gap: 10px;
-    width: 40%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    gap: 2px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
-    white-space: nowrap;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
-    white-space: nowrap;
-    font-size: 11px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    width: 50%;
-    line-height: 18px;
-  }
-  .stay-here .stay-here-advantages .all-image .big-img {
-    display: none;
-  }
-  .stay-here .stay-here-advantages .all-image .small-img {
-    display: none;
-  }
-  .stay-here .stay-here-advantages .all-image .comments {
-    display: none;
-  }
-  .main-info {
-    display: flex;
-    flex-flow: column;
-    gap: 50px;
-  }
-  .main-info .info-card {
-    display: none;
-  }
-  .main-info .mobile-info-card {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
-    align-items: center;
-  }
-  .main-info .mobile-info-card h2 {
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #14274a;
+  main .all-carts .cartF .front span {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 45%;
+    font-weight: 500;
   }
 }
 @media screen and (width < 550px) and (max-width: 320px) {
-  .main-info .mobile-info-card h2 {
-    font-size: 22px;
+  main .all-carts .cartF .front span {
+    font-size: 20px;
   }
 }
 @media screen and (width < 550px) and (max-width: 800px) {
-  .main-info .mobile-info-card h2 {
-    font-size: calc(22px + 12.8 * ((100vw - 320px) / 1660));
+  main .all-carts .cartF .front span {
+    font-size: calc(20px + 12.8 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 550px) and (min-width: 800px) {
-  .main-info .mobile-info-card h2 {
-    font-size: calc(22px + 8 * (100vw / 1660));
+  main .all-carts .cartF .front span {
+    font-size: calc(20px + 8 * (100vw / 1660));
   }
 }
 @media screen and (width < 550px) and (min-width: 1660px) {
-  .main-info .mobile-info-card h2 {
-    font-size: 30px;
+  main .all-carts .cartF .front span {
+    font-size: 28px;
   }
 }
 @media screen and (width < 550px) {
-  .main-info .mobile-info-card .card img {
-    width: 100%;
-  }
-  .main-info .mobile-info-card .card .text {
-    display: flex;
-    width: 100%;
-    padding: 30px;
-    flex-flow: column;
-    align-items: start;
-    gap: 20px;
-    background: #14274A;
-  }
-  .main-info .mobile-info-card .card .text p {
-    font-weight: 300;
-    color: white;
-    line-height: 16px;
-    color: white;
-  }
-  .main-info .mobile-info-card .card .text a {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 10px 20px;
-    background: #E0B973;
-    font-weight: 400;
-    line-height: 10px;
-  }
-  .main-info .mobile-info-card .card .text a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
-    background: #d7a449;
-  }
-  .main-info .mobile-info-card .card .text a:active {
-    background: #e5c388;
-  }
-}
-@media screen and (width < 550px) {
-  .about-us .block {
-    padding: 20px 20px 30px;
-    max-width: inherit;
-    margin: 0 auto;
-  }
-  .about-us .block .text {
-    padding: 0;
-    flex-flow: column;
-    gap: 10px;
-  }
-  .about-us .block .text h2 {
-    margin: 0 auto 15px;
-    letter-spacing: 3px;
-    padding: 0 0 10px;
-    width: inherit;
-    border-bottom: 1px solid #E0B973;
-  }
-  .about-us .block .text p {
-    color: rgb(255, 255, 255);
-    line-height: 18px;
-    font-weight: 400;
-  }
-  .about-us .block img {
+  main .all-carts .cartF .front .cart-text {
     display: none;
   }
 }
 @media screen and (width < 550px) {
-  .reviews {
-    max-width: inherit;
-    margin: 50px auto 100px;
-    flex-flow: column;
-    gap: 30px;
+  main .all-carts .cartF .back {
+    width: 330px;
+    height: 200px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
     padding: 20px;
   }
-  .reviews h2 {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-  .reviews .text {
+  main .all-carts .cartF .back .time {
     flex-flow: column;
-    justify-content: center;
+    gap: 5px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    padding: 0 20px 0;
+    line-height: 16px;
+  }
+  main .all-carts .cartF .back span {
+    width: 330px;
+    height: 200px;
+  }
+}
+@media screen and (width < 550px) {
+  main .offer {
+    display: flex;
+    flex-flow: column;
+    gap: 0px;
+    margin: 30px 0 0 0;
+    align-items: center;
+  }
+  main .offer h2 {
+    font-weight: 700;
+    line-height: 72px;
+    color: #14274A;
+  }
+  main .offer .offer-text {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  main .offer .offer-text div {
+    padding: 0 60px 0 0;
+    display: flex;
+    flex-flow: column;
+  }
+  main .offer .offer-text div p {
+    display: inline-block;
+    color: black;
+    padding: 0 0 10px 0;
+    font-weight: 500;
+  }
+  main .offer .offer-text .offer-first {
+    padding: 0;
+  }
+}
+@media screen and (width < 550px) {
+  main .comments {
+    margin: 50px 0 0 0;
+    gap: 10px;
+  }
+  main .comments h2 {
+    line-height: 18px;
+    padding: 0 0 10px;
+  }
+  main .comments .comments-container .comments-track {
+    width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 350px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
+    line-height: 18px;
+    padding: 0 0 5px;
+  }
+  main .comments .comments-container .comments-track .comment-cart span {
+    font-weight: 400;
+    line-height: 14px;
+    color: #14274A;
+  }
+  main .comments .buttons {
+    margin: 0;
+    display: flex;
     align-items: center;
     gap: 20px;
   }
-  .reviews .text p {
-    letter-spacing: 1px;
-  }
-  .reviews .text .all-star {
-    flex-flow: column;
-    gap: 5px;
-    align-items: center;
-  }
-  .reviews .text .all-star .star {
-    margin: 0 0 0 -5px;
-    flex-flow: row;
-    gap: 5px;
-  }
-  .reviews .text .all-star .star img {
-    width: 30px;
-    height: 30px;
-  }
-  .reviews .text .all-avatars {
-    gap: 10px;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-  }
-  .reviews .text .all-avatars img {
-    padding: 0;
-    height: 50px;
+  main .comments .buttons .left, main .comments .buttons .right {
+    padding: 8px 15px;
+    background: #E0B973;
+    color: white;
+    border-radius: 8px;
   }
 }
 @media screen and (width < 450px) {
   main {
     max-width: inherit;
-    margin: 20px auto 50px;
     padding: 20px;
   }
-  .all-advantages {
-    margin: 0px auto 0;
-    display: grid;
-    grid-template: 50px 2fr/50% 2fr;
-    justify-items: center;
+  main .text {
+    margin: 10px 0 30px;
   }
-  .all-advantages .advantage {
-    justify-content: center;
-    max-width: 110px;
-    gap: 10px;
+  main .text h2 {
+    line-height: 20px;
   }
-  .all-advantages .advantage .logo {
-    width: 40px;
-    height: 40px;
-  }
-  .all-advantages .advantage .logo svg {
-    width: 25px;
-    height: 25px;
-  }
-  .all-advantages .advantage p {
-    line-height: 16px;
-  }
-  .stay-here {
-    margin: 60px auto 90px;
-    flex-flow: column;
-    gap: 30px;
-  }
-  .stay-here .stay-here-text {
-    flex-flow: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .stay-here .stay-here-text h2 {
-    font-weight: 700;
-    text-align: center;
-  }
-  .stay-here .stay-here-text h2 span {
-    font-weight: 700;
-  }
-  .stay-here .stay-here-text p {
-    font-weight: 400;
+  main .text p {
     line-height: 18px;
-    text-align: center;
+  }
+  main .all-carts {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  main .all-carts .cartF .front {
+    width: 280px;
+    height: 160px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(0deg);
+  }
+  main .all-carts .cartF .front img {
+    width: 280px;
+    height: 160px;
+  }
+  main .all-carts .cartF .front .cart-text {
+    display: none;
+  }
+  main .all-carts .cartF .back {
+    width: 280px;
+    height: 160px;
+    transition: transform 0.8s ease-in-out, z-index 0.8s ease-in-out;
+    transform: perspective(900px) rotateY(180deg);
+    padding: 15px 10px;
+  }
+  main .all-carts .cartF .back .time {
+    flex-flow: row;
+    gap: 5px;
+  }
+  main .all-carts .cartF .back .time h3 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back .time h4 {
+    z-index: 20;
+  }
+  main .all-carts .cartF .back p {
+    padding: 0 20px 0;
+    line-height: 14px;
+  }
+  main .all-carts .cartF .back span {
+    width: 280px;
+    height: 160px;
+  }
+  main .comments {
+    margin: 50px 0 0 0;
+    gap: 10px;
+  }
+  main .comments h2 {
+    line-height: 18px;
+  }
+  main .comments .comments-container .comments-track {
+    width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart {
+    min-width: 300px;
+  }
+  main .comments .comments-container .comments-track .comment-cart p {
+    line-height: 16px;
     padding: 0;
   }
-  .stay-here .stay-here-advantages .all-stay-here-advantages {
-    flex-flow: column;
-    gap: 40px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage {
-    flex-flow: column;
-    gap: 10px;
-    width: 100%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number {
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage h4 {
-    font-weight: 600;
-    line-height: 16px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text {
-    flex-flow: column;
-    align-items: start;
-    gap: 20px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments {
-    padding: 10px 20px;
-    flex-flow: row;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments img {
-    width: 30px;
-    height: 30px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text {
-    width: 100%;
-    flex-flow: column;
-    gap: 2px;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text h5 {
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage .number-text .comments .text p {
-    white-space: nowrap;
-  }
-  .stay-here .stay-here-advantages .all-stay-here-advantages .advantage p {
-    width: 100%;
-    line-height: 18px;
-  }
-  .stay-here .stay-here-advantages .all-image .big-img {
-    display: none;
-  }
-  .stay-here .stay-here-advantages .all-image .small-img {
-    display: none;
-  }
-  .stay-here .stay-here-advantages .all-image .comments {
-    display: none;
-  }
-  .main-info {
-    flex-flow: column;
-    gap: 50px;
-  }
-  .main-info .info-card {
-    display: none;
-  }
-  .main-info .mobile-info-card {
-    flex-flow: column;
-    gap: 20px;
-    align-items: center;
-  }
-  .main-info .mobile-info-card h2 {
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-  }
-  .main-info .mobile-info-card .card img {
-    width: 100%;
-  }
-  .main-info .mobile-info-card .card .text {
-    width: 100%;
-    padding: 30px;
-    flex-flow: column;
-    align-items: start;
-    gap: 20px;
-  }
-  .main-info .mobile-info-card .card .text p {
-    font-weight: 300;
-    line-height: 16px;
-  }
-  .main-info .mobile-info-card .card .text a {
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
-    padding: 10px 20px;
+  main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
-    line-height: 10px;
+    line-height: 14px;
+    color: #14274A;
   }
-  .main-info .mobile-info-card .card .text a:hover {
+  main .comments .buttons {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  main .comments .buttons .left, main .comments .buttons .right {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
+    padding: 8px 15px;
+    background: #E0B973;
+    color: white;
+    border-radius: 8px;
+  }
+  main .comments .buttons .left:hover, main .comments .buttons .right:hover {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
     background: #d7a449;
   }
-  .main-info .mobile-info-card .card .text a:active {
+  main .comments .buttons .left:active, main .comments .buttons .right:active {
     background: #e5c388;
-  }
-  .about-us .block {
-    padding: 20px 20px 40px;
-    max-width: inherit;
-    margin: 0 auto;
-  }
-  .about-us .block .text {
-    padding: 0;
-    flex-flow: column;
-    gap: 10px;
-  }
-  .about-us .block .text h2 {
-    margin: 0 auto 15px;
-    letter-spacing: 3px;
-    padding: 0 0 8px;
-    width: inherit;
-    border-bottom: 1px solid #E0B973;
-  }
-  .about-us .block .text p {
-    color: rgb(255, 255, 255);
-    line-height: 18px;
-    font-weight: 400;
-  }
-  .about-us .block img {
-    display: none;
-  }
-  .reviews {
-    max-width: inherit;
-    margin: 30px auto 80px;
-    flex-flow: column;
-    gap: 30px;
-    padding: 20px;
-  }
-  .reviews h2 {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-  .reviews .text {
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .reviews .text p {
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  .reviews .text .all-star {
-    flex-flow: column;
-    gap: 5px;
-    align-items: center;
-  }
-  .reviews .text .all-star .star {
-    margin: 0 0 0 -5px;
-    display: flex;
-    flex-flow: row;
-    gap: 5px;
-  }
-  .reviews .text .all-star .star img {
-    width: 25px;
-    height: 25px;
-  }
-  .reviews .text .all-avatars {
-    gap: 10px;
-    flex-flow: column;
-    display: flex;
-    align-items: center;
-  }
-  .reviews .text .all-avatars img {
-    padding: 0;
-    height: 40px;
   }
 }
 footer {
