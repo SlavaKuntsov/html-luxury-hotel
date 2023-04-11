@@ -914,7 +914,7 @@ nav ul li:nth-child(2) a {
   }
 }
 .wrapper {
-  overflow-x: hidden !important;
+  overflow: hidden visible !important;
 }
 
 main {
