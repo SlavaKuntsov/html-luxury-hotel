@@ -18,6 +18,8 @@
 		let scroll_wrapper = document.querySelector(".scroll_wrapper")
 		let scroll_content = document.querySelector(".scroll_content")
 
+		content.style.removeAttribute = "transform"
+		console.log("none")
 		if (window.innerWidth <= 550) {
 		}
 		else{
@@ -110,11 +112,9 @@ let menuClose = document.getElementById("close");
 let menu = document.querySelector("#burger-menu");
 
 window.onscroll = function () {};
-menu.style.display = "none";
 
 menuOpen.addEventListener("click", function () {
     if (!bool) {
-		menu.style.display = "block";
         menu.style.left = "0";
         bool = true;
     }
@@ -125,7 +125,6 @@ menuOpen.addEventListener("click", function () {
 });
 menuClose.addEventListener("click", function () {
     if (bool) {
-		menu.style.display = "none";
         menu.style.left = "100%";
         bool = false;
     }
