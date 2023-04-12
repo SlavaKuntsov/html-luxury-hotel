@@ -29,16 +29,16 @@
 			// scroll_content.classList.add("content")
 
 			if(wrapper) {
-				gsap.registerPlugin(ScrollSmoother)
+				// gsap.registerPlugin(ScrollSmoother)
 			
-				console.log("gsap ok")
+				// console.log("gsap ok")
 				
-				ScrollSmoother.create({
-					wrapper: '.wrapper',
-					content: '.content',
-					smooth: 2,
-					ignoreMobileResize: true
-				})
+				// ScrollSmoother.create({
+				// 	wrapper: '.wrapper',
+				// 	content: '.content',
+				// 	smooth: 2,
+				// 	ignoreMobileResize: true
+				// })
 			}
 		}
 	})
@@ -120,7 +120,7 @@ menuOpen.addEventListener("click", function () {
         menu.style.left = "0";
         bool = true;
     }
-
+	console.log("open")
     window.onscroll = function () {
         window.scrollTo(0, 0);
     };
@@ -129,6 +129,7 @@ menuClose.addEventListener("click", function () {
     if (bool) {
         menu.style.left = "100%";
         bool = false;
+		console.log("close")
     }
 
     window.onscroll = function () {};
@@ -284,6 +285,10 @@ if (allCarts) {
 			form.style.opacity = "1";
 			body.style.overflow = "hidden";
 
+			window.scrollTo(0, 0);
+			window.onscroll = function () {
+				window.scrollTo(0, 0);
+			};
 
 			inDateOutput.innerHTML = `Date-in: <span>${inDate.value}</span> `;
 			outDateOutput.innerHTML = `Date-out: <span>${outDate.value}</span>`;
@@ -300,11 +305,13 @@ if (allCarts) {
 		form.style.visibility = "hidden";
 		form.style.opacity = "0";
 		body.style.overflow = "auto";
+		window.onscroll = function () {};
 	})
 
 	form.addEventListener("submit", function() {
 		form.style.visibility = "hidden";
 		form.style.opacity = "0";
+		window.onscroll = function () {};
 
 		function formCloseAlert() {
 			alert(1)

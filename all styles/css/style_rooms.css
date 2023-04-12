@@ -141,7 +141,6 @@ header {
 }
 
 #burger-menu {
-  display: none;
   position: fixed;
   top: 0;
   left: 100%;
@@ -937,13 +936,13 @@ main .text h2 {
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 0.05em;
-  color: #14274A;
+  color: #14274a;
 }
 main .text p {
   font-weight: 400;
   font-size: 25px;
   line-height: 29px;
-  color: #14274A;
+  color: #14274a;
   text-align: center;
 }
 main .info {
@@ -963,20 +962,23 @@ main .info .top .date {
   flex-flow: row;
   gap: 100px;
 }
-main .info .top .date .in, main .info .top .date .out {
+main .info .top .date .in,
+main .info .top .date .out {
   display: flex;
   flex-flow: column;
   gap: 15px;
 }
-main .info .top .date .in label, main .info .top .date .out label {
+main .info .top .date .in label,
+main .info .top .date .out label {
   font-size: 27px;
   font-weight: 500;
 }
-main .info .top .date .in input, main .info .top .date .out input {
+main .info .top .date .in input,
+main .info .top .date .out input {
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
-  border: 1px solid #14274A;
+  border: 1px solid #14274a;
 }
 main .info .top .date .radio {
   display: flex;
@@ -996,7 +998,7 @@ main .info .top .date .radio .input {
 main .info .top .date .radio .input input {
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
-  border: 1px solid #14274A;
+  border: 1px solid #14274a;
 }
 main .info .top .reserv {
   font-size: 28px;
@@ -1089,7 +1091,7 @@ main .comments h2 {
   font-weight: 700;
   font-size: 50px;
   line-height: 72px;
-  color: #14274A;
+  color: #14274a;
 }
 main .comments .comments-container {
   overflow: hidden;
@@ -1107,21 +1109,22 @@ main .comments .comments-container .comments-track .comment-cart p {
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: #14274A;
+  color: #14274a;
   padding: 0 0 10px;
 }
 main .comments .comments-container .comments-track .comment-cart span {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #14274A;
+  color: #14274a;
 }
 main .comments .buttons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-main .comments .buttons .left, main .comments .buttons .right {
+main .comments .buttons .left,
+main .comments .buttons .right {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
   padding: 10px 20px;
   font-size: 28px;
@@ -1129,12 +1132,14 @@ main .comments .buttons .left, main .comments .buttons .right {
   color: white;
   border-radius: 8px;
 }
-main .comments .buttons .left:hover, main .comments .buttons .right:hover {
+main .comments .buttons .left:hover,
+main .comments .buttons .right:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
   background: #d7a449;
 }
-main .comments .buttons .left:active, main .comments .buttons .right:active {
+main .comments .buttons .left:active,
+main .comments .buttons .right:active {
   background: #e5c388;
 }
 
@@ -1145,15 +1150,15 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   opacity: 0;
   visibility: hidden;
   background: transparent;
-  -webkit-backdrop-filter: blur(70px);
-          backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
   width: 100%;
   height: 100%;
   z-index: 10;
   transition: opacity 0.4s ease-in-out, visibility 1s ease-in-out;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   padding: 30px 0;
 }
@@ -1161,7 +1166,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   padding: 30px 40px 40px;
   width: 500px;
   height: 850px;
-  background: #14274A;
+  background: #14274a;
   position: relative;
   z-index: 20;
   display: flex;
@@ -1205,12 +1210,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   font-size: 24px;
   font-weight: 500;
 }
-#form form .all-input .name, #form form .all-input .email {
+#form form .all-input .name,
+#form form .all-input .email {
   display: flex;
   flex-flow: column;
   gap: 10px;
 }
-#form form .all-input .name div, #form form .all-input .email div {
+#form form .all-input .name div,
+#form form .all-input .email div {
   display: flex;
   flex-flow: column;
   gap: 15px;
@@ -1310,52 +1317,62 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date {
     gap: 70px;
   }
-  main .info .top .date .in, main .info .top .date .out {
+  main .info .top .date .in,
+  main .info .top .date .out {
     gap: 15px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  main .info .top .date .in label, main .info .top .date .out label {
+  main .info .top .date .in label,
+  main .info .top .date .out label {
     font-size: 14px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  main .info .top .date .in label, main .info .top .date .out label {
+  main .info .top .date .in label,
+  main .info .top .date .out label {
     font-size: calc(14px + 6.4 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  main .info .top .date .in label, main .info .top .date .out label {
+  main .info .top .date .in label,
+  main .info .top .date .out label {
     font-size: calc(14px + 4 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  main .info .top .date .in label, main .info .top .date .out label {
+  main .info .top .date .in label,
+  main .info .top .date .out label {
     font-size: 18px;
   }
 }
 @media screen and (width < 1660px) {
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     padding: 10px 20px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     font-size: 10px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     font-size: calc(10px + 9.6 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     font-size: calc(10px + 6 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     font-size: 16px;
   }
 }
@@ -1615,7 +1632,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     line-height: 30px;
-    color: #14274A;
+    color: #14274a;
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
@@ -1643,7 +1660,8 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     gap: 20px;
     padding: 10px 0 0 0;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     padding: 10px 20px;
     line-height: 20px;
     background: #E0B973;
@@ -1652,22 +1670,26 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   }
 }
 @media screen and (width < 1660px) and (max-width: 320px) {
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     font-size: 12px;
   }
 }
 @media screen and (width < 1660px) and (max-width: 800px) {
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     font-size: calc(12px + 9.6 * ((100vw - 320px) / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 800px) {
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     font-size: calc(12px + 6 * (100vw / 1660));
   }
 }
 @media screen and (width < 1660px) and (min-width: 1660px) {
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     font-size: 18px;
   }
 }
@@ -1705,12 +1727,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 14px;
     font-weight: 500;
   }
-  #form form .all-input .name, #form form .all-input .email {
+  #form form .all-input .name,
+  #form form .all-input .email {
     display: flex;
     flex-flow: column;
     gap: 8px;
   }
-  #form form .all-input .name div, #form form .all-input .email div {
+  #form form .all-input .name div,
+  #form form .all-input .email div {
     display: flex;
     flex-flow: column;
     gap: 8px;
@@ -1755,10 +1779,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date {
     gap: 120px;
   }
-  main .info .top .date .in, main .info .top .date .out {
+  main .info .top .date .in,
+  main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     padding: 10px 20px;
   }
   main .info .top .date .radio {
@@ -1868,14 +1894,15 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     line-height: 24px;
-    color: #14274A;
+    color: #14274a;
   }
   main .comments .buttons {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     padding: 10px 20px;
     background: #E0B973;
     color: white;
@@ -1915,12 +1942,14 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     font-size: 14px;
     font-weight: 500;
   }
-  #form form .all-input .name, #form form .all-input .email {
+  #form form .all-input .name,
+  #form form .all-input .email {
     display: flex;
     flex-flow: column;
     gap: 8px;
   }
-  #form form .all-input .name div, #form form .all-input .email div {
+  #form form .all-input .name div,
+  #form form .all-input .email div {
     display: flex;
     flex-flow: column;
     gap: 8px;
@@ -1963,10 +1992,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date {
     gap: 50px;
   }
-  main .info .top .date .in, main .info .top .date .out {
+  main .info .top .date .in,
+  main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     padding: 8px 15px;
   }
   main .info .top .date .radio {
@@ -2037,14 +2068,15 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     line-height: 14px;
-    color: #14274A;
+    color: #14274a;
   }
   main .comments .buttons {
     display: flex;
     align-items: center;
     gap: 20px;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     padding: 10px 20px;
     background: #E0B973;
     color: white;
@@ -2075,10 +2107,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .info .top .date {
     gap: 20px;
   }
-  main .info .top .date .in, main .info .top .date .out {
+  main .info .top .date .in,
+  main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     padding: 8px 15px;
   }
   main .info .top .date .radio {
@@ -2146,7 +2180,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     line-height: 14px;
-    color: #14274A;
+    color: #14274a;
   }
   main .comments .buttons {
     margin: 0;
@@ -2154,7 +2188,8 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     align-items: center;
     gap: 20px;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     padding: 8px 15px;
     background: #E0B973;
     color: white;
@@ -2186,10 +2221,12 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     flex-flow: wrap;
     gap: 20px;
   }
-  main .info .top .date .in, main .info .top .date .out {
+  main .info .top .date .in,
+  main .info .top .date .out {
     gap: 15px;
   }
-  main .info .top .date .in input, main .info .top .date .out input {
+  main .info .top .date .in input,
+  main .info .top .date .out input {
     padding: 8px 15px;
   }
   main .info .top .date .radio {
@@ -2257,7 +2294,7 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
   main .comments .comments-container .comments-track .comment-cart span {
     font-weight: 400;
     line-height: 14px;
-    color: #14274A;
+    color: #14274a;
   }
   main .comments .buttons {
     margin: 10px 0 0 0;
@@ -2265,19 +2302,22 @@ main .comments .buttons .left:active, main .comments .buttons .right:active {
     align-items: center;
     gap: 20px;
   }
-  main .comments .buttons .left, main .comments .buttons .right {
+  main .comments .buttons .left,
+  main .comments .buttons .right {
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.2s ease-in-out;
     padding: 8px 15px;
     background: #E0B973;
     color: white;
     border-radius: 8px;
   }
-  main .comments .buttons .left:hover, main .comments .buttons .right:hover {
+  main .comments .buttons .left:hover,
+  main .comments .buttons .right:hover {
     transform: translateY(-5px);
     box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.4);
     background: #d7a449;
   }
-  main .comments .buttons .left:active, main .comments .buttons .right:active {
+  main .comments .buttons .left:active,
+  main .comments .buttons .right:active {
     background: #e5c388;
   }
 }
