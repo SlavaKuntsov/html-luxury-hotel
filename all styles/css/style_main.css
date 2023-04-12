@@ -134,7 +134,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 header {
-  background: url("../../img/header/background.webp") no-repeat;
+  background: url("../../img/header/background-min.webp") no-repeat;
   background-size: cover;
   background-position: center top;
   height: 1080px;

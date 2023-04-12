@@ -1,5 +1,7 @@
 // ==============	gsap scroll		==============
+// import gsapScroll from "../scripts/modules/gsap-import.js"
 
+// gsapScroll()
 
 ["DOMContentLoaded", "resize"].forEach(e => {
 	window.addEventListener(e, function() {
