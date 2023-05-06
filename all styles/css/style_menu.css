@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer .footer-text, .header-main, nav {
   max-width: 1500px;
 }
@@ -133,8 +134,37 @@ html::-webkit-scrollbar-thumb:hover {
   border: 0px;
 }
 
+.scrollbar-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1000;
+  background: transparent;
+}
+
+.back-line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  background: #E0B973;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+
 header {
-  background: url("../img/header/") no-repeat;
+  background: url("../../img/main/Ресторан «Панно» в Измайлово.jfif") no-repeat;
   background-size: cover;
   background-position: center top;
   height: 1080px;
@@ -365,6 +395,7 @@ nav ul li:nth-child(4) a {
 .header-main .all-buttons .scroll img {
   width: 50px;
   height: 50px;
+  pointer-events: none;
 }
 
 @keyframes scroll {

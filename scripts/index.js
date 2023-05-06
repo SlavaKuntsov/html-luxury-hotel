@@ -1,7 +1,4 @@
 // ==============	gsap scroll		==============
-// import gsapScroll from "../scripts/modules/gsap-import.js"
-
-// gsapScroll()
 
 ["DOMContentLoaded", "resize"].forEach(e => {
 	window.addEventListener(e, function() {
@@ -29,16 +26,16 @@
 			// scroll_content.classList.add("content")
 
 			if(wrapper) {
-				// gsap.registerPlugin(ScrollSmoother)
+				gsap.registerPlugin(ScrollSmoother)
 			
-				// console.log("gsap ok")
+				console.log("gsap ok")
 				
-				// ScrollSmoother.create({
-				// 	wrapper: '.wrapper',
-				// 	content: '.content',
-				// 	smooth: 2,
-				// 	ignoreMobileResize: true
-				// })
+				ScrollSmoother.create({
+					wrapper: '.wrapper',
+					content: '.content',
+					smooth: 2,
+					ignoreMobileResize: true
+				})
 			}
 		}
 	})
@@ -373,7 +370,7 @@ if (track) {
     });
 
     setPosition = () => {
-        track.style.transform = `translateX(${position}px)`;
+        track.style.transform = `translate(${position}px)`;
         track.style.transition = `transform .4s ease-in-out`;
         checkButtons();
     };
@@ -509,3 +506,14 @@ if (cartF) {
         });
     });
 }
+
+//======================	scrollbar	================================
+
+let scrollbar = document.querySelector('.scrollbar-line')
+
+scrollbar.innerHTML = `
+	<div class="back-line"></div>
+	<div class="line"></div>
+`
+let scrollTop = window.scrollY
+let siteHeight = window.innerHeight

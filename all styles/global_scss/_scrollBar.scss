@@ -17,3 +17,32 @@ html::-webkit-scrollbar-thumb {
 		border: 0px;
 	}
 }
+
+.scrollbar-line{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	z-index: 1000;
+	background: transparent;
+}
+
+.back-line{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.line{
+	width: 100%;
+	height: 100%;
+	background: $ohra;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+}
