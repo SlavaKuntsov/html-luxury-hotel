@@ -1,0 +1,1529 @@
+body{
+	overflow: hidden visible !important
+}
+
+main {
+    @extend %max;
+    margin: 100px auto;
+}
+
+.all-advantages {
+    margin: 10px 10% 150px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    .advantage {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex: 1 1 250px;
+        .logo {
+            border-radius: 50%;
+            background: $ohra;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        p {
+            font-size: 28px;
+            // @include responsive-font(28, 14);
+            line-height: 32px;
+            width: 130px;
+        }
+    }
+}
+
+.stay-here {
+    margin: 100px auto 240px;
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
+    .stay-here-text {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 20px;
+        h2 {
+            font-size: 60px;
+            // @include responsive-font(60, 27);
+            color: $blue;
+            font-weight: 700;
+            span {
+                font-weight: 700;
+                font-size: 60px;
+                // @include responsive-font(60, 27);
+                color: $ohra;
+                font-family: "EB Garamond", serif;
+            }
+        }
+        p {
+            color: $blue;
+            font-size: 30px;
+            // @include responsive-font(30, 14);
+            text-align: center;
+        }
+    }
+    .stay-here-advantages {
+        position: relative;
+        .all-stay-here-advantages {
+            display: flex;
+            flex-flow: column;
+            gap: 50px;
+            .advantage {
+                display: flex;
+                flex-flow: column;
+                gap: 15px;
+                width: 700px;
+                .number {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: $ohra;
+                    color: white;
+                    font-size: 30px;
+                    // @include responsive-font(30, 14);
+                    font-family: "Montserrat", sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .number-text {
+                    .comments {
+                        display: none;
+                    }
+                }
+                h4 {
+                    font-weight: 600;
+                    color: black;
+                    font-size: 32px;
+                    // @include responsive-font(32, 16);
+                    font-family: "Montserrat", sans-serif;
+                }
+                p {
+                    font-size: 26px;
+                    // @include responsive-font(26, 14);
+                    line-height: 28px;
+                }
+            }
+        }
+        .all-image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .big-img {
+                z-index: 1;
+                position: absolute;
+                right: -120px;
+                top: 0;
+                height: 660px;
+            }
+            .small-img {
+                position: absolute;
+                right: 140px;
+                top: 200px;
+                margin: auto 0;
+                z-index: 5;
+                height: 250px;
+            }
+            .comments {
+                @include a-hover;
+                z-index: 10;
+                background: white;
+                padding: 15px 30px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                gap: 20px;
+                width: 300px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                .text {
+                    display: flex;
+                    flex-flow: column;
+                    gap: 10px;
+                    h5 {
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 24px;
+                        // @include responsive-font(24, 10);
+                        font-weight: 600;
+                        white-space: nowrap;
+                    }
+                    p {
+                        white-space: nowrap;
+                        font-size: 20px;
+                        // @include responsive-font(20, 9);
+                        font-family: "Montserrat", sans-serif;
+                    }
+                }
+            }
+            .c1 {
+                position: absolute;
+                top: -40px;
+                right: 0;
+            }
+            .c2 {
+                position: absolute;
+                top: 80px;
+                right: 300px;
+            }
+            .c3 {
+                position: absolute;
+                top: 610px;
+                right: 0;
+            }
+        }
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-flow: column;
+    gap: 80px;
+    .info-card {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        .card-text {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            .text {
+                border-left: 2px solid black;
+                display: flex;
+                flex-flow: column;
+                align-items: start;
+                gap: 30px;
+                padding: 0 0 0 50px;
+                h2 {
+                    font-weight: 700;
+                    font-size: 60px;
+                    // @include responsive-font(60, 27);
+                    line-height: 72px;
+                    letter-spacing: 0.02em;
+                    color: #14274a;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 26px;
+                    // @include responsive-font(26, 16);
+                    line-height: 40px;
+                    color: #14274a;
+                }
+                p.room {
+                    max-width: 540px;
+                }
+                p.facilities {
+                    max-width: 520px;
+                }
+                a {
+                    @include hover($ohra);
+                    padding: 20px 60px;
+                    background: $ohra;
+                    font-weight: 400;
+                    font-size: 20px;
+                    // @include responsive-font(20, 18);
+                    line-height: 24px;
+                    letter-spacing: 0.05em;
+                    color: #ffffff;
+                }
+            }
+        }
+        img.room {
+            height: 550px;
+            width: 850px;
+        }
+        img.facilities {
+            height: 500px;
+            width: 850px;
+        }
+    }
+    .mobile-info-card {
+        display: none;
+    }
+}
+
+.about-us {
+    background: $blue;
+    .block {
+        @extend %max;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        .text {
+            padding: 150px 250px 150px 0;
+            display: flex;
+            flex-flow: column;
+            gap: 40px;
+            h2 {
+                font-size: 50px;
+                // @include responsive-font(50, 22);
+                letter-spacing: 8px;
+                color: white;
+                padding: 0 0 25px;
+                width: 315px;
+                border-bottom: 4px solid $ohra;
+            }
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                // @include responsive-font(25, 13);
+                line-height: 34px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.reviews {
+    @extend %max;
+    margin: 150px auto 200px;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    h2 {
+        font-size: 50px;
+        // @include responsive-font(50, 22);
+        font-weight: 700;
+        color: $blue;
+        letter-spacing: 2px;
+    }
+    .text {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: end;
+        p {
+            font-size: 28px;
+            // @include responsive-font(28, 13);
+            color: $blue;
+            letter-spacing: 1px;
+        }
+        .all-star {
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            .star {
+                margin: 0 0 0 -5px;
+                display: flex;
+                flex-flow: row;
+                gap: 8px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        .all-avatars {
+            gap: 10px;
+            img {
+                padding: 0 0 10px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+// ===========================================================
+
+@media screen and (width < 1660px) {
+    main {
+        @include max_1660;
+        margin: 90px auto;
+    }
+
+    .all-advantages {
+        margin: 0px 10% 100px;
+        flex-flow: row;
+        .advantage {
+            gap: 15px;
+            .logo {
+                width: 55px;
+                height: 55px;
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            p {
+                // font-size: 18px;
+                @include responsive-font(18, 12);
+                line-height: 22px;
+                width: 80px;
+            }
+        }
+    }
+
+    .stay-here {
+        margin: 100px auto 200px;
+        gap: 100px;
+        .stay-here-text {
+            gap: 20px;
+            h2 {
+                // font-size: 35px;
+                @include responsive-font(35, 25);
+                span {
+                    // font-size: 35px;
+                    @include responsive-font(35, 25);
+                }
+            }
+            p {
+                color: $blue;
+                // font-size: 18px;
+                @include responsive-font(18, 14);
+                line-height: 24px;
+                text-align: center;
+                padding: 0 50px;
+            }
+        }
+        .stay-here-advantages {
+            .all-stay-here-advantages {
+                gap: 50px;
+                .advantage {
+                    gap: 10px;
+                    width: 400px;
+                    .number {
+                        width: 40px;
+                        height: 40px;
+                        // font-size: 18px;
+                        @include responsive-font(18, 14);
+                    }
+                    h4 {
+                        // font-size: 20px;
+                        @include responsive-font(20, 16);
+                    }
+                    p {
+                        // font-size: 14px;
+                        @include responsive-font(14, 12);
+                        line-height: 22px;
+                    }
+                }
+            }
+            .all-image {
+                .big-img {
+                    right: -50px;
+                    top: 0;
+                    height: 520px;
+                }
+                .small-img {
+                    right: 140px;
+                    top: 180px;
+                    height: 170px;
+                }
+                .comments {
+                    padding: 10px 20px;
+                    width: 200px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .text {
+                        gap: 5px;
+                        h5 {
+                            // font-size: 14px;
+                            @include responsive-font(14, 10);
+                        }
+                        p {
+                            // font-size: 12px;
+                            @include responsive-font(14, 8);
+                        }
+                    }
+                }
+                .c1 {
+                    position: absolute;
+                    top: -40px;
+                    right: 0;
+                }
+                .c2 {
+                    position: absolute;
+                    top: 100px;
+                    right: 200px;
+                }
+                .c3 {
+                    position: absolute;
+                    top: 490px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        gap: 80px;
+        .info-card {
+            .card-text {
+                .text {
+                    gap: 30px;
+                    padding: 0 0 0 30px;
+                    h2 {
+                        // font-size: 30px;
+                        @include responsive-font(30, 22);
+                        line-height: 40px;
+                    }
+                    p {
+                        // font-size: 14px;
+                        @include responsive-font(14, 12);
+                        line-height: 22px;
+                    }
+                    p.room {
+                        max-width: 340px;
+                    }
+                    p.facilities {
+                        max-width: 320px;
+                    }
+                    a {
+                        padding: 10px 30px;
+                        // font-size: 14px;
+                        @include responsive-font(14, 8);
+                        line-height: 20px;
+                    }
+                }
+            }
+            img.room {
+                height: 300px;
+                width: 480px;
+            }
+            img.facilities {
+                height: 270px;
+                width: 480px;
+            }
+        }
+    }
+
+    .about-us {
+        .block {
+            @include max_1660;
+            .text {
+                padding: 100px 150px 100px 0;
+                gap: 30px;
+                h2 {
+                    // font-size: 30px;
+                    @include responsive-font(30, 22);
+                    letter-spacing: 3px;
+                    padding: 0 0 10px;
+                    width: 190px;
+                    border-bottom: 2px solid $ohra;
+                }
+                p {
+                    // font-size: 16px;
+                    @include responsive-font(16, 12);
+                    line-height: 22px;
+                }
+            }
+            img {
+                height: 440px;
+            }
+        }
+    }
+
+    .reviews {
+        @include max_1660;
+        margin: 100px auto 150px;
+        gap: 40px;
+        h2 {
+            // font-size: 30px;
+            @include responsive-font(30, 22);
+        }
+        .text {
+            p {
+                // font-size: 16px;
+                @include responsive-font(14, 12);
+            }
+            .all-star {
+                gap: 10px;
+                .star {
+                    gap: 8px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .all-avatars {
+                img {
+                    padding: 0 0 10px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+}
+
+// ===========================================================
+
+@media screen and (width < 1100px) {
+    main {
+        @include max_1100;
+        margin: 70px auto 70px;
+    }
+
+    .all-advantages {
+        margin: 0px 10% 50px;
+        .advantage {
+            gap: 10px;
+            .logo {
+                width: 40px;
+                height: 40px;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            p {
+                // font-size: 14px;
+                line-height: 18px;
+                width: 60px;
+            }
+        }
+    }
+
+    .stay-here {
+        margin: 70px auto 100px;
+        gap: 100px;
+        .stay-here-text {
+            gap: 10px;
+            h2 {
+                // font-size: 28px;
+                span {
+                    // font-size: 28px;
+                }
+            }
+            p {
+                // font-size: 12px;
+                line-height: 20px;
+                padding: 0 50px;
+            }
+        }
+        .stay-here-advantages {
+            .all-stay-here-advantages {
+                gap: 30px;
+                .advantage {
+                    gap: 10px;
+                    width: 300px;
+                    .number {
+                        width: 30px;
+                        height: 30px;
+                        // font-size: 14px;
+                    }
+                    h4 {
+                        color: black;
+                        line-height: 20px;
+                        // font-size: 18px;
+                    }
+                    p {
+                        // font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .all-image {
+                .big-img {
+                    right: -50px;
+                    top: 0px;
+                    height: 400px;
+                }
+                .small-img {
+                    right: 100px;
+                    top: 160px;
+                    height: 120px;
+                }
+                .comments {
+                    padding: 10px 15px;
+                    gap: 10px;
+                    width: 160px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .text {
+                        gap: 5px;
+                        h5 {
+                            // font-size: 12px;
+                            font-weight: 600;
+                        }
+                        p {
+                            // font-size: 11px;
+                        }
+                    }
+                }
+                .c1 {
+                }
+                .c2 {
+                    top: 100px;
+                    right: 130px;
+                }
+                .c3 {
+                    top: 365px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        gap: 50px;
+        .info-card {
+            .card-text {
+                .text {
+                    gap: 20px;
+                    padding: 0 0 0 20px;
+                    h2 {
+                        // font-size: 25px;
+                        line-height: 24px;
+                    }
+                    p {
+                        // font-size: 12px;
+                        line-height: 18px;
+                    }
+                    p.room {
+                        max-width: 250px;
+                    }
+                    p.facilities {
+                        max-width: 250px;
+                    }
+                    a {
+                        padding: 10px 20px;
+                        // font-size: 12px;
+                        line-height: 10px;
+                    }
+                }
+            }
+            img.room {
+                height: 250px;
+                width: 370px;
+            }
+            img.facilities {
+                height: 225px;
+                width: 370px;
+            }
+        }
+    }
+
+    .about-us {
+        .block {
+            @include max_1100;
+            .text {
+                padding: 70px 100px 70px 0;
+                gap: 20px;
+                h2 {
+                    // font-size: 25px;
+                    letter-spacing: 2px;
+                    padding: 0 0 10px;
+                    width: 155px;
+                    border-bottom: 2px solid $ohra;
+                }
+                p {
+                    // font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            img {
+                height: 382px;
+            }
+        }
+    }
+
+    .reviews {
+        @include max_1100;
+        margin: 70px auto 120px;
+        gap: 30px;
+        h2 {
+            // font-size: 25px;
+            font-weight: 700;
+        }
+        .text {
+            p {
+                // font-size: 14px;
+                letter-spacing: 1px;
+            }
+            .all-star {
+                gap: 10px;
+                .star {
+                    gap: 5px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            .all-avatars {
+                gap: 10px;
+                img {
+                    padding: 0 0 10px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+// ===========================================================
+
+@media screen and (width < 800px) {
+    main {
+        @include max_800;
+        margin: 70px auto 70px;
+    }
+
+    .all-advantages {
+        margin: 0px 0% 50px 10px;
+        .advantage {
+            gap: 10px;
+            p {
+                // font-size: 13px;
+                line-height: 18px;
+                width: 60px;
+            }
+        }
+    }
+
+    .stay-here {
+        margin: 60px auto 60px;
+        flex-flow: column;
+        gap: 50px;
+        .stay-here-text {
+            gap: 10px;
+            h2 {
+                // font-size: 25px;
+                font-weight: 700;
+                span {
+                    font-weight: 700;
+                    // font-size: 25px;
+                }
+            }
+            p {
+                color: $blue;
+                // font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .stay-here-advantages {
+            .all-stay-here-advantages {
+                gap: 30px;
+                .advantage {
+                    gap: 10px;
+                    width: 250px;
+                    .number {
+                        width: 30px;
+                        height: 30px;
+                        // font-size: 14px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    h4 {
+                        font-weight: 600;
+                        line-height: 16px;
+                        // font-size: 16px;
+                    }
+                    p {
+                        // font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .all-image {
+                .big-img {
+                    right: -20px;
+                    top: 50px;
+                    height: 300px;
+                }
+                .small-img {
+                    right: 40px;
+                    top: 85px;
+                    height: 100px;
+                }
+                .comments {
+                    padding: 8px 10px;
+                    gap: 5px;
+                    width: 130px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .text {
+                        flex-flow: column;
+                        gap: 2px;
+                        h5 {
+                            // font-size: 10px;
+                            font-weight: 600;
+                        }
+                        p {
+                            // font-size: 9px;
+                        }
+                    }
+                }
+                .c1 {
+                    top: 25px;
+                    right: 0;
+                }
+                .c2 {
+                    top: 165px;
+                    right: 100px;
+                }
+                .c3 {
+                    top: 330px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        gap: 50px;
+        .info-card {
+            .card-text {
+                .text {
+                    border-left: 1px solid black;
+                    flex-flow: column;
+                    align-items: start;
+                    gap: 10px;
+                    padding: 0 0 0 20px;
+                    h2 {
+                        font-weight: 700;
+                        // font-size: 20px;
+                        line-height: 24px;
+                    }
+                    p {
+                        font-weight: 400;
+                        // font-size: 12px;
+                        line-height: 18px;
+                    }
+                    p.room {
+                        max-width: 180px;
+                    }
+                    p.facilities {
+                        max-width: 180px;
+                    }
+                    a {
+                        padding: 8px 15px;
+                        font-weight: 400;
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+                }
+            }
+            img.room {
+                height: 180px;
+                width: 260px;
+            }
+            img.facilities {
+                height: 160px;
+                width: 260px;
+            }
+        }
+    }
+
+    .about-us {
+        background: $blue;
+        .block {
+            @include max_800;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            .text {
+                padding: 50px 20px 50px 0;
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                h2 {
+                    // font-size: 20px;
+                    letter-spacing: 2px;
+                    color: white;
+                    padding: 0 0 5px;
+                    width: 150px;
+                    border-bottom: 1px solid $ohra;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                    // font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 300;
+                }
+            }
+            img {
+                width: 230px;
+                height: 315px;
+            }
+        }
+    }
+
+    .reviews {
+        @include max_800;
+        margin: 50px auto 100px;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        h2 {
+            // font-size: 20px;
+            font-weight: 700;
+            color: $blue;
+            letter-spacing: 2px;
+        }
+        .text {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: end;
+            p {
+                // font-size: 12px;
+                color: black;
+                letter-spacing: 1px;
+            }
+            .all-star {
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                .star {
+                    margin: 0 0 0 -5px;
+                    display: flex;
+                    flex-flow: row;
+                    gap: 5px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            .all-avatars {
+                gap: 10px;
+                img {
+                    padding: 0 0 10px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+// ===========================================================
+
+@media screen and (width < 550px) {
+    main {
+        @include max_550;
+        margin: 30px auto 70px;
+        padding: 20px;
+    }
+
+    .all-advantages {
+        margin: 0px auto 0;
+        // padding: 0 0 0 10px;
+        display: grid;
+        grid-template: 50px 2fr / 50% 2fr;
+        justify-items: center;
+        .advantage {
+            max-width: 155px;
+            gap: 10px;
+            .logo {
+                width: 40px;
+                height: 40px;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            p {
+                // font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .stay-here {
+        margin: 50px auto 70px;
+        flex-flow: column;
+        gap: 30px;
+        .stay-here-text {
+            align-items: center;
+            gap: 10px;
+            h2 {
+                // font-size: 27px;
+                font-weight: 700;
+                span {
+                    font-weight: 700;
+                    // font-size: 27px;
+                }
+            }
+            p {
+                // font-size: 13px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .stay-here-advantages {
+            .all-stay-here-advantages {
+                gap: 30px;
+                .advantage {
+                    gap: 10px;
+                    width: 100%;
+                    .number {
+                        width: 30px;
+                        height: 30px;
+                        // font-size: 14px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    h4 {
+                        font-weight: 600;
+                        line-height: 16px;
+                        // font-size: 16px;
+                    }
+                    .number-text {
+                        display: flex;
+                        flex-flow: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 40px;
+                        .comments {
+                            box-shadow: 0px 4px 15px rgba(39, 39, 39, 0.3);
+                            border-radius: 10px;
+                            display: flex;
+                            padding: 10px 20px;
+                            align-items: center;
+                            gap: 10px;
+                            width: 40%;
+                            img {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                            }
+                            .text {
+                                width: 100%;
+                                display: flex;
+                                flex-flow: column;
+                                gap: 2px;
+                                h5 {
+                                    white-space: nowrap;
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                }
+                                p {
+                                    white-space: nowrap;
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        width: 50%;
+                        // font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .all-image {
+                .big-img {
+                    display: none;
+                }
+                .small-img {
+                    display: none;
+                }
+                .comments {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        .info-card {
+            display: none;
+        }
+        .mobile-info-card {
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+            align-items: center;
+            h2 {
+                font-weight: 700;
+                // font-size: 26px;
+                @include responsive-font(30, 22);
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #14274a;
+            }
+            .card {
+                img {
+                    width: 100%;
+                }
+                .text {
+                    display: flex;
+                    width: 100%;
+                    padding: 30px;
+                    flex-flow: column;
+                    align-items: start;
+                    gap: 20px;
+                    background: $blue;
+                    p {
+                        font-weight: 300;
+                        // font-size: 14px;
+                        color: white;
+                        line-height: 16px;
+                        color: white;
+                    }
+                    a {
+                        @include hover($ohra);
+                        padding: 10px 20px;
+                        background: $ohra;
+                        font-weight: 400;
+                        // font-size: 10x;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us {
+        .block {
+            padding: 20px 20px 30px;
+            @include max_550;
+            margin: 0 auto;
+            .text {
+                padding: 0;
+                flex-flow: column;
+                gap: 10px;
+                h2 {
+                    margin: 0 auto 15px;
+                    // font-size: 24px;
+                    letter-spacing: 3px;
+                    padding: 0 0 10px;
+                    width: inherit;
+                    border-bottom: 1px solid $ohra;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                    // font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .reviews {
+        @include max_550;
+        margin: 50px auto 100px;
+        flex-flow: column;
+        gap: 30px;
+        padding: 20px;
+        h2 {
+            text-align: center;
+            // font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .text {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            p {
+                // font-size: 14px;
+                letter-spacing: 1px;
+            }
+            .all-star {
+                flex-flow: column;
+                gap: 5px;
+                align-items: center;
+                .star {
+                    margin: 0 0 0 -5px;
+                    flex-flow: row;
+                    gap: 5px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .all-avatars {
+                gap: 10px;
+                flex-flow: column;
+                align-items: center;
+                text-align: center;
+                img {
+                    padding: 0;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+// ===========================================================
+
+@media screen and (width < 450px) {
+    main {
+        @include max_550;
+        margin: 20px auto 50px;
+        padding: 20px;
+    }
+
+    .all-advantages {
+        margin: 0px auto 0;
+        display: grid;
+        grid-template: 50px 2fr / 50% 2fr;
+        justify-items: center;
+        .advantage {
+            justify-content: center;
+            max-width: 110px;
+            gap: 10px;
+            .logo {
+                width: 40px;
+                height: 40px;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            p {
+                // font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .stay-here {
+        margin: 60px auto 90px;
+        flex-flow: column;
+        gap: 30px;
+        .stay-here-text {
+            flex-flow: column;
+            align-items: center;
+            gap: 10px;
+            h2 {
+                // font-size: 27px;
+                font-weight: 700;
+                text-align: center;
+                span {
+                    font-weight: 700;
+                    // font-size: 27px;
+                }
+            }
+            p {
+                // font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .stay-here-advantages {
+            .all-stay-here-advantages {
+                flex-flow: column;
+                gap: 40px;
+                .advantage {
+                    flex-flow: column;
+                    gap: 10px;
+                    width: 100%;
+                    .number {
+                        width: 30px;
+                        height: 30px;
+                        // font-size: 14px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    h4 {
+                        font-weight: 600;
+                        line-height: 16px;
+                        // font-size: 16px;
+                    }
+                    .number-text {
+                        flex-flow: column;
+                        align-items: start;
+                        gap: 20px;
+                        .comments {
+                            // display: flex;
+                            padding: 10px 20px;
+                            flex-flow: row;
+                            align-items: center;
+                            gap: 10px;
+                            width: 100%;
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                            .text {
+                                width: 100%;
+                                flex-flow: column;
+                                gap: 2px;
+                                h5 {
+                                    // font-size: 13px;
+                                    font-weight: 600;
+                                    white-space: nowrap;
+                                }
+                                p {
+                                    white-space: nowrap;
+                                    // font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        width: 100%;
+                        // font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .all-image {
+                .big-img {
+                    display: none;
+                }
+                .small-img {
+                    display: none;
+                }
+                .comments {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        flex-flow: column;
+        gap: 50px;
+        .info-card {
+            display: none;
+        }
+        .mobile-info-card {
+            flex-flow: column;
+            gap: 20px;
+            align-items: center;
+            h2 {
+                font-weight: 700;
+                // font-size: 27px;
+                line-height: 24px;
+                text-align: center;
+            }
+            .card {
+                img {
+                    width: 100%;
+                }
+                .text {
+                    width: 100%;
+                    padding: 30px;
+                    flex-flow: column;
+                    align-items: start;
+                    gap: 20px;
+                    p {
+                        font-weight: 300;
+                        // font-size: 14px;
+                        line-height: 16px;
+                    }
+                    a {
+                        @include hover($ohra);
+                        padding: 10px 20px;
+                        font-weight: 400;
+                        // font-size: 10x;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us {
+        .block {
+            padding: 20px 20px 40px;
+            @include max_550;
+            margin: 0 auto;
+            .text {
+                padding: 0;
+                flex-flow: column;
+                gap: 10px;
+                h2 {
+                    margin: 0 auto 15px;
+                    // font-size: 22px;
+                    letter-spacing: 3px;
+                    padding: 0 0 8px;
+                    width: inherit;
+                    border-bottom: 1px solid $ohra;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                    // font-size: 13px;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .reviews {
+        @include max_550;
+        margin: 30px auto 80px;
+        flex-flow: column;
+        gap: 30px;
+        padding: 20px;
+        h2 {
+            text-align: center;
+            // font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .text {
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            p {
+                // font-size: 14px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .all-star {
+                flex-flow: column;
+                gap: 5px;
+                align-items: center;
+                .star {
+                    margin: 0 0 0 -5px;
+                    display: flex;
+                    flex-flow: row;
+                    gap: 5px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            .all-avatars {
+                gap: 10px;
+                flex-flow: column;
+                display: flex;
+                align-items: center;
+                img {
+                    padding: 0;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
