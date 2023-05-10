@@ -507,13 +507,13 @@ if (cartF) {
     });
 }
 
-//======================	scrollbar	================================
+// //======================	scrollbar	================================
 
-let scrollbar = document.querySelector('.scrollbar-line')
+// let scrollbar = document.querySelector('.scrollbar-line')
 
-scrollbar.innerHTML = `
-	<div class="back-line"></div>
-	<div class="line"></div>
-`
-let scrollTop = window.scrollY
-let siteHeight = window.innerHeight
+// scrollbar.innerHTML = `
+// 	<div class="back-line"></div>
+// 	<div class="line"></div>
+// `
+// let scrollTop = window.scrollY
+// let siteHeight = window.innerHeight
