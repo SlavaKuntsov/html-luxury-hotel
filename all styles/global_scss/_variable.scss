@@ -3,7 +3,6 @@
 $ohra: #E0B973;
 $blue: #14274A;
 
-//	1920px
 %max {
 	max-width: 1500px;
 }
@@ -15,7 +14,6 @@ $blue: #14274A;
 @mixin max_1100 {
 	max-width: 700px;
 }
-
 
 @mixin max_800 { 
 	max-width: 500px;

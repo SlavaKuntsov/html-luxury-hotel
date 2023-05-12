@@ -3,28 +3,12 @@
 ["DOMContentLoaded", "resize"].forEach(e => {
 	window.addEventListener(e, function() {
 
-		let wrapper = document.querySelector(".wrapper")
-		let content = document.querySelector(".content")
-
-		// wrapper.classList.remove("wrapper")
-		// content.classList.remove("content")
-		
-		
-
-		// wrapper.classList.add("scroll_wrapper")
-		// content.classList.add("scroll_content")
-
-		let scroll_wrapper = document.querySelector(".scroll_wrapper")
-		let scroll_content = document.querySelector(".scroll_content")
+		const wrapper = document.querySelector(".wrapper")
+		const content = document.querySelector(".content")
 
 		content.style.removeAttribute = "transform"
 		console.log("none")
-		if (window.innerWidth <= 550) {
-		}
-		else{
-			// scroll_wrapper.classList.add("wrapper")
-			// scroll_content.classList.add("content")
-
+		if (window.innerWidth > 550) {
 			if(wrapper) {
 				gsap.registerPlugin(ScrollSmoother)
 			
@@ -48,34 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	const animateItems = document.querySelectorAll(".animate")
 
 	function scrollAnimation () {
-		// ok
+
 		let scrollCenter = (window.innerHeight / 1.1)
-		// let scrollCenterPlusScroll = (window.innerHeight / 1.3) + window.scrollY
 
 		animateItems.forEach(item => {
 
-			// // 2 вариант
 			let itemHeight = item.offsetHeight
-			// let itemOffset = offset(item).top
 
-			// let itemPoint = (window.innerHeight - itemHeight ) * 10
-
-			// if(itemPoint > window.innerHeight) {
-			// 	itemPoint = window.innerHeight - (window.innerHeight / 2) / 4
-			// }
-
-
-			// if((scrollY > itemOffset - itemPoint - (itemHeight / 2) ) && scrollY < (itemOffset - (itemHeight / 2) )) {
-			// 	item.classList.add("animate")
-			// }
-			// else{
-			// 	item.classList.remove("animate")
-			// }
-
-			// // 1 вариант
 			let offsetItem = item.getBoundingClientRect().top
-			// let offsetItemSCroll = window.pageYOffset + item.getBoundingClientRect().top
-			// let offsetItem = item.offsetTop + (item.offsetHeight / 2);
 
 			if(scrollCenter < offsetItem + (itemHeight / 1.5)) {
 				item.classList.remove("animate")
@@ -84,16 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				item.classList.add("animate")
 			}
 		})
-	}
-
-	function offset(item) {
-		let rect = item.getBoundingClientRect()
-		let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
-		let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-		return{
-			top: rect.top + scrollTop,
-			left: rect.left + scrollLeft
-		}
 	}
 
 	scrollAnimation()
@@ -106,9 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let bool = false;
 
-let menuOpen = document.getElementById("open");
-let menuClose = document.getElementById("close");
-let menu = document.querySelector("#burger-menu");
+const menuOpen = document.getElementById("open");
+const menuClose = document.getElementById("close");
+const menu = document.querySelector("#burger-menu");
 
 window.onscroll = function () {};
 
@@ -134,7 +88,7 @@ menuClose.addEventListener("click", function () {
 
 // ==============	carts in "Room" page	==============
 
-let allCarts = document.getElementById("all-carts");
+const allCarts = document.getElementById("all-carts");
 
 if (allCarts) {
     let allCartsArray = [
@@ -194,8 +148,8 @@ if (allCarts) {
         },
     ];
 
-    let choose = document.getElementById("choose");
-    let choose2 = document.getElementById("choose2");
+    const choose = document.getElementById("choose");
+    const choose2 = document.getElementById("choose2");
 
     let roomChoose = false;
     let personChoose = false;
@@ -231,13 +185,13 @@ if (allCarts) {
         )
         .join("");
 
-    let inDate = document.getElementById("in");
-    let outDate = document.getElementById("out");
+    const inDate = document.getElementById("in");
+    const outDate = document.getElementById("out");
 
-    let radio = document.querySelector('input[name="radio"]:checked');
+    const radio = document.querySelector('input[name="radio"]:checked');
     let r;
 
-    let rates = document.querySelector('input[name="radio"]');
+    const rates = document.querySelector('input[name="radio"]');
     let rate_value;
     for (let i = 0; i < rates.length; i++) {
         if (rates[i].checked) {
@@ -248,17 +202,17 @@ if (allCarts) {
 
 			// ======== reserve form =================
 
-	let reserv = document.getElementById("reserv")
-	let form = document.getElementById("form")
-	let formContainer = document.querySelector("form")
-	let formClose = document.getElementById("formClose")
+	const reserv = document.getElementById("reserv")
+	const form = document.getElementById("form")
+	const formContainer = document.querySelector("form")
+	const formClose = document.getElementById("formClose")
 
-	let inDateOutput = document.getElementById("in-output")
-	let outDateOutput = document.getElementById("out-output")
-	let roomDateOutput = document.getElementById("room-output")
-	let personDateOutput = document.getElementById("person-output")
+	const inDateOutput = document.getElementById("in-output")
+	const outDateOutput = document.getElementById("out-output")
+	const roomDateOutput = document.getElementById("room-output")
+	const personDateOutput = document.getElementById("person-output")
 
-	let body = document.querySelector("body")
+	const body = document.querySelector("body")
 
 	body.style.overflowX = "hidden";
 	body.style.overflowY = "auto";
@@ -324,7 +278,7 @@ if (allCarts) {
 
 // ========================================
 
-let viewMap = document.getElementById("map");
+const viewMap = document.getElementById("map");
 
 if (viewMap) {
     viewMap.addEventListener("click", function () {
@@ -334,11 +288,11 @@ if (viewMap) {
 
 // ==============	comments slider	==============
 
-let track = document.getElementById("track");
+const track = document.getElementById("track");
 
 if (track) {
-    let leftBtn = document.getElementById("left");
-    let rightBtn = document.getElementById("right");
+    const leftBtn = document.getElementById("left");
+    const rightBtn = document.getElementById("right");
 
     let position = 0;
     let itemWidth;
@@ -396,7 +350,7 @@ if (track) {
 
 // ==============	facilities in "Facilities" page	==============
 
-let allFacilities = document.getElementById("facilities");
+const allFacilities = document.getElementById("facilities");
 
 let allFacilitiesArray = [
     {
@@ -465,10 +419,10 @@ if(allFacilities) {
 
 // ==============	card flip in "Facilities" page	==============
 
-let cartF = document.querySelectorAll(".cartF");
+const cartF = document.querySelectorAll(".cartF");
 
-let front = document.querySelectorAll(".front");
-let back = document.querySelectorAll(".back");
+const front = document.querySelectorAll(".front");
+const back = document.querySelectorAll(".back");
 
 if (cartF) {
     cartF.forEach((cart, index) => {
@@ -506,14 +460,3 @@ if (cartF) {
         });
     });
 }
-
-// //======================	scrollbar	================================
-
-// let scrollbar = document.querySelector('.scrollbar-line')
-
-// scrollbar.innerHTML = `
-// 	<div class="back-line"></div>
-// 	<div class="line"></div>
-// `
-// let scrollTop = window.scrollY
-// let siteHeight = window.innerHeight
