@@ -1,4 +1,4 @@
 TODO.md
-pages/menu.html
-all styles/scss_menu
-all styles/style_menu.css
+/pages/menu.html
+scss_menu/
+style_menu.css
