@@ -7,12 +7,12 @@
 		const content = document.querySelector(".content")
 
 		content.style.removeAttribute = "transform"
-		console.log("none")
+		// console.log("none")
 		if (window.innerWidth > 550) {
 			if(wrapper) {
 				gsap.registerPlugin(ScrollSmoother)
 			
-				console.log("gsap ok")
+				// console.log("gsap ok")
 				
 				ScrollSmoother.create({
 					wrapper: '.wrapper',
@@ -71,7 +71,7 @@ menuOpen.addEventListener("click", function () {
         menu.style.left = "0";
         bool = true;
     }
-	console.log("open")
+	// console.log("open")
     window.onscroll = function () {
         window.scrollTo(0, 0);
     };
@@ -80,7 +80,7 @@ menuClose.addEventListener("click", function () {
     if (bool) {
         menu.style.left = "100%";
         bool = false;
-		console.log("close")
+		// console.log("close")
     }
 
     window.onscroll = function () {};
@@ -160,7 +160,7 @@ if (allCarts) {
 	choose2.style.margin = "2px 0 0 0";
 
     function isClick(title, person) {
-        console.log(title + " " + person);
+        // console.log(title + " " + person);
         roomChoose = title;
         personChoose = person;
 
@@ -196,7 +196,7 @@ if (allCarts) {
     for (let i = 0; i < rates.length; i++) {
         if (rates[i].checked) {
             rate_value = rates[i].value;
-            console.log("rate_value: ", rate_value);
+            // console.log("rate_value: ", rate_value);
         }
     }
 
@@ -219,7 +219,7 @@ if (allCarts) {
 
 	
     reserv.addEventListener("click", function () {
-        console.log(1);
+        // console.log(1);
 
 		function remove() {
 			reserv.classList.remove("incorrect")
@@ -231,7 +231,7 @@ if (allCarts) {
 			inDate.value !== "" &&
             outDate.value !== ""
         ) {
-			console.log(2)
+			// console.log(2)
 			form.style.visibility = "visible";
 			form.style.opacity = "1";
 			body.style.overflow = "hidden";
@@ -309,7 +309,7 @@ if (track) {
 				itemWidth = 300;
 			}
 			
-			console.log(itemWidth)
+			// console.log(itemWidth)
 		})
 	})
 	
